@@ -67,7 +67,7 @@ The StringToSign is constructed according to the following rules. :ref:`Table 1 
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
    |                                   | <Bucket name + Object name> + [Subresource 1] + [Subresource 2] + ...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-   |                                   | #. Bucket name and object name, for example,\ **/bucket/object**\ . If no object name is specified, for example,\ **/bucket/**\ , the entire bucket is listed. If no bucket name is specified either, the value of this field is\ **/**\ .                                                                                                                                                                                                                                                                                                                               |
+   |                                   | #. Bucket name and object name, for example, \ **/bucket/object**\ . If no object name is specified, for example, \ **/bucket/**\ , the entire bucket is listed. If no bucket name is specified either, the value of this field is \ **/**\ .                                                                                                                                                                                                                                                                                                                            |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
    |                                   | #. If a subresource (such as **?acl** and **?logging**) exists, the subresource must be added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -96,30 +96,30 @@ The following tables provide some examples of generating StringToSign.
    |                                         |                                   |
    | Date: Sat, 12 Oct 2015 08:12:38 GMT     | ``\n``                            |
    |                                         |                                   |
-   |                                         | Sat, 12 Oct 2015 08:12:38 GMT\n   |
+   |                                         | Sat, 12 Oct 2015 08:12:38 GMT\\n  |
    |                                         |                                   |
    |                                         | /bucket/object.txt                |
    +-----------------------------------------+-----------------------------------+
 
 .. table:: **Table 3** Using temporary AK/SK and security token to upload objects
 
-   +------------------------------------------+--------------------------------------------+
-   | Request Header                           | StringToSign                               |
-   +==========================================+============================================+
-   | PUT /object.txt HTTP/1.1                 | PUT\n                                      |
-   |                                          |                                            |
-   | User-Agent: curl/7.15.5                  | ``\n``                                     |
-   |                                          |                                            |
-   | Host: bucket.obs.\ *region*.example.com  | text/plain\n                               |
-   |                                          |                                            |
-   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                     |
-   |                                          |                                            |
-   | x-obs-security-token: YwkaRTbdY8g7q....  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\n |
-   |                                          |                                            |
-   | content-type: text/plain                 | x-obs-security-token:YwkaRTbdY8g7q....\n   |
-   |                                          |                                            |
-   | Content-Length: 5913339                  | /bucket/object.txt                         |
-   +------------------------------------------+--------------------------------------------+
+   +------------------------------------------+---------------------------------------------+
+   | Request Header                           | StringToSign                                |
+   +==========================================+=============================================+
+   | PUT /object.txt HTTP/1.1                 | PUT\\n                                      |
+   |                                          |                                             |
+   | User-Agent: curl/7.15.5                  | ``\n``                                      |
+   |                                          |                                             |
+   | Host: bucket.obs.\ *region*.example.com  | text/plain\\n                               |
+   |                                          |                                             |
+   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                      |
+   |                                          |                                             |
+   | x-obs-security-token: YwkaRTbdY8g7q....  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\\n |
+   |                                          |                                             |
+   | content-type: text/plain                 | x-obs-security-token:YwkaRTbdY8g7q....\\n   |
+   |                                          |                                             |
+   | Content-Length: 5913339                  | /bucket/object.txt                          |
+   +------------------------------------------+---------------------------------------------+
 
 .. note::
 
@@ -132,15 +132,15 @@ The following tables provide some examples of generating StringToSign.
    +-----------------------------------------+-----------------------------------+
    | Request Header                          | StringToSign                      |
    +=========================================+===================================+
-   | PUT /object.txt HTTP/1.1                | PUT\n                             |
+   | PUT /object.txt HTTP/1.1                | PUT\\n                            |
    |                                         |                                   |
    | User-Agent: curl/7.15.5                 | ``\n``                            |
    |                                         |                                   |
-   | Host: bucket.obs.\ *region*.example.com | text/plain\n                      |
+   | Host: bucket.obs.\ *region*.example.com | text/plain\\n                     |
    |                                         |                                   |
-   | Date: Mon, 14 Oct 2015 12:08:34 GMT     | Mon, 14 Oct 2015 12:08:34 GMT\n   |
+   | Date: Mon, 14 Oct 2015 12:08:34 GMT     | Mon, 14 Oct 2015 12:08:34 GMT\\n  |
    |                                         |                                   |
-   | x-obs-acl: public-read                  | x-obs-acl:public-read\n           |
+   | x-obs-acl: public-read                  | x-obs-acl:public-read\\n          |
    |                                         |                                   |
    | content-type: text/plain                | /bucket/object.txt                |
    |                                         |                                   |
@@ -158,7 +158,7 @@ The following tables provide some examples of generating StringToSign.
    |                                         |                                   |
    | Date: Sat, 12 Oct 2015 08:12:38 GMT     | ``\n``                            |
    |                                         |                                   |
-   |                                         | Sat, 12 Oct 2015 08:12:38 GMT\n   |
+   |                                         | Sat, 12 Oct 2015 08:12:38 GMT\\n  |
    |                                         |                                   |
    |                                         | /bucket/object.txt?acl            |
    +-----------------------------------------+-----------------------------------+
@@ -167,39 +167,39 @@ The following tables provide some examples of generating StringToSign.
 
 .. table:: **Table 6** An object upload request carrying the Content-MD5 header
 
-   +------------------------------------------+--------------------------------------------+
-   | Request Header                           | StringToSign                               |
-   +==========================================+============================================+
-   | PUT /object.txt HTTP/1.1                 | PUT\n                                      |
-   |                                          |                                            |
-   | Host: bucket.obs.\ *region*.example.com  | I5pU0r4+sgO9Emgl1KMQUg==\n                 |
-   |                                          |                                            |
-   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                     |
-   |                                          |                                            |
-   | Content-MD5: I5pU0r4+sgO9Emgl1KMQUg==    | ``\n``                                     |
-   |                                          |                                            |
-   | Content-Length: 5913339                  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\n |
-   |                                          |                                            |
-   |                                          | /bucket/object.txt                         |
-   +------------------------------------------+--------------------------------------------+
+   +------------------------------------------+---------------------------------------------+
+   | Request Header                           | StringToSign                                |
+   +==========================================+=============================================+
+   | PUT /object.txt HTTP/1.1                 | PUT\\n                                      |
+   |                                          |                                             |
+   | Host: bucket.obs.\ *region*.example.com  | I5pU0r4+sgO9Emgl1KMQUg==\\n                 |
+   |                                          |                                             |
+   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                      |
+   |                                          |                                             |
+   | Content-MD5: I5pU0r4+sgO9Emgl1KMQUg==    | ``\n``                                      |
+   |                                          |                                             |
+   | Content-Length: 5913339                  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\\n |
+   |                                          |                                             |
+   |                                          | /bucket/object.txt                          |
+   +------------------------------------------+---------------------------------------------+
 
 .. table:: **Table 7** Uploading an object through a user domain name
 
-   +------------------------------------------+--------------------------------------------+
-   | Request Header                           | StringToSign                               |
-   +==========================================+============================================+
-   | PUT /object.txt HTTP/1.1                 | PUT\n                                      |
-   |                                          |                                            |
-   | Host: obs.ccc.com                        | I5pU0r4+sgO9Emgl1KMQUg==\n                 |
-   |                                          |                                            |
-   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                     |
-   |                                          |                                            |
-   | Content-MD5: I5pU0r4+sgO9Emgl1KMQUg==    | ``\n``                                     |
-   |                                          |                                            |
-   | Content-Length: 5913339                  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\n |
-   |                                          |                                            |
-   |                                          | /obs.ccc.com/object.txt                    |
-   +------------------------------------------+--------------------------------------------+
+   +------------------------------------------+---------------------------------------------+
+   | Request Header                           | StringToSign                                |
+   +==========================================+=============================================+
+   | PUT /object.txt HTTP/1.1                 | PUT\\n                                      |
+   |                                          |                                             |
+   | Host: obs.ccc.com                        | I5pU0r4+sgO9Emgl1KMQUg==\\n                 |
+   |                                          |                                             |
+   | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT | ``\n``                                      |
+   |                                          |                                             |
+   | Content-MD5: I5pU0r4+sgO9Emgl1KMQUg==    | ``\n``                                      |
+   |                                          |                                             |
+   | Content-Length: 5913339                  | x-obs-date:Tue, 15 Oct 2015 07:20:09 GMT\\n |
+   |                                          |                                             |
+   |                                          | /obs.ccc.com/object.txt                     |
+   +------------------------------------------+---------------------------------------------+
 
 Content-MD5 Algorithm in Java
 -----------------------------

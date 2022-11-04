@@ -8,7 +8,7 @@ Configuring Bucket Storage Quota
 Functions
 ---------
 
-The bucket storage quota must be a positive integer in the unit of byte. The maximum storage quota is 2\ :sup:`63` – 1 bytes. The default bucket storage quota is **0**, indicating that the bucket storage quota is not limited.
+The bucket storage quota must be a positive integer in the unit of byte. The maximum storage quota is 2\ :sup:`63` - 1 bytes. The default bucket storage quota is **0**, indicating that the bucket storage quota is not limited.
 
 .. note::
 
