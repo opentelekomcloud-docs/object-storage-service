@@ -18,7 +18,7 @@ To perform this operation, you must have the **PutBucketTagging** permission. By
 
    -  A bucket can have a maximum of 10 tags.
    -  A tag key and key value can contain a maximum of 36 and 43 characters, respectively.
-   -  Tag keys and key values cannot contain commas (,), asterisks (*), vertical bars (|), slashes (/), less-than signs (<), greater-than signs (>), equal signs (=), backslashes (\), or ASCII codes (0x00 to 0x1F).
+   -  Tag keys and key values cannot contain commas (,), asterisks (*), vertical bars (|), slashes (/), less-than signs (<), greater-than signs (>), equal signs (=), backslashes (\\), or ASCII codes (0x00 to 0x1F).
 
 Request Syntax
 --------------

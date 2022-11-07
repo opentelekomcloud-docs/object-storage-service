@@ -137,7 +137,7 @@ Generate a predefined URL instance for the browser by carrying the signature in 
    |                                                                                                                                          |                                   |
    |                                                                                                                                          | ``\n``                            |
    |                                                                                                                                          |                                   |
-   |                                                                                                                                          | 1532779451\n                      |
+   |                                                                                                                                          | 1532779451\\n                     |
    |                                                                                                                                          |                                   |
    |                                                                                                                                          | /examplebucket/objectkey          |
    +------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
@@ -153,7 +153,7 @@ Generate a predefined URL instance for the browser by carrying the signature in 
    |                                                                                                                                                                                 |                                                                 |
    |                                                                                                                                                                                 | ``\n``                                                          |
    |                                                                                                                                                                                 |                                                                 |
-   |                                                                                                                                                                                 | 1532779451\n                                                    |
+   |                                                                                                                                                                                 | 1532779451\\n                                                   |
    |                                                                                                                                                                                 |                                                                 |
    |                                                                                                                                                                                 | /examplebucket/objectkey?x-obs-security-token=YwkaRTbdY8g7q.... |
    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+
@@ -170,9 +170,9 @@ http(s)://examplebucket.obs.\ *region*.example.com/objectkey?AccessKeyId=AccessK
 
 If you enter the address in the browser, then the object **objectkey** in the **examplebucket** bucket can be downloaded. The validity period of this link is **1532779451** (indicating Sat Jul 28 20:04:11 CST 2018).
 
-In the Linux operating system, when running the **curl** command, you need to add a forward slash (\) to escape the character (&). The following command can download the **objectkey** object to the **output** file:
+In the Linux operating system, when running the **curl** command, you need to add a forward slash (\\) to escape the character (&). The following command can download the **objectkey** object to the **output** file:
 
-curl http(s)://examplebucket.obs.\ *region*.example.com/objectkey?AccessKeyId=AccessKeyID\&Expires=1532779451\&Signature=0Akylf43Bm3mD1bh2rM3dmVp1Bo%3D -X GET -o output
+curl http(s)://examplebucket.obs.\ *region*.example.com/objectkey?AccessKeyId=AccessKeyID\\&Expires=1532779451\\&Signature=0Akylf43Bm3mD1bh2rM3dmVp1Bo%3D -X GET -o output
 
 .. note::
 
