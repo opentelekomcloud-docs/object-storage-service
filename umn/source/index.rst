@@ -1,5 +1,13 @@
-==========
-Main Index
-==========
+===================================
+Object Storage Service - User Guide
+===================================
 
-TODO:
+.. toctree::
+   :maxdepth: 1
+
+   service_overview/index
+   obs_console_operation_guide/index
+   obs_browser_operation_guide/index
+   faqs/index
+   change_history
+   glossary
