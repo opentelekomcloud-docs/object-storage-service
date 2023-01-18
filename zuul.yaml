@@ -1,10 +1,29 @@
----
+- job:
+    name: build-otc-obs-s3api
+    parent: otc-tox-docs
+    description: Build s3api document using tox
+    files:
+    - ^doc/s3api/source/.*
+    vars:
+      tox_envlist: s3api
+- job:
+    name: build-otc-obs-tool-guide
+    parent: otc-tox-docs
+    description: Build tool-guide document using tox
+    files:
+    - ^doc/tool/source/.*
+    vars:
+      tox_envlist: tool-guide
 - project:
     merge-mode: squash-merge
     default-branch: main
     templates:
-      - api-ref-hc-jobs
-      - umn-hc-jobs
+    - api-ref-hc-jobs
+    - umn-hc-jobs
+    - helpcenter-base-jobs
     check:
+      # Separate documents are rendered in check, while published through regular otc-tox-docs job part of the basic template
       jobs:
-        - noop
+      - noop
+      - build-otc-obs-tool-guide
+      - build-otc-obs-s3api
