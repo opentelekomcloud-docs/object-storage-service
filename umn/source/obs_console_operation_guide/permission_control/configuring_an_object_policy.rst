@@ -5,12 +5,12 @@
 Configuring an Object Policy
 ============================
 
-An object policy applies to a specific object, which is also part of a bucket policy. The resource of an object policy is the selected object, and the actions and conditions are the object related actions and conditions configured in the bucket policy.
+Object policies are applied to the objects in a bucket. With an object policy, you can configure conditions and actions for objects in a bucket.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 

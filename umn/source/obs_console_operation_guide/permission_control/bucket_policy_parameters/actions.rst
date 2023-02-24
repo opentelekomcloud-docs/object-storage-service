@@ -44,15 +44,15 @@ Actions Related to Buckets
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | PutBucketCORS              | Configures CORS for the bucket.                                                                      |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | GetBucketVersioning        | Obtains the versioning information of the bucket.                                                    |
+   |         | GetBucketVersioning        | Obtains the versioning information of a bucket.                                                      |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutBucketVersioning        | Configures versioning for the bucket.                                                                |
+   |         | PutBucketVersioning        | Configures versioning for a bucket.                                                                  |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetBucketLocation          | Obtains the bucket location.                                                                         |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetBucketLogging           | Obtains the bucket logging information.                                                              |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutBucketLogging           | Configures logging for the bucket.                                                                   |
+   |         | PutBucketLogging           | Configures logging for a bucket.                                                                     |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetBucketWebsite           | Obtains the static website configuration information about the bucket.                               |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
@@ -83,7 +83,7 @@ Actions Related to Objects
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
    |         | List\*                   | The value supports a wildcard character (``*``) that indicates all LIST operations can be performed.        |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   | Object  | GetObject                | Obtains the object and its metadata.                                                                        |
+   | Object  | GetObject                | Obtains an object and its metadata.                                                                         |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
    |         | GetObjectVersion         | Obtains the object of a specified version and its metadata.                                                 |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+

@@ -41,7 +41,7 @@ Enabling Versioning
 
 -  The latest objects in a bucket are returned by default after a GET Object request.
 
--  Objects can be downloaded by version IDs. By default, the latest object is downloaded if the version ID is not specified. For details, see :ref:`Follow-up Procedure <obs_03_0327__section29772226>` in :ref:`Configuring Versioning <obs_03_0327>`.
+-  Objects can be downloaded by version IDs. By default, the latest object is downloaded if the version ID is not specified. For details, see :ref:`Related Operations <obs_03_0327__section29772226>` in :ref:`Configuring Versioning <obs_03_0327>`.
 
 -  You can select an object and click **Delete** on the right to delete the object. After the object is deleted, OBS generates a **Delete Marker** with a unique version ID for the deleted object, and the deleted object is displayed in the **Deleted Objects** list. For details, see :ref:`Deleting a File or Folder <en-us_topic_0045853756>`. The 404 error will be returned if attempts are made to access this deleted object.
 
@@ -51,9 +51,9 @@ Enabling Versioning
 
       **Figure 3** Object with a delete marker
 
--  You can recover a deleted object by deleting the object version that has the **Delete Marker**. For details, see :ref:`Follow-up Procedure <en-us_topic_0066176932__section27691114163422>` in :ref:`Undeleting a File <en-us_topic_0066176932>`.
+-  You can recover a deleted object by deleting the object version that has the **Delete Marker**. For details, see :ref:`Related Operations <en-us_topic_0066176932__section27691114163422>` in :ref:`Undeleting a File <en-us_topic_0066176932>`.
 
--  After an object is deleted, you can specify the version number in **Deleted Objects** to permanently delete the object of the specified version. For details, see :ref:`Follow-up Procedure <en-us_topic_0045853756__section089519314196>` in :ref:`Deleting a File or Folder <en-us_topic_0045853756>`.
+-  After an object is deleted, you can specify the version number in **Deleted Objects** to permanently delete the object of the specified version. For details, see :ref:`Related Operations <en-us_topic_0045853756__section089519314196>` in :ref:`Deleting a File or Folder <en-us_topic_0045853756>`.
 
 -  An object is displayed either in the object list or the list of deleted objects. It will never be displayed in both the lists at the same time.
 

@@ -10,12 +10,12 @@ This section describes how to use CORS in HTML5 to implement cross-origin access
 Prerequisites
 -------------
 
-Static website hosting has been configured. For details about how to configure static website hosting, see :ref:`Configuring Static Website Hosting <en-us_topic_0045853755>`.
+Static website hosting has been configured. For details, see :ref:`Configuring Static Website Hosting <en-us_topic_0045853755>`.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. On the right of the **Overview** page, select **CORS Rules** in the **Basic Configurations** area. The **CORS Rules** page is displayed.
 
@@ -91,4 +91,4 @@ Procedure
    -  **Exposed Header**: \*
    -  **Cache Duration (s)**: **100**
 
-   If so, OBS only allows GET requests from **https://www.example.com** to access bucket **testbucket**, without restrictions on request headers. The client can cache CORS responses for 100 seconds.
+   By doing so, OBS only allows GET requests from **https://www.example.com** to access bucket **testbucket**, without restrictions on request headers. The client can cache CORS responses for 100 seconds.

@@ -33,9 +33,9 @@ When using the following tools to access OBS resources, you need to use the AK/S
    +=============+=================================================================+
    | OBS Browser | Configure the AK and SK during account configuration.           |
    +-------------+-----------------------------------------------------------------+
-   | SDK         | Configure the AK and SK in the initialization phase.            |
+   | SDKs        | Configure the AK and SK in the initialization phase.            |
    +-------------+-----------------------------------------------------------------+
-   | API         | Add the AK/SK pair to the request when computing the signature. |
+   | APIs        | Add the AK/SK pair to the request when computing the signature. |
    +-------------+-----------------------------------------------------------------+
 
 References
@@ -43,4 +43,4 @@ References
 
 For details about how to obtain a permanent AK/SK pair, see :ref:`Creating Access Keys (AK and SK) <obs_03_0405>`.
 
-For details about how to obtain a temporary AK/SK pair and security token, see `Obtaining Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.
+For details about how to obtain a temporary AK/SK pair and security token, see `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.

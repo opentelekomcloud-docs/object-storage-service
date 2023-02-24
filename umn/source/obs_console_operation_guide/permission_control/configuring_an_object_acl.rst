@@ -15,7 +15,7 @@ An object owner is the account that uploads the object, but may not be the owner
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 

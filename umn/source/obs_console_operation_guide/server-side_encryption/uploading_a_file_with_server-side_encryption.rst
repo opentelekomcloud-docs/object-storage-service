@@ -5,7 +5,7 @@
 Uploading a File with Server-Side Encryption
 ============================================
 
-OBS allows users to encrypt objects using server-side encryption so that the objects can be securely stored in OBS.
+OBS allows you to encrypt objects using server-side encryption so that the objects can be securely stored in OBS.
 
 Limitations and Constraints
 ---------------------------
@@ -21,7 +21,7 @@ In the region where OBS is deployed, the **KMS Administrator** permission has be
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 
@@ -33,9 +33,9 @@ Procedure
 
    .. note::
 
-      If the default encryption is enabled for a bucket, uploaded objects are automatically encrypted.
+      If the default encryption has been enabled for the bucket, uploaded objects are automatically encrypted.
 
-   After **KMS encryption** is selected, **obs/default** is selected by default as the key for the encryption. You can also click **Create KMS Key** to switch to the management console of KMS and create customer master keys. Then back to OBS Console and select the key from the drop-down list box for KMS encryption.
+   After **KMS encryption** is selected, **obs/default** is selected by default as the key for the encryption. You can also click **Create KMS Key** to switch to the KMS management console and create a customer master key. Then go back to OBS Console and select the key from the drop-down list.
 
 
    .. figure:: /_static/images/en-us_image_0130187638.png

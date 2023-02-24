@@ -19,9 +19,9 @@ OBS Console Operation Guide
 -  :ref:`Tags <obs_03_0330>`
 -  :ref:`Event Notification <obs_03_0332>`
 -  :ref:`Lifecycle Management <obs_03_0334>`
--  :ref:`User-Defined Domain Name Binding <obs_03_0030>`
+-  :ref:`Configuring User-Defined Domain Names <obs_03_0030>`
 -  :ref:`Static Website Hosting <obs_03_0336>`
--  :ref:`CORS <obs_03_0339>`
+-  :ref:`Cross-Origin Resource Sharing <obs_03_0339>`
 -  :ref:`URL Validation <obs_03_0340>`
 -  :ref:`Cloud Trace Service <obs_03_0020>`
 -  :ref:`Task Management <obs_03_0076>`
@@ -46,9 +46,9 @@ OBS Console Operation Guide
    tags/index
    event_notification/index
    lifecycle_management/index
-   user-defined_domain_name_binding/index
+   configuring_user-defined_domain_names/index
    static_website_hosting/index
-   cors/index
+   cross-origin_resource_sharing/index
    url_validation/index
    cloud_trace_service
    task_management

@@ -10,7 +10,7 @@ You can configure a custom bucket policy by coding. The size of a custom bucket 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 
@@ -65,7 +65,7 @@ Procedure
       |                                   |                                                                                                                                                                                                |
       |                                   | .. note::                                                                                                                                                                                      |
       |                                   |                                                                                                                                                                                                |
-      |                                   |    For **Account ID**, input the **Domain ID** that can be found on the **My Credential** page.                                                                                                |
+      |                                   |    For **Account ID**, enter the **Domain ID** that can be found on the **My Credential** page.                                                                                                |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Condition                         | Conditions under which the bucket policy takes effect. For details, see :ref:`Conditions <obs_03_0120>`.                                                                                       |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

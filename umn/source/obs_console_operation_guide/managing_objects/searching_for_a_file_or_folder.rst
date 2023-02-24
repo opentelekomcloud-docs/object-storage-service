@@ -10,7 +10,7 @@ This section describes how to search for a file or folder by name prefix on OBS 
 Searching by Prefixes of Object Names
 -------------------------------------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 

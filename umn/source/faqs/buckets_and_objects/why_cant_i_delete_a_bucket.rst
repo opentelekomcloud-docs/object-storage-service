@@ -10,4 +10,4 @@ Why Can't I Delete a Bucket?
 -  Check whether all fragments in the bucket have been deleted. If not, delete all fragments from the bucket.
 -  If versioning is enabled, check whether there are deleted objects remaining in the bucket. If yes, permanently delete all deleted objects from the bucket.
 -  Check whether the account that deletes the bucket is the owner of the bucket.
--  If the fault persists, contact the customer service personnel.
+-  If the fault persists, contact customer service.

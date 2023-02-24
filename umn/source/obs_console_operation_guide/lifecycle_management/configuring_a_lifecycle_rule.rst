@@ -5,25 +5,27 @@
 Configuring a Lifecycle Rule
 ============================
 
-You can configure the lifecycle rule for a bucket or an object. You can transition the storage class of an object from Standard to Warm or Cold, or from Warm to Cold. However, an object in the Cold storage class cannot be transitioned to other storage classes by configuring the lifecycle rule. You can also specify an expiration time of objects, so the objects are automatically deleted after they expire.
+You can configure a lifecycle rule for a bucket or for certain objects. With a lifecycle rule, you can transition objects from Standard to Warm or Cold, or from Warm to Cold. However, Cold objects cannot be transitioned to other storage classes using a lifecycle rule. You can also make the objects to be automatically deleted once they expire.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the right **Basic Configurations** area, click **Lifecycle Rules**. The **Lifecycle Rules** page is displayed.
 
-   Alternatively, you can choose **Basic Configurations** > **Lifecycle Rules** in the navigation pane on the left.
+   Alternatively, you can choose **Basic Configurations** > **Lifecycle Rules** in the navigation pane.
 
-#. Click **Create**. A dialog box is displayed in :ref:`Figure 1 <obs_03_0335__fig30958876193536>`.
+#. Click **Create**. A dialog box shown in :ref:`Figure 1 <obs_03_0335__fig1529154319415>` is displayed.
 
-   .. _obs_03_0335__fig30958876193536:
+   .. _obs_03_0335__fig1529154319415:
 
-   .. figure:: /_static/images/en-us_image_0129609510.png
+   .. figure:: /_static/images/en-us_image_0000001449684800.png
       :alt: **Figure 1** Creating a lifecycle rule
 
       **Figure 1** Creating a lifecycle rule
+
+   |image1|
 
 #. Configure a lifecycle rule.
 
@@ -56,17 +58,17 @@ Procedure
       -  You can configure either the **Current Version** or **Historical Version**, or both of them.
 
    -  **Transition to Warm**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Warm**. This number must be at least 30.
-   -  **Transition to Cold**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Cold**. If objects are configured to be transitioned to both **Warm** and **Cold**, the number of days for transition to **Cold** must be at least 30 days later than that for transition to **Warm**. If only transition to Cold is enabled and transition to **Warm** is disabled, there is no limit on the number of days for transition.
+   -  **Transition to Cold**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Cold**. If you configure to transition objects first to Warm and then Cold, the objects must stay Warm at least 30 days before they can be transitioned to Cold. If only transition to Cold is used, but transition to Warm is not, there is no limit on the number of days for transition.
    -  Object deletion upon expiration: You can specify the number of days after which objects that have been last updated and meet the specified conditions are automatically deleted. The expiration time must be greater than the two transition times.
 
-   For example, the following files are stored in OBS on January 7, 2015:
+   For example, on January 7, 2015, you saved the following files in OBS:
 
    -  log/test1.log
    -  log/test2.log
    -  doc/example.doc
    -  doc/good.txt
 
-   The following files are stored in OBS on January 10, 2015:
+   On January 10, 2015, you saved the following files:
 
    -  log/clientlog.log
    -  log/serverlog.log
@@ -82,7 +84,7 @@ Procedure
 
    .. note::
 
-      The storage class transition and deletion of an object may be delayed after the time condition is met. Generally, the delay does not exceed 48 hours. If you change the configurations of an existing lifecycle rule, the effective time of the lifecycle rule will change according to the new configurations.
+      In theory, it takes 24 hours at most to execute a lifecycle rule. Because OBS calculates the lifecycle of an object from the next 00:00 (UTC time) after the object is uploaded, there may be a delay in transitioning objects between storage classes and deleting expired objects. Generally, the delay does not exceed 48 hours. If you make changes to an existing lifecycle rule, the rule will take effect again.
 
 #. Click **OK** to complete the lifecycle rule configuration.
 
@@ -92,3 +94,5 @@ Follow-up Procedure
 You can click **Edit** under the **Operation** column of a lifecycle rule, to edit the rule. Also you can click **Disable** or **Enable** to disable or enable it.
 
 If you want to delete more than one lifecycle rule at a time, select them and click **Delete** above the list.
+
+.. |image1| image:: /_static/images/en-us_image_0129609510.png

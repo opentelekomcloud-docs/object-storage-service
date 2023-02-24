@@ -8,7 +8,7 @@ Application Example: Configuring SMN-Enabled Event Notification
 Background Information
 ----------------------
 
-An enterprise has a large number of files to archive but it does not want to cost much on storage resources. Therefore, the enterprise subscribes to OBS for storing the files and expects that every operation performed on OBS can trigger an event notification, which is sent to an employee of the company by email.
+An enterprise has a large number of files to archive but it does not want to cost much on storage resources. Therefore, the enterprise subscribes to OBS for storing files and expects that an employee can be informed of every operation performed on OBS via email.
 
 Procedure
 ---------
@@ -59,11 +59,11 @@ Procedure
 
    a. In the bucket list, click the bucket that you have created in :ref:`2 <obs_03_0333__li29947515>`.
 
-   b. In the navigation pane on the left, choose **Basic Configurations** > **Event Notification**. The **Event Notification** page is displayed.
+   b. In the navigation pane, choose **Basic Configurations** > **Event Notification**. The **Event Notification** page is displayed.
 
    c. Click **Create**. The **Create Event Notification** dialog box is displayed.
 
-   d. Configure the parameters. See :ref:`Figure 3 <obs_03_0333__fig377201314360>` for details. For an enterprise account, the specified user in the account will be notified about all specified operations on the **SMN** folder in the **testbucket** bucket. For details about parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
+   d. Configure event notification parameters, as shown in :ref:`Figure 3 <obs_03_0333__fig377201314360>`. After the notification is configured, all specified operations on the **SMN** folder in bucket **testbucket** will be informed of an employee. For details about parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
 
       .. note::
 

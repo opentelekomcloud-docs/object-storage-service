@@ -9,7 +9,7 @@ A bucket is a container that stores objects in OBS. Before you store data in OBS
 
 .. note::
 
-   An account can create a maximum of 100 buckets.
+   An account can create a maximum of 100 buckets and parallel file systems.
 
 Procedure
 ---------

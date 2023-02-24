@@ -121,7 +121,7 @@ Procedure
 
    Prepare the static website files to be uploaded and perform the following steps to upload all static website files to bucket **example**.
 
-   a. Click the bucket name **example** in the bucket list to go to the **Overview** page, and select **Objects** in the navigation pane.
+   a. Click the bucket name **example** to go to the **Objects** page.
 
    b. Click **Upload Object**. A dialog box shown in :ref:`Figure 2 <obs_03_0338__fig1759204213351>` is displayed.
 
@@ -140,7 +140,7 @@ Procedure
 
          -  The static website files cannot be encrypted for upload.
          -  The website home page file (**index.html**) and 404 error page (**error.html**) must be stored in the root directory of the bucket.
-         -  It is recommended that you select **Standard** for the storage class. If the storage class of a static website file is Cold, you need to restore the static website file before accessing it. For details, see :ref:`Restoring a Cold File Stored in OBS <obs_03_0320>`.
+         -  It is recommended that you select **Standard** for the storage class. If the storage class of a static website file is Cold, you need to restore the static website file before you can access it. For details, see :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`.
 
    d. Click **Upload** to complete the upload.
 
@@ -154,7 +154,7 @@ Procedure
 
       You can also redirect the entire static website to another bucket or domain name. For details, see :ref:`Configuring Redirection <en-us_topic_0066088957>`.
 
-   a. Click the bucket name **example** to go to the **Overview** page.
+   a. Click the bucket name **example** to go to the **Objects** page.
 
    b. In the navigation pane, choose **Basic Configurations** > **Static Website Hosting**. The **Static Website Hosting** page is displayed.
 
@@ -185,7 +185,7 @@ Procedure
 
    To bind a user-defined domain name to a bucket, perform the following steps:
 
-   a. Click the bucket name **example** to go to the **Overview** page. In the navigation pane, select **Domain Name Mgmt**.
+   a. Click the bucket name **example** to go to the **Objects** page. In the navigation pane, choose **Domain Name Mgmt**.
 
    b. Click **Bind User Domain Name**, and enter **www.example.com** in the **User Domain Name** text box.
 

@@ -14,6 +14,6 @@ The following table lists the batch download support for different OBS tools.
    =========== ==============
    OBS Console Not supported
    OBS Browser Supported
-   SDK         Not supported
-   API         Not supported
+   SDKs        Not supported
+   APIs        Not supported
    =========== ==============

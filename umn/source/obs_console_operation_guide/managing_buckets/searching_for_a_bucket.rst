@@ -5,7 +5,7 @@
 Searching for a Bucket
 ======================
 
-This section describes how to search for a bucket by its name.
+You can search for a bucket by characters contained in its name.
 
 .. note::
 
@@ -20,7 +20,7 @@ Procedure
 
    Buckets that meet the search criteria are displayed in the bucket list.
 
-   For example, if you want to search for buckets whose names contain **test**, you only need to enter **test** in the search box in the upper right corner on the main page and click |image2|. Then, all buckets that contain **test** in their names are displayed in the bucket list.
+   For example, if you want to search for buckets whose names contain **test**, you only need to enter **test** in the search box and click |image2|. Then, all buckets that contain **test** in their names are displayed.
 
 Related Operations
 ------------------

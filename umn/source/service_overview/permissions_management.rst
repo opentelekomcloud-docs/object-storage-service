@@ -14,7 +14,7 @@ If your account does not require individual IAM users for permissions management
 OBS Permissions
 ---------------
 
-By default, new IAM users do not have any permissions assigned. To assign permissions to these new users, add them to one or more groups, and attach permissions policies to these groups. IAM provides preset system policies that define common permissions for different services, such as full control access and read-only. You can directly use these preset policies.
+By default, new IAM users do not have any permissions assigned. You can assign permissions to these users by adding them to one or more groups and attaching policies to the groups. IAM provides preset system policies that define common permissions for different services, such as full control access and read-only. You can directly use these preset policies.
 
 OBS is a global service deployed and accessed without specifying any physical region. OBS permissions are assigned to users in the global project, and users do not need to switch regions when accessing OBS.
 
@@ -22,7 +22,7 @@ RBAC policy: An RBAC policy consists of permissions for an entire service. Users
 
 .. note::
 
-   Due to data caching, an RBAC policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user and user group.
+   Due to data caching, an RBAC policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user and a user group.
 
 :ref:`Table 1 <obs_03_0045__table358116162418>` lists all system policies of OBS.
 
@@ -133,7 +133,7 @@ The following table lists operations that can be performed under each set of OBS
    +-------------------------------------------------------------+----------------------+-----------------+-----------------------------------------------------------------------------------+
    | Listing uploaded parts                                      | Yes                  | Yes             | No                                                                                |
    +-------------------------------------------------------------+----------------------+-----------------+-----------------------------------------------------------------------------------+
-   | Canceling multipart tasks                                   | Yes                  | No              | No                                                                                |
+   | Canceling multipart uploads                                 | Yes                  | No              | No                                                                                |
    +-------------------------------------------------------------+----------------------+-----------------+-----------------------------------------------------------------------------------+
 
 Managing OBS Resource Permissions

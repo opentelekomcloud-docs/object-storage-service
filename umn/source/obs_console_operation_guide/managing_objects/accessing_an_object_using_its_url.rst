@@ -5,12 +5,12 @@
 Accessing an Object Using Its URL
 =================================
 
-If you set the permission for an object to allow anonymous users to read it, anonymous users can access the object through the URL that you shared.
+You can grant anonymous users the read permission for an object so they can access the object using the shared object URL.
 
 Prerequisites
 -------------
 
-A read permission has been set for anonymous users. For details about how to enable the permission, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
+Anonymous users have the read permission for the object. For details about permission granting, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
 
 .. note::
 
@@ -19,7 +19,7 @@ A read permission has been set for anonymous users. For details about how to ena
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 
@@ -36,5 +36,5 @@ Procedure
 
    .. note::
 
-      -  To allow anonymous users to access objects whose storage classes are **Cold** using the URL, ensure that the objects are in the **Restored** state.
+      -  To allow anonymous users to access objects in Cold storage using URLs, ensure that these objects are in the **Restored** state.
       -  The method of using a browser to access objects varies depending on the object type. You can directly open **.txt** and **.html** files using a browser. However, when you open **.exe** and **.dat** files using a browser, the files are automatically downloaded to your local computer.

@@ -5,14 +5,14 @@
 Which Events Can Trigger Event Notifications?
 =============================================
 
-OBS supports event notification for the following event types:
+OBS supports notification for the following event types:
 
 -  **ObjectCreated**: Indicates all kinds of object creation operations, including PUT, POST, and COPY of objects, as well as the merging of parts.
 
    -  **Put**: Creates or overwrites an object using the PUT method.
    -  **Post**: Creates or overwrites an object using the POST (browser-based upload) method.
    -  **Copy**: Creates or overwrites an object using the COPY method.
-   -  **CompleteMultipartUpload**: Merges parts of multipart tasks.
+   -  **CompleteMultipartUpload**: Merges parts of a multipart upload.
 
 -  **ObjectRemoved**: Deletes an object.
 

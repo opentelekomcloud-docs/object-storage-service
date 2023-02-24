@@ -16,7 +16,7 @@ The following table lists the batch deletion support for different OBS tools.
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+
    | OBS Browser | Supported. A maximum of 100 objects can be deleted at a time. If a folder is selected, only one folder can be deleted at a time. |
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | SDK         | Supported. A maximum of 1000 objects can be deleted at a time.                                                                   |
+   | SDKs        | Supported. A maximum of 1000 objects can be deleted at a time.                                                                   |
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | API         | Supported. A maximum of 1000 objects can be deleted at a time.                                                                   |
+   | APIs        | Supported. A maximum of 1000 objects can be deleted at a time.                                                                   |
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+

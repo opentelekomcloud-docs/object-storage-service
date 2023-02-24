@@ -8,10 +8,10 @@ Managing Fragments
 Background Information
 ----------------------
 
-Because OBS uploads data in the multipart mode, fragments may be generated due to any of the following data upload failures (but not limited to these failures):
+Data can be uploaded to OBS using multipart uploads. Fragments are generated, if a multipart upload fails because of the following reasons (included but not limited to):
 
--  The network is in poor condition, and the connection to the OBS server is interrupted frequently.
--  The upload task is manually interrupted.
+-  The network is in poor condition, and connection to the OBS server is frequently interrupted.
+-  The upload task is manually suspended.
 -  The device is faulty.
 -  The device is powered off suddenly.
 

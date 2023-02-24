@@ -21,7 +21,7 @@ Procedure
 
    .. note::
 
-      The name of a deleted bucket can be reused for a bucket at least 30 minutes after the deletion.
+      The name of a deleted bucket can be reused for a bucket or a parallel file system at least 30 minutes after the deletion.
 
 #. In the displayed dialog box, click **Yes**.
 #. In the displayed dialog box, click **Close** to close the dialog box.

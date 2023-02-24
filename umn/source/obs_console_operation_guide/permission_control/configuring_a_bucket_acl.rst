@@ -13,7 +13,7 @@ You are the bucket owner or you have the permission to write the bucket ACL.
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 

@@ -13,7 +13,7 @@ Different storage classes meet different requirements for storage performance an
 
 -  The Standard storage class features low access latency and high throughput. It is therefore suitable for storing a massive number of hot files (frequently accessed every month) or small files (less than 1 MB). The application scenarios include big data analytics, mobile apps, hot videos, and social apps.
 -  The Warm storage class is ideal for storing data that is semi-frequently accessed (less than 12 times a year), with requirements for quick response. The application scenarios include file synchronization, file sharing, and enterprise backup.
--  The Cold storage class is suitable for archiving data that is rarely-accessed (averagely once a year). The application scenarios include data archiving and long-term data backups. The Cold storage class is secure, durable, and inexpensive, and can be used to replace tape libraries. However, it may take hours to restore data from the Archive storage class.
+-  The Cold storage class is suitable for archiving data that is rarely-accessed (averagely once a year). The application scenarios include data archiving and long-term data backups. The Cold storage class is secure, durable, and inexpensive, and can be used to replace tape libraries. To keep cost low, it may take hours to restore data from the Cold storage class.
 
 Bucket Storage Classes vs. Object Storage Classes
 -------------------------------------------------
