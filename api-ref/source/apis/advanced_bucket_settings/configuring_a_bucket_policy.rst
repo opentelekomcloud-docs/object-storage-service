@@ -26,7 +26,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no message parameters.
 
 Request Headers
 ---------------
@@ -36,7 +36,7 @@ This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__t
 Request Elements
 ----------------
 
-The request body is a JSON string containing bucket policy information.
+The request body is a JSON string that contains the bucket policy information.
 
 Response Syntax
 ---------------

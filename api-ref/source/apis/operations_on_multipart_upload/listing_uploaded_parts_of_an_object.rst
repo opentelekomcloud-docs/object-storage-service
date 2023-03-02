@@ -161,7 +161,7 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | StorageClass                      | Indicates the storage type.                                                                                                                               |
    |                                   |                                                                                                                                                           |
-   |                                   | Type: enumeration                                                                                                                                         |
+   |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Value options: **STANDARD** \| **WARM** \| **COLD**                                                                                                       |
    |                                   |                                                                                                                                                           |
@@ -230,7 +230,7 @@ Error Responses
 ---------------
 
 #. If the AK or signature is invalid, OBS returns **403 Forbidden** and the error code is **AccessDenied**.
-#. If the requested bucket does not exist, OBS returns **404 Forbidden** and the error code is **NoSuchBucket**.
+#. If the requested bucket is not found, OBS returns **404 Not Found** and the error code is **NoSuchBucket**.
 #. If the requested multipart upload task does not exist, OBS returns **404 Not Found** and the error code is **NoSuchUpload**.
 #. OBS determines whether the use's domain ID has the read permission for the specified bucket. If the user does not have the permission, OBS returns **403 Forbidden** and the error code is **AccessDenied**.
 

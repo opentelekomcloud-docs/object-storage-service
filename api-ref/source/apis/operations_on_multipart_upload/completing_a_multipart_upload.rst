@@ -2,8 +2,8 @@
 
 .. _obs_04_0102:
 
-Merging Parts into a Complete Object
-====================================
+Completing a Multipart Upload
+=============================
 
 Functions
 ---------
@@ -138,7 +138,7 @@ In addition to the common response headers, the following message headers may al
    |                                                 |                                                                                                                                                                                   |
    |                                                 | Type: string                                                                                                                                                                      |
    |                                                 |                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption:kms                                                                                                                                         |
+   |                                                 | Example: **x-obs-server-side-encryption:kms**                                                                                                                                     |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | x-obs-server-side-encryption-kms-key-id         | Indicates the master key ID. This header is included in a response if SSE-KMS is used.                                                                                            |
    |                                                 |                                                                                                                                                                                   |
@@ -154,7 +154,7 @@ In addition to the common response headers, the following message headers may al
    |                                                 |                                                                                                                                                                                   |
    |                                                 | Type: string                                                                                                                                                                      |
    |                                                 |                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-algorithm:AES256                                                                                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-algorithm:AES256**                                                                                                               |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
@@ -169,11 +169,11 @@ This response uses elements to return the result of merging parts. :ref:`Table 4
    +-----------------------------------+------------------------------------------------------------------------------------------------------+
    | Element                           | Description                                                                                          |
    +===================================+======================================================================================================+
-   | Location                          | URL of the object after parts being merged.                                                          |
+   | Location                          | Path of the object after parts have been merged.                                                     |
    |                                   |                                                                                                      |
    |                                   | Type: string                                                                                         |
    +-----------------------------------+------------------------------------------------------------------------------------------------------+
-   | Bucket                            | Bucket in which parts are combined                                                                   |
+   | Bucket                            | Bucket in which parts are merged.                                                                    |
    |                                   |                                                                                                      |
    |                                   | Type: string                                                                                         |
    +-----------------------------------+------------------------------------------------------------------------------------------------------+
@@ -193,7 +193,7 @@ Error Responses
 #. If the message body format is incorrect, OBS returns **400 Bad Request**.
 #. If the part information in the message body is not sorted by part sequence number, OBS returns **400 Bad Request** and the error code is **InvalidPartOrder**.
 #. If the AK or signature is invalid, OBS returns **403 Forbidden** and the error code is **AccessDenied**.
-#. If the requested bucket does not exist, OBS returns **404 Not Found** and the error code is **NoSuchBucket**.
+#. If the requested bucket is not found, OBS returns **404 Not Found** and the error code is **NoSuchBucket**.
 #. If the requested multipart upload does not exist, OBS returns **404 Not Found** and error code **NoSuchUpload**.
 #. If the user is not the initiator of the task, OBS returns **403 Forbidden** and the error code is **AccessDenied**.
 #. If the request part list contains a part that does not exist, OBS returns **400 Bad Request** and the error code is **InvalidPart**.

@@ -20,7 +20,7 @@ You can also configure the default encryption method for a bucket to encrypt obj
    |                                         |                                                                                                                                                                                      |
    |                                         | Type: string                                                                                                                                                                         |
    |                                         |                                                                                                                                                                                      |
-   |                                         | Example: x-obs-server-side-encryption:kms                                                                                                                                            |
+   |                                         | Example: **x-obs-server-side-encryption:kms**                                                                                                                                        |
    +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | x-obs-server-side-encryption-kms-key-id | Indicates the master key ID of an encrypted object. This header is used in SSE-KMS mode. If the customer does not provide the master key ID, the default master key ID will be used. |
    |                                         |                                                                                                                                                                                      |
@@ -44,7 +44,7 @@ You can also configure the default encryption method for a bucket to encrypt obj
 API operations to which the newly added headers apply:
 
 -  PUT operation for uploading objects
--  POST operation for uploading objects (**x-obs-server-side-encryption** and **x-obs-server-side-encryption-kms-key-id** need to be placed in the table instead of the header field)
+-  POST operation for uploading objects (**x-obs-server-side-encryption** and **x-obs-server-side-encryption-kms-key-id** need to be placed in the form instead of the header)
 -  PutObject-Copy (the newly added headers apply to target objects)
 -  API operations for initiating a multipart upload task
 

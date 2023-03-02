@@ -27,7 +27,7 @@ Request Syntax
 Request parameters
 ------------------
 
-This request contains no parameter.
+This request contains no message parameters.
 
 Request Headers
 ---------------
@@ -79,7 +79,7 @@ This response contains the following elements to detail bucket encryption config
    +====================================+=====================================================================================+
    | ServerSideEncryptionConfiguration  | Root element of the default encryption configuration of a bucket.                   |
    |                                    |                                                                                     |
-   |                                    | Type: element                                                                       |
+   |                                    | Type: container                                                                     |
    |                                    |                                                                                     |
    |                                    | Ancestor: none                                                                      |
    |                                    |                                                                                     |
@@ -87,7 +87,7 @@ This response contains the following elements to detail bucket encryption config
    +------------------------------------+-------------------------------------------------------------------------------------+
    | Rule                               | Sub-element of the default encryption configuration of a bucket.                    |
    |                                    |                                                                                     |
-   |                                    | Type: element                                                                       |
+   |                                    | Type: container                                                                     |
    |                                    |                                                                                     |
    |                                    | Ancestor: ServerSideEncryptionConfiguration                                         |
    |                                    |                                                                                     |
@@ -95,7 +95,7 @@ This response contains the following elements to detail bucket encryption config
    +------------------------------------+-------------------------------------------------------------------------------------+
    | ApplyServerSideEncryptionByDefault | Sub-element of the default encryption configuration of a bucket.                    |
    |                                    |                                                                                     |
-   |                                    | Type: element                                                                       |
+   |                                    | Type: container                                                                     |
    |                                    |                                                                                     |
    |                                    | Ancestor: Rule                                                                      |
    |                                    |                                                                                     |
@@ -105,7 +105,7 @@ This response contains the following elements to detail bucket encryption config
    |                                    |                                                                                     |
    |                                    | Type: string                                                                        |
    |                                    |                                                                                     |
-   |                                    | Valid values: **kms**                                                               |
+   |                                    | Valid value: **kms**                                                                |
    |                                    |                                                                                     |
    |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                        |
    +------------------------------------+-------------------------------------------------------------------------------------+
@@ -125,7 +125,7 @@ This response contains the following elements to detail bucket encryption config
 Error Responses
 ---------------
 
-In addition common error codes, this API also returns other error codes. The following table lists common errors and possible causes. For details, see :ref:`Table 2 <obs_04_0063__table1488314173514>`.
+In addition to common error codes, this API also returns others. The following table lists common errors and possible causes. For details, see :ref:`Table 2 <obs_04_0063__table1488314173514>`.
 
 .. _obs_04_0063__table1488314173514:
 

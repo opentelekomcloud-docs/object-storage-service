@@ -25,7 +25,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no message parameters.
 
 Request Headers
 ---------------
@@ -65,18 +65,18 @@ This response contains elements to provide details about the storage class infor
 
 .. table:: **Table 1** Response elements
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+
-   | Element                           | Description                                                                                            |
-   +===================================+========================================================================================================+
-   | StorageClass                      | Default storage class of the bucket.                                                                   |
-   |                                   |                                                                                                        |
-   |                                   | Type: string. For details about the enumeration type, see :ref:`Table 1 <obs_04_0044__table63485364>`. |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------+
+   | Element                           | Description                                                                                             |
+   +===================================+=========================================================================================================+
+   | StorageClass                      | Default storage class of the bucket.                                                                    |
+   |                                   |                                                                                                         |
+   |                                   | Type: string. For details about the enumeration types, see :ref:`Table 1 <obs_04_0044__table63485364>`. |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------+
 
 Error Responses
 ---------------
 
-No special error responses are involved. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
+No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
 Sample Request
 --------------

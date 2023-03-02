@@ -23,7 +23,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no parameters.
 
 Request Headers
 ---------------
@@ -80,7 +80,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-storage-class               | Default storage class of the bucket. The options are as follows: **STANDARD** (Standard storage class), **WARM** (Warm storage class), and **COLD** (Cold storage class).                          |
+   | x-obs-storage-class               | Default storage class of the bucket. The options are as follows: **STANDARD** (Standard), **WARM** (Warm), and **COLD** (Cold).                                                                    |
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -88,7 +88,9 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-epid                        | Enterprise project ID of the current bucket.                                                                                                                                                       |
+   | x-obs-fs-file-interface           | Indicates whether the bucket is a parallel file system. The value can be **Enabled** (parallel file system).                                                                                       |
+   |                                   |                                                                                                                                                                                                    |
+   |                                   | If this header field is not carried, the bucket is not a parallel file system.                                                                                                                     |
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -123,7 +125,7 @@ This response involves no elements.
 Error Responses
 ---------------
 
-No special error responses are involved. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
+No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
 Sample Request 1
 ----------------

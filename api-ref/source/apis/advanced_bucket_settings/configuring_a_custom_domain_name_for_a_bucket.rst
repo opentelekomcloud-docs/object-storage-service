@@ -35,7 +35,7 @@ Request Parameters
    +=======================+====================================================================================================================+=======================+
    | customdomain          | Custom domain name of a bucket.                                                                                    | Yes                   |
    |                       |                                                                                                                    |                       |
-   |                       | Type: string, which must meet the naming convention of domain names.                                               |                       |
+   |                       | Type: string, which must meet the naming conventions of domain names.                                              |                       |
    |                       |                                                                                                                    |                       |
    |                       | Specifications: The value contains a maximum of 256 characters.                                                    |                       |
    |                       |                                                                                                                    |                       |

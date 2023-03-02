@@ -2,7 +2,7 @@
 
 .. _obs_04_0097:
 
-Listing Initialized Multipart Tasks in a Bucket
+Listing Initiated Multipart Uploads in a Bucket
 ===============================================
 
 Functions
@@ -144,7 +144,7 @@ This response contains elements of information about the multipart uploads. :ref
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListMultipartUploadsResult                                                                                                                      |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | NextUploadIdMarker                | Value of UploadMarker in a subsequent request after a multipart upload list is truncated                                                                  |
+   | NextUploadIdMarker                | Value of UploadMarker in a subsequent request when a multipart upload list is truncated.                                                                  |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
@@ -206,7 +206,7 @@ This response contains elements of information about the multipart uploads. :ref
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | StorageClass                      | Indicates the storage class that will be used for storing an object when the multipart is uploaded.                                                       |
    |                                   |                                                                                                                                                           |
-   |                                   | Type: enumeration                                                                                                                                         |
+   |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: Upload                                                                                                                                          |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -303,7 +303,7 @@ Sample Request 2
 
 **List the initialized multipart tasks with the prefix and delimiter**.
 
-The following example describes how to list initialized multipart tasks when there are two multipart tasks in the bucket **examplebucket**, and their object names are **multipart-object001** and **part2-key02**. Set **prefix** to **multipart** and set **delimiter** to **object001**.
+The following example describes how to list two initiated multipart uploads (with objects **multipart-object001** and **part2-key02** in bucket **examplebucket**. In this listing operation, **prefix** is set to **multipart** and **object001** is set to **delimiter**.
 
 .. code-block:: text
 

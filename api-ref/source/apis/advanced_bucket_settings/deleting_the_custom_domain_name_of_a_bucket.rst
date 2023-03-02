@@ -27,17 +27,17 @@ Request Parameters
 
 .. table:: **Table 1** Request parameters
 
-   +-----------------------+----------------------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                                          | Mandatory             |
-   +=======================+======================================================================+=======================+
-   | customdomain          | Specifies the custom domain name to be deleted.                      | Yes                   |
-   |                       |                                                                      |                       |
-   |                       | Type: string, which must meet the naming convention of domain names. |                       |
-   |                       |                                                                      |                       |
-   |                       | Specifications: The value contains a maximum of 256 characters.      |                       |
-   |                       |                                                                      |                       |
-   |                       | No default value.                                                    |                       |
-   +-----------------------+----------------------------------------------------------------------+-----------------------+
+   +-----------------------+-----------------------------------------------------------------------+-----------------------+
+   | Parameter             | Description                                                           | Mandatory             |
+   +=======================+=======================================================================+=======================+
+   | customdomain          | Specifies the custom domain name to be deleted.                       | Yes                   |
+   |                       |                                                                       |                       |
+   |                       | Type: string, which must meet the naming conventions of domain names. |                       |
+   |                       |                                                                       |                       |
+   |                       | Specifications: The value contains a maximum of 256 characters.       |                       |
+   |                       |                                                                       |                       |
+   |                       | No default value.                                                     |                       |
+   +-----------------------+-----------------------------------------------------------------------+-----------------------+
 
 Request Header
 --------------

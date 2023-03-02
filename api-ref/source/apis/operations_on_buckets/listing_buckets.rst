@@ -23,12 +23,33 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no parameters.
 
 Request Headers
 ---------------
 
 This request header uses common message fields. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
+
+The operation message header is the same as that of a common request. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`. However, this request can contain additional headers. The following table describes the additional headers for this request.
+
+.. table:: **Table 1** Additional request headers
+
+   +-----------------------+-----------------------------------------------------------------------------------------------+-----------------------+
+   | Header                | Description                                                                                   | Mandatory             |
+   +=======================+===============================================================================================+=======================+
+   | x-obs-bucket-type     | This header field is used to specify the content to be obtained.                              | No                    |
+   |                       |                                                                                               |                       |
+   |                       | Value:                                                                                        |                       |
+   |                       |                                                                                               |                       |
+   |                       | -  **OBJECT**: Obtain the list of all buckets.                                                |                       |
+   |                       | -  **POSIX**: Obtain the list of all parallel file systems.                                   |                       |
+   |                       |                                                                                               |                       |
+   |                       | If this header is not carried, the list of all buckets and parallel file systems is obtained. |                       |
+   |                       |                                                                                               |                       |
+   |                       | Type: string                                                                                  |                       |
+   |                       |                                                                                               |                       |
+   |                       | Example: **x-obs-bucket-type: POSIX**                                                         |                       |
+   +-----------------------+-----------------------------------------------------------------------------------------------+-----------------------+
 
 Request Elements
 ----------------
@@ -69,11 +90,11 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response contains the XML list of buckets owned by the user. :ref:`Table 1 <obs_04_0020__table3679815894442>` describes the elements.
+This response contains the XML list of buckets owned by the user. :ref:`Table 2 <obs_04_0020__table3679815894442>` describes the elements.
 
 .. _obs_04_0020__table3679815894442:
 
-.. table:: **Table 1** Response elements
+.. table:: **Table 2** Response elements
 
    +-----------------------------------+----------------------------------------------------+
    | Element                           | Description                                        |
@@ -112,15 +133,16 @@ This response contains the XML list of buckets owned by the user. :ref:`Table 1 
    +-----------------------------------+----------------------------------------------------+
    | BucketType                        | Bucket type                                        |
    |                                   |                                                    |
-   |                                   | Type: string. Value options are as follows:        |
+   |                                   | Type: string                                       |
    |                                   |                                                    |
    |                                   | -  **OBJECT**: indicates a bucket.                 |
+   |                                   | -  **POSIX**: indicates a parallel file system.    |
    +-----------------------------------+----------------------------------------------------+
 
 Error Responses
 ---------------
 
-No special error responses are involved. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
+No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
 Sample Request
 --------------

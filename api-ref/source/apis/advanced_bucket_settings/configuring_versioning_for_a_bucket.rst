@@ -50,7 +50,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no message parameters.
 
 Request Headers
 ---------------
@@ -75,7 +75,7 @@ This request contains elements to configure the bucket versioning in XML format.
    +-------------------------+----------------------------------------+-----------------------+
    | Status                  | Versioning status of the bucket        | Yes                   |
    |                         |                                        |                       |
-   |                         | Type: enumeration                      |                       |
+   |                         | Type: string                           |                       |
    |                         |                                        |                       |
    |                         | Ancestor node: VersioningConfiguration |                       |
    |                         |                                        |                       |
@@ -105,7 +105,7 @@ This response involves no elements.
 Error Responses
 ---------------
 
-No special error responses are involved. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
+No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
 Sample Request
 --------------

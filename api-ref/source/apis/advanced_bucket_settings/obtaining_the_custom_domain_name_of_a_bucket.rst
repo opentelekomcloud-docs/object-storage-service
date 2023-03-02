@@ -72,41 +72,41 @@ The response returns the custom domain name of the bucket in the form of message
 
 .. table:: **Table 1** Response elements
 
-   +-----------------------------------+--------------------------------------------------+
-   | Element                           | Description                                      |
-   +===================================+==================================================+
-   | ListBucketCustomDomainsResult     | Container of the returned result                 |
-   |                                   |                                                  |
-   |                                   | Type: container                                  |
-   |                                   |                                                  |
-   |                                   | Children: Domains                                |
-   |                                   |                                                  |
-   |                                   | Ancestor: none                                   |
-   +-----------------------------------+--------------------------------------------------+
-   | Domains                           | Element indicating the custom domain name        |
-   |                                   |                                                  |
-   |                                   | Type: element                                    |
-   |                                   |                                                  |
-   |                                   | Children: DomainName, CreateTime                 |
-   |                                   |                                                  |
-   |                                   | Ancestor: ListBucketCustomDomainsResult          |
-   +-----------------------------------+--------------------------------------------------+
-   | DomainName                        | Custom domain name                               |
-   |                                   |                                                  |
-   |                                   | Type: string                                     |
-   |                                   |                                                  |
-   |                                   | Children: none                                   |
-   |                                   |                                                  |
-   |                                   | Ancestor: Domains                                |
-   +-----------------------------------+--------------------------------------------------+
-   | CreateTime                        | Time when a custom domain name is created        |
-   |                                   |                                                  |
-   |                                   | Type: string, expressed in the form of UTC time. |
-   |                                   |                                                  |
-   |                                   | Children: none                                   |
-   |                                   |                                                  |
-   |                                   | Ancestor: Domains                                |
-   +-----------------------------------+--------------------------------------------------+
+   +-----------------------------------+-------------------------------------------+
+   | Element                           | Description                               |
+   +===================================+===========================================+
+   | ListBucketCustomDomainsResult     | Container of the returned result          |
+   |                                   |                                           |
+   |                                   | Type: container                           |
+   |                                   |                                           |
+   |                                   | Children: Domains                         |
+   |                                   |                                           |
+   |                                   | Ancestor: none                            |
+   +-----------------------------------+-------------------------------------------+
+   | Domains                           | Element indicating the custom domain name |
+   |                                   |                                           |
+   |                                   | Type: container                           |
+   |                                   |                                           |
+   |                                   | Children: DomainName, CreateTime          |
+   |                                   |                                           |
+   |                                   | Ancestor: ListBucketCustomDomainsResult   |
+   +-----------------------------------+-------------------------------------------+
+   | DomainName                        | Custom domain name                        |
+   |                                   |                                           |
+   |                                   | Type: string                              |
+   |                                   |                                           |
+   |                                   | Children: none                            |
+   |                                   |                                           |
+   |                                   | Ancestor: Domains                         |
+   +-----------------------------------+-------------------------------------------+
+   | CreateTime                        | Time when a custom domain name is created |
+   |                                   |                                           |
+   |                                   | Type: string, which must be a UTC time.   |
+   |                                   |                                           |
+   |                                   | Children: none                            |
+   |                                   |                                           |
+   |                                   | Ancestor: Domains                         |
+   +-----------------------------------+-------------------------------------------+
 
 Error Responses
 ---------------

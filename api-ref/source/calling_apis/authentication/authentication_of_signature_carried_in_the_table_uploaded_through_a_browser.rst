@@ -94,7 +94,7 @@ A mechanism used to verify the validity of a request. Conditions are used to def
    |                                                                             | Mandatory field for the temporary AK/SK and security token authentication.                                                                                                                                                                                                                    |
    +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The policy conditions can be matched in the following ways:
+The table below describes how policy conditions can be matched.
 
 .. table:: **Table 2** Policy condition matching methods
 
@@ -122,7 +122,7 @@ The policy conditions can be matched in the following ways:
 
    A policy is in the JSON format. Conditions can be put in curly brackets {} and square brackets []. The key and value elements of the table are written in the curly brackets {}, which are separated by colons (:). The square brackets [] contain the condition type, key, and value. These three items are separated by commas (,). The dollar sign ($) in front of the key indicates that the key is a variable.
 
-The following characters must be escaped in a policy:
+The table below lists the characters that must be escaped in a policy.
 
 .. table:: **Table 3** Characters that must be escaped in a policy
 

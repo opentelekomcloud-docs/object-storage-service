@@ -55,7 +55,7 @@ This request uses elements to specify the list of objects to be deleted in a bat
 
 .. _obs_04_0086__table42836777:
 
-.. table:: **Table 1** Request Elements
+.. table:: **Table 1** Request elements
 
    +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Element               | Description                                                                                                                                                                                   | Mandatory             |

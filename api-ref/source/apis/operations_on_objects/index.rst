@@ -15,6 +15,10 @@ Operations on Objects
 -  :ref:`Restoring Cold Objects <obs_04_0087>`
 -  :ref:`Configuring an Object ACL <obs_04_0089>`
 -  :ref:`Obtaining Object ACL Configuration <obs_04_0090>`
+-  :ref:`Modifying Object Metadata <obs_04_0091>`
+-  :ref:`Modifying an Object <obs_04_0092>`
+-  :ref:`Truncating an Object <obs_04_0093>`
+-  :ref:`Renaming an Object <obs_04_0094>`
 
 .. toctree::
    :maxdepth: 1
@@ -30,3 +34,7 @@ Operations on Objects
    restoring_cold_objects
    configuring_an_object_acl
    obtaining_object_acl_configuration
+   modifying_object_metadata
+   modifying_an_object
+   truncating_an_object
+   renaming_an_object
