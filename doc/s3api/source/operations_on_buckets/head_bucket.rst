@@ -70,7 +70,6 @@ Response Syntax
     x-obs-version: version
     x-default-storage-class: staorage class
     x-amz-id-2: id
-    x-amz-epid: epid
     Date: date
     Content-Length: length
 
@@ -118,10 +117,6 @@ In addition to common headers, when CORS is configured for buckets, you can use 
    |                                   |                                                                                                                                                                      |
    |                                   | Type: String                                                                                                                                                         |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-amz-epid                        | Enterprise project ID of the current bucket.                                                                                                                         |
-   |                                   |                                                                                                                                                                      |
-   |                                   | Type: string                                                                                                                                                         |
-   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
 -----------------
@@ -159,7 +154,6 @@ Sample Response
    x-obs-version: 3.0
    x-default-storage-class: STANDARD
    x-amz-id-2: MzY3Q0I2M0EyRjI4MzA0NDk4MTI4NTQ5MjcxOTA2MEFBQUFBQUFBYmJiYmJiYmJD
-   x-amz-epid: 9892d768-2d13-450f-aac7-ed0e44c2585f
    Date: Sun, 26 Sep 2010 09:18:36 GMT
    Content-Length: 0
 
@@ -195,6 +189,5 @@ Sample Response (Getting Bucket Metadata and CORS Configuration when CORS is pro
    x-obs-version: 3.0
    x-default-storage-class: STANDARD
    x-amz-id-2: YkFlH3FTA2Tf/lIc2XiyuICp/EUqpVI4j1/g5hlatg75TTZdERSCYliqitChspgA
-   x-amz-epid: 9892d768-2d13-450f-aac7-ed0e44c2585f
    Date: Tue, 28 Apr 2015 13:47:30 GMT
    Content-Length: 0

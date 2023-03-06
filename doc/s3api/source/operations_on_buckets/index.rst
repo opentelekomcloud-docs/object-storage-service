@@ -14,6 +14,7 @@ The requests that are sent to OBS by users must comply with REST specifications 
 -  :ref:`DELETE Bucket <en-us_topic_0125560472>`
 -  :ref:`GET Bucket (List Objects) <en-us_topic_0125560237>`
 -  :ref:`GET Bucket Object versions <en-us_topic_0125560273>`
+-  :ref:`GET Bucket V2 (List Objects V2) <en-us_topic_0000001358895697>`
 -  :ref:`List Multipart Uploads <en-us_topic_0125560292>`
 -  :ref:`HEAD Bucket <en-us_topic_0125560467>`
 -  :ref:`GET Bucket location <en-us_topic_0125560404>`
@@ -62,6 +63,7 @@ The requests that are sent to OBS by users must comply with REST specifications 
    delete_bucket
    get_bucket_list_objects
    get_bucket_object_versions
+   get_bucket_v2_list_objects_v2
    list_multipart_uploads
    head_bucket
    get_bucket_location
