@@ -2,8 +2,8 @@
 
 .. _obs_03_0339:
 
-CORS
-====
+Cross-Origin Resource Sharing
+=============================
 
 -  :ref:`CORS Overview <en-us_topic_0045853680>`
 -  :ref:`Configuring CORS <en-us_topic_0066036542>`

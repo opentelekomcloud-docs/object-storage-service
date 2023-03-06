@@ -5,7 +5,7 @@
 Downloading a File
 ==================
 
-Through OBS Console, you can download files stored in OBS to your PC.
+You can download files from OBS Console to your local computer.
 
 Limitations and Constraints
 ---------------------------
@@ -15,8 +15,8 @@ Objects in the Cold storage class can be downloaded only when they are in the **
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
-#. In the navigation pane on the left, click **Objects**.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the navigation pane, click **Objects**.
 #. Select the files you want to download, and then click **Download** or **More** > **Download As** to download the files.
 
    .. note::

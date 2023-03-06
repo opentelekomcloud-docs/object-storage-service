@@ -14,9 +14,9 @@ Process
 
 
 .. figure:: /_static/images/en-us_image_0170301902.png
-   :alt: **Figure 1** Granting an IAM user the access permissions to OBS
+   :alt: **Figure 1** Process of granting an IAM user the OBS permissions
 
-   **Figure 1** Granting an IAM user the access permissions to OBS
+   **Figure 1** Process of granting an IAM user the OBS permissions
 
 Procedure
 ---------

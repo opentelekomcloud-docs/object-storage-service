@@ -10,7 +10,7 @@ Managing Objects
 -  :ref:`Downloading a File <obs_03_0317>`
 -  :ref:`Searching for a File or Folder <obs_03_0318>`
 -  :ref:`Accessing an Object Using Its URL <obs_03_0319>`
--  :ref:`Restoring a Cold File Stored in OBS <obs_03_0320>`
+-  :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`
 -  :ref:`Deleting a File or Folder <en-us_topic_0045853756>`
 -  :ref:`Undeleting a File <en-us_topic_0066176932>`
 -  :ref:`Managing Fragments <en-us_topic_0045853514>`
@@ -24,7 +24,7 @@ Managing Objects
    downloading_a_file
    searching_for_a_file_or_folder
    accessing_an_object_using_its_url
-   restoring_a_cold_file_stored_in_obs
+   restoring_objects_from_the_cold_storage
    deleting_a_file_or_folder
    undeleting_a_file
    managing_fragments

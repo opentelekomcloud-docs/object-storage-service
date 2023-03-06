@@ -10,7 +10,7 @@ You can configure the bucket policy to limit the time when objects in a bucket a
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.

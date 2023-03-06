@@ -17,8 +17,8 @@ A bucket owner can edit a bucket policy to implement fine-grained bucket access 
 
 A bucket policy can be used to control access to the bucket and objects in the bucket. Specifically, you can define the effect, authorized users, resources, actions, and conditions of a bucket policy. Permissions attached to a bucket apply to all the objects in the bucket. After a bucket policy is created, access requests to the bucket are controlled by the bucket policy. The bucket policy controls access requests by allowing or denying the requests.
 
-ACL
----
+ACLs
+----
 
 A bucket or object ACL can assign the following users the read and write permissions to OBS resources:
 

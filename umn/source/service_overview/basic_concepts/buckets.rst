@@ -13,7 +13,7 @@ OBS provides the following storage classes for buckets: Standard, Warm, and Cold
 
 Each bucket name in OBS is globally unique and cannot be changed after the bucket has been created. The region where a bucket resides cannot be changed once the bucket is created. When you create a bucket, OBS creates a default access control list (ACL) that grants users permissions (such as read and write permissions) on the bucket. Only authorized users can perform operations such as creating, deleting, viewing, and configuring buckets.
 
-An account (including all IAM users under this account) can create a maximum of 100 buckets. However, there is no restriction on the number and total size of objects in a bucket.
+An account (including all IAM users under this account) can create a maximum of 100 buckets and parallel file systems. However, there is no restriction on the number and total size of objects in a bucket.
 
 OBS adopts the REST architectural style, and is based on HTTP and HTTPS. You can use URLs to locate resources.
 

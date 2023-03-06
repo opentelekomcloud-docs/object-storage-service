@@ -9,13 +9,13 @@ You can enable logging to facilitate analysis or audit as required. Access logs 
 
 The logging function itself is offered for free, only the space occupied by log files is charged.
 
-After logging is enabled, the log delivery user will be automatically granted the permission to read the bucket ACL and write the bucket where logs are saved. If you manually disable such permissions, bucket logging fails.
+After logging is enabled, the log delivery user group will be automatically granted the permission to read the bucket ACL and write the bucket where logs are saved. If you manually disable such permissions, bucket logging fails.
 
 OBS can record bucket access requests in logs for request analysis and log audit.
 
 Logs occupy some OBS storage space rented by users, causing extra fees. For this reason, OBS does not collect bucket access logs by default.
 
-Approximately fifteen minutes after log management is successfully configured, you can view the operation logs in the target bucket that stores the logs.
+After logging is configured, you can view operation logs in the bucket that stores the logs in approximately fifteen minutes.
 
 The following shows an example access log of the target bucket:
 

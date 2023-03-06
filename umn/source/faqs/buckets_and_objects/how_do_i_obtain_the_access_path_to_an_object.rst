@@ -5,7 +5,7 @@
 How Do I Obtain the Access Path to an Object?
 =============================================
 
-Object access paths use the following format: **https://**\ *{bucket name}*\ **.**\ *{domain name}*\ **/**\ *{object name}*.
+Object access paths use the following format: **https://**\ *{bucket name}*\ **.**\ *{domain name}*\ **/**\ *{object name}*, for example, **https://**\ *bucketname*\ **.obs.eu-de.otc.t-systems.com/**\ *objectname*.
 
 You can combine a path manually or use the tools in the following table to obtain it.
 
@@ -18,9 +18,9 @@ You can combine a path manually or use the tools in the following table to obtai
    +-------------+------------------------------------------------------------------------------------------------------------------------------------+
    | OBS Browser | Click the **Attribute** button of the object and then you can copy the URL displayed in the detailed information about the object. |
    +-------------+------------------------------------------------------------------------------------------------------------------------------------+
-   | SDK         | You can get the URL of an object by calling the **getObjectUrl** interface.                                                        |
+   | SDKs        | You can get the URL of an object by calling the **getObjectUrl** interface.                                                        |
    +-------------+------------------------------------------------------------------------------------------------------------------------------------+
-   | API         | Not supported                                                                                                                      |
+   | APIs        | Not supported                                                                                                                      |
    +-------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::

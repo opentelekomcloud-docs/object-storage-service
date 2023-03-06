@@ -5,7 +5,7 @@
 How Do I Manage Fragments?
 ==========================
 
-Fragments on OBS consume storage spaces that are charged according to price rates of storage space.
+Generated fragments take up storage space that is billable.
 
 You can clear the fragments in a bucket on OBS Console or OBS Browser.
 

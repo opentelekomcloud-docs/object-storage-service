@@ -54,17 +54,17 @@ Procedure
       -  You can configure either the **Current Version** or **Historical Version**, or both of them.
 
    -  **Transition to Warm**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Warm**. This number must be at least 30.
-   -  **Transition to Cold**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Cold**. If objects are configured to be transitioned to both **Warm** and **Cold**, the number of days for transition to **Cold** must be at least 30 days later than that for transition to **Warm**. If only transition to Cold is enabled and transition to **Warm** is disabled, there is no limit on the number of days for transition.
+   -  **Transition to Cold**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Cold**. If you configure to transition objects first to Warm and then Cold, the objects must stay Warm at least 30 days before they can be transitioned to Cold. If only transition to Cold is used, but transition to Warm is not, there is no limit on the number of days for transition.
    -  Object deletion upon expiration: You can specify the number of days after which objects that have been last updated and meet the specified conditions are automatically deleted. The expiration time must be greater than the two transition times.
 
-   For example, the following files are stored in OBS on January 7, 2015:
+   For example, on January 7, 2015, you saved the following files in OBS:
 
    -  log/test1.log
    -  log/test2.log
    -  doc/example.doc
    -  doc/good.txt
 
-   The following files are stored in OBS on January 10, 2015:
+   On January 10, 2015, you saved the following files:
 
    -  log/clientlog.log
    -  log/serverlog.log
@@ -80,7 +80,7 @@ Procedure
 
    .. note::
 
-      The storage class transition and deletion of an object may be delayed after the time condition is met. Generally, the delay does not exceed 48 hours. If you change the configurations of an existing lifecycle rule, the effective time of the lifecycle rule will change according to the new configurations.
+      In theory, it takes 24 hours at most to execute a lifecycle rule. Because OBS calculates the lifecycle of an object from the next 00:00 (UTC time) after the object is uploaded, there may be a delay in transitioning objects between storage classes and deleting expired objects. Generally, the delay does not exceed 48 hours. If you make changes to an existing lifecycle rule, the rule will take effect again.
 
 #. Click **Save**.
 

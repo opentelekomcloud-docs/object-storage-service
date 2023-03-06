@@ -28,8 +28,8 @@ A bucket policy is attached to a bucket and objects in the bucket. By leveraging
 There are three options for standard bucket policies.
 
 -  **Private**: No access beyond the bucket ACL settings is granted.
--  **Public Read**: Any user can read objects in the bucket.
--  **Public Read and Write**: Any user can read, write, and delete objects in the bucket.
+-  **Public Read**: Anyone can read objects in the bucket.
+-  **Public Read and Write**: Anyone can read, write, or delete objects in the bucket.
 
 After a bucket is created, the default bucket policy is **Private**. Only the bucket owner has the full control permissions over the bucket. To ensure data security, it is recommended that you do not use the **Public Read** or **Public Read and Write** policies.
 

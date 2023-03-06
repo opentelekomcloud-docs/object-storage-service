@@ -16,14 +16,14 @@ Web page files of the static website have been uploaded to a bucket.
 
 The static website files hosted in the bucket are accessible to anonymous users.
 
-If the web page files are in the Cold storage class, restore them first. For more information, see :ref:`Restoring a Cold File Stored in OBS <obs_03_0320>`.
+If the web page files are in the Cold storage class, restore them first. For more information, see :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. (**Optional**) If the static website files in the bucket are not accessible to anonymous users, perform this step to configure them to be accessible to anonymous users. If the static website files are already accessible to anonymous users, skip this step.
+#. (**Optional**) If the static website files in the bucket are not accessible to anonymous users, perform this step. If the static website files are already accessible to anonymous users, skip this step.
 
    Authorize anonymous users the permission to read files on the static website. For details, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
 
@@ -50,7 +50,7 @@ Procedure
 
 #. Enable it by turning on the status switch.
 
-#. Set **Hosting By** to **Current bucket**. For details, see :ref:`Figure 2 <en-us_topic_0045853755__fig1131112528711>`.
+#. Set the hosting type to the current bucket. For details, see :ref:`Figure 2 <en-us_topic_0045853755__fig1131112528711>`.
 
    .. _en-us_topic_0045853755__fig1131112528711:
 
@@ -59,11 +59,11 @@ Procedure
 
       **Figure 2** Configuring static website hosting
 
-#. Set the values of **Home Page** and **404 Error Page**.
+#. Set the values of the homepage and 404 error page.
 
    -  **Home Page**: specifies the default homepage of the static website. When OBS Console is used to configure static website hosting, only HTML web pages are supported. When are used to configure static website hosting, OBS does not have such a restriction but the **Content-Type** of objects must be specified.
 
-      OBS only allows files such as **index.html** in the root directory of a bucket to function as the default homepage. That is to say, do not set the default homepage with a multi-level directory structure (for example, **/page/index.html**).
+      OBS only allows files such as **index.html** in the root directory of a bucket to function as the default homepage. Do not set the default homepage with a multi-level directory structure (for example, **/page/index.html**).
 
    -  **404 Error Page**: specifies the error page returned when an error occurs during static website access. When OBS Console is used to configure static website hosting, only HTML, JPG, PNG, BMP, and WEBP files under the root directory are supported. When APIs are used to configure static website hosting, OBS does not have such a restriction but the **Content-Type** of objects must be specified.
 

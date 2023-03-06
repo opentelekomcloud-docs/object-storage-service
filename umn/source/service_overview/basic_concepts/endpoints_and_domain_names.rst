@@ -11,7 +11,7 @@ Endpoints and Domain Names
 
 An OBS bucket domain name is in the format of *BucketName.Endpoint*, where *BucketName* indicates the name of the bucket, and *Endpoint* indicates the domain name of the region where the bucket is located.
 
-:ref:`Table 1 <obs_03_0152__table94332031121816>` lists the bucket domain name and other domain names in OBS, including their formats and protocols.
+:ref:`Table 1 <obs_03_0152__table94332031121816>` lists the bucket domain name and other domain names in OBS, including their structure and protocols.
 
 .. _obs_03_0152__table94332031121816:
 

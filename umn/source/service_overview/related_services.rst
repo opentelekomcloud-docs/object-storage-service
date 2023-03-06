@@ -13,7 +13,7 @@ Related Services
    | IAM provides the following functions:                                                                 | Identity and Access Management (IAM) | :ref:`Permissions Management <obs_03_0045>`                                               |
    |                                                                                                       |                                      |                                                                                           |
    | -  User identity authentication                                                                       |                                      | :ref:`Configuring User Permissions <obs_03_0304>`                                         |
-   | -  IAM user permission management                                                                     |                                      |                                                                                           |
+   | -  IAM user permission control                                                                        |                                      |                                                                                           |
    | -  IAM agency configuration                                                                           |                                      |                                                                                           |
    +-------------------------------------------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------+
    | CTS collects records of operations on OBS resources, facilitating querying, audits, and backtracking. | Cloud Trace Service (CTS)            | :ref:`Cloud Trace Service <obs_03_0020>`                                                  |
@@ -27,4 +27,4 @@ Related Services
    | DNS resolves domain names configured for static website hosting in OBS.                               | Domain Name Service (DNS)            | :ref:`Using a User-Defined Domain Name to Configure Static Website Hosting <obs_03_0338>` |
    +-------------------------------------------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------+
 
-The OBS can serve as a storage resource pool for other cloud services such as Relational Database Service (RDS) and Cloud Trace Service (CTS).
+OBS can serve as a storage resource pool for other cloud services such as Relational Database Service (RDS) and Cloud Trace Service (CTS).

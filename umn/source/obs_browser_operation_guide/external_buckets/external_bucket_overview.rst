@@ -62,7 +62,7 @@ Operations That Can Be Performed on the External Bucket
 
 Operations that can be performed by the authorized user on the external bucket:
 
--  You can add an external bucket but cannot restore objects from the Cold storage class in the bucket. You can view the object restoration status only when the owner of those objects authorizes you the permission to read the objects.
+-  You can add an external bucket but cannot restore objects from the Cold storage class in the bucket. You can view the object restore status only when the owner of those objects authorizes you the permission to read the objects.
 -  You (the user who adds the bucket) can perform only authorized actions on original objects in the bucket. If you want to have additional operation permissions for objects in the bucket, you need to have the permissions authorized by the object owner.
 -  If you upload an object to the added external bucket, the read access to the object and the object ACL will be automatically authorized to the bucket owner and configured in the object ACL settings.
 -  If you upload an encrypted object to the added external bucket, the bucket owner cannot access the object because the bucket owner does not have the key.

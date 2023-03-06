@@ -61,6 +61,6 @@ You can modify the storage class of the object after uploading the file or folde
 
 .. note::
 
-   -  Objects can be changed from **Standard** to **Warm** or **Cold** storage class, or from **Warm** to **Standard** or **Cold** storage class, but objects in **Cold** storage class must be restored before being changed to **Standard** or **Warm** storage class. Changing from **Warm** or **Cold** to other storage classes incurs restoration fees. Select an appropriate change option based on your actual needs.
-   -  When the storage class is changed to **Cold**, the object restoration status changes to **Unrestored**.
+   -  Objects can be changed from Standard to Warm or Cold storage class, or from Warm to Standard or Cold storage class, but objects in Cold storage class must be restored before being changed to Standard or Warm storage class. Changing from Warm or Cold to other storage classes incurs restore fees. Select an appropriate change option based on your actual needs.
+   -  When the storage class is changed to Cold, the object restore status changes to **Unrestored**.
    -  You can also configure a lifecycle rule to change the storage class of an object. For details, see :ref:`Lifecycle Management Overview <obs_03_0425>`.

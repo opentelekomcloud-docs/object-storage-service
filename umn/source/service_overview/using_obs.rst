@@ -12,11 +12,11 @@ You can use the following tools to access and manage OBS resources:
    +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Tool        | Description                                                                                                                                                                   |
    +=============+===============================================================================================================================================================================+
-   | OBS Console | OBS Console is a web-based GUI. You can perform operations on OBS Console easily.                                                                                             |
+   | OBS Console | OBS Console is a web-based GUI for you to easily manage OBS resources.                                                                                                        |
    +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OBS Browser | OBS Browser is an OBS client running on Windows operating systems. You can use OBS Browser to manage the storage of objects on your PC.                                       |
    +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | SDK         | OBS SDKs encapsulate APIs provided by OBS to simplify user development. Users can directly use API functions provided by the OBS SDKs to obtain the OBS service capabilities. |
+   | SDKs        | OBS SDKs encapsulate APIs provided by OBS to simplify user development. Users can directly use API functions provided by the OBS SDKs to obtain the OBS service capabilities. |
    +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | API         | With the API, you can easily access OBS from web applications. By making API calls, you can upload and download data anytime, anywhere, or through any Internet device.       |
+   | APIs        | With APIs, you can easily access OBS from web applications. By making API calls, you can upload and download data anytime, anywhere, or through any Internet device.          |
    +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

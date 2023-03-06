@@ -9,7 +9,7 @@ Buckets are containers that store objects in OBS. Before you store data in OBS, 
 
 .. note::
 
-   An account can create a maximum of 100 buckets.
+   An account can create a maximum of 100 buckets and parallel file systems.
 
 Procedure
 ---------
@@ -88,8 +88,8 @@ The **Region** information can be configured on OBS Browser. The following detai
 
 #. After file **region** is successfully modified, restart OBS Browser so that the configurations can take effect.
 
-Follow-up Procedure
--------------------
+Related Operations
+------------------
 
 You can specify its storage class when creating a bucket or change its storage class after bucket creation. The procedure is as follows:
 

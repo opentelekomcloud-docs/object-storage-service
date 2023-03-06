@@ -11,9 +11,9 @@ This section describes how to upload local files to OBS over the Internet. These
 
    OBS Console allows you to upload files in a batch. Up to 100 files can be uploaded at a time, with the total size of no more than 5 GB. If the file size exceeds 5 GB, use OBS Browser or the multipart upload of OBS SDKs and APIs for upload.
 
-   If versioning is disabled and the name of a newly uploaded file is the same as that of a file in the bucket, the newly uploaded file automatically overwrites the existing file and does not retain the ACL information of the existing file. If the name of the newly uploaded folder is the same as that of a folder in the bucket, the two folders will be merged, and files in the new folder will overwrite namesake files in the old folder.
+   If versioning is disabled for your bucket and you upload a new file with the same name as the one you previously uploaded to your bucket, the new file automatically overwrites the previous file and does not retain its ACL information. If you upload a new folder using the same name that was used with a previous folder in the bucket, the two folders will be merged, and files in the new folder will overwrite namesake files in the previous folder.
 
-   If versioning is enabled and the name of a newly uploaded file is the same as that of a file in the bucket, a new version is added to the existing file. For details about versioning, see :ref:`Versioning Overview <en-us_topic_0045853504>`.
+   After versioning is enabled for your bucket, if the new file you upload has the same name as the one you previously uploaded to the bucket, a new file version will be added in the bucket. For details about versioning, see :ref:`Versioning Overview <en-us_topic_0045853504>`.
 
 Prerequisites
 -------------
@@ -24,7 +24,7 @@ Prerequisites
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the navigation pane, click **Objects**.
 
@@ -40,16 +40,20 @@ Procedure
 
       **Figure 1** Uploading objects
 
-#. Select a storage class. If no storage class is selected, the file will inherit the storage class of the bucket.
-
-#. Add a file or folder to be uploaded by dragging it to the Upload Object area.
-
-   You can also click **add file** in the Upload Object area to select files.
-
-#. **Optional**: Select KMS encryption to encrypt the uploaded file. For details, see :ref:`Uploading a File with Server-Side Encryption <obs_03_0322>`.
+#. Select a storage class. If you do not specify a storage class, the object you upload inherits the default storage class of the bucket.
 
    .. note::
 
-      If the default encryption is enabled for a bucket, uploaded objects are automatically encrypted.
+      An object can have a different storage class from its bucket. You can specify a storage class for an object when uploading it, or you can change the object storage class after the object is uploaded.
+
+#. Add a file or folder to be uploaded by dragging it to the **Upload Object** area.
+
+   You can also click **add file** in the **Upload Object** area to select files.
+
+#. **Optional**: Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading a File with Server-Side Encryption <obs_03_0322>`.
+
+   .. note::
+
+      If the default encryption has been enabled for the bucket, uploaded objects are automatically encrypted.
 
 #. Click **Upload**.

@@ -10,7 +10,7 @@ On OBS Console, you can view details of a bucket.
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. Under **Basic Information**, view the basic information of the bucket. For details, see :ref:`Figure 1 <obs_03_0312__fig4178468919236>`.
 

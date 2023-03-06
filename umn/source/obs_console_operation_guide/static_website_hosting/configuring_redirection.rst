@@ -5,7 +5,7 @@
 Configuring Redirection
 =======================
 
-You can configure static website hosting by redirecting all requests for a bucket to another bucket or URL.
+You can redirect all requests for a bucket to another bucket or URL by configuring redirection rules.
 
 Prerequisites
 -------------
@@ -14,12 +14,12 @@ Web page files of the static website have been uploaded to a bucket.
 
 The static website files hosted in the bucket are accessible to anonymous users.
 
-If the web page files are in the Cold storage class, restore them first. For more information, see :ref:`Restoring a Cold File Stored in OBS <obs_03_0320>`.
+If the web page files are in the Cold storage class, restore them first. For more information, see :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
 #. In the right **Basic Configurations** area, click **Static Website Hosting**. The **Static Website Hosting** page is displayed.
 
@@ -42,7 +42,7 @@ Procedure
 
 #. In the bucket list, click the bucket to which requests for the static website are redirected.
 
-#. (**Optional**) If the static website files in the bucket are not accessible to anonymous users, perform this step to configure them to be accessible to anonymous users. If the static website files are already accessible to anonymous users, skip this step.
+#. (**Optional**) If the static website files in the bucket are not accessible to anonymous users, perform this step. If the static website files are already accessible to anonymous users, skip this step.
 
    Authorize anonymous users the permission to read files on the static website. For details, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
 

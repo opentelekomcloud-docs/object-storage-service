@@ -1,27 +1,42 @@
-:original_name: obs_03_0418.html
+:original_name: obs_03_0320.html
 
-.. _obs_03_0418:
+.. _obs_03_0320:
 
-Restoring a Cold File in OBS
-============================
+Restoring Objects from the Cold Storage
+=======================================
 
-Background Information
-----------------------
+You must restore a Cold object before you can operate it, including download, access using a URL, as well as ACL and metadata settings.
 
-The Cold storage class is applicable to archiving rarely-accessed (such as once a year) data. The application scenarios include data archiving and long-term data retention for backup, allowing users to safely store data at a low price. However, it can take up to hours to restore data from the Cold storage class.
+Limitations and Constraints
+---------------------------
 
-If an object in the Cold storage class is being restored, you cannot suspend or delete the restoration task.
-
-You cannot restore an object that is in the **Restoring** state.
+-  You cannot suspend or delete the restore task if a Cold object is being restored.
+-  You cannot re-restore an object in the **Restoring** state.
+-  After an object is restored, an object copy in the Standard storage class will be generated. This way, there is the object in Cold storage class and also its copy in Standard storage class in the bucket. The copy will be automatically deleted once the restore expires.
 
 Procedure
 ---------
 
-#. Log in to OBS Browser.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. Click the bucket in which the file that you want to restore resides. The object list is displayed.
+#. In the navigation pane, click **Objects**.
 
-#. Click the restore icon next to the object that you want to restore. Alternatively, you can select an object and click the restore icon on the top of the object list.
+#. Select the file you want to restore, and click **Restore** on the right. The following dialog box shown in :ref:`Figure 1 <obs_03_0320__fig37793164192736>` is displayed.
+
+   You can select multiple files and click **Restore** above the file list to batch restore the files.
+
+   .. note::
+
+      Objects that are being restored cannot be added for batch restore.
+
+   .. _obs_03_0320__fig37793164192736:
+
+   .. figure:: /_static/images/en-us_image_0129533894.png
+      :alt: **Figure 1** Restoring an object
+
+      **Figure 1** Restoring an object
+
+#. Configure the validity period and speed of the restore. The following table describes the parameters.
 
    .. table:: **Table 1** Parameters for restoring objects
 
@@ -41,16 +56,9 @@ Procedure
 
 #. Click **OK**.
 
-   Click |image1| and the **Properties** dialog box is displayed. For details, see :ref:`Figure 1 <obs_03_0418__fe014653c9d364bf3999772d96d998638>`. You can view the restoration status.
+   The **Restoration Status** column in the object list displays the restore statuses of objects.
 
-   .. _obs_03_0418__fe014653c9d364bf3999772d96d998638:
-
-   .. figure:: /_static/images/en-us_image_0129830942.png
-      :alt: **Figure 1** Properties of the restored object
-
-      **Figure 1** Properties of the restored object
-
-   You can download the file only after its status changes to **Restored**. You can click the **Refresh** button in the upper right corner to refresh the restoration tasks and to view the restoration progress. The system also automatically refreshes the restoration tasks every 5 minutes.
+   You can click |image1| to manually refresh the restore status.
 
    .. note::
 
@@ -65,4 +73,4 @@ Within the validity period of a restored object, you can restore the object agai
 
    If a restored object is restored again, its expiration time should be later than the time set for the previous restore. Assume that an object is restored on January 1 and will expire 30 days later (on January 30). If the object is restored again on January 10 and is made to be expired earlier than January 30 (less than 20 days later), this restore action is considered invalid.
 
-.. |image1| image:: /_static/images/en-us_image_0237534488.png
+.. |image1| image:: /_static/images/en-us_image_0148639825.png
