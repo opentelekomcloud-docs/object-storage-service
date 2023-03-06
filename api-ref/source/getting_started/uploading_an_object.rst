@@ -66,8 +66,6 @@ In this example, an Apache HttpClient is used.
            CloseableHttpClient httpClient = HttpClients.createDefault();
            CloseableHttpResponse httpResponse = null;
            String requestTime = DateUtils.formatDate(System.currentTimeMillis());
-
-
            HttpPut httpPut = new HttpPut("http://bucket001.obs.a1.example.com/objecttest1");
            httpPut.addHeader("Date", requestTime);
 

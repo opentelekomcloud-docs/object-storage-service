@@ -59,8 +59,6 @@ In this example, an Apache HttpClient is used.
            CloseableHttpClient httpClient = HttpClients.createDefault();
            String requesttime = DateUtils.formatDate(System.currentTimeMillis());
            String contentType = "application/xml";
-
-
            HttpPut httpPut = new HttpPut("http://bucket001.obs.a1.example.com");
            httpPut.addHeader("Date", requesttime);
            httpPut.addHeader("Content-Type", contentType);

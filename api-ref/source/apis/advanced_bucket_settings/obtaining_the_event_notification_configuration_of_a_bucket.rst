@@ -25,7 +25,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no message parameters.
 
 Request Headers
 ---------------
@@ -82,24 +82,22 @@ This response contains elements to detail the configuration. :ref:`Table 1 <obs_
 
 .. _obs_04_0040__table6153252715448:
 
-.. table:: **Table 1** Response elements for configuring event notification
+.. table:: **Table 1** Response elements for configuring event notifications
 
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | Element                           | Description                                                                                                                 |
    +===================================+=============================================================================================================================+
    | NotificationConfiguration         | Element for configuring the event notification function of a bucket. If this element is **null**, the function is disabled. |
    |                                   |                                                                                                                             |
-   |                                   | Type: element                                                                                                               |
+   |                                   | Type: container                                                                                                             |
    |                                   |                                                                                                                             |
    |                                   | Ancestor: none                                                                                                              |
    |                                   |                                                                                                                             |
-   |                                   | Children: one or more                                                                                                       |
-   |                                   |                                                                                                                             |
-   |                                   | TopicConfiguration                                                                                                          |
+   |                                   | Children: one or more TopicConfiguration elements                                                                           |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | TopicConfiguration                | Element for configuring the event notification topic.                                                                       |
    |                                   |                                                                                                                             |
-   |                                   | Type: element                                                                                                               |
+   |                                   | Type: container                                                                                                             |
    |                                   |                                                                                                                             |
    |                                   | Ancestor: NotificationConfiguration                                                                                         |
    |                                   |                                                                                                                             |
@@ -115,31 +113,25 @@ This response contains elements to detail the configuration. :ref:`Table 1 <obs_
    |                                   |                                                                                                                             |
    |                                   | Type: string                                                                                                                |
    |                                   |                                                                                                                             |
-   |                                   | Ancestor:                                                                                                                   |
-   |                                   |                                                                                                                             |
-   |                                   | TopicConfiguration                                                                                                          |
+   |                                   | Ancestor: TopicConfiguration                                                                                                |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | Filter                            | Element used to store rules of filtering object names.                                                                      |
    |                                   |                                                                                                                             |
-   |                                   | Type: element                                                                                                               |
+   |                                   | Type: container                                                                                                             |
    |                                   |                                                                                                                             |
-   |                                   | Ancestor:                                                                                                                   |
-   |                                   |                                                                                                                             |
-   |                                   | TopicConfiguration                                                                                                          |
+   |                                   | Ancestor: TopicConfiguration                                                                                                |
    |                                   |                                                                                                                             |
    |                                   | Children: Object                                                                                                            |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | Object                            | Element used to store rules of filtering object names.                                                                      |
    |                                   |                                                                                                                             |
-   |                                   | Type: element                                                                                                               |
+   |                                   | Type: container                                                                                                             |
    |                                   |                                                                                                                             |
-   |                                   | Ancestor:                                                                                                                   |
-   |                                   |                                                                                                                             |
-   |                                   | TopicConfiguration                                                                                                          |
+   |                                   | Ancestor: TopicConfiguration                                                                                                |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | FilterRule                        | Element that defines key-value pairs of the filtering rule.                                                                 |
    |                                   |                                                                                                                             |
-   |                                   | Type: element                                                                                                               |
+   |                                   | Type: container                                                                                                             |
    |                                   |                                                                                                                             |
    |                                   | Ancestor: Object                                                                                                            |
    |                                   |                                                                                                                             |
@@ -163,7 +155,7 @@ This response contains elements to detail the configuration. :ref:`Table 1 <obs_
    |                                   |                                                                                                                             |
    |                                   | .. note::                                                                                                                   |
    |                                   |                                                                                                                             |
-   |                                   |    Multiple event types can be added in one TopicConfiguration item.                                                        |
+   |                                   |    Multiple event types can be added in one TopicConfiguration element.                                                     |
    |                                   |                                                                                                                             |
    |                                   | Type: string                                                                                                                |
    |                                   |                                                                                                                             |
@@ -189,15 +181,13 @@ This response contains elements to detail the configuration. :ref:`Table 1 <obs_
    |                                   |                                                                                                                             |
    |                                   | -  ObjectRemoved:\*                                                                                                         |
    |                                   |                                                                                                                             |
-   |                                   | Ancestor:                                                                                                                   |
-   |                                   |                                                                                                                             |
-   |                                   | TopicConfiguration                                                                                                          |
+   |                                   | Ancestor: TopicConfiguration                                                                                                |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Error Responses
 ---------------
 
-No special error responses are involved. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
+No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
 Sample Request
 --------------

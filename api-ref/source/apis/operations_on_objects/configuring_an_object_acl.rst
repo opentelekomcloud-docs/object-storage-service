@@ -98,15 +98,19 @@ The request message carries the ACL information of the object by using message e
    |                       |                                                                                                                 |                       |
    |                       | Value range: Everyone                                                                                           |                       |
    |                       |                                                                                                                 |                       |
-   |                       | Type: enumeration                                                                                               |                       |
+   |                       | Type: string                                                                                                    |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------+
    | Delivered             | Indicates whether an object ACL inherits the ACL of a bucket.                                                   | No                    |
    |                       |                                                                                                                 |                       |
-   |                       | Type: boolean Default value: true                                                                               |                       |
+   |                       | Type: boolean                                                                                                   |                       |
+   |                       |                                                                                                                 |                       |
+   |                       | Default value: **true**                                                                                         |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------+
    | Permission            | Authorized permission.                                                                                          | No                    |
    |                       |                                                                                                                 |                       |
-   |                       | Type: enumeration                                                                                               |                       |
+   |                       | Value options: **READ** \| **READ_ACP** \| **WRITE_ACP** \| **FULL_CONTROL**                                    |                       |
+   |                       |                                                                                                                 |                       |
+   |                       | Type: string                                                                                                    |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------+
    | AccessControlList     | Indicates an ACL, which consists of three elements: **Grant**, **Grantee**, and **Permission**.                 | Yes                   |
    |                       |                                                                                                                 |                       |

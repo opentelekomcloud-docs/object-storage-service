@@ -61,8 +61,6 @@ In this example, an Apache HttpClient is used.
        private static void listAllMyBuckets() {
            CloseableHttpClient httpClient = HttpClients.createDefault();
            String requesttime = DateUtils.formatDate(System.currentTimeMillis());
-
-
            HttpGet httpGet = new HttpGet("http://obs.a1.example.com");
            httpGet.addHeader("Date", requesttime);
 

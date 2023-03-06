@@ -8,7 +8,7 @@ Uploading Objects - POST
 Functions
 ---------
 
-Uploading an object adds it to a bucket. This requires users to have the write operation.
+This operation uploads an object to a bucket. To use this operation, you must have the write permission on the bucket.
 
 .. note::
 
@@ -108,7 +108,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no parameter.
+This request contains no parameters.
 
 Request Headers
 ---------------
@@ -235,7 +235,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Note: There are three storage classes: STANDARD (Standard storage class), WARM (Warm storage class), and COLD (Cold storage class). Therefore, this parameter value can be **STANDARD**, **WARM**, or **COLD**. These values are case sensitive.                                         |                                                   |
+   |                                                 | Storage class value options: **STANDARD** (Standard), **WARM** (Warm), **COLD** (Cold). These values are case sensitive.                                                                                                                                                                 |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | An example is provided as follows:                                                                                                                                                                                                                                                       |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
@@ -258,7 +258,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 | -  If the value is valid and the request is successful, OBS returns status code 303. **Location** contains **success_action_redirect** as well as the bucket name, object name, and object ETag.                                                                                         |                                                   |
    |                                                 | -  If this parameter is invalid, OBS ignores this parameter. The response code is 204, and the **Location** is the object address.                                                                                                                                                       |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Type: string.                                                                                                                                                                                                                                                                            |                                                   |
+   |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | An example is provided as follows:                                                                                                                                                                                                                                                       |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
@@ -300,7 +300,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Example: x-obs-server-side-encryption:kms                                                                                                                                                                                                                                                |                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption:kms**                                                                                                                                                                                                                                            |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
    | x-obs-server-side-encryption-kms-key-id         | Master key ID. This header is used in SSE-KMS mode. If the customer does not provide the master key ID, the default master key ID will be used.                                                                                                                                          | No                                                |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
@@ -324,7 +324,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-algorithm:AES256                                                                                                                                                                                                                          |                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-algorithm:AES256**                                                                                                                                                                                                                      |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Constraint: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.                                                                                                                                  |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
@@ -332,7 +332,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=                                                                                                                                                                                          |                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=**                                                                                                                                                                                      |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Constraint: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.                                                                                        |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
@@ -340,7 +340,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                                                                             |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==                                                                                                                                                                                                          |                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                                                                                                                                      |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Constraint: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.                                                                                      |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
@@ -348,7 +348,7 @@ This request uses form elements. :ref:`Table 2 <obs_04_0081__table13225554>` des
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: integer                                                                                                                                                                                                                                                                            |                                                   |
    |                                                 |                                                                                                                                                                                                                                                                                          |                                                   |
-   |                                                 | Example: x-obs-expires:3                                                                                                                                                                                                                                                                 |                                                   |
+   |                                                 | Example: **x-obs-expires:3**                                                                                                                                                                                                                                                             |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
 
 Response Syntax
@@ -406,7 +406,7 @@ In addition to the common response headers, the following message headers may al
    |                                                 |                                                                                                                                                                                                   |
    |                                                 | Type: string                                                                                                                                                                                      |
    |                                                 |                                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption:kms                                                                                                                                                         |
+   |                                                 | Example: **x-obs-server-side-encryption:kms**                                                                                                                                                     |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | x-obs-server-side-encryption-kms-key-id         | Indicates the master key ID. This header is included in a response if SSE-KMS is used.                                                                                                            |
    |                                                 |                                                                                                                                                                                                   |
@@ -416,19 +416,19 @@ In addition to the common response headers, the following message headers may al
    |                                                 |                                                                                                                                                                                                   |
    |                                                 | *regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID used in this encryption.                 |
    |                                                 |                                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-kms-key-id:*region*:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0                                                               |
+   |                                                 | Example: **x-obs-server-side-encryption-kms-key-id:**\ *region*\ **:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0**                                                   |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | x-obs-server-side-encryption-customer-algorithm | Indicates an encryption algorithm. This header is included in a response if SSE-C is used.                                                                                                        |
    |                                                 |                                                                                                                                                                                                   |
    |                                                 | Type: string                                                                                                                                                                                      |
    |                                                 |                                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-algorithm:AES256                                                                                                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-algorithm:AES256**                                                                                                                               |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of a key used to encrypt objects. This header is included in a response if SSE-C is used.                                                                                 |
    |                                                 |                                                                                                                                                                                                   |
    |                                                 | Type: string                                                                                                                                                                                      |
    |                                                 |                                                                                                                                                                                                   |
-   |                                                 | Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==                                                                                                                   |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                                               |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
@@ -608,3 +608,47 @@ Sample Response 2
    x-obs-request-id: 5DEB00000164A728A7C7F4E032214CFA
    x-obs-id-2: 32AAAUJAIAABAAAQAAEAABAAAQAAEAABCSwj2PcBE0YcoLHUDO7GSj+rVByzjflA
    Date: Tue, 17 Jul 2018 07:33:36 GMT
+
+Sample Request 3
+----------------
+
+**Use a token for authentication.**
+
+.. code-block:: text
+
+   POST / HTTP/1.1
+   Content-Type:multipart/form-data; boundary=9431149156168
+   Content-Length: 634
+   Host: examplebucket.obs.region.example.com
+
+   --9431149156168
+   Content-Disposition: form-data; name="key"
+   obj01
+
+   --9431149156168
+   Content-Disposition: form-data; name="token"
+   UDSIAMSTUBTEST002538:XsVcTzR2/A284oE4VH9qPndGcuE=:eyJjb25kaXRpb25zIjogW3siYnVja2V0IjogInRlc3QzMDAzMDU4NzE2NjI2ODkzNjcuMTIifSwgeyJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24veG1sIn0sIFsiZXEiLCAiJGtleSIsICJvYmoudHh0Il1dLCAiZXhwaXJhdGlvbiI6ICIyMDIyLTA5LTA5VDEyOjA5OjI3WiJ9
+
+   --9431149156168
+   Content-Disposition: form-data; name="file"; filename="myfile"
+   Content-Type: text/plain
+   01234567890
+
+   --9431149156168--
+   Content-Disposition: form-data; name="submit"
+   Upload to OBS
+
+Sample Response 3
+-----------------
+
+**The response to the authentication using a token**
+
+::
+
+   HTTP/1.1 204 No Content
+   Server: OBS
+   Location: http://examplebucket.obs.region.example.com/my-obs-object-key-demo
+   ETag: "7eda50a430fed940023acb9c4c6a2fff"
+   x-obs-request-id: 000001832010443D80F30B649B969C47
+   x-obs-id-2: 32AAAUgAIAABAAAQAAEAABAAAQAAEAABCTj0yO9KJd5In+i9pzTgCDVG9vMnk7O/
+   Date: Fri,09Sep 2022 02: 24:40 GMT

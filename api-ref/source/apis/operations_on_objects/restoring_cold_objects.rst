@@ -8,12 +8,12 @@ Restoring Cold Objects
 Functions
 ---------
 
-To obtain the content of an object in the Cold storage class, you need to restore the object first and then you can download it. After an object is restored, a copy of the object is saved in the Standard storage class. By doing so, the object in the Cold storage class and its copy in the Standard storage class co-exist in the bucket. The copy will be automatically deleted upon the expiration of its retention period.
+To obtain the content of an object in the Cold storage class, you need to restore the object first and then you can download it. After an object is restored, a copy of the object is saved in the Standard storage class. By doing so, the object in the Cold storage class and its copy in the Standard storage class co-exist in the bucket. The copy will be automatically deleted once its retention period expires.
 
 Versioning
 ----------
 
-By default, this operation returns the latest version of an object. If the object has a deletion marker, status code 404 is returned. To restore an object of a specified version, the **versionId** parameter can be used to specify the desired version.
+By default, this operation returns the latest version of an object. If the object has a delete marker, status code 404 is returned. To restore an object of a specified version, the **versionId** parameter can be used to specify the desired version.
 
 Request Syntax
 --------------
@@ -54,31 +54,31 @@ Request Elements
 
 .. table:: **Table 1** Request elements
 
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Element               | Description                                                                                                | Mandatory             |
-   +=======================+============================================================================================================+=======================+
-   | RestoreRequest        | Container for restoration information                                                                      | Yes                   |
-   |                       |                                                                                                            |                       |
-   |                       | Type: container                                                                                            |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Days                  | Indicates the storage duration of the restored object. The minimum value is 1 and the maximum value is 30. | Yes                   |
-   |                       |                                                                                                            |                       |
-   |                       | Type: positive integer                                                                                     |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | RestoreJob            | Container for restoring options                                                                            | No                    |
-   |                       |                                                                                                            |                       |
-   |                       | Type: container                                                                                            |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Tier                  | Restoring options: **Expedited** \| **Standard**                                                           | No                    |
-   |                       |                                                                                                            |                       |
-   |                       | **Expedited** indicates that data can be restored within 1 to 5 minutes.                                   |                       |
-   |                       |                                                                                                            |                       |
-   |                       | **Standard** indicates that the data can be restored within 3 to 5 hours.                                  |                       |
-   |                       |                                                                                                            |                       |
-   |                       | The default value is **Standard**.                                                                         |                       |
-   |                       |                                                                                                            |                       |
-   |                       | Type: string                                                                                               |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Element               | Description                                                                                                                                                | Mandatory             |
+   +=======================+============================================================================================================================================================+=======================+
+   | RestoreRequest        | Container for the restore information                                                                                                                      | Yes                   |
+   |                       |                                                                                                                                                            |                       |
+   |                       | Type: container                                                                                                                                            |                       |
+   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Days                  | Indicates the storage duration of the restored object. The minimum value is 1 and the maximum value is 30.                                                 | Yes                   |
+   |                       |                                                                                                                                                            |                       |
+   |                       | Type: integer                                                                                                                                              |                       |
+   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | RestoreJob            | Container for the restore options                                                                                                                          | No                    |
+   |                       |                                                                                                                                                            |                       |
+   |                       | Type: container                                                                                                                                            |                       |
+   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Tier                  | Restore options: **Expedited** \| **Standard**                                                                                                             | No                    |
+   |                       |                                                                                                                                                            |                       |
+   |                       | **Expedited** indicates that objects can be quickly restored within 1 to 5 minutes from Archive storage and within 3 to 5 hours from Deep Archive storage. |                       |
+   |                       |                                                                                                                                                            |                       |
+   |                       | **Standard** indicates that objects can be restored within 3 to 5 hours from Archive storage and within 5 to 12 hours from Deep Archive storage.           |                       |
+   |                       |                                                                                                                                                            |                       |
+   |                       | The default value is **Standard**.                                                                                                                         |                       |
+   |                       |                                                                                                                                                            |                       |
+   |                       | Type: string                                                                                                                                               |                       |
+   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 Response Syntax
 ---------------
@@ -126,7 +126,7 @@ Error Responses
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: The XML you provided was not well-formed or did not validate against our published schema            |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | InvalidObjectState       | The restored object is not a Cold object.                                                                          | 403 Forbidden         |
+   | InvalidObjectState       | The restored object is not in the Cold storage.                                                                    | 403 Forbidden         |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: Restore is not allowed, as object's storage class is not COLD                                        |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
