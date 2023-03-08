@@ -81,7 +81,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Object Storage Service - S3 API Reference"
+html_title = "Object Storage Service - Permissions Configuration Guide"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -95,7 +95,7 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'obs-s3api.tex',
-     u'Object Storage Service - S3 API Reference',
+     'obs-perms-cfg.tex',
+     u'Object Storage Service - Permissions Configuration Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
