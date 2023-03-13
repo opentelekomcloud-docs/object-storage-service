@@ -35,7 +35,7 @@ Request Syntax
 .. code-block:: text
 
    PUT /?versioning HTTP/1.1
-    User-Agent: agnet
+    User-Agent: agent
     Host: bucketname.obs.example.com
     Accept: */*
     Date: date
@@ -43,9 +43,9 @@ Request Syntax
     Content-Length: length
     Expect: expect
 
-    <VersioningConfiguration>
+   <VersioningConfiguration>
     <Status>status</Status>
-    </VersioningConfiguration>
+   </VersioningConfiguration>
 
 Request Parameters
 ------------------
@@ -124,9 +124,9 @@ Sample Request
     Content-Length: 80
     Expect: 100-continue
 
-    <VersioningConfiguration>
+   <VersioningConfiguration>
     <Status>Enabled</Status>
-    </VersioningConfiguration>
+   </VersioningConfiguration>
 
 Sample Response
 ---------------

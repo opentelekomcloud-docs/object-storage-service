@@ -57,7 +57,7 @@ Response Syntax
                <Key>TagNameJJ1</Key>
                <Value>tytttasceettt</Value>
            </Tag>
-   </TagSet>
+       </TagSet>
    </Tagging>
 
 Response Headers
@@ -151,5 +151,5 @@ Sample Response
                <Key>TagNameJJ1</Key>
                <Value>tytttasceettt</Value>
            </Tag>
-   </TagSet>
+       </TagSet>
    </Tagging>

@@ -151,10 +151,12 @@ Sample Request
    Authorization: AWS UDSIAMSTUBTEST000002:kaEwOixnSVuS6If3Q0Lnd6kxm5A=
    Content-Length: 183
    Expect: 100-continue
-   <RestoreRequest xmlns="http://s3.amazonaws.com/doc/2006-3-01">      <Days>3</Days>
-   <GlacierJobParameters>
-    <Tier>Expedited</Tier>
-    </GlacierJobParameters>
+
+   <RestoreRequest xmlns="http://s3.amazonaws.com/doc/2006-3-01">
+      <Days>3</Days>
+      <GlacierJobParameters>
+          <Tier>Expedited</Tier>
+      </GlacierJobParameters>
    </RestoreRequest>
 
 Sample Response
