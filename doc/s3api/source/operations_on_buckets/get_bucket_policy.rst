@@ -92,21 +92,22 @@ Sample Response
     Content-Type: application/xml
     Date: Fri, 06 Sep 2013 07:06:42 GMT
     Content-Length: 184
+
    {
-    "Id": "Policy1375342051334",
-    "Statement": [
-    {
-    "Sid": "Stmt1375240018061",
-    "Action": [
-    "s3:GetBucketLogging"
-    ],
-    "Effect": "Allow",
-    "Resource": "arn:aws:s3:::logging.bucket3",
-    "Principal": {
-    "AWS": [
-    "norman"
-    ]
-    }
-    }
-    ]
-    }
+       "Id": "Policy1375342051334",
+       "Statement": [
+           {
+               "Sid": "Stmt1375240018061",
+               "Action": [
+                   "s3:GetBucketLogging"
+               ],
+               "Effect": "Allow",
+               "Resource": "arn:aws:s3:::logging.bucket3",
+               "Principal": {
+                   "AWS": [
+                       "norman"
+                   ]
+               }
+           }
+       ]
+   }

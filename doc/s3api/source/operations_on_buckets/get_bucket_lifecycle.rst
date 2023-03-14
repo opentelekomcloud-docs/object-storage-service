@@ -15,7 +15,7 @@ Request Syntax
 .. code-block:: text
 
    GET /?lifecycle HTTP/1.1
-   User-Agent: agnet
+   User-Agent: agent
     Host: bucketname.obs.example.com
    Accept: */*
    Date: date

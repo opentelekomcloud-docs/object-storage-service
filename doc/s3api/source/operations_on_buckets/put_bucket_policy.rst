@@ -82,22 +82,22 @@ Account's domain ID is **783fc6652cf246c096ea836694f71855**.
     Content-Length: 223
 
     {
-    "Id": "Policy1375342051334",
-    "Statement": [
-    {
-    "Sid": "Stmt1375240018061",
-    "Action": [
-    "s3:GetBucketLogging"
-    ],
-    "Effect": "Allow",
-    "Resource": "arn:aws:s3:::logging.bucket3",
-    "Principal": {
-    "AWS": [
-    "arn:aws:iam::783fc6652cf246c096ea836694f71855:root"
-    ]
-    }
-    }
-    ]
+       "Id": "Policy1375342051334",
+       "Statement": [
+           {
+               "Sid": "Stmt1375240018061",
+               "Action": [
+                   "s3:GetBucketLogging"
+               ],
+               "Effect": "Allow",
+               "Resource": "arn:aws:s3:::logging.bucket3",
+               "Principal": {
+                   "AWS": [
+                       "arn:aws:iam::783fc6652cf246c096ea836694f71855:root"
+                    ]
+                }
+            }
+        ]
     }
 
 Sample Response: Grant OBS account permission
@@ -128,22 +128,22 @@ User ID is **71f3901173514e6988115ea2c26d1999** and Account's domain ID is **219
    Content-Length: 256
 
    {
-   "Id": "Policy1375342051335",
-   "Statement": [
-   {
-   "Sid": "Stmt1375240018062",
-   "Action": [
-   "s3:PutBucketLogging"
-   ],
-   "Effect": "Allow",
-   "Resource": "arn:aws:s3:::logging.bucket3",
-   "Principal": {
-   "AWS": [
-   "arn:aws:iam::219d520ceac84c5a98b237431a2cf4c2:user/71f3901173514e6988115ea2c26d1999"
-   ]
-   }
-   }
-   ]
+       "Id": "Policy1375342051335",
+       "Statement": [
+           {
+               "Sid": "Stmt1375240018062",
+               "Action": [
+                   "s3:PutBucketLogging"
+               ],
+               "Effect": "Allow",
+               "Resource": "arn:aws:s3:::logging.bucket3",
+               "Principal": {
+                   "AWS": [
+                       "arn:aws:iam::219d520ceac84c5a98b237431a2cf4c2:user/71f3901173514e6988115ea2c26d1999"
+                   ]
+               }
+           }
+       ]
    }
 
 Sample Response: Grant OBS user permission

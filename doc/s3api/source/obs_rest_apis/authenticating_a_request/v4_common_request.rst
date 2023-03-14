@@ -135,7 +135,7 @@ The signature computing process in V4 authentication mode is detailed in the fol
       DateKey = HMAC-SHA256("AWS4"+"<SecretAccessKey>", "<yyyymmdd>")
       DateRegionKey = HMAC-SHA256(<DateKey>, "<aws-region>")
       DateRegionServiceKey = HMAC-SHA256(<DateRegionKey>, "<aws-service>")
-      SigningKey = HMAC-SHA256(<DateRegionServiceKey>, "aws4_request"
+      SigningKey = HMAC-SHA256(<DateRegionServiceKey>, "aws4_request")
 
    Each field is described as follows:
 

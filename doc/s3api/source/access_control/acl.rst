@@ -33,17 +33,17 @@ The request for modifying or setting the ACL of a bucket or object must contain 
 
    <AccessControlPolicy>
     <Owner>
-    <ID>id</ID>
-    <DisplayName>displayname</DisplayName>
+     <ID>id</ID>
+     <DisplayName>displayname</DisplayName>
     </Owner>
     <AccessControlList>
-    <Grant>
-    <Grantee>grantee</Grantee>
-    <Permission>permission</Permission>
-    </Grant>
-    <Grant>…………</Grant>
+     <Grant>
+      <Grantee>grantee</Grantee>
+      <Permission>permission</Permission>
+     </Grant>
+     <Grant>…………</Grant>
     </AccessControlList>
-    </AccessControlPolicy>
+   </AccessControlPolicy>
 
 In the preceding ACL, **permission** indicates one of the five permission types supported by OBS. For details about the permission, see :ref:`Table 2 <en-us_topic_0125560406__table39984204>`. The format of content in **Grantee** varies with the grantee.
 
@@ -54,7 +54,7 @@ In the preceding ACL, **permission** indicates one of the five permission types 
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
        <ID>DomainId</ID>
        <DisplayName>displayname</DisplayName>
-       </Grantee>
+      </Grantee>
 
 #. A registered user group user as the grantee
 
@@ -62,7 +62,7 @@ In the preceding ACL, **permission** indicates one of the five permission types 
 
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group">
        <URI>http://acs.amazonaws.com/groups/global/AuthenticatedUsers</URI>
-       </Grantee>
+      </Grantee>
 
 #. An anonymous user as the grantee
 
@@ -70,13 +70,15 @@ In the preceding ACL, **permission** indicates one of the five permission types 
 
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group">
        <URI>http://acs.amazonaws.com/groups/global/AllUsers</URI>
-       </Grantee>
+      </Grantee>
 
 #. Log delivery user group user as the grantee
 
    .. code-block::
 
-      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group">   <URI>http://acs.amazonaws.com/groups/s3/LogDelivery</URI>   </Grantee>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group">
+       <URI>http://acs.amazonaws.com/groups/s3/LogDelivery</URI>
+      </Grantee>
 
 .. _en-us_topic_0125560406__table39984204:
 

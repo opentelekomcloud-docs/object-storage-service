@@ -214,7 +214,7 @@ An error response is returned if a request is incorrect, permission is incorrect
     <HostId>RkRCRDJENDc5MzdGQkQ4OUY3MTI4NTQ3NDk2Mjg0M0FB
     QUFBQUFBYmJiYmJiYmJD</HostId>
      ……
-    </Error>
+   </Error>
 
 :ref:`Table 9 <en-us_topic_0125560255__table127440>` describes the common elements contained in an error response.
 

@@ -298,15 +298,15 @@ A **Condition** block (element) can contain multiple key value pairs. The follow
 .. code-block::
 
    "Condition" : {
-      "DateGreaterThan" : {
-      "aws:CurrentTime" : "2009-04-16T12:00:00Z"
-      },
-      "DateLessThan": {
-      "aws:CurrentTime" : "2009-04-16T15:00:00Z"
-      },
-      "IpAddress" : {
-      "aws:SourceIp" : ["192.168.176.0/24","192.168.143.0/24"]
-      }
+       "DateGreaterThan": {
+           "aws:CurrentTime" : "2009-04-16T12:00:00Z"
+       },
+       "DateLessThan": {
+           "aws:CurrentTime" : "2009-04-16T15:00:00Z"
+       },
+       "IpAddress": {
+           "aws:SourceIp" : ["192.168.176.0/24", "192.168.143.0/24"]
+       }
     }
 
 A **Condition** block can contain two types of keys:
@@ -459,22 +459,24 @@ OBS is charged based on the services that you use. To prevent user data from bei
 
    .. code-block::
 
-      "Statement":[
+      "Statement": [
           {"Sid": "1",
            "Effect": "Allow",
            "Principal": {"CanonicalUser":["*"]},
            "Action": "s3:*",
            "Resource":["arn:aws:s3:::bucket/*"],
           },
-          {"Sid":"2",
-           "Effect":"Deny",
+          {"Sid": "2",
+           "Effect": "Deny",
            "Principal":{"CanonicalUser":["*"]},
-           "Action":["s3:*"],
-           "Resource":["arn:aws:s3:::bucket/*"],                             "Condition":{
-               "StringNotEquals":
-               {"aws:Referer":["www.example01.com","${null}"]}
-            }
-          }
+           "Action": ["s3:*"],
+           "Resource": ["arn:aws:s3:::bucket/*"],
+           "Condition":{
+               "StringNotEquals":{
+                    "aws:Referer": ["www.example01.com","${null}"]
+                   }
+               }
+           }
       ]
 
    If you set a whitelist in this way, you can perform operations on resources in buckets only when the value of the **referer** parameter is **www.example01.com** or is blank.
@@ -485,15 +487,17 @@ OBS is charged based on the services that you use. To prevent user data from bei
 
    .. code-block::
 
-      "Statement":[
-           {"Sid":"1",
-            "Effect":"Deny",
-            "Principal":{"CanonicalUser":["*"]},
-            "Action":["s3:*"],
-            "Resource":["arn:aws:s3:::bucket/*"],                             "Condition":{
-                "StringEquals":
-                {"aws:Referer":["www.example01.com","www.example02.com"]}
-             }
+      "Statement": [
+          {"Sid":"1",
+           "Effect":"Deny",
+           "Principal":{"CanonicalUser":["*"]},
+           "Action":["s3: *"],
+           "Resource":["arn:aws:s3:::bucket/*"],
+           "Condition":{
+               "StringEquals":{
+                   "aws:Referer":["www.example01.com", "www.example02.com"]
+                   }
+               }
            }
        ]
 

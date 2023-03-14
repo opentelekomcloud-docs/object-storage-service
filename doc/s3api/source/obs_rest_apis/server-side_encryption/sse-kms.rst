@@ -53,36 +53,23 @@ In SSE-KMS mode, OBS uses the keys provided by KMS for server-side encryption. W
 
 OBS supports bucket policies. If you want to restrict server-side encryption for all objects stored in a bucket, you can use bucket policies. For example, if an object upload request does not contain **x-amz-server-side-encryption:"aws:kms"**, the header for requesting server-side encryption (SSE-KMS), the following bucket policy rejects the upload request:
 
-{
+.. code-block::
 
-"Version":"2008-10-17",
-
-"Id":"PutObjPolicy",
-
-"Statement":[{
-
-"Sid":"DenyUnEncryptedObjectUploads",
-
-"Effect":"Deny",
-
-"Principal":"``*``",
-
-"Action":"s3:PutObject",
-
-"Resource":"arn:aws:s3:::YourBucket/``*``",
-
-"Condition":{
-
-"StringNotEquals":{
-
-"s3:x-amz-server-side-encryption":"aws:kms"
-
-}
-
-}
-
-}
-
-]
-
-}
+   {
+   "Version":"2008-10-17",
+   "Id":"PutObjPolicy",
+   "Statement": [
+           {
+               "Sid": "DenyUnEncryptedObjectUploads",
+               "Effect": "Deny",
+               "Principal": "*",
+               "Action": "s3:PutObject",
+               "Resource": "arn:aws:s3:::YourBucket/*",
+               "Condition": {
+                   "StringNotEquals": {
+                       "s3:x-amz-server-side-encryption": "aws:kms"
+                   }
+               }
+           }
+       ]
+   }
