@@ -7,8 +7,8 @@ Principals
 
 The principals indicate the users which the bucket policies apply to. These users can be accounts, federated users or federated user groups, and IAM users. Target users can be specified in either of the following ways:
 
--  **Include**: Specifies the user on whom the bucket policy statement takes effect.
--  **Exclude**: Specifies that on all users except the specified user the bucket policy statement takes effect.
+-  **Include**: The policy takes effect on specified users.
+-  **Exclude**: The policy takes effect on all users except the specified ones.
 
 Cloud Service User
 ------------------

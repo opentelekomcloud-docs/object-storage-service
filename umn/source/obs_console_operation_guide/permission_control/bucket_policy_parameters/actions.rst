@@ -9,8 +9,8 @@ Actions are related to resources. When the resource is the current bucket, actio
 
 Actions can be specified in either of the following ways:
 
--  **Include**: Specifies the actions on which the bucket policy takes effect.
--  **Exclude**: Specifies that on all except the specified actions the bucket policy takes effect.
+-  **Include**: The policy takes effect on specified actions.
+-  **Exclude**: The policy takes effect on all actions except the specified ones.
 
 Actions Related to Buckets
 --------------------------

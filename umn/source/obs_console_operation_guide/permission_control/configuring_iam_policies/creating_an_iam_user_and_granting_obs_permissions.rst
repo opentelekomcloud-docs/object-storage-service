@@ -2,8 +2,8 @@
 
 .. _obs_03_0122:
 
-Creating a User and Granting OBS Permissions
-============================================
+Creating an IAM User and Granting OBS Permissions
+=================================================
 
 Process
 -------
@@ -17,23 +17,23 @@ Process
 Procedure
 ---------
 
-#. Log in to the management console using a cloud service account.
+#. Log in to the management console with your account.
 
-#. On the top navigation menu, choose **Service List** > **Management & Deployment** > **Identity and Access Management**. The IAM console page is displayed.
+#. On the top menu bar, choose **Service List** > **Management & Deployment** > **Identity and Access Management**. The IAM console is displayed.
 
-#. Create a user group and grant the OBS permissions to the user group.
+#. Create a user group and assign OBS permissions to it.
 
-   User groups facilitate centralized user management and streamlined permissions management. Users in the same user group have the same permissions. Users created in IAM inherit permissions from the groups to which they belong.
+   A user group is a collection of users. By assigning permissions to a user group, you assign permissions to the users in this group. After you create an IAM user, add it to one or more user groups, so that it can inherit the permissions from the groups.
 
-   a. In the navigation pane on the left, click **User Groups**. The **User Groups** page is displayed.
+   a. In the navigation pane, choose **User Groups**. The **User Groups** page is displayed.
 
    b. Click **Create User Group**.
 
-   c. On the **Create User Group** page, enter a name for the user group and click **OK**.
+   c. Enter a user group name and click **OK**.
 
-      The user group is displayed in the user group list once the creation completes.
+      The user group is displayed in the user group list once the creation is complete.
 
-   d. Click **Modify** in the **Operation** column of the row where the created user group resides.
+   d. Locate the user group you created and click **Modify** in the **Operation** column of the row.
 
    e. In the **Group Permissions** area, locate **OBS (S3)**, click **Attach Policy** in the **Operation** column, select the policy name, and click **OK**.
 
@@ -43,7 +43,7 @@ Procedure
 
 #. Create a user.
 
-   a. In the navigation pane on the left, click **Users**. The **Users** page is displayed.
+   a. In the navigation pane, choose **Users**. The **Users** page is displayed.
    b. Click **Create User**.
    c. Set user information and click **Next**.
 

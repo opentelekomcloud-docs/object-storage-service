@@ -51,7 +51,7 @@ Enabling Versioning
 
       **Figure 3** Object with a delete marker
 
--  You can recover a deleted object by deleting the object version that has the **Delete Marker**. For details, see :ref:`Related Operations <en-us_topic_0066176932__section27691114163422>` in :ref:`Undeleting a File <en-us_topic_0066176932>`.
+-  You can recover a deleted object by deleting the delete marker. For details, see :ref:`Related Operations <en-us_topic_0066176932__section27691114163422>` in :ref:`Undeleting a File <en-us_topic_0066176932>`.
 
 -  After an object is deleted, you can specify the version number in **Deleted Objects** to permanently delete the object of the specified version. For details, see :ref:`Related Operations <en-us_topic_0045853756__section089519314196>` in :ref:`Deleting a File or Folder <en-us_topic_0045853756>`.
 

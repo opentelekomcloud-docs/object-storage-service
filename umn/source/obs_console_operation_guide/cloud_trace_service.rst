@@ -23,6 +23,54 @@ Procedure
 #. Then choose **Service List** > **Management & Deployment** > **Cloud Trace Service**. The **Trace List** page is displayed.
 #. For details about how to enable CTS, see `Enabling CTS <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030598498.html>`__ in the *CTS User Guide*.
 
+.. table:: **Table 1** OBS management operations logged by CTS
+
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Tracker Type | Operation                                                     | Resource | Trace Name               |
+   +==============+===============================================================+==========+==========================+
+   | Management   | Deleting a bucket                                             | bucket   | deleteBucket             |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting the CORS configuration a Bucket                      | bucket   | deleteBucketCors         |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting the custom domain name configuration                 | bucket   | deleteBucketCustomdomain |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting the lifecycle configuration of a bucket              | bucket   | deleteBucketLifecycle    |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting a bucket policy                                      | bucket   | deleteBucketPolicy       |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting the tag configuration of a bucket                    | bucket   | deleteBucketTagging      |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting the static website hosting configuration of a bucket | bucket   | deleteBucketWebsite      |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Deleting bucket data                                          | bucket   | deleteBucketdata         |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Creating a bucket                                             | bucket   | createBucket             |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket ACL                                    | bucket   | setBucketAcl             |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the CORS rule for a bucket                        | bucket   | setBucketCors            |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Setting the custom domain name for a bucket                   | bucket   | setBucketCustomdomain    |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket lifecycle rules                        | bucket   | setBucketLifecycle       |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket logging function                       | bucket   | setBucketLogging         |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the event notification function for buckets       | bucket   | setBucketNotification    |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket policy                                 | bucket   | setBucketPolicy          |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket quota                                  | bucket   | setBucketQuota           |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket storage class                          | bucket   | setBucketStorageclass    |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the bucket tag                                    | bucket   | setBucketTagging         |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the versioning function for buckets               | bucket   | setBucketVersioning      |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+   | Management   | Configuring the static domain name for buckets                | bucket   | setBucketWebsite         |
+   +--------------+---------------------------------------------------------------+----------+--------------------------+
+
 Follow-up Procedure
 -------------------
 

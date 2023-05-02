@@ -17,7 +17,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. On the right of the **Overview** page, select **CORS Rules** in the **Basic Configurations** area. The **CORS Rules** page is displayed.
+#. On the right of the **Overview** page, click **CORS Rules** in the **Basic Configurations** area. The **CORS Rules** page is displayed.
 
    Alternatively, you can choose **Basic Configurations** > **CORS Rules** in the navigation pane.
 

@@ -8,6 +8,7 @@ Managing Objects
 -  :ref:`Creating a Folder <obs_03_0316>`
 -  :ref:`Uploading a File <en-us_topic_0045853663>`
 -  :ref:`Downloading a File <obs_03_0317>`
+-  :ref:`Sharing a File <obs_03_0046>`
 -  :ref:`Searching for a File or Folder <obs_03_0318>`
 -  :ref:`Accessing an Object Using Its URL <obs_03_0319>`
 -  :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`
@@ -22,6 +23,7 @@ Managing Objects
    creating_a_folder
    uploading_a_file
    downloading_a_file
+   sharing_a_file
    searching_for_a_file_or_folder
    accessing_an_object_using_its_url
    restoring_objects_from_the_cold_storage

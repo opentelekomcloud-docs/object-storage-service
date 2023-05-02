@@ -11,7 +11,7 @@ Security
 -  :ref:`How Does OBS Prevent My Data from Being Stolen? <obs_faq_0041>`
 -  :ref:`Can a Pair of AK and SK Be Replaced When They Are Being Used to Access OBS? <obs_faq_0043>`
 -  :ref:`Can a Pair of AK and SK Be Used by Multiple Users to Access OBS? <obs_faq_0021>`
--  :ref:`Which Encryption Technologies Are Supported by OBS? <obs_faq_0044>`
+-  :ref:`What Encryption Technologies Can I Use to Encrypt Data on OBS? <obs_faq_0044>`
 
 .. toctree::
    :maxdepth: 1
@@ -23,4 +23,4 @@ Security
    how_does_obs_prevent_my_data_from_being_stolen
    can_a_pair_of_ak_and_sk_be_replaced_when_they_are_being_used_to_access_obs
    can_a_pair_of_ak_and_sk_be_used_by_multiple_users_to_access_obs
-   which_encryption_technologies_are_supported_by_obs
+   what_encryption_technologies_can_i_use_to_encrypt_data_on_obs

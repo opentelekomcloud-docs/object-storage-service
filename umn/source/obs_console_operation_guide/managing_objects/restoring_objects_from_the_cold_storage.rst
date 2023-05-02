@@ -62,7 +62,7 @@ Procedure
 
    .. note::
 
-      The system checks the file restore status at UTC 00:00 everyday. The system starts counting down the expiration time from the time when the latest check is complete.
+      The system checks the file restore status at UTC 00:00 every day. The system starts counting down the expiration time from the time when the latest check is complete.
 
 Related Operations
 ------------------
