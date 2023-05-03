@@ -63,7 +63,7 @@ Procedure
 
    c. Click **Create**. The **Create Event Notification** dialog box is displayed.
 
-   d. Configure event notification parameters, as shown in :ref:`Figure 3 <obs_03_0333__fig377201314360>`. After the notification is configured, all specified operations on the **SMN** folder in bucket **testbucket** will be informed of an employee. For details about parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
+   d. Configure event notification parameters, as shown in :ref:`Figure 3 <obs_03_0333__fig377201314360>`. After the notification is configured, an employee will be informed of all specified operations on the **SMN** folder in bucket **testbucket**. For details about parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
 
       .. note::
 
@@ -90,7 +90,7 @@ Verification
 
    .. note::
 
-      For details about each field in the notification content, see :ref:`SMN-Enabled Event Notification <en-us_topic_0045853816>`.
+      For details about each field in the notification content, see :ref:`SMN-Enabled Event Notifications <en-us_topic_0045853816>`.
 
    .. _obs_03_0333__fig1183879515218:
 

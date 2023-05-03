@@ -17,7 +17,7 @@ OBS Console Operation Guide
 -  :ref:`Versioning <en-us_topic_0045853849>`
 -  :ref:`Logging <obs_03_0328>`
 -  :ref:`Tags <obs_03_0330>`
--  :ref:`Event Notification <obs_03_0332>`
+-  :ref:`Event Notifications <obs_03_0332>`
 -  :ref:`Lifecycle Management <obs_03_0334>`
 -  :ref:`Configuring User-Defined Domain Names <obs_03_0030>`
 -  :ref:`Static Website Hosting <obs_03_0336>`
@@ -44,7 +44,7 @@ OBS Console Operation Guide
    versioning/index
    logging/index
    tags/index
-   event_notification/index
+   event_notifications/index
    lifecycle_management/index
    configuring_user-defined_domain_names/index
    static_website_hosting/index

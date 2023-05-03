@@ -5,14 +5,14 @@
 Deleting a File
 ===============
 
-You can delete unnecessary files one by one or in a batch to save space and costs.
+You can delete unnecessary files one by one or in a batch on OBS Console to save space and money.
 
 Procedure
 ---------
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Select the file you want to delete, and choose **More** > **Delete** on the right.
 

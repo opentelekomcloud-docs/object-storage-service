@@ -20,10 +20,7 @@ Procedure
 
    .. _obs_03_0335__fig1529154319415:
 
-   .. figure:: /_static/images/en-us_image_0000001449684800.png
-      :alt: **Figure 1** Creating a lifecycle rule
-
-      **Figure 1** Creating a lifecycle rule
+   **Figure 1** Creating a lifecycle rule
 
    |image1|
 

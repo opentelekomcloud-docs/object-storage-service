@@ -2,8 +2,8 @@
 
 .. _obs_faq_0044:
 
-Which Encryption Technologies Are Supported by OBS?
-===================================================
+What Encryption Technologies Can I Use to Encrypt Data on OBS?
+==============================================================
 
 Before uploading your data to OBS, you can encrypt the data to ensure security during transmission and storage. OBS support various encryption technologies used on clients.
 
@@ -13,4 +13,4 @@ The objects to be uploaded can be encrypted using SSE-KMS. You need to create a 
 
 After server-side encryption is enabled, objects to be uploaded will be encrypted and stored on the server. When downloading the encrypted objects, the encrypted data will be decrypted on the server and displayed in plaintext to users.
 
-OBS supports both SSE-KMS and server-side encryption with customer-provided keys (SSE-C) by invoking APIs. In SSE-C mode, OBS uses the keys and MD5 values provided by customers for server-side encryption.
+OBS provides SSE-KMS and SSE-C that can be configured by calling APIs. With SSE-C, OBS uses the customer-provided keys and their MD5 values for server-side encryption.

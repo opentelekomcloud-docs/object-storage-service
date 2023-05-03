@@ -10,7 +10,7 @@ This topic describes how to configure an SMN-enabled event notification rule on 
 Background Information
 ----------------------
 
-For details, see :ref:`SMN-Enabled Event Notification <en-us_topic_0045853816>`.
+For details, see :ref:`SMN-Enabled Event Notifications <en-us_topic_0045853816>`.
 
 Procedure
 ---------

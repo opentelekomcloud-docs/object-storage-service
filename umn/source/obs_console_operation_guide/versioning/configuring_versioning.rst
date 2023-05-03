@@ -34,7 +34,7 @@ After versioning is enabled, on the object details page that is displayed, click
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 #. In the navigation pane, click **Objects**.
-#. In the object list, click the target object. The system displays the object information.
+#. In the object list, click the object you want to go to the object details page.
 #. On the **Versions** tab, view all versions of the object.
 #. Perform the following operations on object versions:
 

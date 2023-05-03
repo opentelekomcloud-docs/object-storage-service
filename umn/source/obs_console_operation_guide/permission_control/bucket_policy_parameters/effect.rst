@@ -7,8 +7,8 @@ Effect
 
 A bucket policy can either allow or deny the access requests that match the configuration.
 
--  **Allow**: Indicates that access requests are allowed, if they match the configurations of the bucket policy.
--  **Deny**: Indicates that access requests are denied, if they match the configurations of the bucket policy.
+-  **Allow**: The policy allows the matched requests.
+-  **Deny**: The policy denies the matched requests.
 
 When a bucket policy contains both the allow and deny effects, the deny effect prevails. The following figure shows the judgment process.
 

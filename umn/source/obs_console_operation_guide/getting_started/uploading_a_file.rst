@@ -26,7 +26,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Go to the folder to which objects are uploaded. Click **Upload Object**. The **Upload Object** dialog box is displayed.
 
@@ -50,7 +50,7 @@ Procedure
 
    You can also click **add file** in the **Upload Object** area to select files.
 
-#. **Optional**: Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading a File with Server-Side Encryption <obs_03_0322>`.
+#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading a File in Server-Side Encryption Mode <obs_03_0322>`.
 
    .. note::
 

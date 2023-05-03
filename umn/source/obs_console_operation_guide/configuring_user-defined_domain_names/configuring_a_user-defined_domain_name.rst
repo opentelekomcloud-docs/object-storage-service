@@ -5,11 +5,6 @@
 Configuring a User-Defined Domain Name
 ======================================
 
-Prerequisites
--------------
-
-You have created a bucket and uploaded your website file to it.
-
 Procedure
 ---------
 
@@ -17,7 +12,7 @@ Procedure
 
 #. In the navigation pane, choose **Domain Name Mgmt**.
 
-#. Click **Bind User Domain Name** and enter the domain name to be configured, as shown in :ref:`Figure 1 <obs_03_0032__fig53010339108>`.
+#. Click **Bind User Domain Name**. In the displayed dialog box, enter the domain name to configure, as shown in :ref:`Figure 1 <obs_03_0032__fig53010339108>`.
 
    The suffix of a user-defined domain name can contain 2 to 6 uppercase or lowercase letters.
 
