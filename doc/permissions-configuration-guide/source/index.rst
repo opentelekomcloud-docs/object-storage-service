@@ -12,4 +12,3 @@ Object Storage Service - Permissions Configuration Guide
    configuration_cases_in_typical_permission_control_scenarios/index
    appendix/index
    change_history
-
