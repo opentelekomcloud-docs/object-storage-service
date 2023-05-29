@@ -22,7 +22,7 @@ This operation supports server-side encryption.
 
 For a single upload, the size of the object to be uploaded ranges [0, 5 GB]. To upload a file greater than 5 GB, see :ref:`Operations on Multipart Upload <obs_04_0096>`.
 
-OBS does not have real folders. To facilitate data management, OBS provides a method to simulate a folder by adding a slash (/) to the object name, for example, **test/123.jpg**. You can simulate **test** as a folder and **123.jpg** as the name of a file under the **test** folder. However, the object key remains **test/123.jpg**. Objects named in this format appear as folders on the console.
+OBS does not have real folders. To facilitate data management, OBS provides a method to simulate a folder by adding a slash (/) to the object name, for example, **test/123.jpg**. You can simulate **test** as a folder and **123.jpg** as the name of a file under the **test** folder. However, the object key remains **test/123.jpg**. Objects named in this format appear as folders on the console. When you upload an object larger than 0 in size using this format, an empty folder will be displayed on the console, but the occupied storage capacity is the actual object size.
 
 Differences Between PUT and POST Methods
 ----------------------------------------
@@ -200,7 +200,7 @@ This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__t
    | success-action-redirect                         | Indicates the address (URL) to which a successfully responded request is redirected.                                                                                                                                                     | No                                                |
    |                                                 |                                                                                                                                                                                                                                          |                                                   |
    |                                                 | -  If the value is valid and the request is successful, OBS returns status code 303. **Location** contains **success_action_redirect** as well as the bucket name, object name, and object ETag.                                         |                                                   |
-   |                                                 | -  If this parameter is invalid, OBS ignores this parameter. The response code is 204, and the **Location** is the object address.                                                                                                       |                                                   |
+   |                                                 | -  If this parameter value is invalid, OBS ignores this parameter. In such case, the **Location** header is the object address, and OBS returns the response code based on whether the operation succeeds or fails.                      |                                                   |
    |                                                 |                                                                                                                                                                                                                                          |                                                   |
    |                                                 | Type: string                                                                                                                                                                                                                             |                                                   |
    +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
@@ -236,7 +236,7 @@ In addition to the common response headers, the following message headers may al
 
 .. _obs_04_0080__table24122936102344:
 
-.. table:: **Table 2** Additional response header parameters
+.. table:: **Table 2** Additional response headers
 
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Header                                          | Description                                                                                                                                                                       |

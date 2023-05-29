@@ -71,11 +71,11 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the following message headers may also be used. For details, see :ref:`Table 2 <obs_04_0085__table862048515455>`.
+If versioning is enabled for the bucket, the headers listed in :ref:`Table 2 <obs_04_0085__table862048515455>` may also be used.
 
 .. _obs_04_0085__table862048515455:
 
-.. table:: **Table 2** Additional response header parameters
+.. table:: **Table 2** Additional response headers
 
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+
    | Header                            | Description                                                                                                                |
@@ -92,7 +92,7 @@ In addition to the common response headers, the following message headers may al
    |                                   |                                                                                                                            |
    |                                   | Valid value: character string                                                                                              |
    |                                   |                                                                                                                            |
-   |                                   | There is no default value.                                                                                                 |
+   |                                   | Default value: none                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements

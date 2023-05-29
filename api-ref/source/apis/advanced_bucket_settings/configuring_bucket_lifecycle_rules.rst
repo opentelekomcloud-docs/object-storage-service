@@ -18,7 +18,7 @@ You can perform this operation to create or update the lifecycle configuration o
 
 .. note::
 
-   Objects are permanently deleted upon the expiration of their lifecycle time, and the deleted objects cannot be restored.
+   -  Expired objects deleted based on a lifecycle rule cannot be recovered.
 
 To perform this operation, you must have the **PutLifecycleConfiguration** permission. By default, only the bucket owner can perform this operation. The bucket owner can grant the permission to other users by configuring the bucket policy or user policy.
 
@@ -126,8 +126,9 @@ In this request, you need to specify the lifecycle configuration in the request 
       If the object of the latest version has the DeleteMarker and the object has other versions, all versions of the object remain unchanged.
 
 -  The following lists the processing when the versioning is enabled or suspended for a bucket and objects of the latest versions meet the transition rules:
--  If the latest version of the object has the DeleteMarker, the storage class of this version will not be transitioned.
--  If the latest version of the object does not have the DeleteMarker and meets the transition rule, the storage class of this version will be transitioned.
+
+   -  If the latest version of the object has the DeleteMarker, the storage class of this version will not be transitioned.
+   -  If the latest version of the object does not have the DeleteMarker and meets the transition rule, the storage class of this version will be transitioned.
 
 .. _obs_04_0034__table49391898171726:
 
@@ -226,7 +227,7 @@ In this request, you need to specify the lifecycle configuration in the request 
    |                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                            |
    |                                | Ancestor node: AbortIncompleteMultipartUpload                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                            |
    +--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Prefix                         | Object name prefix identifying one or more objects to which the rule applies.                                                                                                                                                                                                                                                                                                                                                                                                                                               | Yes                                                                                                                                                        |
+   | Prefix                         | Object name prefix that identifies one or more objects to which the rule applies.                                                                                                                                                                                                                                                                                                                                                                                                                                           | Yes                                                                                                                                                        |
    |                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                            |
    |                                | Type: string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                            |
    |                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                            |
@@ -269,7 +270,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response contains no elements.
+This response involves no elements.
 
 Error Responses
 ---------------

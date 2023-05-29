@@ -125,7 +125,7 @@ In addition to the common response headers, the following message headers may al
 
 .. _obs_04_0102__table31698209142128:
 
-.. table:: **Table 3** Additional response header parameters
+.. table:: **Table 3** Additional response headers
 
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Header                                          | Description                                                                                                                                                                       |

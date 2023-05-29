@@ -21,6 +21,9 @@ Advanced Bucket Settings
 -  :ref:`Obtaining the Event Notification Configuration of a Bucket <obs_04_0040>`
 -  :ref:`Configuring Storage Class for a Bucket <obs_04_0044>`
 -  :ref:`Obtaining Bucket Storage Class Information <obs_04_0045>`
+-  :ref:`Configuring Cross-Region Replication for a Bucket <obs_04_0046>`
+-  :ref:`Obtaining the Cross-Region Replication Configuration of a Bucket <obs_04_0047>`
+-  :ref:`Deleting the Cross-Region Replication Configuration of a Bucket <obs_04_0048>`
 -  :ref:`Configuring Tags for a Bucket <obs_04_0049>`
 -  :ref:`Obtaining Bucket Tags <obs_04_0050>`
 -  :ref:`Deleting Tags <obs_04_0051>`
@@ -54,6 +57,9 @@ Advanced Bucket Settings
    obtaining_the_event_notification_configuration_of_a_bucket
    configuring_storage_class_for_a_bucket
    obtaining_bucket_storage_class_information
+   configuring_cross-region_replication_for_a_bucket
+   obtaining_the_cross-region_replication_configuration_of_a_bucket
+   deleting_the_cross-region_replication_configuration_of_a_bucket
    configuring_tags_for_a_bucket
    obtaining_bucket_tags
    deleting_tags
