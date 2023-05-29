@@ -20,3 +20,9 @@ The following table lists the batch deletion support for different OBS tools.
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+
    | APIs        | Supported. A maximum of 1000 objects can be deleted at a time.                                                                   |
    +-------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+.. note::
+
+   The batch deletion performance is negatively correlated with the number of objects in a single request. When it comes to QPS, deleting *N* objects is counted as *N* operations. If a large number of objects named with prefixes in lexicographic order are deleted, lots of requests may be concentrated in a specific partition, which results in hot access. This limits the request rate in the hot partition and increases access delay.
+
+   To address this problem, you can reduce the number of objects in a single batch deletion request, initiate more concurrent requests, and name objects with random prefixes.
