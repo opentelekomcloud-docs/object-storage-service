@@ -33,9 +33,9 @@ otcdocs_doc_environment = 'public'
 otcdocs_doc_link = '/object-storage-service/parallel-file-system/'
 otcdocs_doc_title = 'Parallel File System (PFS)'
 otcdocs_doc_type = 'parallel-file-system'
+otcdocs_service_category = 'storage'
 otcdocs_service_title = 'Object Storage Service'
 otcdocs_service_type = 'obs'
-otcdocs_service_category = 'storage'
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
