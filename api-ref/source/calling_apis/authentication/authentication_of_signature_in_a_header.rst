@@ -502,6 +502,6 @@ Signature Algorithm in Python
    else:
         hashed = hmac.new(yourSecretAccessKeyID.encode('UTF-8'), canonical_string.encode('UTF-8'),hashlib.sha1)
         encode_canonical = binascii.b2a_base64(hashed.digest())[:-1].decode('UTF-8')
-   print encode_canonical
+   print(encode_canonical)
 
 The calculation result of the signature is **ydH8ffpcbS6YpeOMcEZfn0wE90c=**, which varies depending on the execution time.
