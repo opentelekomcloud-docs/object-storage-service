@@ -15,6 +15,7 @@ FAQs
 -  :ref:`Event Notification <obs_faq_0900>`
 -  :ref:`How Do I Use Lifecycle Management? <obs_faq_0400>`
 -  :ref:`How Do I Use Static Website Hosting? <obs_faq_0500>`
+-  :ref:`How Do I Use Cross-Region Replication? <obs_03_0016>`
 
 .. toctree::
    :maxdepth: 1
@@ -30,3 +31,4 @@ FAQs
    event_notification/index
    how_do_i_use_lifecycle_management/index
    how_do_i_use_static_website_hosting/index
+   how_do_i_use_cross-region_replication/index
