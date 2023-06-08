@@ -18,6 +18,7 @@ OBS Console Operation Guide
 -  :ref:`Logging <obs_03_0328>`
 -  :ref:`Tags <obs_03_0330>`
 -  :ref:`Event Notifications <obs_03_0332>`
+-  :ref:`Cross-Region Replication <obs_03_0001>`
 -  :ref:`Lifecycle Management <obs_03_0334>`
 -  :ref:`Configuring User-Defined Domain Names <obs_03_0030>`
 -  :ref:`Static Website Hosting <obs_03_0336>`
@@ -25,6 +26,7 @@ OBS Console Operation Guide
 -  :ref:`URL Validation <obs_03_0340>`
 -  :ref:`Cloud Trace Service <obs_03_0020>`
 -  :ref:`Task Management <obs_03_0076>`
+-  :ref:`Related Operations <obs_03_0036>`
 -  :ref:`Troubleshooting <obs_03_0342>`
 -  :ref:`Error Code List <obs_03_0348>`
 
@@ -45,6 +47,7 @@ OBS Console Operation Guide
    logging/index
    tags/index
    event_notifications/index
+   cross-region_replication/index
    lifecycle_management/index
    configuring_user-defined_domain_names/index
    static_website_hosting/index
@@ -52,5 +55,6 @@ OBS Console Operation Guide
    url_validation/index
    cloud_trace_service
    task_management
+   related_operations/index
    troubleshooting/index
    error_code_list
