@@ -31,7 +31,7 @@ otcdocs_repo_name = 'opentelekomcloud-docs/object-storage-service'
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
 otcdocs_doc_link = '/object-storage-service/swiftapi/'
-otcdocs_doc_title = 'API Reference (Swift)'
+otcdocs_doc_title = 'API Reference (Swift) - Deprecated'
 otcdocs_doc_type = 'swiftapi'
 otcdocs_service_category = 'storage'
 otcdocs_service_title = 'Object Storage Service'
@@ -90,7 +90,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Object Storage Service - API Reference (Swift)"
+html_title = "Object Storage Service - API Reference (Swift) - Deprecated"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -105,6 +105,6 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-swiftapi.tex',
-     u'Object Storage Service - API Reference (Swift)',
+     u'Object Storage Service - API Reference (Swift) - Deprecated',
      u'OpenTelekomCloud', 'manual'),
 ]
