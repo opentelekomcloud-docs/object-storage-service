@@ -66,21 +66,21 @@ This request contains elements to configure the bucket versioning in XML format.
 
 .. table:: **Table 1** Elements for configuring bucket versioning
 
-   +-------------------------+----------------------------------------+-----------------------+
-   | Element                 | Description                            | Mandatory             |
-   +=========================+========================================+=======================+
-   | VersioningConfiguration | Root node for configuring versioning   | Yes                   |
-   |                         |                                        |                       |
-   |                         | Ancestor node: none                    |                       |
-   +-------------------------+----------------------------------------+-----------------------+
-   | Status                  | Versioning status of the bucket        | Yes                   |
-   |                         |                                        |                       |
-   |                         | Type: string                           |                       |
-   |                         |                                        |                       |
-   |                         | Ancestor node: VersioningConfiguration |                       |
-   |                         |                                        |                       |
-   |                         | Value options: Enabled, Suspended      |                       |
-   +-------------------------+----------------------------------------+-----------------------+
+   +-------------------------+-------------------------------------------+-----------------------+
+   | Element                 | Description                               | Mandatory             |
+   +=========================+===========================================+=======================+
+   | VersioningConfiguration | Root node for configuring versioning      | Yes                   |
+   |                         |                                           |                       |
+   |                         | Ancestor node: none                       |                       |
+   +-------------------------+-------------------------------------------+-----------------------+
+   | Status                  | Versioning status of the bucket           | Yes                   |
+   |                         |                                           |                       |
+   |                         | Type: string                              |                       |
+   |                         |                                           |                       |
+   |                         | Ancestor node: VersioningConfiguration    |                       |
+   |                         |                                           |                       |
+   |                         | Value options: **Enabled**, **Suspended** |                       |
+   +-------------------------+-------------------------------------------+-----------------------+
 
 Response Syntax
 ---------------

@@ -76,7 +76,7 @@ This response contains elements to specify the bucket versioning status. :ref:`T
    |                                   |                                           |
    |                                   | Type: string                              |
    |                                   |                                           |
-   |                                   | Value options: Enabled, Suspended         |
+   |                                   | Value options: **Enabled**, **Suspended** |
    +-----------------------------------+-------------------------------------------+
 
 Error Responses

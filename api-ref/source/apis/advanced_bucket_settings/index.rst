@@ -36,6 +36,8 @@ Advanced Bucket Settings
 -  :ref:`Configuring Bucket Encryption <obs_04_0062>`
 -  :ref:`Obtaining Bucket Encryption Configuration <obs_04_0063>`
 -  :ref:`Deleting the Encryption Configuration of a Bucket <obs_04_0064>`
+-  :ref:`Configuring the Requester-Pays Function for a Bucket <obs_04_0068>`
+-  :ref:`Obtaining the Requester-Pays Configuration Information of a Bucket <obs_04_0069>`
 
 .. toctree::
    :maxdepth: 1
@@ -72,3 +74,5 @@ Advanced Bucket Settings
    configuring_bucket_encryption
    obtaining_bucket_encryption_configuration
    deleting_the_encryption_configuration_of_a_bucket
+   configuring_the_requester-pays_function_for_a_bucket
+   obtaining_the_requester-pays_configuration_information_of_a_bucket

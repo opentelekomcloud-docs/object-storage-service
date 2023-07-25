@@ -8,7 +8,7 @@ Querying Bucket Storage Quota
 Functions
 ---------
 
-Only the bucket owner can query information about the bucket storage quota. However, an inactive owner is not allowed to get the bucket quota. The bucket storage quota is measured by byte. **0** indicates that no upper limit is set.
+A bucket owner can query the bucket storage quota, but a bucket owner who is frozen due to arrears cannot. The bucket storage quota is measured by byte. **0** indicates that no upper limit is set.
 
 Request Syntax
 --------------

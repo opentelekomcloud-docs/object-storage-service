@@ -29,27 +29,27 @@ This request uses parameters to specify which parts in a multipart upload will b
 
 .. table:: **Table 1** Request parameters
 
-   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                                                                                                              | Mandatory             |
-   +=======================+==========================================================================================================================================+=======================+
-   | uploadId              | Indicates a multipart upload ID.                                                                                                         | Yes                   |
-   |                       |                                                                                                                                          |                       |
-   |                       | Type: string                                                                                                                             |                       |
-   |                       |                                                                                                                                          |                       |
-   |                       | Default value: none                                                                                                                      |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | max-parts             | Specifies the maximum number of parts to be listed.                                                                                      | No                    |
-   |                       |                                                                                                                                          |                       |
-   |                       | Type: string                                                                                                                             |                       |
-   |                       |                                                                                                                                          |                       |
-   |                       | Default value: 1000                                                                                                                      |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | part-number           | Indicates the part after which the part listing begins. OBS lists only parts with greater numbers than that specified by this parameter. | No                    |
-   |                       |                                                                                                                                          |                       |
-   | -marker               | Type: string                                                                                                                             |                       |
-   |                       |                                                                                                                                          |                       |
-   |                       | Default value: none                                                                                                                      |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Parameter             | Description                                                                                                                | Mandatory             |
+   +=======================+============================================================================================================================+=======================+
+   | uploadId              | ID of the multipart upload                                                                                                 | Yes                   |
+   |                       |                                                                                                                            |                       |
+   |                       | Type: string                                                                                                               |                       |
+   |                       |                                                                                                                            |                       |
+   |                       | Default value: none                                                                                                        |                       |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | max-parts             | Maximum number of parts that can be listed                                                                                 | No                    |
+   |                       |                                                                                                                            |                       |
+   |                       | Type: integer                                                                                                              |                       |
+   |                       |                                                                                                                            |                       |
+   |                       | Default value: 1000                                                                                                        |                       |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | part-number           | Part after which the part listing begins. OBS lists only parts with greater numbers than that specified by this parameter. | No                    |
+   |                       |                                                                                                                            |                       |
+   | -marker               | Type: integer                                                                                                              |                       |
+   |                       |                                                                                                                            |                       |
+   |                       | Default value: none                                                                                                        |                       |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 Request Headers
 ---------------
@@ -111,7 +111,7 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Element                           | Description                                                                                                                                               |
    +===================================+===========================================================================================================================================================+
-   | ListPartsResult                   | Indicates the container for responses to List Parts requests.                                                                                             |
+   | ListPartsResult                   | Container for responses to part listing requests                                                                                                          |
    |                                   |                                                                                                                                                           |
    |                                   | Type: container                                                                                                                                           |
    |                                   |                                                                                                                                                           |
@@ -119,25 +119,25 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: none                                                                                                                                            |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Bucket                            | Indicates a bucket name.                                                                                                                                  |
+   | Bucket                            | Name of the bucket                                                                                                                                        |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Key                               | Indicates an object name.                                                                                                                                 |
+   | Key                               | Object name                                                                                                                                               |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | UploadId                          | Indicates the ID of a multipart upload.                                                                                                                   |
+   | UploadId                          | ID of the multipart upload                                                                                                                                |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Initiator                         | Indicates the initiator of a multipart upload.                                                                                                            |
+   | Initiator                         | Initiator of the multipart upload                                                                                                                         |
    |                                   |                                                                                                                                                           |
    |                                   | Type: container                                                                                                                                           |
    |                                   |                                                                                                                                                           |
@@ -153,27 +153,27 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | ID                                | ID of the domain to which the owner belongs                                                                                                               |
+   | ID                                | ID of the domain where the owner belongs                                                                                                                  |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: Initiator or Owner                                                                                                                              |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | StorageClass                      | Indicates the storage type.                                                                                                                               |
+   | StorageClass                      | Storage class                                                                                                                                             |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
-   |                                   | Value options: **STANDARD** \| **WARM** \| **COLD**                                                                                                       |
+   |                                   | Value options: **STANDARD**, **WARM**, **COLD**                                                                                                           |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | PartNumberMarker                  | Part number after which listing parts begins.                                                                                                             |
+   | PartNumberMarker                  | Part number after which listing parts begins                                                                                                              |
    |                                   |                                                                                                                                                           |
    |                                   | Type: integer                                                                                                                                             |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | NextPartNumberMarker              | Indicates the value of **PartNumberMarker** in the next request when the returned result is incomplete.                                                   |
+   | NextPartNumberMarker              | Value of **PartNumberMarker** in the next request when the returned result is incomplete                                                                  |
    |                                   |                                                                                                                                                           |
    |                                   | Type: integer                                                                                                                                             |
    |                                   |                                                                                                                                                           |
@@ -185,13 +185,13 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | IsTruncated                       | Indicates whether the returned part list is truncated. **true**: Not all results are returned. **false**: All results have been returned.                 |
+   | IsTruncated                       | Whether the returned part list is truncated. **true**: Not all results are returned. **false**: All results have been returned.                           |
    |                                   |                                                                                                                                                           |
    |                                   | Type: boolean                                                                                                                                             |
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult                                                                                                                                 |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Part                              | Indicates the container for elements related to a particular part.                                                                                        |
+   | Part                              | Container for elements related to a particular part.                                                                                                      |
    |                                   |                                                                                                                                                           |
    |                                   | Type: string                                                                                                                                              |
    |                                   |                                                                                                                                                           |
@@ -207,7 +207,7 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult.Part                                                                                                                            |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | LastModified                      | Indicates the date and time a part was uploaded.                                                                                                          |
+   | LastModified                      | When a part was uploaded                                                                                                                                  |
    |                                   |                                                                                                                                                           |
    |                                   | Type: date                                                                                                                                                |
    |                                   |                                                                                                                                                           |
@@ -219,7 +219,7 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                           |
    |                                   | Ancestor: ListPartsResult.Part                                                                                                                            |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Size                              | Indicates the size of an uploaded part.                                                                                                                   |
+   | Size                              | Size of an uploaded part                                                                                                                                  |
    |                                   |                                                                                                                                                           |
    |                                   | Type: integer                                                                                                                                             |
    |                                   |                                                                                                                                                           |
