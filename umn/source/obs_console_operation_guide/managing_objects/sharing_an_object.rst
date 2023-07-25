@@ -2,8 +2,8 @@
 
 .. _obs_03_0046:
 
-Sharing a File
-==============
+Sharing an Object
+=================
 
 Scenarios
 ---------
@@ -34,9 +34,9 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
-#. Locate the file to be shared and click **Share** under the **Operation** column. The dialog box as given in :ref:`Figure 1 <obs_03_0046__fig125731684458>` is displayed.
+#. Locate the file to be shared and click **Share** in the **Operation** column. The dialog box as given in :ref:`Figure 1 <obs_03_0046__fig125731684458>` is displayed.
 
    Once the **Share File** dialog box is opened, the URL is effective and valid for five minutes by default. If you change the validity period, the authentication information in the URL changes accordingly, and the URL's new validity period starts upon the change.
 

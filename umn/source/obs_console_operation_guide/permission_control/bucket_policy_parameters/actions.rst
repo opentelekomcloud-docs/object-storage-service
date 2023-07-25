@@ -5,7 +5,7 @@
 Actions
 =======
 
-Actions are related to resources. When the resource is the current bucket, actions configured in the bucket policy must be bucket related actions. When objects are specified as resources, actions configured in the bucket policy must be object related actions.
+Actions are related to resources. When the resource is the current bucket, bucket-related actions should be configured in a bucket policy. When objects are specified as resources, object-related actions should be configured in a bucket policy.
 
 Actions can be specified in either of the following ways:
 

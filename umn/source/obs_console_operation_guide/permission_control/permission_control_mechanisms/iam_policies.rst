@@ -37,6 +37,23 @@ Policy syntax example:
 .. code-block::
 
    {
+         "Version": "1.1",
+         "Statement": [
+               {
+                     "Effect": "Allow",
+                     "Action": [
+                           "obs:bucket:ListAllMybuckets",
+                           "obs:bucket:HeadBucket",
+                           "obs:bucket:ListBucket",
+                           "obs:bucket:GetBucketLocation"
+                     ]
+               }
+         ]
+   }
+
+.. code-block::
+
+   {
            "Version": "1.0",
            "Statement": [
                    {
@@ -53,23 +70,24 @@ Policy syntax example:
 
 .. table:: **Table 1** Policy syntax parameters
 
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter                         | Description                                                                                                                                                                                                                               |
-   +===================================+===========================================================================================================================================================================================================================================+
-   | Version                           | The version number of a policy.                                                                                                                                                                                                           |
-   |                                   |                                                                                                                                                                                                                                           |
-   |                                   | -  **1.0**: RBAC policies. An RBAC policy consists of permissions for an entire service. Users in a group with such a policy assigned are granted all of the permissions required for that service.                                       |
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Statement                         | Permissions defined by a policy, including **Effect** and **Action**.                                                                                                                                                                     |
-   |                                   |                                                                                                                                                                                                                                           |
-   |                                   | -  **Effect**                                                                                                                                                                                                                             |
-   |                                   |                                                                                                                                                                                                                                           |
-   |                                   |    The valid values for **Effect** are **Allow** and **Deny**. System policies contain only **Allow** statements.                                                                                                                         |
-   |                                   |                                                                                                                                                                                                                                           |
-   |                                   | -  **Action**                                                                                                                                                                                                                             |
-   |                                   |                                                                                                                                                                                                                                           |
-   |                                   |    Permissions of specific operations on resources. A policy can contain one or more permissions. The wildcard (``*``) is allowed to indicate all of the services, resource types, or operations depending on its location in the action. |
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                          |
+   +===================================+======================================================================================================================================================================================================================================================================================================================================================+
+   | Version                           | The version number of a policy.                                                                                                                                                                                                                                                                                                                      |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                      |
+   |                                   | -  **1.0**: RBAC policies. An RBAC policy consists of permissions for an entire service. Users in a group with such a policy assigned are granted all of the permissions required for that service.                                                                                                                                                  |
+   |                                   | -  **1.1**: Fine-grained policies. A fine-grained policy consists of API-based permissions for operations on specific resource types. Fine-grained policies, as the name suggests, allow for more fine-grained control than RBAC policies. Users with such fine-grained permissions can only perform authorized operations on specific services.     |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Statement                         | Permissions defined by a policy, including **Effect** and **Action**.                                                                                                                                                                                                                                                                                |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                      |
+   |                                   | -  **Effect**                                                                                                                                                                                                                                                                                                                                        |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                      |
+   |                                   |    The valid values for **Effect** are **Allow** and **Deny**. System policies contain only **Allow** statements. For custom policies containing both **Allow** and **Deny** statements, the **Deny** statements take precedence.                                                                                                                    |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                      |
+   |                                   | -  **Action**                                                                                                                                                                                                                                                                                                                                        |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                      |
+   |                                   |    Permissions of specific operations on resources in the format of *Service name*:*Resource type*:*Operation*. A policy can contain one or more permissions. The wildcard (``*``) is allowed to indicate all of the services, resource types, or operations depending on its location in the action. OBS has two resource types: bucket and object. |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Authentication of IAM policies
 ------------------------------

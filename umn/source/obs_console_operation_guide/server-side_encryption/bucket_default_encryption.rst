@@ -5,7 +5,7 @@
 Bucket Default Encryption
 =========================
 
-OBS enables you to configure default encryption for a bucket. After the configuration, objects uploaded to the bucket are automatically encrypted using the specified KMS key, improving data storage security.
+OBS allows you to configure default encryption for a bucket. After the configuration, objects uploaded to this bucket are automatically encrypted using the specified KMS key, making data storage more secure.
 
 You can enable default encryption when creating a bucket (see :ref:`Creating a Bucket <en-us_topic_0045853662>`), or enable or disable default encryption after a bucket is created.
 

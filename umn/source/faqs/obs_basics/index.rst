@@ -10,6 +10,7 @@ OBS Basics
 -  :ref:`What Are the Advantages of Object Storage over SAN and NAS Storage? <obs_faq_0006>`
 -  :ref:`Which Types of Data Can Be Stored in OBS? <obs_faq_0009>`
 -  :ref:`How Much Data Can I Store in OBS? <obs_faq_0010>`
+-  :ref:`Does OBS Support Traffic Monitoring? <obs_faq_0111>`
 -  :ref:`Can Folders in OBS Be Used the Same Way as in a File System? <obs_faq_0016>`
 -  :ref:`Where Is Data Stored in OBS? <obs_faq_0018>`
 -  :ref:`What Is the Relationship Between OBS Bucket Names and OBS Domain Names? <obs_faq_0123>`
@@ -34,6 +35,7 @@ OBS Basics
    what_are_the_advantages_of_object_storage_over_san_and_nas_storage
    which_types_of_data_can_be_stored_in_obs
    how_much_data_can_i_store_in_obs
+   does_obs_support_traffic_monitoring
    can_folders_in_obs_be_used_the_same_way_as_in_a_file_system
    where_is_data_stored_in_obs
    what_is_the_relationship_between_obs_bucket_names_and_obs_domain_names

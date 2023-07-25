@@ -5,7 +5,7 @@
 How Do I Obtain the Access Path to an Object?
 =============================================
 
-Object access paths use the following format: **https://**\ *{bucket name}*\ **.**\ *{domain name}*\ **/**\ *{object name}*, for example, **https://**\ *bucketname*\ **.obs.eu-de.otc.t-systems.com/**\ *objectname*.
+Object access paths use the following format: **https://**\ *{bucket name}*\ **.**\ *{domain name}*\ **/**\ *{object name}*, for example, **https://bucketname.obs.eu-de.otc.t-systems.com/objectname**.
 
 You can combine a path manually or use the tools in the following table to obtain it.
 

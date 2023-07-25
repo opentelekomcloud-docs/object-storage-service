@@ -20,7 +20,7 @@ Lifecycle management applies to the following scenarios:
 
 You can define lifecycle rules for identifying objects and manage lifecycles of the objects based on the rules.
 
-You can identify what objects in your bucket will be infrequently accessed, and then configure lifecycle rules to transition them to the Warm or Cold storage class to save storage costs. In short, transition basically means that the object storage class is altered without copying the object. You can also manually change the storage class of an object on the Objects page. For details, see :ref:`Uploading a File <en-us_topic_0045853663>`.
+You can identify what objects in your bucket will be infrequently accessed, and then configure lifecycle rules to transition them to the Warm or Cold storage class to save storage costs. In short, transition basically means that the object storage class is altered without copying the object. You can also manually change the storage class of an object on the Objects page. For details, see :ref:`Uploading an Object <en-us_topic_0045853663>`.
 
 Lifecycle rules have two key elements:
 
