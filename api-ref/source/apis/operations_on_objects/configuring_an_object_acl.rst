@@ -108,7 +108,7 @@ The request message carries the ACL information of the object by using message e
    +-----------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------+
    | Permission            | Authorized permission.                                                                                          | No                    |
    |                       |                                                                                                                 |                       |
-   |                       | Value options: **READ** \| **READ_ACP** \| **WRITE_ACP** \| **FULL_CONTROL**                                    |                       |
+   |                       | Value options: **READ**, **READ_ACP**, **WRITE_ACP**, **FULL_CONTROL**                                          |                       |
    |                       |                                                                                                                 |                       |
    |                       | Type: string                                                                                                    |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------------+-----------------------+

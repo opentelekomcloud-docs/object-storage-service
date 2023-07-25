@@ -105,7 +105,7 @@ This response contains the following elements to detail bucket encryption config
    |                                    |                                                                                     |
    |                                    | Type: string                                                                        |
    |                                    |                                                                                     |
-   |                                    | Valid value: **kms**                                                                |
+   |                                    | Value options: **kms**                                                              |
    |                                    |                                                                                     |
    |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                        |
    +------------------------------------+-------------------------------------------------------------------------------------+

@@ -84,7 +84,7 @@ If versioning is enabled for the bucket, the headers listed in :ref:`Table 2 <ob
    |                                   |                                                                                                                            |
    |                                   | Type: boolean                                                                                                              |
    |                                   |                                                                                                                            |
-   |                                   | Valid values: **true** or **false**                                                                                        |
+   |                                   | Value options: **true**, **false**                                                                                         |
    |                                   |                                                                                                                            |
    |                                   | The default value is **false**.                                                                                            |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+

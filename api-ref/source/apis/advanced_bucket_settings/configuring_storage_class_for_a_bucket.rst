@@ -57,7 +57,7 @@ This request needs an additional element to specify the default bucket storage c
    |                       |                                                                                                      |                       |
    |                       | Type: string                                                                                         |                       |
    |                       |                                                                                                      |                       |
-   |                       | Value options: STANDARD \| WARM \| COLD                                                              |                       |
+   |                       | Value options: **STANDARD**, **WARM**, **COLD**                                                      |                       |
    |                       |                                                                                                      |                       |
    |                       | The available storage classes include Standard (**STANDARD**), Warm (**WARM**), and Cold (**COLD**). |                       |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------+

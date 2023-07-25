@@ -143,7 +143,7 @@ This response contains elements to detail the configuration. :ref:`Table 1 <obs_
    |                                   |                                                                                                                             |
    |                                   | Ancestor: FilterRule                                                                                                        |
    |                                   |                                                                                                                             |
-   |                                   | Value options: prefix, suffix                                                                                               |
+   |                                   | Value options: **prefix**, **suffix**                                                                                       |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | Value                             | Keywords of object names so that objects can be filtered based on the prefixes or suffixes                                  |
    |                                   |                                                                                                                             |
