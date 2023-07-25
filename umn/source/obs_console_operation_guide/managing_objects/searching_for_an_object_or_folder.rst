@@ -2,8 +2,8 @@
 
 .. _obs_03_0318:
 
-Searching for a File or Folder
-==============================
+Searching for an Object or Folder
+=================================
 
 This section describes how to search for a file or folder by name prefix on OBS Console.
 
@@ -12,7 +12,7 @@ Searching by Prefixes of Object Names
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. In the search box above the object list, enter the name prefix of the file or folder that you want to search for.
 
@@ -30,7 +30,7 @@ Searching by Prefixes of Object Names
 Related Operations
 ------------------
 
-In the object list, you can click |image2| in each column to sort objects by name, storage class, size, or latest modification time.
+In the object list, click |image2| next to the object name, size, or latest modification time to sort objects.
 
 .. |image1| image:: /_static/images/en-us_image_0198432912.png
 .. |image2| image:: /_static/images/en-us_image_0210886567.png

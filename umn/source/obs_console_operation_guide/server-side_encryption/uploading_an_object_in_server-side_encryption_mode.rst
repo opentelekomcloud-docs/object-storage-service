@@ -2,12 +2,12 @@
 
 .. _obs_03_0322:
 
-Uploading a File in Server-Side Encryption Mode
-===============================================
+Uploading an Object in Server-Side Encryption Mode
+==================================================
 
-OBS allows you to encrypt objects using server-side encryption so that the objects can be securely stored in OBS.
+OBS allows you to encrypt objects with server-side encryption so that the objects can be securely stored in OBS.
 
-If default encryption is not enabled for a bucket, the files you upload to this bucket are not encrypted by default, but you can configure server-side encryption when uploading files. If a bucket has already had default encryption enabled, you can configure the files you upload to this bucket to inherit the encryption settings from this bucket or separately configure server-side encryption for the files.
+In a bucket with server-side encryption disabled, objects uploaded to it are not encrypted by default. You can configure server-side encryption when uploading objects. In a bucket with server-side encryption enabled, objects uploaded to it inherit the encryption settings of the bucket. You can also separately configure encryption for the objects.
 
 Limitations and Constraints
 ---------------------------

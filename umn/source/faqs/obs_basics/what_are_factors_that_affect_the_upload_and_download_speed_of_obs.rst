@@ -5,4 +5,7 @@
 What Are Factors that Affect the Upload and Download Speed of OBS?
 ==================================================================
 
-In theory, OBS has no limitations on either upload or download speeds, but, if you access OBS over a public network, your speed will be limited by public network conditions.
+The OBS upload and download speed may be affected by:
+
+-  Bandwidth limit of OBS itself
+-  Bandwidth of the internet or intranet

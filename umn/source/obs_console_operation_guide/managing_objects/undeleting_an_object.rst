@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0066176932:
 
-Undeleting a File
-=================
+Undeleting an Object
+====================
 
 Scenarios
 ---------
@@ -19,7 +19,7 @@ When versioning is enabled for a bucket, OBS works slightly different when delet
 
 -  Deleting a file or folder: The file or folder is not permanently deleted, but is retained in the **Deleted Objects** list and marked with the **Delete Marker**.
 
-   -  To permanently delete the file or folder, delete it again from the **Deleted Objects** list. For details, see :ref:`Deleting a File or Folder <en-us_topic_0045853756>`.
+   -  To permanently delete the file or folder, delete it again from the **Deleted Objects** list. For details, see :ref:`Deleting an Object or Folder <en-us_topic_0045853756>`.
    -  To recover the deleted file, undelete it from the **Deleted Objects** list. For details, see :ref:`Procedure <en-us_topic_0066176932__section50464659154530>`.
 
 -  Deleting an object version: The version will be permanently deleted. If the deleted version is the latest one, the next latest version becomes the latest version.
@@ -54,7 +54,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Click **Deleted Objects**.
 
@@ -70,7 +70,7 @@ Related Operations
 **Recover a file by deleting its version with the Delete Marker:**
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 #. Click **Deleted Objects**.
 #. Click the deleted file that you want to recover. The file information is displayed.
 #. On the **Versions** tab, view all versions of the file.

@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0045853663:
 
-Uploading a File
-================
+Uploading an Object
+===================
 
 This section describes how to upload local files to OBS over the Internet. These files can be texts, images, videos, or any other type of files.
 
@@ -49,7 +49,7 @@ Procedure
 
    You can also click **add file** in the **Upload Object** area to select files.
 
-#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading a File in Server-Side Encryption Mode <obs_03_0322>`.
+#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading an Object in Server-Side Encryption Mode <obs_03_0322>`.
 
    .. note::
 
@@ -63,7 +63,7 @@ Related Operations
 When uploading an object, you can specify a storage class for it. After the object is uploaded, you can also change its storage class. The procedure is as follows:
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 #. Select the target object and choose **More** > **Change Storage Class** on the right.
 #. Select the desired storage class and click **OK**.
 

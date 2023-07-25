@@ -2,8 +2,8 @@
 
 .. _obs_03_0307:
 
-Uploading a File
-================
+Uploading an Object
+===================
 
 This section describes how to upload local files to OBS over the Internet. These files can be texts, images, videos, or any other type of files.
 
@@ -50,7 +50,7 @@ Procedure
 
    You can also click **add file** in the **Upload Object** area to select files.
 
-#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading a File in Server-Side Encryption Mode <obs_03_0322>`.
+#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading an Object in Server-Side Encryption Mode <obs_03_0322>`.
 
    .. note::
 

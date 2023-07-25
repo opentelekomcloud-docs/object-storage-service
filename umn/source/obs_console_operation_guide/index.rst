@@ -17,13 +17,15 @@ OBS Console Operation Guide
 -  :ref:`Versioning <en-us_topic_0045853849>`
 -  :ref:`Logging <obs_03_0328>`
 -  :ref:`Tags <obs_03_0330>`
--  :ref:`Event Notifications <obs_03_0332>`
+-  :ref:`Event Notifications <obs_03_0147>`
 -  :ref:`Cross-Region Replication <obs_03_0001>`
 -  :ref:`Lifecycle Management <obs_03_0334>`
 -  :ref:`Configuring User-Defined Domain Names <obs_03_0030>`
 -  :ref:`Static Website Hosting <obs_03_0336>`
 -  :ref:`Cross-Origin Resource Sharing <obs_03_0339>`
 -  :ref:`URL Validation <obs_03_0340>`
+-  :ref:`Requester Pays <obs_03_0350>`
+-  :ref:`Monitoring <obs_03_0008>`
 -  :ref:`Cloud Trace Service <obs_03_0020>`
 -  :ref:`Task Management <obs_03_0076>`
 -  :ref:`Related Operations <obs_03_0036>`
@@ -53,6 +55,8 @@ OBS Console Operation Guide
    static_website_hosting/index
    cross-origin_resource_sharing/index
    url_validation/index
+   requester_pays
+   monitoring/index
    cloud_trace_service
    task_management
    related_operations/index

@@ -19,7 +19,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Select the file you want to restore, and click **Restore** on the right. The following dialog box shown in :ref:`Figure 1 <obs_03_0320__fig37793164192736>` is displayed.
 

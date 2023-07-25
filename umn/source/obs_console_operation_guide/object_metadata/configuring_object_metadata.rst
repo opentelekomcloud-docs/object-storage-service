@@ -10,7 +10,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Click the object to be operated, and then click the **Metadata** tab.
 

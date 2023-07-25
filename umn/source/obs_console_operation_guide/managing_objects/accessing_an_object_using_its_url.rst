@@ -21,7 +21,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Objects**.
 
 #. Click the object to be shared. The object information is displayed on the top part of the page. The **Link** displays the shared link of the object. For details, see :ref:`Figure 1 <obs_03_0319__fig36534596192426>`.
 

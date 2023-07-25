@@ -41,6 +41,8 @@ Procedure
 
          In the **Policy Information** area, you can view the details about the policy.
 
+         Due to data caching, an RBAC policy and fine-grained policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user and user group.
+
 #. Create a user.
 
    a. In the navigation pane, choose **Users**. The **Users** page is displayed.
