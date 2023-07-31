@@ -12,9 +12,13 @@ Procedure
 
 #. Log in to OBS Browser+.
 
-#. Select the bucket you want to view and click **Basic Information**.
+#. Right-click the bucket you want to view and choose **Basic Information** from the shortcut menu.
 
-#. In the displayed **Basic Information** window, view your required information.
+#. In the displayed **Basic Information** window, view your required information, as shown in :ref:`Figure 1 <obs_03_1043__fig855244105918>`.
+
+   .. _obs_03_1043__fig855244105918:
+
+   **Figure 1** Bucket's basic information
 
    |image1|
 

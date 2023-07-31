@@ -18,6 +18,6 @@ Procedure
 
    .. note::
 
-      To download Archive files, you must restore them first. For more information, see :ref:`Restoring a File <obs_03_1068>`.
+      To download Cold files, you must restore them first. For more information, see :ref:`Restoring a File <obs_03_1068>`.
 
 #. In the displayed dialog box, select a path for saving the file or folder and click **OK**.

@@ -14,6 +14,7 @@ Object Storage Service - Tool Guide (OBS Browser)
    advanced_bucket_settings/index
    object_operations/index
    task_management/index
+   best_practices/index
    faqs/index
    uninstalling_obs_browser
    change_history

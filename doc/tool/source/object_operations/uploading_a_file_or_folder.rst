@@ -12,7 +12,7 @@ Context
 
 Files are uploaded using multipart upload on OBS Browser+. With multipart upload, you can upload a single file with the maximum size of 48.8 TB.
 
-A file or folder name cannot exceed 1023 bytes. The length of a file name is the sum of the length of its own and the length of its upper-level directories. The total length cannot exceed 1023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level folder of file **file01** is **folder01**, the name length of file **file01** is the length of **folder01/file01**.
+A file or folder name cannot exceed 1,023 bytes. The length of a file name is the sum of the length of its own and the length of its upper-level directories. The total length cannot exceed 1,023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level folder of file **file01** is **folder01**, the name length of file **file01** is the length of **folder01/file01**.
 
 Procedure
 ---------
@@ -21,11 +21,19 @@ Procedure
 
 #. Click the bucket where you want to upload files or folders.
 
-#. Click **Upload** and then **Add File** or **Folder**.
+#. Click **Upload** and then **Add File** or **Folder**, as shown in :ref:`Figure 1 <obs_03_1061__fig174389178182>`.
+
+   .. _obs_03_1061__fig174389178182:
+
+   **Figure 1** Uploading a file or folder
 
    |image1|
 
    For better experience when using the **Add File** function, you are advised to upload a maximum of 100 files at a time. If you need to upload more, place all the files in a folder and upload them by adding a folder.
+
+   .. caution::
+
+      You must have access to the file you want to upload, or the file upload will fail.
 
 #. In the displayed dialog box, select the file or folder you want to upload and click **Open**.
 
