@@ -23,15 +23,19 @@ Procedure
 
 #. Log in to OBS Browser+.
 
-#. In the navigation pane, choose **External Bucket**.
+#. In the navigation pane, choose **External Bucket**, as shown in :ref:`Figure 1 <obs_03_1058__fig11715141135020>`.
+
+   .. _obs_03_1058__fig11715141135020:
+
+   **Figure 1** External buckets
 
    |image1|
 
-#. Click **Add**. In the **Add External Bucket** dialog box, enter the external bucket name and click **OK**, as shown in :ref:`Figure 1 <obs_03_1058__fig174389178182>`.
+#. Click **Add**. In the **Add External Bucket** dialog box, enter the external bucket name and click **OK**, as shown in :ref:`Figure 2 <obs_03_1058__fig174389178182>`.
 
    .. _obs_03_1058__fig174389178182:
 
-   **Figure 1** Adding an external bucket
+   **Figure 2** Adding an external bucket
 
    |image2|
 
@@ -44,6 +48,10 @@ Procedure
    -  Cannot contain a period (.) and a hyphen (-) adjacent to each other, for example, **my-.bucket** or **my.-bucket**.
 
    After external buckets are added, you can see them in the bucket list and have ACL access permissions for them.
+
+   .. note::
+
+      If the added external bucket has requester pays enabled, the requester who accesses this bucket needs to pay for the request and associated data transfer and the bucket owner only pays the cost of storing data.
 
 Example
 -------

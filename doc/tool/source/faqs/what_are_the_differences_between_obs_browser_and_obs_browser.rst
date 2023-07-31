@@ -24,10 +24,10 @@ OBS Browser+ is an upgraded edition of OBS Browser, with the brand new GUI offer
    External bucket management               Not supported Supported
    Object restore                           Supported     Supported
    CORS rule configuration                  Supported     Not supported
-   Lifecycle rule configuration             Supported     Not supported
+   Lifecycle rule configuration             Supported     Supported
    Logging configuration                    Supported     Not supported
    Bucket ACL                               Supported     Supported
-   Bucket encryption                        Not supported Not supported
+   Bucket encryption                        Not supported Supported
    Favorites                                Not supported Supported
    Fragment management                      Supported     Supported
    Batch retry (failed queues)              Not supported Supported

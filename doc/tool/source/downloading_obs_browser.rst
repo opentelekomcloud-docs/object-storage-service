@@ -5,4 +5,4 @@
 Downloading OBS Browser+
 ========================
 
-The OBS Browser+ software package is integrated in OBS Console. Log in to OBS Console and click the download link of OBS Browser+ on the home page to download the software package.
+To download OBS Browser+, you can click the OBS Browser+ package link on the homepage of OBS Console.

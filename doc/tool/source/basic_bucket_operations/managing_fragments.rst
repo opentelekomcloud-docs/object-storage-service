@@ -5,8 +5,6 @@
 Managing Fragments
 ==================
 
-Clear fragments that are generated due to data upload failures.
-
 Context
 -------
 
@@ -17,6 +15,12 @@ Data is uploaded to OBS using multipart upload. In the event of some situations,
 -  The device is faulty.
 -  The device is powered off suddenly.
 
+With fragment management, you can clear fragments that are generated due to data upload failures.
+
+.. important::
+
+   Deleted fragments cannot be recovered. Before deleting fragments, ensure that all multipart uploads are complete, or deleting fragments may cause uploads to fail.
+
 Procedure
 ---------
 
@@ -24,9 +28,11 @@ Procedure
 
 #. Select the bucket you want and click **Fragments**.
 
-#. In the **Fragments** window, select the unwanted fragments and click **Delete** above the list.
+#. In the **Fragments** window, select the unwanted fragments and click **Delete** above the list. You can also click **Delete All** above the list to delete all fragments. Click |image1| in the upper right corner to refresh the fragment list, as shown in :ref:`Figure 1 <obs_03_1044__fig855244105918>`.
 
-   You can also click **Delete All** above the list to delete all fragments. Click |image1| in the upper right corner to refresh the fragment list.
+   .. _obs_03_1044__fig855244105918:
+
+   **Figure 1** Fragment management
 
    |image2|
 
@@ -35,10 +41,6 @@ Procedure
 #. Click **OK**.
 
    The **Fragments** window is displayed. You can close this window to go back to the OBS Browser+ homepage.
-
-.. caution::
-
-   Deleted fragments cannot be recovered. Before deleting fragments, ensure that all multipart uploads are complete, or deleting fragments may cause uploads to fail.
 
 .. |image1| image:: /_static/images/en-us_image_0000001240541671.png
 .. |image2| image:: /_static/images/en-us_image_0000001223075866.png

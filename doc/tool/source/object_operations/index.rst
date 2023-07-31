@@ -16,6 +16,7 @@ Right-click in the blank area of the object list and choose **Create Folder** or
 -  :ref:`Copying a File or Folder <obs_03_1064>`
 -  :ref:`Moving a File or Folder <obs_03_1065>`
 -  :ref:`Deleting a File or Folder <obs_03_1066>`
+-  :ref:`Sharing a File or Folder <obs_03_1067>`
 -  :ref:`Restoring a File <obs_03_1068>`
 
 .. toctree::
@@ -29,4 +30,5 @@ Right-click in the blank area of the object list and choose **Create Folder** or
    copying_a_file_or_folder
    moving_a_file_or_folder
    deleting_a_file_or_folder
+   sharing_a_file_or_folder
    restoring_a_file

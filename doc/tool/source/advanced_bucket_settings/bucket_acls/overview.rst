@@ -13,7 +13,7 @@ For easy and practical authorization, OBS ACLs have the following features:
 
 -  An ACL takes effect for both a tenant and users under this tenant.
 -  If a bucket and its objects have the same owner, the ACL configured on the bucket also applies to the objects in the bucket by default.
--  You can configure an ACL during bucket creation or after the bucket is created, and configure an ACL during object upload or after the object is uploaded.
+-  An ACL is created during bucket or object creation by default. You can also configure one after the bucket or object is created.
 
 ACLs control write and read permissions based on accounts, whose permission granularity is not as fine as bucket policies or IAM policies. Generally, it is recommended that you use IAM permissions and bucket policies for access control.
 

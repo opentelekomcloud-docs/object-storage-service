@@ -19,13 +19,17 @@ Procedure
 
 #. Click the bucket where you want to create a folder and click **Create Folder**.
 
-#. In the displayed dialog box, enter a folder name and click **OK**.
+#. In the displayed dialog box, enter a folder name and click **OK**, as shown in :ref:`Figure 1 <obs_03_1060__fig174389178182>`.
+
+   .. _obs_03_1060__fig174389178182:
+
+   **Figure 1** Creating a folder
 
    |image1|
 
    -  A folder name cannot contain the following special characters: \\ : \* ? ' < > \|
    -  A folder name cannot start or end with a period (.) or slash (/).
-   -  A folder name cannot exceed 1023 bytes. The length of a folder name is the sum of the length of its own and the length of its upper-level directories. The total length cannot exceed 1023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level directory of **folder01** is **folder02**, the name length of folder **folder01** is the length of **folder02/folder01/**.
+   -  A folder name cannot exceed 1,023 bytes. The length of a folder name is the sum of the length of its own and the length of its upper-level directories. The total length cannot exceed 1,023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level directory of **folder01** is **folder02**, the name length of folder **folder01** is the length of **folder02/folder01/**.
    -  A single slash (/) separates and creates multiple levels of folders.
 
 #. Click **OK**.

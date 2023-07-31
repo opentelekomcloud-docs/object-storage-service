@@ -12,13 +12,21 @@ Procedure
 
 #. Log in to OBS Browser+.
 
-#. In the upper right corner of the page, enter a string contained in the bucket name in the search box.
+#. In the upper right corner of the page, enter a string contained in the bucket name in the search box, as shown in :ref:`Figure 1 <obs_03_1042__fig3347646295529>`.
+
+   .. _obs_03_1042__fig3347646295529:
+
+   **Figure 1** Search box
 
    |image1|
 
 #. Click |image2|.
 
-   Matching buckets are displayed in the list. If you want to search for other buckets, click |image3| in the search box to delete the keyword you have entered and enter a new one.
+   Matching buckets are displayed in the list. If you want to search for other buckets, click |image3| in the search box to delete the keyword you have entered and enter a new one, as shown in :ref:`Figure 2 <obs_03_1042__fig855244105918>`.
+
+   .. _obs_03_1042__fig855244105918:
+
+   **Figure 2** Searching for buckets
 
    |image4|
 

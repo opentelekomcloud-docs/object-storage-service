@@ -23,11 +23,7 @@ Procedure
 
 #. Go to the object list in the target bucket.
 
-#. Select the file you want to restore and choose **More** > **Restore Object**, as shown in :ref:`Figure 1 <obs_03_1068__fig28331433184819>`.
-
-   .. _obs_03_1068__fig28331433184819:
-
-   **Figure 1** Restoring an object
+#. Select the file you want to restore and choose **More** > **Restore Object**.
 
    |image1|
 
@@ -48,8 +44,8 @@ Procedure
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Speed                             | How fast an object will be restored.                                                                                                                                                                                                                       |
       |                                   |                                                                                                                                                                                                                                                            |
-      |                                   | -  **Expedited**: Allows you to restore data of less than 250 MB within 1 to 5 minutes.                                                                                                                                                                    |
-      |                                   | -  **Standard**: Allows you to restore all Cold data within 3 to 5 hours.                                                                                                                                                                                  |
+      |                                   | -  **Expedited**: Data smaller than 250 MB can be restored within 1 to 5 minutes.                                                                                                                                                                          |
+      |                                   | -  **Standard**: All Cold data can be restored within 3 to 5 hours.                                                                                                                                                                                        |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK** to confirm the restored file.

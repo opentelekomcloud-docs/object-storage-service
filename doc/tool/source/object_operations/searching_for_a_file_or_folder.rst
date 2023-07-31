@@ -16,7 +16,11 @@ Procedure
 
 #. In the upper right corner of the page, enter the name prefix of the file or folder you want in the search box.
 
-#. Click |image1|.
+#. Click |image1|, as shown in :ref:`Figure 1 <obs_03_1062__fig174389178182>`.
+
+   .. _obs_03_1062__fig174389178182:
+
+   **Figure 1** Searching for a file or folder
 
    |image2|
 

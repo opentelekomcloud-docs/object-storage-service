@@ -14,7 +14,11 @@ Procedure
 
 #. In the upper part of the page, click **Create Bucket**.
 
-#. In the displayed dialog box, configure bucket parameters as needed.
+#. In the displayed dialog box, configure bucket parameters, as shown in :ref:`Figure 1 <obs_03_1041__fig3347646295529>`.
+
+   .. _obs_03_1041__fig3347646295529:
+
+   **Figure 1** Creating a bucket
 
    |image1|
 
