@@ -13,14 +13,14 @@ As the OTC console depends on listing all objects as well, it is also highly rec
  
 Some tools like OBS browser currently also can't handle versioned objects and will only list and manipulate the current version of the object.
 
-Right now the recommended method for managing versioned objects is using SDK or API directly (for example, :ref:`Listing Objects in a Bucket <obs_04_0022>`, :ref:`Downloading Objects <obs_04_0083>`).
+Right now the recommended method for managing versioned objects is using SDK or API directly (for more information see **version-id-marker** header in :ref:`Listing Objects in a Bucket Request parameters <obs_04_0022__table14681180>` and **Versioning** in :ref:`Downloading Objects <obs_04_0083>`).
 
 Typical Use Cases
 -----------------
 
-A typical use case is recovering the latest historical version of an object by deleting the deletemarker version. This operation is recommended to be performed either through API or SDK. This is a single operation based on the specific object ID.
+A typical use case is recovering the latest historical version of an object by deleting the deletemarker version. This operation is recommended to be performed either through API or SDK. This is a single operation based on the specific object ID. For more information see :ref:`Deleting an Object Request parameters <obs_04_0085__d0e15727>`.
 
-Another typical use case is deleting all versions of objects with a specific name (or even all objects from a bucket to delete the bucket). This operation however would need to be performed on multiple objects and thus can again run into difficulties based on the number of objects. It is recommended in this case to limit the batches of objects the operation runs on at the time and also the number of concurrency.
+Another typical use case is deleting all versions of objects with a specific name (or even all objects from a bucket to delete the bucket). This operation however would need to be performed on multiple objects and thus can again run into difficulties based on the number of objects. It is recommended in this case to limit the batches of objects the operation runs on at the time and also the number of concurrency. For more information see :ref:`Deleting Objects <obs_04_0086>`.
 
 Configuring Lifecylce Policy for Mass Deleting Objects
 ------------------------------------------------------
