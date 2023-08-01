@@ -13,6 +13,7 @@ Buckets and Objects
 -  :ref:`Can I Modify the Region of a Bucket? <obs_faq_0133>`
 -  :ref:`How Do I Obtain the Access Path to an Object? <obs_faq_0031>`
 -  :ref:`Why Can't I Find Certain Objects in a Bucket When I Searched for Them? <obs_faq_0136>`
+-  :ref:`Lifecyle Policy as Best Practice to Delete Objects and to Deal with Versioning <obs_faq_0199>`
 
 .. toctree::
    :maxdepth: 1
@@ -26,3 +27,4 @@ Buckets and Objects
    can_i_modify_the_region_of_a_bucket
    how_do_i_obtain_the_access_path_to_an_object
    why_cant_i_find_certain_objects_in_a_bucket_when_i_searched_for_them
+   lifecyle_policy_as_best_practice_to_delete_objects_and_to_deal_with_versioning
