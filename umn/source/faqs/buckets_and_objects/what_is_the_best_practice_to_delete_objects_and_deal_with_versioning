@@ -1,7 +1,7 @@
 .. _obs_faq_0199:
 
 What is the Best Practice to Delete Objects and Deal with Versioning?
-========================================================================
+=====================================================================
 
 In OBS buckets are containers, with their names acting as globally unique identifiers, thus two buckets in the OTC can't share the same name.
 The objects stored in these buckets however are identified by their unique IDs, which allows overloading objects with newer versions, under the same name, if versioning has been enabled for the bucket.
@@ -22,10 +22,10 @@ A typical use case is recovering the latest historical version of an object by d
 
 Another typical use case is deleting all versions of objects with a specific name (or even all objects from a bucket to delete the bucket). This operation however would need to be performed on multiple objects and thus can again run into difficulties based on the number of objects. It is recommended in this case to limit the batches of objects the operation runs on at the time and also the number of concurrency. For more information see `Deleting Objects <https://docs.otc.t-systems.com/object-storage-service/api-ref/apis/operations_on_objects/deleting_objects.html>`_.
 
-Configuring Lifecycle Policy for Mass Deleting Objects
-------------------------------------------------------
+Configuring Lifecycle Rule for Mass Deleting Objects
+----------------------------------------------------
 
-The best practice for mass deleting objects (regardless of versioning) is using lifecycle policy.
+The best practice for mass deleting objects (regardless of versioning) is using Lifecycle Rule.
 
 To conveniently delete a large number of objects you can configure a Lifecycle Rule (see :ref:`Configuring a Lifecycle Rule <obs_03_0335>`) that will remove these objects after the specified number of days - the Rule will be applied either to some of the objects based on a prefix or to all objects in the bucket. In order to configure such rule:
 
