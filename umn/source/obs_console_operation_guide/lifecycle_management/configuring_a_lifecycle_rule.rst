@@ -10,7 +10,7 @@ You can configure a lifecycle rule for a bucket or for certain objects. With a l
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the right **Basic Configurations** area, click **Lifecycle Rules**. The **Lifecycle Rules** page is displayed.
 
@@ -20,9 +20,10 @@ Procedure
 
    .. _obs_03_0335__fig1529154319415:
 
-   **Figure 1** Creating a lifecycle rule
+   .. figure:: /_static/images/en-us_image_0000001631360616.png
+      :alt: **Figure 1** Creating a lifecycle rule
 
-   |image1|
+      **Figure 1** Creating a lifecycle rule
 
 #. Configure a lifecycle rule.
 
@@ -51,7 +52,7 @@ Procedure
 
    .. note::
 
-      -  **Current Version** and **Historical Version** are two concepts for **Versioning**. If **Versioning** is enabled, uploading objects with the same name to the same path generates different versions. The object uploaded lastly is called **Current Version**, and the object uploaded earlier is called **Historical Version**.
+      -  **Current Version** and **Historical Version** are two concepts for **Versioning**. If **Versioning** is enabled, uploading objects with the same name to the same path generates different versions. The object uploaded lastly is called **Current Version**, and the object uploaded previously is called **Historical Version**.
       -  You can configure either the **Current Version** or **Historical Version**, or both of them.
 
    -  **Transition to Warm**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to **Warm**. This number must be at least 30.
@@ -91,5 +92,3 @@ Follow-up Procedure
 You can click **Edit** under the **Operation** column of a lifecycle rule, to edit the rule. Also you can click **Disable** or **Enable** to disable or enable it.
 
 If you want to delete more than one lifecycle rule at a time, select them and click **Delete** above the list.
-
-.. |image1| image:: /_static/images/en-us_image_0129609510.png

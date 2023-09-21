@@ -36,7 +36,7 @@ When versioning is enabled for a bucket, OBS works slightly different when delet
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Objects**.
 

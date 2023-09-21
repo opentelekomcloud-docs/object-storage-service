@@ -10,7 +10,7 @@ This section describes how to search for a file or folder by name prefix on OBS 
 Searching by Prefixes of Object Names
 -------------------------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Objects**.
 
@@ -33,4 +33,4 @@ Related Operations
 In the object list, click |image2| next to the object name, size, or latest modification time to sort objects.
 
 .. |image1| image:: /_static/images/en-us_image_0198432912.png
-.. |image2| image:: /_static/images/en-us_image_0210886567.png
+.. |image2| image:: /_static/images/en-us_image_0000001627960406.png

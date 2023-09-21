@@ -19,7 +19,7 @@ Procedure
 ---------
 
 #. Log in to the management console.
-#. In the upper left corner of the top navigation menu, click |image1| to select a region and project.
+#. In the upper left corner of the top navigation menu, click |image1| to select a region and then project.
 #. Then choose **Service List** > **Management & Deployment** > **Cloud Trace Service**. The **Trace List** page is displayed.
 #. For details about how to enable CTS, see `Enabling CTS <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030598498.html>`__ in the *CTS User Guide*.
 

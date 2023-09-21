@@ -32,7 +32,7 @@ Procedure
 ---------
 
 #. Log in to OBS Console.
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 #. Select the **Public Read and Write** policy from the standard bucket policies that are pre-defined.
 #. In the dialog box that is displayed, click **Yes**.

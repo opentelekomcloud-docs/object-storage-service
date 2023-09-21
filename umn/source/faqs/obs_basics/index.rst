@@ -13,7 +13,6 @@ OBS Basics
 -  :ref:`Does OBS Support Traffic Monitoring? <obs_faq_0111>`
 -  :ref:`Can Folders in OBS Be Used the Same Way as in a File System? <obs_faq_0016>`
 -  :ref:`Where Is Data Stored in OBS? <obs_faq_0018>`
--  :ref:`What Is the Relationship Between OBS Bucket Names and OBS Domain Names? <obs_faq_0123>`
 -  :ref:`Does OBS Support Access over HTTPS? <obs_03_0071>`
 -  :ref:`Can Other Users Access My Data Stored in OBS? <obs_faq_0125>`
 -  :ref:`Does OBS Support Resumable Data Transfer? <obs_faq_0014>`
@@ -38,7 +37,6 @@ OBS Basics
    does_obs_support_traffic_monitoring
    can_folders_in_obs_be_used_the_same_way_as_in_a_file_system
    where_is_data_stored_in_obs
-   what_is_the_relationship_between_obs_bucket_names_and_obs_domain_names
    does_obs_support_access_over_https
    can_other_users_access_my_data_stored_in_obs
    does_obs_support_resumable_data_transfer

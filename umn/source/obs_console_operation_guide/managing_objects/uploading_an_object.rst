@@ -23,7 +23,7 @@ Prerequisites
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Objects**.
 
@@ -62,7 +62,7 @@ Related Operations
 
 When uploading an object, you can specify a storage class for it. After the object is uploaded, you can also change its storage class. The procedure is as follows:
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Objects**.
 #. Select the target object and choose **More** > **Change Storage Class** on the right.
 #. Select the desired storage class and click **OK**.

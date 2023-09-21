@@ -15,7 +15,7 @@ Static website hosting has been configured. For details, see :ref:`Configuring S
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. On the right of the **Overview** page, click **CORS Rules** in the **Basic Configurations** area. The **CORS Rules** page is displayed.
 
@@ -25,7 +25,7 @@ Procedure
 
    .. note::
 
-      You can set a maximum of 100 CORS rules for one bucket.
+      A bucket can have a maximum of 100 CORS rules configured.
 
    .. _en-us_topic_0066036542__fig2425430173411:
 

@@ -10,7 +10,7 @@ You can grant anonymous users the read permission for an object so they can acce
 Prerequisites
 -------------
 
-Anonymous users have the read permission for the object. For details about permission granting, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
+Anonymous users have the read permission for the object. For details about permission granting, see :ref:`Granting Object Access Permissions to Anonymous Users <obs_03_0132>`.
 
 .. note::
 
@@ -19,7 +19,7 @@ Anonymous users have the read permission for the object. For details about permi
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Objects**.
 

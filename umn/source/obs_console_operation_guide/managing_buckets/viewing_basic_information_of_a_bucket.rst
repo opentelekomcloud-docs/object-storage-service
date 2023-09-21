@@ -5,16 +5,15 @@
 Viewing Basic Information of a Bucket
 =====================================
 
-On OBS Console, you can view details of a bucket.
+On OBS Console, you can view details about a bucket.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
-#. Under **Basic Information**, view the basic information of the bucket. For details, see :ref:`Figure 1 <obs_03_0312__fig4178468919236>`.
+#. Under **Basic Information**, view the basic bucket information.
 
-   .. _obs_03_0312__fig4178468919236:
 
    .. figure:: /_static/images/en-us_image_0129457318.png
       :alt: **Figure 1** Basic information about the bucket

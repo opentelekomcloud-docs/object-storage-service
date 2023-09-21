@@ -2,8 +2,8 @@
 
 .. _obs_03_0132:
 
-Authorizing Access Permissions to Anonymous Users
-=================================================
+Granting Object Access Permissions to Anonymous Users
+=====================================================
 
 An enterprise stores a large volume of map data in OBS, and offers the data for public query. This enterprise sets a read permission for anonymous users, and provides the data URLs on the Internet. Then all users can read or download the data through the URLs.
 
@@ -16,7 +16,7 @@ Procedure
 
 #. Click the object to be operated and click **Object ACL**.
 
-#. In **Object ACL** > **Public Permissions** > **Anonymous User**, click **Edit** to set **Access to Object** to **Read**. For details, see :ref:`Figure 1 <obs_03_0132__fig58496641194012>`.
+#. Under **Object ACL** > **Public Permissions** > **Anonymous User**, click **Edit** to set **Access to Object** to **Read**, as shown in :ref:`Figure 1 <obs_03_0132__fig58496641194012>`.
 
    .. _obs_03_0132__fig58496641194012:
 

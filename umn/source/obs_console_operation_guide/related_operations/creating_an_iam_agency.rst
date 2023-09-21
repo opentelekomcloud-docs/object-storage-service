@@ -5,7 +5,7 @@
 Creating an IAM Agency
 ======================
 
-To use some OBS features, such as cross-region replication, you need to use IAM agencies to grant required permissions to OBS for processing your data.
+To use some OBS features, you need to use IAM agencies to grant required permissions to OBS for processing your data.
 
 Creating an Agency for Cross-Region Replication
 -----------------------------------------------

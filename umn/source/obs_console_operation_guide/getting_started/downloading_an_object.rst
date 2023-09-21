@@ -15,8 +15,8 @@ Objects in the Cold storage class can be downloaded only when they are in the **
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
-#. In the navigation pane, click **Objects**.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the navigation pane, choose **Objects**.
 #. Select the files you want to download, and then click **Download** or **More** > **Download As** to download the files.
 
    .. note::
