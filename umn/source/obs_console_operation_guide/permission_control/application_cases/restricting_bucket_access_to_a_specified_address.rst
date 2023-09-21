@@ -10,13 +10,13 @@ You can configure a bucket policy to authorize a specified address the permissio
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
 #. Configure the parameters according to the following table:
 
-   .. table:: **Table 1** Parameters for authorizing the permission to access a specified bucket
+   .. table:: **Table 1** Parameters for granting permission to access a bucket
 
       +-----------------------------------+------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                          |

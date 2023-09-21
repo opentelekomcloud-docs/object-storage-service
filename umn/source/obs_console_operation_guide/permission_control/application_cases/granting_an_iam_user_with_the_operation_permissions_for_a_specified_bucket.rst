@@ -7,18 +7,18 @@ Granting an IAM User with the Operation Permissions for a Specified Bucket
 
 Create an IAM user under in an account. The IAM user has no permission to any resource before it is added to any user group. The bucket owner (root account) or other accounts and IAM users, who have the permission to set bucket policies, can configure bucket policies to grant the bucket operation permissions to IAM users.
 
-The following is an example about how to authorize an IAM user with the bucket access and object upload permissions.
+The following is an example about how to grant an IAM user the bucket access and object upload permissions.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
-#. Set the following parameters to authorize the IAM user with the permission to access the bucket (listing objects in the bucket).
+#. Configure parameters listed in the table below to grant an IAM user the permission to access the bucket (listing objects in the bucket).
 
-   .. table:: **Table 1** Parameters for authorizing the permission to access a specified bucket
+   .. table:: **Table 1** Parameters for granting permission to access a bucket
 
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                                            |
@@ -39,13 +39,13 @@ Procedure
 
 #. Click **OK**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
-#. Set the following parameters to authorize the IAM user with the permission to upload objects to the bucket.
+#. Configure parameters in the table below to grant an IAM user the permission to upload objects to a bucket.
 
    .. note::
 
       Before authorizing the IAM user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
-   .. table:: **Table 2** Parameters for authorizing the permission to upload objects
+   .. table:: **Table 2** Parameters for granting permission to upload objects
 
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                                                                                                                                         |

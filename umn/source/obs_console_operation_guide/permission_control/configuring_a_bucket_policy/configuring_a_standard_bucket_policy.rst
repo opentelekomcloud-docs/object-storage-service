@@ -10,7 +10,7 @@ For standard bucket policy, OBS offers three options, namely the Private, Public
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Permissions**.
 

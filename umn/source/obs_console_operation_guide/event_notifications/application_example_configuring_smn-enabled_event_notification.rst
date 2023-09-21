@@ -19,7 +19,7 @@ Procedure
 
    Create a bucket.
 
-   Click **Create Bucket** on the upper right corner of the page. For details, see :ref:`Figure 1 <obs_03_0333__fig164117487446>`. Select **Region**, select **Storage Class**, enter the bucket name, and click **Create Now**.
+   Click **Create Bucket** in the upper right corner of the page. A page shown in :ref:`Figure 1 <obs_03_0333__fig164117487446>` is displayed. On the page, select a region and storage class, and specify a bucket name and other parameters. Then, click **Create Now**.
 
    .. _obs_03_0333__fig164117487446:
 
@@ -32,7 +32,7 @@ Procedure
 
    Create a folder.
 
-   Click the bucket created in :ref:`Step 2 <obs_03_0333__li29947515>` to go to the **Overview** page. Choose **Objects** > **Create Folder**, enter the folder name, and click **OK**. For details, see :ref:`Figure 2 <obs_03_0333__fig28070790193136>`. In the following example, **SMN** is the folder name.
+   Click the bucket created in :ref:`Step 2 <obs_03_0333__li29947515>` to go to the **Overview** page. Choose **Objects** > **Create Folder**, enter a folder name, and click **OK**, as shown in :ref:`Figure 2 <obs_03_0333__fig28070790193136>`. In the following example, **SMN** is the folder name.
 
    .. _obs_03_0333__fig28070790193136:
 
@@ -63,7 +63,7 @@ Procedure
 
    c. Click **Create**. The **Create Event Notification** dialog box is displayed.
 
-   d. Configure event notification parameters, as shown in :ref:`Figure 3 <obs_03_0333__fig377201314360>`. After the notification is configured, an employee will be informed of all specified operations on the **SMN** folder in bucket **testbucket**. For details about parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
+   d. Configure event notification parameters, as shown in :ref:`Figure 3 <obs_03_0333__fig377201314360>`. After the notification is configured, an employee will be informed of all specified operations on the **SMN** folder in bucket **testbucket**. For details about the parameters, see :ref:`Table 1 <en-us_topic_0066088963__aobs_console_0039_mmccppss_table01>`.
 
       .. note::
 

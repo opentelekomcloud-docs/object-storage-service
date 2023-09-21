@@ -28,23 +28,23 @@ Actions Related to Buckets
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | List\*                     | The value supports a wildcard character (``*``) that indicates all LIST operations can be performed. |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   | Bucket  | DeleteBucket               | Deletes the bucket.                                                                                  |
+   | Bucket  | DeleteBucket               | Deletes a bucket.                                                                                    |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | ListBucket                 | Lists objects in the bucket, and gets the bucket metadata.                                           |
+   |         | ListBucket                 | Lists objects in a bucket, and obtains the bucket metadata.                                          |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | ListBucketVersions         | Lists object versions in the bucket.                                                                 |
+   |         | ListBucketVersions         | Lists versioned objects in a bucket.                                                                 |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | ListBucketMultipartUploads | Lists multipart upload tasks.                                                                        |
+   |         | ListBucketMultipartUploads | Lists multipart uploads.                                                                             |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | GetBucketAcl               | Obtains the ACL information of the bucket.                                                           |
+   |         | GetBucketAcl               | Obtains the bucket ACL information.                                                                  |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutBucketAcl               | Configures the ACL for the bucket.                                                                   |
+   |         | PutBucketAcl               | Configures a bucket ACL.                                                                             |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetBucketCORS              | Obtains the CORS configuration of the bucket.                                                        |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutBucketCORS              | Configures CORS for the bucket.                                                                      |
+   |         | PutBucketCORS              | Configures CORS for a bucket.                                                                        |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | GetBucketVersioning        | Obtains the versioning information of a bucket.                                                      |
+   |         | GetBucketVersioning        | Obtains the bucket versioning information.                                                           |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | PutBucketVersioning        | Configures versioning for a bucket.                                                                  |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
@@ -54,15 +54,15 @@ Actions Related to Buckets
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | PutBucketLogging           | Configures logging for a bucket.                                                                     |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | GetBucketWebsite           | Obtains the static website configuration information about the bucket.                               |
+   |         | GetBucketWebsite           | Obtains the static website configuration of the bucket.                                              |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | PutBucketWebsite           | Configures the static website hosting for the bucket.                                                |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | DeleteBucketWebsite        | Cancels the static website hosting configuration of the bucket.                                      |
+   |         | DeleteBucketWebsite        | Deletes the static website hosting configuration of the bucket.                                      |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetLifecycleConfiguration  | Obtains the lifecycle rules of the bucket.                                                           |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutLifecycleConfiguration  | Configures a lifecycle rule for the bucket.                                                          |
+   |         | PutLifecycleConfiguration  | Configures a lifecycle rule for a bucket.                                                            |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
 
 .. _obs_03_0051__section387654045518:
@@ -93,7 +93,7 @@ Actions Related to Objects
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
    |         | GetObjectVersionAcl      | Obtains the ACL information of a specified object version.                                                  |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | PutObjectAcl             | Configures the ACL for an object.                                                                           |
+   |         | PutObjectAcl             | Configures an object ACL.                                                                                   |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
    |         | PutObjectVersionAcl      | Configures the ACL for a specified object version.                                                          |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+

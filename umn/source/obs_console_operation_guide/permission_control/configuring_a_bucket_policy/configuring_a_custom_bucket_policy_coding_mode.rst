@@ -10,9 +10,9 @@ You can configure a custom bucket policy by coding. The size of a custom bucket 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
-#. In the navigation pane on the left, click **Permissions** to go to the permission management page.
+#. In the navigation pane, choose **Permissions**.
 
 #. On the **Bucket Policies** tab page, configure a custom bucket policy according to your needs.
 
@@ -54,9 +54,9 @@ Procedure
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Description                                                                                                                                                                                    |
       +===================================+================================================================================================================================================================================================+
-      | Action                            | Actions on which the bucket policy takes effect. For details, see :ref:`Actions <obs_03_0051>`.                                                                                                |
+      | Action                            | Actions the bucket policy applies to. For details, see :ref:`Actions <obs_03_0051>`.                                                                                                           |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Effect                            | For details about bucket policy effects, see :ref:`Effect <obs_03_0115>`.                                                                                                                      |
+      | Effect                            | Effect of the bucket policy. For details, see :ref:`Effect <obs_03_0115>`.                                                                                                                     |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Principal                         | Authorized users on whom the bucket policy takes effect. You can obtain the user ID on the **My Credential** page by logging in to the console as the user to be authorized. Principal format: |
       |                                   |                                                                                                                                                                                                |

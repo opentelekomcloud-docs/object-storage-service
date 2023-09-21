@@ -8,7 +8,7 @@ Configuring Versioning
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the **Basic Information** area, move the cursor over **Disabled**, **Suspended**, or **Enabled** next to **Versioning**. The **Edit** button is displayed next to the versioning status. Click **Edit**. The dialog box for editing the versioning status is displayed.
 
@@ -32,8 +32,8 @@ Related Operations
 
 After versioning is enabled, on the object details page that is displayed, click **Versions**, and then you can delete and download versions of the object.
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
-#. In the navigation pane, click **Objects**.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the navigation pane, choose **Objects**.
 #. In the object list, click the object you want to go to the object details page.
 #. On the **Versions** tab, view all versions of the object.
 #. Perform the following operations on object versions:

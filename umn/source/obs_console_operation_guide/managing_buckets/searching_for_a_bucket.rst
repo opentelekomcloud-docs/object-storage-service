@@ -14,7 +14,7 @@ You can search for a bucket by characters contained in its name.
 Procedure
 ---------
 
-#. In the search box at the upper right corner of the OBS Console homepage, enter characters contained in the name of the bucket that you want to search for.
+#. In the search box in the upper right corner of the OBS Console homepage, enter characters contained in the name of the bucket you want to search for.
 
 #. Click |image1|.
 
@@ -25,7 +25,7 @@ Procedure
 Related Operations
 ------------------
 
-In the bucket list, you can click |image3| in each column to sort buckets by name, storage class, region, storage usage, object quantity, or creation time.
+In the bucket list, click |image3| next to the bucket name, storage class, region, used capacity, number of objects, or creation time to sort buckets.
 
 .. |image1| image:: /_static/images/en-us_image_0198432912.png
 .. |image2| image:: /_static/images/en-us_image_0198432912.png

@@ -21,13 +21,13 @@ The following is an example about how to authorize other accounts with the bucke
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
 #. Set the following parameters to authorize another account with the permission to access the bucket:
 
-   .. table:: **Table 1** Parameters for authorizing the permission to access a specified bucket
+   .. table:: **Table 1** Parameters for granting permission to access a bucket
 
       +-----------------------------------+-------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                           |
@@ -57,7 +57,7 @@ Procedure
 
       Before authorizing the user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
-   .. table:: **Table 2** Parameters for authorizing the permission to upload objects
+   .. table:: **Table 2** Parameters for granting permission to upload objects
 
       +-----------------------------------+-------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                           |

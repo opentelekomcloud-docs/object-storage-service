@@ -14,20 +14,20 @@ OBS encrypts only the objects uploaded after the default encryption is enabled, 
 Enabling Default Encryption for a Bucket
 ----------------------------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the right **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
 
 #. Select **Enable**.
 
-   Key **obs/default** is selected by default for KMS encryption. You can also click **Create KMS Key** to switch to the management console of KMS and create customer master keys. Then back to OBS Console and select the key from the drop-down list box for KMS encryption.
+   Key **obs/default** is selected by default for KMS encryption. You can also click **Create KMS Key** to switch to the KMS management console and create a customer master key. Then go back to OBS Console and select the key from the drop-down list.
 
 #. Click **OK**.
 
 Disabling Default Encryption for a Bucket
 -----------------------------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the right **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
 #. Select **Disable**.
 #. Click **OK**.

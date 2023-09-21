@@ -10,7 +10,7 @@ You can add tags to a bucket when creating the bucket. For details, see :ref:`Cr
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the right **Basic Configurations** area, click **Tags**. The **Tags** page is displayed.
 

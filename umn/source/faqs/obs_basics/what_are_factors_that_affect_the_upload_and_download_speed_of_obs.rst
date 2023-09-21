@@ -7,5 +7,5 @@ What Are Factors that Affect the Upload and Download Speed of OBS?
 
 The OBS upload and download speed may be affected by:
 
--  Bandwidth limit of OBS itself
--  Bandwidth of the internet or intranet
+-  Upper limit of the read/write bandwidth allowed by a single account
+-  Disk I/O, NICs, and resources consumed by other processes

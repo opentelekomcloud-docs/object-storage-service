@@ -9,7 +9,7 @@ The resource can be the current entire bucket, an object, or a set of objects in
 
 Resources can be specified in either of the following ways:
 
--  **Include**: The policy takes effect on specified OBS resources.
+-  **Include**: The policy takes effect on the specified OBS resources.
 -  **Exclude**: The policy takes effect on all OBS resources except the specified ones.
 
 Specifying Bucket Resources

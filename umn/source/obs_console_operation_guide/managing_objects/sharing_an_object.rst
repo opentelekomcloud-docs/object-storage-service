@@ -8,12 +8,12 @@ Sharing an Object
 Scenarios
 ---------
 
-You can allow anyone to access your file stored in OBS by sharing the temporary URL of the file.
+You can share temporary URLs of your objects with others for them to access your objects stored in OBS.
 
 Background Information
 ----------------------
 
-File sharing is temporary. All shared URLs are temporary with a validity period.
+File sharing is temporary. All sharing URLs are only valid for a limited period of time.
 
 A temporary URL consists of the access domain name and the temporary authentication information of a file.
 
@@ -32,15 +32,14 @@ Limitations and Constraints
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the navigation pane, choose **Objects**.
 
-#. Locate the file to be shared and click **Share** in the **Operation** column. The dialog box as given in :ref:`Figure 1 <obs_03_0046__fig125731684458>` is displayed.
+#. Locate the file to be shared and click **Share** in the **Operation** column.
 
    Once the **Share File** dialog box is opened, the URL is effective and valid for five minutes by default. If you change the validity period, the authentication information in the URL changes accordingly, and the URL's new validity period starts upon the change.
 
-   .. _obs_03_0046__fig125731684458:
 
    .. figure:: /_static/images/en-us_image_0000001523534634.png
       :alt: **Figure 1** Sharing a file
@@ -55,4 +54,4 @@ Procedure
 
    .. note::
 
-      Within the validity period of a URL, any user who has the URL can access the file.
+      Within the URL validity period, anyone who has the URL can access the file.

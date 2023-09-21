@@ -19,7 +19,7 @@ If the web page files are in the Cold storage class, restore them first. For mor
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
 #. In the right **Basic Configurations** area, click **Static Website Hosting**. The **Static Website Hosting** page is displayed.
 
@@ -44,7 +44,7 @@ Procedure
 
 #. (**Optional**) If the static website files in the bucket are not accessible to anonymous users, perform this step. If the static website files are already accessible to anonymous users, skip this step.
 
-   Authorize anonymous users the permission to read files on the static website. For details, see :ref:`Authorizing Access Permissions to Anonymous Users <obs_03_0132>`.
+   Grant the read permission for static website files to anonymous users. For details, see :ref:`Granting Object Access Permissions to Anonymous Users <obs_03_0132>`.
 
    If the bucket contains only static website files, configure the **Public Read** policy for the bucket so that all files in it can be accessed publicly.
 

@@ -10,13 +10,13 @@ If all objects in a folder need to be accessible to anonymous users, you can con
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
 #. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
 #. Configure parameters according to the following table, so that you can grant anonymous users the permission to access the folder and objects in it:
 
-   .. table:: **Table 1** Parameters for authorizing the permission to access a specified bucket
+   .. table:: **Table 1** Parameters for granting permission to access a bucket
 
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                                                                 |
@@ -41,4 +41,4 @@ Verification
 ------------
 
 #. After the permission is successfully configured, select an object in the folder and click the object name to view its details. The object link (URL) is displayed on the details page. Share the URL over the Internet, so that all users can access or download the object through the Internet.
-#. An anonymous user can view the object by copying the URL of the object to the web browser.
+#. An anonymous user can use the URL to access the object in a browser.
