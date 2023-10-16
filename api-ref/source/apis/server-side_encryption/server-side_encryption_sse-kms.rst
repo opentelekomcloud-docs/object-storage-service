@@ -5,72 +5,87 @@
 Server-Side Encryption (SSE-KMS)
 ================================
 
-In the SSE-KMS mode, OBS uses the keys provided by KMS for server-side encryption. When an object encrypted using SSE-KMS is added to a bucket in a region for the first time, OBS creates a default customer master key (CMK), which is used to encrypt and decrypt the keys provided by KMS. The SSE-KMS mode does not support the keys created by customers. The bucket ACL and policy do not allow cross-tenant authorized access to objects encrypted using SSE-KMS.
+Functions
+---------
 
-Two headers are added to support SSE-KMS in SSE-KMS mode.
+With SSE-KMS, OBS uses the keys provided by Key Management Service (KMS) for server-side encryption. You can create custom keys on KMS to encrypt your objects. If you do not specify a key, OBS creates a default key the first time you upload an object to the bucket. Custom keys or default keys are used to encrypt and decrypt data encryption keys (DEKs).
+
+.. note::
+
+   When a custom key in a non-default IAM project is used to encrypt objects, only the key owner can upload or download the encrypted objects.
+
+Newly Added Headers
+-------------------
+
+Two headers are added for SSE-KMS. You can configure the headers listed in :ref:`Table 1 <obs_04_0106__table1716921114398>` to enable SSE-KMS.
 
 You can also configure the default encryption method for a bucket to encrypt objects in the bucket. When default encryption is enabled for a bucket, any request for uploading objects without specified encryption header will trigger the default bucket encryption for the objects uploaded. For more information about bucket encryption configuration, see :ref:`Configuring Bucket Encryption <obs_04_0062>`.
 
+.. _obs_04_0106__table1716921114398:
+
 .. table:: **Table 1** Header fields used in SSE-KMS mode
 
-   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Element                                 | Description                                                                                                                                                                          |
-   +=========================================+======================================================================================================================================================================================+
-   | x-obs-server-side-encryption            | Indicates that SSE-KMS is used. Objects are encrypted using SSE-KMS.                                                                                                                 |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | Type: string                                                                                                                                                                         |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | Example: **x-obs-server-side-encryption:kms**                                                                                                                                        |
-   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-server-side-encryption-kms-key-id | Indicates the master key ID of an encrypted object. This header is used in SSE-KMS mode. If the customer does not provide the master key ID, the default master key ID will be used. |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | Type: string                                                                                                                                                                         |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | The following two formats are supported:                                                                                                                                             |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | 1. *regionID*\ **:**\ *domainID*\ **:key/**\ *key_id*                                                                                                                                |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | 2. *key_id*                                                                                                                                                                          |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | **regionID** is the ID of the region to which the key belongs. **domainID** is the account ID of the tenant to which the key belongs. **key_id** is the key ID created inKMS.        |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | Example:                                                                                                                                                                             |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | 1. x-obs-server-side-encryption-kms-key-id:*region*:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0                                                        |
-   |                                         |                                                                                                                                                                                      |
-   |                                         | 2. x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0                                                                                                      |
-   +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Element                                 | Description                                                                                                                                                                                                    |
+   +=========================================+================================================================================================================================================================================================================+
+   | x-obs-server-side-encryption            | Indicates that SSE-KMS is used for encrypting objects.                                                                                                                                                         |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | Type: string                                                                                                                                                                                                   |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | Example: **x-obs-server-side-encryption:kms**                                                                                                                                                                  |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-server-side-encryption-kms-key-id | Indicates the master key ID when SSE-KMS is used. If this header is not provided, the default master key ID will be used. If there is no such a default master key, OBS will create one and use it by default. |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | Type: string                                                                                                                                                                                                   |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | The following two formats are supported:                                                                                                                                                                       |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | - *regionID*\ **:**\ *domainID*\ **:key/**\ *key_id*                                                                                                                                                           |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | - *key_id*                                                                                                                                                                                                     |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | *regionID* indicates the ID of the region where the key belongs. *domainID* indicates the ID of the tenant where the key belongs. *key_id* indicates the ID of the key created in KMS.                         |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | Examples:                                                                                                                                                                                                      |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | - **x-obs-server-side-encryption-kms-key-id:**\ *region*\ **:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0**                                                                       |
+   |                                         |                                                                                                                                                                                                                |
+   |                                         | - **x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0**                                                                                                                             |
+   +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-API operations to which the newly added headers apply:
+APIs Where SSE-KMS Headers Apply
+--------------------------------
 
--  PUT operation for uploading objects
--  POST operation for uploading objects (**x-obs-server-side-encryption** and **x-obs-server-side-encryption-kms-key-id** need to be placed in the form instead of the header)
--  PutObject-Copy (the newly added headers apply to target objects)
--  API operations for initiating a multipart upload task
+You can configure headers about SSE-KMS in the APIs below:
 
-OBS supports bucket policies. You can use a bucket policy to implement server-side encryption on all the objects stored in a bucket. For example, a tenant's object upload request does not contain the header **x-obs-server-side-encryption:"kms"** for server-side encryption (SSE-KMS), the following bucket policy will reject the upload request.
+-  :ref:`Uploading Objects - PUT <obs_04_0080>`
+-  :ref:`Uploading Objects - POST <obs_04_0081>`: **x-obs-server-side-encryption** and **x-obs-server-side-encryption-kms-key-id** need to be placed in the form instead of headers.
+-  :ref:`Copying Objects <obs_04_0082>`: The newly added headers apply to object copies.
+-  :ref:`Initiating a Multipart Upload <obs_04_0098>`
+
+You can configure a bucket policy to restrict the request headers for a specified bucket. For example, if you require that object upload requests do not contain header **x-obs-server-side-encryption:"kms"**, you can use the following bucket policy:
 
 .. code-block::
 
    {
-   "Statement":[{
-   "Sid":"DenyUnEncryptedObjectUploads",
-   "Effect":"Deny",
-   "Principal":"*",
-   "Action":"PutObject",
-   "Resource":"YourBucket/*",
-   "Condition":{
-   "StringNotEquals":{
-   "x-obs-server-side-encryption":"kms"
-   }
-   }
-   }
+       "Statement": [
+           {
+               "Sid": "DenyUnEncryptedObjectUploads",
+               "Effect": "Deny",
+               "Principal": "*",
+               "Action": "PutObject",
+               "Resource": "YourBucket/*",
+               "Condition": {
+                   "StringNotEquals": {
+                       "x-obs-server-side-encryption": "kms"
+                   }
+               }
+           }
+       ]
    }
 
-Sample Request 1
-----------------
-
-**Use the default key to encrypt the uploaded object**.
+Sample Request: Using the Default Key to Encrypt an Object
+----------------------------------------------------------
 
 .. code-block:: text
 
@@ -86,8 +101,8 @@ Sample Request 1
 
    [5242 Byte object contents]
 
-Sample Response 1
------------------
+Sample Response: Using the Default Key to Encrypt an Object
+-----------------------------------------------------------
 
 ::
 
@@ -101,10 +116,8 @@ Sample Response 1
    Date: Wed, 06 Jun 2018 09:08:21 GMT
    Content-Length: 0
 
-Sample Request 2
-----------------
-
-**Use a specified key to encrypt the uploaded object**.
+Sample Request: Using a Custom Key to Encrypt an Object
+-------------------------------------------------------
 
 .. code-block:: text
 
@@ -121,8 +134,8 @@ Sample Request 2
 
    [5242 Byte object contents]
 
-Sample Response 2
------------------
+Sample Response: Using a Custom Key to Encrypt an Object
+--------------------------------------------------------
 
 ::
 
@@ -136,10 +149,8 @@ Sample Response 2
    Date: Wed, 06 Jun 2018 09:08:50 GMT
    Content-Length: 0
 
-Sample Request 3
-----------------
-
-**Copy a common object and save it as an encrypted object by encrypting it using a specified key.**
+Sample Request: Using a Key to Encrypt an Object Copy
+-----------------------------------------------------
 
 .. code-block:: text
 
@@ -153,8 +164,8 @@ Sample Request 3
    Authorization: OBS H4IPJX0TQTHTHEBQQCEC:SH3uTrElaGWarVI1uTq325kTVCI=
    x-obs-copy-source: /bucket/srcobject1
 
-Sample Response 3
------------------
+Sample Response: Using a Key to Encrypt an Object Copy
+------------------------------------------------------
 
 ::
 
@@ -168,10 +179,8 @@ Sample Response 3
    Date: Wed, 06 Jun 2018 09:10:29 GMT
    Content-Length: 0
 
-Sample Request 4
-----------------
-
-**Carry the signature in the URL and upload the encrypted object.**
+Sample Request: Uploading an Encrypted Object Using a Signed URL
+----------------------------------------------------------------
 
 .. code-block:: text
 
@@ -181,8 +190,8 @@ Sample Request 4
    Accept: */*
    Date: Wed, 06 Jun 2018 09:10:29 GMT
 
-Sample Response 4
------------------
+Sample Response: Uploading an Encrypted Object Using a Signed URL
+-----------------------------------------------------------------
 
 ::
 

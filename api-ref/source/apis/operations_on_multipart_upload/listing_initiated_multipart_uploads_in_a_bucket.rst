@@ -248,10 +248,8 @@ If the value of **maxUploads** is a non-integer or smaller than 0, OBS returns *
 
 Other errors are included in :ref:`Table 2 <obs_04_0115__d0e843>`.
 
-Sample Request 1
-----------------
-
-**List the initialized multipart tasks without any parameter**.
+Sample Request: Listing Initiated Multipart Uploads
+---------------------------------------------------
 
 .. code-block:: text
 
@@ -262,8 +260,8 @@ Sample Request 1
    Date: WED, 01 Jul 2015 04:51:21 GMT
    Authorization: OBS UDSIAMSTUBTEST000008:XdmZgYQ+ZVy1rjxJ9/KpKq+wrU0=
 
-Sample Response 1
------------------
+Sample Response: Listing Initiated Multipart Uploads
+----------------------------------------------------
 
 ::
 
@@ -298,10 +296,8 @@ Sample Response 1
      </Upload>
    </ListMultipartUploadsResult>
 
-Sample Request 2
-----------------
-
-**List the initialized multipart tasks with the prefix and delimiter**.
+Sample Request: Listing Initiated Multipart Uploads (with a Prefix and Delimiter Specified)
+-------------------------------------------------------------------------------------------
 
 The following example describes how to list two initiated multipart uploads (with objects **multipart-object001** and **part2-key02** in bucket **examplebucket**. In this listing operation, **prefix** is set to **multipart** and **object001** is set to **delimiter**.
 
@@ -314,8 +310,8 @@ The following example describes how to list two initiated multipart uploads (wit
    Date: WED, 01 Jul 2015 04:51:21 GMT
    Authorization: OBS UDSIAMSTUBTEST000008:XdmZgYQ+ZVy1rjxJ9/KpKq+wrU0=
 
-Sample Response 2
------------------
+Sample Response: Listing Initiated Multipart Uploads (with a Prefix and Delimiter Specified)
+--------------------------------------------------------------------------------------------
 
 ::
 

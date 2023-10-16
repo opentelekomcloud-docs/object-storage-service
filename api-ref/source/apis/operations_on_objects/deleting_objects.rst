@@ -81,7 +81,7 @@ This request uses elements to specify the list of objects to be deleted in a bat
    |                       | Type: string                                                                                                                                                                                  |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-A maximum of 1000 objects can be deleted at a time. If you send a request for deleting more than 1000 objects, OBS returns an error message.
+A maximum of 1,000 objects can be deleted at a time. If you send a request for deleting more than 1,000 objects, OBS returns an error message.
 
 After concurrent tasks are assigned, OBS may encounter an internal error during cyclic deletion of multiple objects. In that case, the metadata still exists when the object index data is deleted, which means data inconsistency.
 
@@ -103,7 +103,7 @@ Response Syntax
    <Error>
        <Key>Key</Key>
        <Code>ErrorCode</Code>
-       <Message>message</Message>
+       <Message>Message</Message>
    </Error>
    </DeleteResult>
 

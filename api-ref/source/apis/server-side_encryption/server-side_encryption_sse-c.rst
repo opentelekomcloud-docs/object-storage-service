@@ -5,9 +5,15 @@
 Server-Side Encryption (SSE-C)
 ==============================
 
-In the SSE-C mode, OBS uses the keys and MD5 values provided by customers for server-side encryption.
+Functions
+---------
 
-OBS does not store your encryption keys. If you lost your encryption keys, you lost the objects. Six headers are added to support SSE-C.
+With SSE-C used, OBS uses the keys and MD5 values provided by customers for server-side encryption.
+
+Newly Added Headers
+-------------------
+
+OBS does not store your encryption keys. If you lost them, you lost the objects. Six headers are added to support SSE-C.
 
 The following table lists headers that are required when you use SSE-C to encrypt objects.
 
@@ -29,16 +35,16 @@ The following table lists headers that are required when you use SSE-C to encryp
    |                                                 | Example: **x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                                                                                                 |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-API operations to which the newly added headers apply:
+APIs where the newly added headers apply:
 
--  PutObject
--  PostObject
--  CopyObject (the newly added headers apply to target objects)
--  HeadObject
--  GetObject
--  InitiateMultipartUpload
--  UploadPart
--  UploadPart-Copy (the newly added headers apply to target parts)
+-  :ref:`Uploading Objects - PUT <obs_04_0080>`
+-  :ref:`Uploading Objects - POST <obs_04_0081>`
+-  :ref:`Copying Objects <obs_04_0082>`: The newly added headers apply to object copies.
+-  :ref:`Querying Object Metadata <obs_04_0084>`
+-  :ref:`Downloading Objects <obs_04_0083>`
+-  :ref:`Initiating a Multipart Upload <obs_04_0098>`
+-  :ref:`Uploading Parts <obs_04_0099>`
+-  :ref:`Copying Parts <obs_04_0100>`: The newly added headers apply to target parts.
 
 The following table lists three headers that are added for CopyObject and UploadPart-Copy operations to support source objects encrypted using SSE-C.
 
@@ -60,10 +66,8 @@ The following table lists three headers that are added for CopyObject and Upload
    |                                                             | Example: **x-obs-copy-source-server-side-encryption-customer-key:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                                       |
    +-------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Sample Request 1
-----------------
-
-**Upload an object with the SSE-C encryption mode.**
+Sample Request: Uploading an Object Encrypted with SSE-C
+--------------------------------------------------------
 
 .. code-block:: text
 
@@ -80,8 +84,8 @@ Sample Request 1
 
    [5242 Byte object contents]
 
-Sample Response 1
------------------
+Sample Response: Uploading an Object Encrypted with SSE-C
+---------------------------------------------------------
 
 ::
 
@@ -95,10 +99,8 @@ Sample Response 1
    Date: Wed, 06 Jun 2018 09:12:00 GMT
    Content-Length: 0
 
-Sample Request 2
-----------------
-
-**Copy the SSE-C encrypted object and save it as the KMS encrypted object.**
+Sample Request: Copying an SSE-C Encrypted Object and Saving It as a KMS Encrypted Object
+-----------------------------------------------------------------------------------------
 
 .. code-block:: text
 
@@ -117,8 +119,8 @@ Sample Request 2
 
    [5242 Byte object contents]
 
-Sample Response 2
------------------
+Sample Response: Copying an SSE-C Encrypted Object and Saving It as a KMS Encrypted Object
+------------------------------------------------------------------------------------------
 
 ::
 
@@ -132,10 +134,8 @@ Sample Response 2
    Date: Wed, 06 Jun 2018 09:20:10 GMT
    Content-Length: 0
 
-Sample Request 3
-----------------
-
-**The URL contains the signature and the SSE-C encrypted object is uploaded.**
+Sample Request: Uploading an SSE-C Encrypted Object Using a Signed URL
+----------------------------------------------------------------------
 
 .. code-block:: text
 
@@ -151,8 +151,8 @@ Sample Request 3
 
    [5242 Byte object contents]
 
-Sample Response 3
------------------
+Sample Response: Uploading an SSE-C Encrypted Object Using a Signed URL
+-----------------------------------------------------------------------
 
 ::
 

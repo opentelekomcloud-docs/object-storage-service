@@ -12,7 +12,7 @@ This operation can rename an object.
 
 .. note::
 
-   This API is supported only by parallel file systems. For details about how to create a parallel file system, see :ref:`Sample Request 4 <obs_04_0021__section4293341135610>`. Renaming an object is a non-idempotent operation.
+   This API is supported only by parallel file systems. For details about how to create a parallel file system, see :ref:`Sample Request: Creating a Parallel File System <obs_04_0021__section4293341135610>`. Renaming an object is a non-idempotent operation.
 
 Request Syntax
 --------------

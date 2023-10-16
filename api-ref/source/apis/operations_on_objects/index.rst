@@ -19,6 +19,7 @@ Operations on Objects
 -  :ref:`Modifying an Object <obs_04_0092>`
 -  :ref:`Truncating an Object <obs_04_0093>`
 -  :ref:`Renaming an Object <obs_04_0094>`
+-  :ref:`Configuring WORM Retention for an Object <obs_04_0166>`
 
 .. toctree::
    :maxdepth: 1
@@ -38,3 +39,4 @@ Operations on Objects
    modifying_an_object
    truncating_an_object
    renaming_an_object
+   configuring_worm_retention_for_an_object

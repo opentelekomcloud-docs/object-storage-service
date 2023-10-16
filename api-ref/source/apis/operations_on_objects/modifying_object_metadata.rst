@@ -185,10 +185,8 @@ Error Responses
 
 No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
-Sample Request 1
-----------------
-
-**Adding Object Metadata**
+Sample Request: Adding Metadata for an Object
+---------------------------------------------
 
 Add the following metadata to the object: **Content-Type:application/zip** and **x-obs-meta-test:meta**.
 
@@ -204,8 +202,8 @@ Add the following metadata to the object: **Content-Type:application/zip** and *
    Content-Type:application/zip
    x-obs-meta-test:meta
 
-Sample Response 1
------------------
+Sample Response: Adding Metadata for an Object
+----------------------------------------------
 
 ::
 
@@ -219,10 +217,8 @@ Sample Response 1
    x-obs-metadata-directive:REPLACE_NEW
    x-obs-meta-test:meta
 
-Sample Request 2
-----------------
-
-**Modifying Object Metadata**
+Sample Request: Editing Metadata of an Object
+---------------------------------------------
 
 If metadata **x-obs-meta-test:testmeta** exists in the object and the value of **x-obs-storage-class** is **WARM**, change the metadata **x-obs-meta-test** of the object to **newmeta** and change **x-obs-storage-class** to **COLD**.
 
@@ -238,8 +234,8 @@ If metadata **x-obs-meta-test:testmeta** exists in the object and the value of *
    x-obs-meta-test:newmeta
    x-obs-storage-class:COLD
 
-Sample Response 2
------------------
+Sample Response: Editing Metadata of an Object
+----------------------------------------------
 
 ::
 
@@ -254,10 +250,8 @@ Sample Response 2
    x-obs-meta-test:newmeta
    x-obs-storage-class:COLD
 
-Sample Request 3
-----------------
-
-**Deleting Object Metadata**
+Sample Request: Deleting Metadata of an Object
+----------------------------------------------
 
 Metadata **x-obs-meta-test:newmeta** and **Content-Type:application/zip** exist in the object, and delete **x-obs-meta-test**.
 
@@ -272,8 +266,8 @@ Metadata **x-obs-meta-test:newmeta** and **Content-Type:application/zip** exist 
    x-obs-metadata-directive:REPLACE
    Content-Type:application/zip
 
-Sample Response 3
------------------
+Sample Response: Deleting Metadata of an Object
+-----------------------------------------------
 
 ::
 

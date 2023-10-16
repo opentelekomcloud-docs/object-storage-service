@@ -29,7 +29,7 @@ Advanced Bucket Settings
 -  :ref:`Deleting Tags <obs_04_0051>`
 -  :ref:`Configuring Bucket Storage Quota <obs_04_0052>`
 -  :ref:`Querying Bucket Storage Quota <obs_04_0053>`
--  :ref:`Querying Information About Used Space in a Bucket <obs_04_0054>`
+-  :ref:`Obtaining Storage Information of a Bucket <obs_04_0054>`
 -  :ref:`Configuring a Custom Domain Name for a Bucket <obs_04_0059>`
 -  :ref:`Obtaining the Custom Domain Name of a Bucket <obs_04_0060>`
 -  :ref:`Deleting the Custom Domain Name of a Bucket <obs_04_0061>`
@@ -38,6 +38,8 @@ Advanced Bucket Settings
 -  :ref:`Deleting the Encryption Configuration of a Bucket <obs_04_0064>`
 -  :ref:`Configuring the Requester-Pays Function for a Bucket <obs_04_0068>`
 -  :ref:`Obtaining the Requester-Pays Configuration Information of a Bucket <obs_04_0069>`
+-  :ref:`Configuring a Default WORM Policy for a Bucket <obs_04_0167>`
+-  :ref:`Obtaining the Default WORM Policy of a Bucket <obs_04_0168>`
 
 .. toctree::
    :maxdepth: 1
@@ -67,7 +69,7 @@ Advanced Bucket Settings
    deleting_tags
    configuring_bucket_storage_quota
    querying_bucket_storage_quota
-   querying_information_about_used_space_in_a_bucket
+   obtaining_storage_information_of_a_bucket
    configuring_a_custom_domain_name_for_a_bucket
    obtaining_the_custom_domain_name_of_a_bucket
    deleting_the_custom_domain_name_of_a_bucket
@@ -76,3 +78,5 @@ Advanced Bucket Settings
    deleting_the_encryption_configuration_of_a_bucket
    configuring_the_requester-pays_function_for_a_bucket
    obtaining_the_requester-pays_configuration_information_of_a_bucket
+   configuring_a_default_worm_policy_for_a_bucket
+   obtaining_the_default_worm_policy_of_a_bucket
