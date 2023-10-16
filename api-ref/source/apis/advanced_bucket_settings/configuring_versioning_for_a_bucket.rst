@@ -12,6 +12,8 @@ This operation restores an object that is mistakenly overwritten or deleted. You
 
 By default, versioning is disabled for a bucket.
 
+Once WORM is enabled for a bucket, OBS automatically enables versioning for the bucket and the versioning cannot be suspended for that bucket.
+
 You can perform this operation to enable or suspend versioning for a bucket.
 
 After versioning is enabled for a bucket:

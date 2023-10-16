@@ -34,17 +34,13 @@ The request parameter specifies the object ACL to be obtained. For details about
 
 .. table:: **Table 1** Request parameters
 
-   +-----------------------+---------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                             | Mandatory             |
-   +=======================+=========================================================+=======================+
-   | acl                   | Indicates that the request is to obtain the object ACL. | Yes                   |
-   |                       |                                                         |                       |
-   |                       | Type: string                                            |                       |
-   +-----------------------+---------------------------------------------------------+-----------------------+
-   | versionId             | Version number of an object.                            | No                    |
-   |                       |                                                         |                       |
-   |                       | Type: string                                            |                       |
-   +-----------------------+---------------------------------------------------------+-----------------------+
+   +-----------------------+------------------------------+-----------------------+
+   | Parameter             | Description                  | Mandatory             |
+   +=======================+==============================+=======================+
+   | versionId             | Version number of an object. | No                    |
+   |                       |                              |                       |
+   |                       | Type: string                 |                       |
+   +-----------------------+------------------------------+-----------------------+
 
 Request Headers
 ---------------
@@ -100,7 +96,7 @@ In addition to the common response headers, the following message headers may al
    |                                   |                                   |
    |                                   | Valid value: string               |
    |                                   |                                   |
-   |                                   | There is no default value.        |
+   |                                   | Default value: none               |
    +-----------------------------------+-----------------------------------+
 
 Response Elements

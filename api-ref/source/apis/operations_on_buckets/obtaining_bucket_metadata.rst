@@ -127,10 +127,8 @@ Error Responses
 
 No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
-Sample Request 1
-----------------
-
-**No header field for obtaining CORS configuration is carried**.
+Sample Request: Getting CORS Configuration (with No Headers Specified)
+----------------------------------------------------------------------
 
 ::
 
@@ -141,8 +139,8 @@ Sample Request 1
    Date: WED, 01 Jul 2015 02:30:25 GMT
    Authorization: OBS H4IPJX0TQTHTHEBQQCEC:niCQCuGIZpETKIyx1datxHZyYlk=
 
-Sample Response 1
------------------
+Sample Response: Getting CORS Configuration (with No Headers Specified)
+-----------------------------------------------------------------------
 
 ::
 
@@ -157,10 +155,8 @@ Sample Response 1
    x-obs-version: 3.0
    Content-Length: 0
 
-Sample Request 2
-----------------
-
-**Obtain bucket metadata and CORS configuration information after CORS is configured for the bucket**.
+Sample Request: Getting Bucket Metadata and CORS Configuration
+--------------------------------------------------------------
 
 ::
 
@@ -173,8 +169,8 @@ Sample Request 2
    Origin:www.example.com
    Access-Control-Request-Headers:AllowedHeader_1
 
-Sample Response 2
------------------
+Sample Response: Getting Bucket Metadata and CORS Configuration
+---------------------------------------------------------------
 
 ::
 

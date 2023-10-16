@@ -252,7 +252,6 @@ Sample Response
    <LifecycleConfiguration>
      <Rule>
        <ID>delete-2-days</ID>
-         <Prefix>test/</Prefix>
        <Status>Enabled</Status>
        <Expiration>
          <Days>2</Days>

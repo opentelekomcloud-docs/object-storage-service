@@ -42,7 +42,7 @@ This request uses parameters to specify which parts in a multipart upload will b
    |                       |                                                                                                                            |                       |
    |                       | Type: integer                                                                                                              |                       |
    |                       |                                                                                                                            |                       |
-   |                       | Default value: 1000                                                                                                        |                       |
+   |                       | Default value: **1,000**                                                                                                   |                       |
    +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | part-number           | Part after which the part listing begins. OBS lists only parts with greater numbers than that specified by this parameter. | No                    |
    |                       |                                                                                                                            |                       |

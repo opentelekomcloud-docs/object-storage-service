@@ -14,6 +14,7 @@ This operation is used to create a bucket with a specified name.
 
    -  By default, a user can have a maximum of 100 buckets.
    -  The name of a deleted bucket can be reused for a bucket or a parallel file system at least 30 minutes after the deletion.
+   -  You can enable WORM when you create a bucket, but you cannot enable WORM for an existing bucket. In a bucket with WORM enabled, you can further configure retention policies for objects you upload to this bucket. For more information, see the WORM sections. Once enabled, WORM cannot be disabled for a bucket. When you create a bucket with WORM enabled, OBS automatically enables versioning for the bucket and the versioning cannot be suspended for that bucket. When you create a parallel file system, you cannot enable WORM for it.
 
 A bucket name must be unique in OBS. If a user creates a bucket with the same name as that of an existing bucket under the same account and in the same region, a 200 code (indicating success) is returned. In scenarios other than the preceding one, the request for creating a bucket with the same name as that of an existing one will receive the 409 code (indicating that a namesake bucket already exists). To set an access control policy for the bucket to be created, you can add the **x-obs-acl** parameter to request headers.
 
@@ -114,6 +115,12 @@ The operation message header is the same as that of a common request. For detail
    |                                    |                                                                                                                                                                                                                                                                                                                                         |                       |
    |                                    | Example: **x-obs-fs-file-interface:Enabled**                                                                                                                                                                                                                                                                                            |                       |
    +------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | x-obs-bucket-object-lock-enabled   | When creating a bucket, you can use this header to enable WORM for the bucket.                                                                                                                                                                                                                                                          | No                    |
+   |                                    |                                                                                                                                                                                                                                                                                                                                         |                       |
+   |                                    | Type: string                                                                                                                                                                                                                                                                                                                            |                       |
+   |                                    |                                                                                                                                                                                                                                                                                                                                         |                       |
+   |                                    | Example: **x-obs-bucket-object-lock-enabled:true**                                                                                                                                                                                                                                                                                      |                       |
+   +------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 Request Elements
 ----------------
@@ -166,10 +173,8 @@ Error Responses
 
 No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
-Sample Request 1
-----------------
-
-Create a bucket.
+Sample Request: Creating a Bucket
+---------------------------------
 
 .. code-block:: text
 
@@ -185,8 +190,8 @@ Create a bucket.
        <Location>region</Location>
    </CreateBucketConfiguration>
 
-Sample Response 1
------------------
+Sample Response: Creating a Bucket
+----------------------------------
 
 ::
 
@@ -198,10 +203,8 @@ Sample Response 1
    Date: WED, 01 Jul 2015 02:25:06 GMT
    Content-Length: 0
 
-Sample Request 2
-----------------
-
-Create a bucket with a specified ACL and storage class.
+Sample Request: Creating a Bucket (with the ACL and Storage Class Specified)
+----------------------------------------------------------------------------
 
 .. code-block:: text
 
@@ -219,8 +222,8 @@ Create a bucket with a specified ACL and storage class.
        <Location>region</Location>
    </CreateBucketConfiguration>
 
-Sample Response 2
------------------
+Sample Response: Creating a Bucket (with the ACL and Storage Class Specified)
+-----------------------------------------------------------------------------
 
 ::
 
@@ -234,10 +237,8 @@ Sample Response 2
 
 .. _obs_04_0021__section4293341135610:
 
-Sample Request 4
-----------------
-
-Create a parallel file system.
+Sample Request: Creating a Parallel File System
+-----------------------------------------------
 
 .. code-block:: text
 
@@ -254,14 +255,42 @@ Create a parallel file system.
    <Location>region</Location>
    </CreateBucketConfiguration>
 
-Sample Response 4
------------------
+Sample Response: Creating a Parallel File System
+------------------------------------------------
 
 ::
 
    HTTP/1.1 200 OK
    Server: OBS
    x-obs-request-id: BF260000016435CE298386946AE4C482
+   Location: /examplebucket
+   x-obs-id-2: 32AAAQAAEAABSAAgAAEAABAAAQAAEAABCT9W2tcvLmMJ+plfdopaD62S0npbaRUz
+   Date: WED, 01 Jul 2015 02:25:06 GMT
+   Content-Length: 0
+
+Sample Request: Creating a Bucket with WORM Enabled
+---------------------------------------------------
+
+.. code-block:: text
+
+   PUT / HTTP/1.1
+   User-Agent: curl/7.29.0
+   Host: examplebucket.obs.region.example.com
+   Accept: */*
+   Date: WED, 01 Jul 2015 02:25:05 GMT
+   Authorization: OBS H4IPJX0TQTHTHEBQQCEC:75/Y4Ng1izvzc1nTGxpMXTE6ynw=
+   x-obs-bucket-object-lock-enabled:true
+   Content-Length: 0
+
+Sample Response: Creating a Bucket with WORM Enabled
+----------------------------------------------------
+
+.. code-block::
+
+   HTTP/1.1 200 OK
+   Server: OBS
+   x-obs-request-id: 00000184C11AC7A6809F881341842C02
+   x-reserved-indicator: Unauthorized
    Location: /examplebucket
    x-obs-id-2: 32AAAQAAEAABSAAgAAEAABAAAQAAEAABCT9W2tcvLmMJ+plfdopaD62S0npbaRUz
    Date: WED, 01 Jul 2015 02:25:06 GMT
