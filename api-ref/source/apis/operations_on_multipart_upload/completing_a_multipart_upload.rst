@@ -126,7 +126,7 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the following message headers may also be used. For details, see :ref:`Table 3 <obs_04_0102__table31698209142128>`.
+In addition to the common response headers, the message headers listed in :ref:`Table 3 <obs_04_0102__table31698209142128>` may be used.
 
 .. _obs_04_0102__table31698209142128:
 
@@ -202,7 +202,7 @@ Error Responses
 #. If the requested multipart upload does not exist, OBS returns **404 Not Found** and error code **NoSuchUpload**.
 #. If the user is not the initiator of the task, OBS returns **403 Forbidden** and the error code is **AccessDenied**.
 #. If the request part list contains a part that does not exist, OBS returns **400 Bad Request** and the error code is **InvalidPart**.
-#. If the Etag of the part contained in the request part list is incorrect, OBS returns **400 Bad Request** and the error code is **InvalidPart**.
+#. If the part's ETag contained in the request list is incorrect, OBS returns **400 Bad Request** with an error code of **InvalidPart**.
 #. If the size of a part other than the last part is smaller than 100 KB, OBS returns **400 Bad Request**.
 #. If the size of the object is greater than 48.8 TB after parts being merged, OBS returns status code **400 Bad Request**.
 

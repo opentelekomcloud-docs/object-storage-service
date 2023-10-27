@@ -10,12 +10,12 @@ Functions
 
 OBS uses the PUT method to create or update the default server-side encryption for a bucket.
 
-After encryption is enabled for a bucket, objects uploaded to the bucket are encrypted with the encryption configuration the bucket. Currently, it only supports the server-side encryption using keys hosted by KMS (SSE-KMS). For details about SSE-KMS, see :ref:`Server-Side Encryption (SSE-KMS) <obs_04_0106>`.
+After you configure encryption for a bucket, objects uploaded to this bucket will be encrypted with the bucket encryption settings you specified. Available encryption methods include server-side encryption with KMS-managed keys (SSE-KMS) and server-side encryption with customer-provided keys (SSE-C). For details, see :ref:`Server-Side Encryption <obs_04_0104>`.
 
-To perform this operation, you must have the permission to configure encryption for the bucket. By default, the bucket owner has this permission and can assign this permission to other users.
+To perform this operation, you must have the **PutEncryptionConfiguration** permission. By default, the bucket owner has this permission and can grant it to others.
 
-Request Syntax
---------------
+Request Syntax (SSE-KMS)
+------------------------
 
 .. code-block:: text
 
@@ -36,7 +36,7 @@ Request Syntax
        </Rule>
    </ServerSideEncryptionConfiguration>
 
-Request parameters
+Request Parameters
 ------------------
 
 This request contains no message parameters.
@@ -96,13 +96,13 @@ In this request, you need to carry the bucket encryption configuration in the re
    |                                    |                                                                                                                                                                        |                       |
    |                                    | Valid value formats are as follows:                                                                                                                                    |                       |
    |                                    |                                                                                                                                                                        |                       |
-   |                                    | #. *regionID:domainID (account ID)*\ **:key/**\ *key_id*                                                                                                               |                       |
+   |                                    | #. *regionID*\ **:**\ *domainID*\ **:key/**\ *key_id*                                                                                                                  |                       |
    |                                    | #. *key_id*                                                                                                                                                            |                       |
    |                                    |                                                                                                                                                                        |                       |
    |                                    | In the preceding formats:                                                                                                                                              |                       |
    |                                    |                                                                                                                                                                        |                       |
-   |                                    | -  *regionID* indicates the ID of the region where the key resides.                                                                                                    |                       |
-   |                                    | -  *domainID* indicates the ID of the domain to which the key belongs. For details, see :ref:`Obtaining the Domain ID and User ID <obs_04_0117>`.                      |                       |
+   |                                    | -  *regionID* indicates the ID of the region where the key belongs.                                                                                                    |                       |
+   |                                    | -  *domainID* indicates the ID of the domain to which the key belongs. For details, see :ref:`Obtaining a Domain ID and a User ID <obs_04_0117>`.                      |                       |
    |                                    | -  *key_id* indicates the ID of the key created in KMS.                                                                                                                |                       |
    |                                    |                                                                                                                                                                        |                       |
    |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                                                                                                           |                       |
@@ -140,7 +140,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response contains no element.
+This response contains no elements.
 
 Error Responses
 ---------------

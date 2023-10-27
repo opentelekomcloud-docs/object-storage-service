@@ -67,11 +67,11 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-:ref:`Table 2 <obs_04_0023__table13151171313444>` lists additional response header parameters that are used except for the common response header parameters.
+In addition to the common response headers, the message headers listed in :ref:`Table 2 <obs_04_0023__table13151171313444>` may be used.
 
 .. _obs_04_0023__table13151171313444:
 
-.. table:: **Table 2** Additional response header parameters
+.. table:: **Table 2** Additional response headers
 
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Header                            | Description                                                                                                                                                                                        |
@@ -80,7 +80,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-storage-class               | Default storage class of the bucket. The options are as follows: **STANDARD** (Standard), **WARM** (Warm), and **COLD** (Cold).                                                                    |
+   | x-obs-storage-class               | Default storage class of the bucket. The options are as follows: **STANDARD** (Standard), **WARM** (Warm), **COLD** (Cold).                                                                        |
    |                                   |                                                                                                                                                                                                    |
    |                                   | Type: string                                                                                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -120,7 +120,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

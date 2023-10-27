@@ -2,10 +2,10 @@
 
 .. _obs_04_0117:
 
-Obtaining the Domain ID and User ID
+Obtaining a Domain ID and a User ID
 ===================================
 
-During API calls, the domain ID (**DomainID**) and user ID (**UserID**) need to be specified in some requests. Therefore, you need to obtain them from the console. The procedure is as follows:
+When making API calls, you may need to specify the domain ID (**DomainID**) and user ID (**UserID**) in some requests. To obtain them from the console, do as follows:
 
 #. Log in to the console.
 

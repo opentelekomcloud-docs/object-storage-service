@@ -66,7 +66,7 @@ In addition, the request can use additional headers, as shown in :ref:`Table 2 <
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Type: string                                                                                                                                                                                        |                                                 |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-algorithm | Indicates a decryption algorithm. The header is used in SSE-C mode.                                                                                                                                 | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-algorithm | Indicates the decryption algorithm when SSE-C is used.                                                                                                                                              | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Type: string                                                                                                                                                                                        |                                                 |
    |                                                 |                                                                                                                                                                                                     |                                                 |
@@ -74,7 +74,7 @@ In addition, the request can use additional headers, as shown in :ref:`Table 2 <
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Constraint: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.                                             |                                                 |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-key       | Indicates a key used to decrypt objects. The header is used in SSE-C mode.                                                                                                                          | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-key       | Indicates the decryption key when SSE-C is used.                                                                                                                                                    | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Type: string                                                                                                                                                                                        |                                                 |
    |                                                 |                                                                                                                                                                                                     |                                                 |
@@ -82,7 +82,7 @@ In addition, the request can use additional headers, as shown in :ref:`Table 2 <
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Constraint: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.   |                                                 |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of a key used to decrypt objects. The header is used in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key.             | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of the decryption key when SSE-C is used. The MD5 value is used to check whether any error occurs during the transmission of the key.                                       | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                     |                                                 |
    |                                                 | Type: string                                                                                                                                                                                        |                                                 |
    |                                                 |                                                                                                                                                                                                     |                                                 |
@@ -113,7 +113,7 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the following message headers may also be used. For details, see :ref:`Table 3 <obs_04_0084__table53333691145218>`.
+In addition to the common response headers, the message headers listed in :ref:`Table 3 <obs_04_0084__table53333691145218>` may be used.
 
 .. _obs_04_0084__table53333691145218:
 
@@ -220,7 +220,7 @@ In addition to the common response headers, the following message headers may al
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

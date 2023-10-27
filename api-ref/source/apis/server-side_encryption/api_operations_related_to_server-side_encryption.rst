@@ -63,16 +63,24 @@ The following table describes the requirements on the transmission protocols use
 
 .. table:: **Table 4** Requirements for the transfer protocol used by the UploadPart-Copy operation
 
-   ============================== ======================= =================
-   Source Object                  Target Part             Transfer Protocol
-   ============================== ======================= =================
-   Non-encrypted object           SSE-KMS encryption part HTTP or HTTPS
-   Object encrypted using SSE-KMS SSE-KMS encryption part HTTP or HTTPS
-   Object encrypted using SSE-C   SSE-KMS encryption part HTTP or HTTPS
-   Non-encrypted object           SSE-C encryption part   HTTPS
-   Object encrypted using SSE-KMS SSE-C encryption part   HTTPS
-   Object encrypted using SSE-C   SSE-C encryption part   HTTPS
-   Non-encrypted object           Non-encrypted part      HTTP or HTTPS
-   Object encrypted using SSE-KMS Non-encrypted part      HTTP or HTTPS
-   Object encrypted using SSE-C   Non-encrypted part      HTTP or HTTPS
-   ============================== ======================= =================
+   +--------------------------------+------------------------------+-------------------+
+   | Source Object                  | Target Part                  | Transfer Protocol |
+   +================================+==============================+===================+
+   | Non-encrypted object           | Part encrypted using SSE-KMS | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-KMS | Part encrypted using SSE-KMS | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-C   | Part encrypted using SSE-KMS | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+
+   | Non-encrypted object           | Part encrypted using SSE-C   | HTTPS             |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-KMS | Part encrypted using SSE-C   | HTTPS             |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-C   | Part encrypted using SSE-C   | HTTPS             |
+   +--------------------------------+------------------------------+-------------------+
+   | Non-encrypted object           | Non-encrypted part           | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-KMS | Non-encrypted part           | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+
+   | Object encrypted using SSE-C   | Non-encrypted part           | HTTP or HTTPS     |
+   +--------------------------------+------------------------------+-------------------+

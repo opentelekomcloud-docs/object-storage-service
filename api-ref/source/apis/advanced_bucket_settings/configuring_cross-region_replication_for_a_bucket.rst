@@ -8,7 +8,7 @@ Configuring Cross-Region Replication for a Bucket
 Functions
 ---------
 
-Cross-region replication refers to the automatic and asynchronous replication of objects across buckets in different regions. By activating the cross-region replication function, OBS can copy new objects and modified objects from a source bucket to destination buckets in different regions.
+Cross-region replication refers to the automatic and asynchronous replication of objects across buckets in different regions. By activating cross-region replication, OBS can copy new objects and modified objects from a source bucket in one region to a destination bucket in a different region.
 
 The following two requirements must be met when configuring the cross-region replication for a bucket:
 
@@ -175,7 +175,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

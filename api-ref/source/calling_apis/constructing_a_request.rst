@@ -117,7 +117,7 @@ Refers to optional and additional request fields, for example a field required b
 (Optional) Request Body
 -----------------------
 
-A request body is generally sent in a structured format (for example, JSON or XML). It corresponds to **Content-Type** in the request header and is used to transfer content other than the request header. If the request body contains Chinese characters, these characters must be coded in UTF-8.
+A request body is generally sent in a structured format (for example, JSON or XML). It corresponds to **Content-Type** in the request header and is used to transfer content other than the request header. If the request body contains full-width characters, these characters must be coded using UTF-8.
 
 The request body varies according to the APIs. Certain APIs do not require the request body, such as the GET and DELETE APIs.
 

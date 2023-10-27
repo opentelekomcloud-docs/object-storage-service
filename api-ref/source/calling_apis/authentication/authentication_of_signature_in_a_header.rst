@@ -279,36 +279,36 @@ Signature Calculation in Java
 
        private static final String OBS_PREFIX = "x-obs-";
 
-       private static final String DEFAULT_ENCODING = "UTF-8";
+    private static final String DEFAULT_ENCODING = "UTF-8";
 
-       private static final List<String> SUB_RESOURCES = Collections.unmodifiableList(Arrays.asList(
-               "CDNNotifyConfiguration", "acl", "attname",  "cors", "customdomain", "delete",
-               "deletebucket", "encryption", "length", "lifecycle", "location", "logging",
-               "metadata", "mirrorBackToSource", "modify", "name", "notification", "obscompresspolicy",
-                           "partNumber", "policy", "position", "quota","rename", "replication", "requestPayment", "response-cache-control",
-                           "response-content-disposition","response-content-encoding", "response-content-language", "response-content-type",
-                           "response-expires","restore", "storageClass", "storagePolicy", "storageinfo", "tagging", "torrent", "truncate",
-               "uploadId", "uploads", "versionId", "versioning", "versions", "website",
-               "x-obs-security-token", "object-lock", "retention"));
+    private static final List<String> SUB_RESOURCES = Collections.unmodifiableList(Arrays.asList(
+      "CDNNotifyConfiguration", "acl", "attname",  "cors", "customdomain", "delete",
+      "deletebucket", "encryption", "length", "lifecycle", "location", "logging",
+      "metadata", "mirrorBackToSource", "modify", "name", "notification", "obscompresspolicy",
+      "partNumber", "policy", "position", "quota","rename", "replication", "requestPayment", "response-cache-control",
+      "response-content-disposition","response-content-encoding", "response-content-language", "response-content-type",
+      "response-expires","restore", "storageClass", "storagePolicy", "storageinfo", "tagging", "torrent", "truncate",
+      "uploadId", "uploads", "versionId", "versioning", "versions", "website",
+      "x-obs-security-token", "object-lock", "retention"));
 
-       private String ak;
+    private String ak;
 
-       private String sk;
+    private String sk;
 
-        public String urlEncode(String input) throws UnsupportedEncodingException
+     public String urlEncode(String input) throws UnsupportedEncodingException
        {
-           return URLEncoder.encode(input, DEFAULT_ENCODING)
+     return URLEncoder.encode(input, DEFAULT_ENCODING)
            .replaceAll("%7E", "~") //for browser
            .replaceAll("%2F", "/")
            .replaceAll("%20", "+");
        }
 
-       private String join(List<?> items, String delimiter)
+    private String join(List<?> items, String delimiter)
        {
            StringBuilder sb = new StringBuilder();
            for (int i = 0; i < items.size(); i++)
            {
-       String item = items.get(i).toString();
+    String item = items.get(i).toString();
                sb.append(item);
                if (i < items.size() - 1)
                {
