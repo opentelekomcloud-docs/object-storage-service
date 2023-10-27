@@ -103,7 +103,7 @@ If versioning is enabled for the bucket, the headers listed in :ref:`Table 2 <ob
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

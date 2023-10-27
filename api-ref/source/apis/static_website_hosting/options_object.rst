@@ -125,7 +125,7 @@ The request uses the headers described in :ref:`Table 2 <obs_04_0078__table14690
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

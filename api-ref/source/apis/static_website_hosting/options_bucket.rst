@@ -129,7 +129,7 @@ The response uses the following headers as described in :ref:`Table 2 <obs_04_00
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------

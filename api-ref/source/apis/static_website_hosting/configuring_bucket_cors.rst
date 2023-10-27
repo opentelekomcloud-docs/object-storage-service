@@ -150,7 +150,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response contains no element.
+This response contains no elements.
 
 Error Responses
 ---------------

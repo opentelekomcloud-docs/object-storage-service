@@ -55,7 +55,7 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------
@@ -69,7 +69,7 @@ Sample Request 1
 
 Grant permissions to the tenant whose ID is **783fc6652cf246c096ea836694f71855**.
 
-For details about how to obtain the tenant ID, see :ref:`Obtaining the Domain ID and User ID <obs_04_0117>`.
+For details about how to obtain the tenant ID, see :ref:`Obtaining a Domain ID and a User ID <obs_04_0117>`.
 
 .. code-block:: text
 
@@ -115,7 +115,7 @@ Sample Request 2
 
 The user ID is **71f3901173514e6988115ea2c26d1999**, and the account ID is **783fc6652cf246c096ea836694f71855**.
 
-For details about how to obtain the account ID and user ID, see :ref:`Obtaining the Domain ID and User ID <obs_04_0117>`.
+For details about how to obtain the account ID and user ID, see :ref:`Obtaining a Domain ID and a User ID <obs_04_0117>`.
 
 .. code-block:: text
 
@@ -161,7 +161,7 @@ Sample Request 3
 
 The user ID is **71f3901173514e6988115ea2c26d1999**, and the account ID is **783fc6652cf246c096ea836694f71855**.
 
-For details about how to obtain the account ID and user ID, see :ref:`Obtaining the Domain ID and User ID <obs_04_0117>`.
+For details about how to obtain the account ID and user ID, see :ref:`Obtaining a Domain ID and a User ID <obs_04_0117>`.
 
 .. code-block:: text
 

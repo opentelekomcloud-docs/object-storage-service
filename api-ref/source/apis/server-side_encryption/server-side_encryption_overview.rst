@@ -5,14 +5,14 @@
 Server-Side Encryption Overview
 ===============================
 
-Users can upload and download objects in common mode or using server-side encryption.
+You can configure server-side encryption for objects, so that they will be encrypted or decrypted when you upload them to or download them from a bucket.
 
-OBS supports server-side encryption.
+The encryption and decryption happen on the server side.
 
-Users can implement this function based on the key type to meet site requirements. Two server-side encryption modes are supported: KMS server-side encryption (SSE-KMS) and server-side encryption (SSE-C) provided by the customer. Both the two modes use the industry-standard AES256 encryption algorithm.
+The encryption methods provided include SSE-KMS and SSE-C. All of them use the AES-256 algorithm.
 
-In the SSE-KMS mode, OBS uses the keys provided by KMS for server-side encryption.
+With SSE-KMS, OBS uses the keys provided by KMS for server-side encryption. You can create custom keys on KMS to encrypt your objects.
 
-In the SSE-C mode, OBS uses the keys and MD5 values provided by customers for server-side encryption.
+With SSE-C, OBS uses the keys and MD5 values provided by customers for server-side encryption.
 
-When server-side encryption is used, the returned ETag value is not the MD5 value of the object. OBS will verify the MD5 value of an uploaded object when the upload request carries the **Content-MD5** header field, no matter whether server-side encryption is used or not.
+When server-side encryption is used, the returned ETag value is not the object's MD5 value.

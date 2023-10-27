@@ -142,7 +142,7 @@ This request uses common headers. In addition, you can add additional headers to
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Type: string                                                                                                                                                                                                                                                 |                                                 |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
-   |                                                 | Example: **0f64741bf7cb1089e988e4585d0d3434**                                                                                                                                                                                                                |                                                 |
+   |                                                 | ETag example: **0f64741bf7cb1089e988e4585d0d3434**                                                                                                                                                                                                           |                                                 |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
    | If-None-Match                                   | Returns the object only if its ETag is different from the one specified by this header. Otherwise, **304 Not Modified** is returned.                                                                                                                         | No                                              |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
@@ -150,7 +150,7 @@ This request uses common headers. In addition, you can add additional headers to
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | ETag example: **0f64741bf7cb1089e988e4585d0d3434**                                                                                                                                                                                                           |                                                 |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-algorithm | Indicates an encryption algorithm. The header is used in SSE-C mode.                                                                                                                                                                                         | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-algorithm | Indicates the encryption algorithm when SSE-C is used.                                                                                                                                                                                                       | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Type: string                                                                                                                                                                                                                                                 |                                                 |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
@@ -158,7 +158,7 @@ This request uses common headers. In addition, you can add additional headers to
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Constraint: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.                                                                                                      |                                                 |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-key       | Indicates a key used to encrypt objects. The header is used in SSE-C mode. This key is used to decrypt objects.                                                                                                                                              | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-key       | Indicates the key for decrypting objects when SSE-C is used.                                                                                                                                                                                                 | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Type: string                                                                                                                                                                                                                                                 |                                                 |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
@@ -166,7 +166,7 @@ This request uses common headers. In addition, you can add additional headers to
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Constraint: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.                                                            |                                                 |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
-   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of a key used to encrypt objects. The header is used in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key.                                                                      | No. This header is required when SSE-C is used. |
+   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of the encryption key when SSE-C is used. The MD5 value is used to check whether any error occurs during the transmission of the key.                                                                                                | No. This header is required when SSE-C is used. |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
    |                                                 | Type: string                                                                                                                                                                                                                                                 |                                                 |
    |                                                 |                                                                                                                                                                                                                                                              |                                                 |
@@ -199,11 +199,11 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the following message headers may also be used. For details, see :ref:`Table 3 <obs_04_0083__table40465940>`.
+In addition to the common response headers, the message headers listed in :ref:`Table 3 <obs_04_0083__table40465940>` may be used.
 
 .. _obs_04_0083__table40465940:
 
-.. table:: **Table 3** Additional response header parameters
+.. table:: **Table 3** Additional response headers
 
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Header                                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -270,7 +270,7 @@ In addition to the common response headers, the following message headers may al
 Response Elements
 -----------------
 
-This response involves no elements.
+This response contains no elements.
 
 Error Responses
 ---------------
@@ -383,7 +383,7 @@ Sample Response: Downloading a Specified Range of an Object
 Sample Request: Checking the ETag Value of an Object
 ----------------------------------------------------
 
-**Download an object if its Etag value matches**.
+**Download an object if its ETag value is matched**.
 
 .. code-block:: text
 
@@ -398,7 +398,7 @@ Sample Request: Checking the ETag Value of an Object
 Sample Response: Checking the ETag Value of an Object (ETag Mismatch)
 ---------------------------------------------------------------------
 
-If the Etag value of the stored object is not **682e760adb130c60c120da3e333a8b09**, the system displays a message indicating that the download fails.
+If the object's ETag value is not **682e760adb130c60c120da3e333a8b09**, the system displays a download failure message.
 
 ::
 
@@ -421,7 +421,7 @@ If the Etag value of the stored object is not **682e760adb130c60c120da3e333a8b09
 Sample Response: Checking the ETag Value of an Object (ETag Matched)
 --------------------------------------------------------------------
 
-If the Etag value of the stored object is **682e760adb130c60c120da3e333a8b09**, the download is successful.
+If the object's ETag value is **682e760adb130c60c120da3e333a8b09**, the download is successful.
 
 ::
 
