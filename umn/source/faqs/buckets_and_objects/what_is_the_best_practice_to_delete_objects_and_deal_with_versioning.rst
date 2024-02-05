@@ -1,4 +1,6 @@
-.. _obs_faq_0199:
+:original_name: obs_faq_best_practice_del_obj.html
+
+.. _obs_faq_best_practice_del_obj:
 
 What is the Best Practice to Delete Objects and Deal with Versioning?
 =====================================================================
