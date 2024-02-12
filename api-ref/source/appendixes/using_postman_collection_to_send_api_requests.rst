@@ -7,8 +7,8 @@ Using Postman Collection to Send API Requests
 
 You can use Postman application to send API requests and get responses from the OBS services. Please find the OBS Postman requests collection file and the Postman environment file attached below:
 
-* :download:`Postman collection file <_static/attachments/OBS_collection.postman_collection.json>`
-* :download:`Postman environment file <_static/attachments/Prod_eude.postman_environment.json>`
+* :download:`Postman collection file </_static/attachments/OBS_collection.postman_collection.json>`
+* :download:`Postman environment file </_static/attachments/Prod_eude.postman_environment.json>`
 
 The files above were tested using Postman application for Windows. These are templates that can be used to check the API call methods in order to help you construct API calls in other tools.
 
