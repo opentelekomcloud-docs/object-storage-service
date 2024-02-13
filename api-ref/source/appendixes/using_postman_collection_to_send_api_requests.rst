@@ -11,6 +11,7 @@ You can use Postman application to send API requests and get responses from the 
 * :download:`Postman environment file </_static/attachments/Prod_eude.postman_environment.json>`
 
 The files above were tested using Postman application for Windows. These are templates that can be used to check the API call methods in order to help you construct API calls in other tools.
+For example, you can change bucket and objects WORM settings using requests located in OBS API/Object Lock (WORM) folder.
 
 In order to send requests from the collection:
 
