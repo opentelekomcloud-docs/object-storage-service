@@ -24,6 +24,7 @@ The requests that are sent to OBS by users must comply with REST specifications 
 -  :ref:`Abort Multipart Upload <en-us_topic_0125560402>`
 -  :ref:`OPTIONS Object <en-us_topic_0125560261>`
 -  :ref:`POST Object restore <en-us_topic_0125560388>`
+-  :ref:`Configuring WORM Retention for an Object <en-us_topic_0000001806154009>`
 
 .. toctree::
    :maxdepth: 1
@@ -46,3 +47,4 @@ The requests that are sent to OBS by users must comply with REST specifications 
    abort_multipart_upload
    options_object
    post_object_restore
+   configuring_worm_retention_for_an_object
