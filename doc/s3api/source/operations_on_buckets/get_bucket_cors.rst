@@ -170,18 +170,18 @@ Sample Response
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <CORSConfiguration xmlns="http://obs.example.com/doc/2015-06-30/">
-    <CORSRule>
-    <AllowedMethod>POST</AllowedMethod>
-    <AllowedMethod>GET</AllowedMethod>
-    <AllowedMethod>HEAD</AllowedMethod>
-    <AllowedMethod>PUT</AllowedMethod>
-    <AllowedMethod>DELETE</AllowedMethod>
-    <AllowedOrigin>obs.example.com</AllowedOrigin>
-    <AllowedOrigin>www.example.com</AllowedOrigin>
-    <AllowedHeader>AllowedHeader_1</AllowedHeader>
-    <AllowedHeader>AllowedHeader_2</AllowedHeader>
-    <MaxAgeSeconds>100</MaxAgeSeconds>
-    <ExposeHeader>ExposeHeader_1</ExposeHeader>
-    <ExposeHeader>ExposeHeader_2</ExposeHeader>
-    </CORSRule>
+        <CORSRule>
+            <AllowedMethod>POST</AllowedMethod>
+            <AllowedMethod>GET</AllowedMethod>
+            <AllowedMethod>HEAD</AllowedMethod>
+            <AllowedMethod>PUT</AllowedMethod>
+            <AllowedMethod>DELETE</AllowedMethod>
+            <AllowedOrigin>obs.example.com</AllowedOrigin>
+            <AllowedOrigin>www.example.com</AllowedOrigin>
+            <AllowedHeader>AllowedHeader_1</AllowedHeader>
+            <AllowedHeader>AllowedHeader_2</AllowedHeader>
+            <MaxAgeSeconds>100</MaxAgeSeconds>
+            <ExposeHeader>ExposeHeader_1</ExposeHeader>
+            <ExposeHeader>ExposeHeader_2</ExposeHeader>
+        </CORSRule>
     </CORSConfiguration>

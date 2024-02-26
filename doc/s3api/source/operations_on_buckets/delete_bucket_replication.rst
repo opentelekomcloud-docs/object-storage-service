@@ -1,23 +1,19 @@
-:original_name: en-us_topic_0000001127815293.html
+:original_name: en-us_topic_0000001684063985.html
 
-.. _en-us_topic_0000001127815293:
+.. _en-us_topic_0000001684063985:
 
-DELETE Bucket Encryption
-========================
+DELETE Bucket Replication
+=========================
 
-OBS uses the DELETE method to delete the encryption configuration of a specified bucket.
-
-To perform this operation, you must have the **s3:PutEncryptionConfiguration** permission. By default, only the bucket owner can delete the tags of a bucket. The bucket owner can allow other users to perform this operation by setting a bucket policy or granting them the permission.
+This operation deletes the bucket replication configuration. Only users have the **s3:DeleteReplicationConfiguration** permission can perform this operation.
 
 Request Syntax
 --------------
 
 .. code-block:: text
 
-   DELETE /?encryption HTTP/1.1
-   User-Agent: curl/7.29.0
+   DELETE /?replication HTTP/1.1
    Host: bucketname.obs.region.example.com
-   Accept: */*
    Date: date
    Authorization: authorization string
 
@@ -39,13 +35,14 @@ This request involves no elements.
 Response Syntax
 ---------------
 
-::
+.. code-block::
 
-   HTTP/1.1 status_code
+   HTTP/1.1 204 No Content
    Server: OBS
-   x-amz-request-id: request id
-   x-amz-id-2: id
+   x-amz-id-2:id
+   x-amz-request-id:id
    Date: date
+   Connection: keep-alive
 
 Response Headers
 ----------------
@@ -67,20 +64,18 @@ Sample Request
 
 .. code-block:: text
 
-   DELETE /examplebucket?encryption HTTP/1.1
-   User-Agent: curl/7.29.0
+   DELETE /?replication HTTP/1.1
    Host: examplebucket.obs.region.example.com
-   Accept: */*
-   Date: Tue, 08 Jan 2019 13:18:35 +0000
-   Authorization: authorization
+   Date: Wed, 11 Feb 2015 05:37:16 GMT
+   Authorization: signatureValue
 
 Sample Response
 ---------------
 
-::
+.. code-block::
 
    HTTP/1.1 204 No Content
    Server: OBS
-   x-amz-request-id: 000001682D993B666808E265A3F6361D
-   x-amz-id-2: 32AAAQAAEAABAAAQAAEAABAAAQAAEAABCSyB46jGSQsu06m1nyIeKxTuJ+H27ooC
-   Date: Tue, 08 Jan 2019 13:14:03 GMT
+   x-amz-id-2: Uuag1LuByRx9e6j5OnimrSAMPLEtRPfTaOAa==
+   x-amz-request-id: 656c76696e672example
+   Date: Wed, 11 Feb 2015 05:37:16 GMT
