@@ -40,8 +40,6 @@ Cross-region replication has the following limitations and constraints:
 
 -  Currently, only buckets of version 3.0 support cross-region replication. To check the bucket version, go to the **Overview** page of the bucket on OBS Console. Then you can view the bucket version in the **Basic Information** area.
 
--  Objects cannot be copied to the destination bucket if they are uploaded before cross-region replication is enabled.
-
 -  The source bucket and the destination bucket must belong to different regions separately. Data cannot be copied between buckets in the same region.
 
 -  Objects of the Cold storage class in the source bucket cannot be copied to the destination bucket through the cross-region replication function.

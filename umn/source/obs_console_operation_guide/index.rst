@@ -13,7 +13,8 @@ OBS Console Operation Guide
 -  :ref:`Managing Objects <obs_03_0315>`
 -  :ref:`Server-Side Encryption <obs_03_0321>`
 -  :ref:`Object Metadata <obs_03_0323>`
--  :ref:`Permission Control <obs_03_0086>`
+-  :ref:`Bucket Inventories <obs_03_0082>`
+-  :ref:`Permissions Control <obs_03_0086>`
 -  :ref:`Versioning <en-us_topic_0045853849>`
 -  :ref:`Logging <obs_03_0328>`
 -  :ref:`Tags <obs_03_0330>`
@@ -44,7 +45,8 @@ OBS Console Operation Guide
    managing_objects/index
    server-side_encryption/index
    object_metadata/index
-   permission_control/index
+   bucket_inventories/index
+   permissions_control/index
    versioning/index
    logging/index
    tags/index

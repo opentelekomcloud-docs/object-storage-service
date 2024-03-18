@@ -8,6 +8,6 @@ Object Storage Service - User Guide
    service_overview/index
    obs_console_operation_guide/index
    obs_browser_operation_guide/index
-   faqs/index
+   faq/index
    change_history
    glossary

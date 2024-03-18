@@ -13,6 +13,10 @@ Why is no upload task created and nothing displayed on the page after a large nu
 Answer
 ------
 
-Confirm the number of files to be uploaded. The **Upload File** function of OBS Browser allows 500 files to be uploaded at the same time. If more files need to be uploaded, place the files in a folder and use the **Upload Folder** function to upload the folder.
+- Check whether the total name length of all files uploaded exceed approximately 25,500 characters.
 
-Confirm the total name length of all files to be uploaded cannot exceed approximately 25,500 characters. If the name length exceeds this threshold, the system stops responding to the upload request.
+If the total name length is above this limit, OBS will stop responding to the upload request.
+
+- Check whether the total number of files uploaded exceed 500.
+
+OBS Browser allows a maximum of 500 files that can be uploaded at a time. To upload more files than this limit, place the files in a folder and then upload the folder to OBS.

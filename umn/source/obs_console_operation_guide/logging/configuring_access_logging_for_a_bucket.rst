@@ -12,7 +12,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
-#. In the right **Basic Configurations** area, click **Logging**. The **Logging** dialog box is displayed.
+#. In the **Basic Configurations** area, click **Logging**. The **Logging** dialog box is displayed.
 
 #. Select **Enable**. For details, see :ref:`Figure 1 <obs_03_0329__fig17700501192958>`.
 
@@ -23,7 +23,7 @@ Procedure
 
       **Figure 1** Logging
 
-#. Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
+#. Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically granted the permissions to read the bucket ACL and write logs to the bucket.
 
 #. Enter a prefix for the **Log File Name Prefix**.
 
