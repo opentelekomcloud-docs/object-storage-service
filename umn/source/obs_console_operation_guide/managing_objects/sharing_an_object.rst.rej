@@ -1,0 +1,21 @@
+diff a/umn/source/obs_console_operation_guide/managing_objects/sharing_an_object.rst b/umn/source/obs_console_operation_guide/managing_objects/sharing_an_object.rst	(rejected hunks)
+@@ -24,8 +24,8 @@ After an object is shared on OBS Console, the system will generate a URL that co
+ Limitations and Constraints
+ ---------------------------
+ 
+--  An object shared from OBS Console can be valid for one minute to 18 hours. If you need a longer validity period for a shared object, use the client tool OBS Browser+ that supports a validity period from one minute to 30 days. Or, you can configure a :ref:`bucket policy or object policy <en-us_topic_0045853745>` to grant the access permissions of an object to other users permanently.
+--  Only buckets of version 3.0 support file sharing. You can view the bucket version in the **Basic Information** area on the **Overview** page of a bucket.
++-  An object shared from OBS Console can be valid for one minute to 18 hours. If you need a longer validity period, use OBS Browser+ that allows a validity period from one minute to 30 days. Or, you can configure a :ref:`bucket policy or object policy <en-us_topic_0045853745>` to grant other users access to the object permanently.
++-  Only buckets of version 3.0 support object sharing. You can view the bucket version in the **Basic Information** area on the **Overview** page of a bucket.
+ -  Encrypted objects cannot be shared.
+ -  To share a cold object, restore it first.
+ 
+@@ -50,7 +50,7 @@ Procedure
+ 
+    -  Click **Open URL** to preview the file on a new page or directly download it to your default download path.
+    -  Click **Copy Link** to share the link to others for them to access this file using a browser.
+-   -  Click **Copy Path** to share the file path to users who have access permissions to the bucket. The users then can search for the file by pasting the shared path to the search box of the bucket.
++   -  Click **Copy Path** to share the file path to users who have access to the bucket. The users then can search for the file by pasting the shared path to the search box of the bucket.
+ 
+    .. note::
+ 

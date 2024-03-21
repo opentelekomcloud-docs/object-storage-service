@@ -1,0 +1,31 @@
+diff a/umn/source/obs_browser_operation_guide/logging/configuring_logging.rst b/umn/source/obs_browser_operation_guide/logging/configuring_logging.rst	(rejected hunks)
+@@ -5,12 +5,12 @@
+ Configuring Logging
+ ===================
+ 
+-After logging is enabled for a bucket, OBS automatically converts bucket logs into objects following the naming rules and writes the objects into a target bucket.
++After logging is enabled for a bucket, OBS automatically converts the bucket's logs into objects in a fixed naming format and then writes these objects into a destination bucket.
+ 
+ Prerequisites
+ -------------
+ 
+-The log delivery user group has been assigned the **Write** and **ACL View** permissions for the target bucket. For details, see :ref:`Configuring a Bucket ACL <en-us_topic_0045853509>`.
++The log delivery user group has the write and ACL view permissions for the destination bucket. For details, see :ref:`Configuring a Bucket ACL <en-us_topic_0045853509>`.
+ 
+ Procedure
+ ---------
+@@ -24,11 +24,11 @@ Procedure
+    .. _en-us_topic_0045853744__fig5791779717938:
+ 
+    .. figure:: /_static/images/en-us_image_0129837880.png
+-      :alt: **Figure 1** Logging
++      :alt: **Figure 1** Configuring logging
+ 
+-      **Figure 1** Logging
++      **Figure 1** Configuring logging
+ 
+-#. Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
++#. Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically granted the permissions to read the bucket ACL and write logs to the bucket.
+ 
+ #. Enter a prefix for the **Log File Name Prefix**.
+ 

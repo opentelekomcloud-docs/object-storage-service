@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/managing_buckets/searching_for_a_bucket.rst b/umn/source/obs_console_operation_guide/managing_buckets/searching_for_a_bucket.rst	(rejected hunks)
+@@ -9,7 +9,7 @@ You can search for a bucket by characters contained in its name.
+ 
+ .. note::
+ 
+-   Currently, searching for buckets by tag is not supported.
++   Currently, bucket search by tag is not supported.
+ 
+ Procedure
+ ---------

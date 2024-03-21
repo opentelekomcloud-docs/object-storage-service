@@ -1,0 +1,35 @@
+diff a/umn/source/obs_console_operation_guide/getting_started/uploading_an_object.rst b/umn/source/obs_console_operation_guide/getting_started/uploading_an_object.rst	(rejected hunks)
+@@ -19,7 +19,7 @@ Prerequisites
+ -------------
+ 
+ -  At least one bucket has been created.
+--  If you want to classify files, you can create folders and upload files to different folders. For details about how to create a folder, see :ref:`Creating a Folder <obs_03_0316>`
++-  If you want to classify files, you can create folders and upload files to different folders. For details, see :ref:`Creating a Folder <obs_03_0316>`.
+ 
+ Procedure
+ ---------
+@@ -28,7 +28,7 @@ Procedure
+ 
+ #. In the navigation pane, choose **Objects**.
+ 
+-#. Go to the folder to which objects are uploaded. Click **Upload Object**. The **Upload Object** dialog box is displayed.
++#. Go to the folder where you want to upload files and click **Upload Object**. The **Upload Object** dialog box is displayed.
+ 
+    .. note::
+ 
+@@ -40,13 +40,13 @@ Procedure
+ 
+       **Figure 1** Uploading objects
+ 
+-#. Select a storage class. If you do not specify a storage class, the object you upload inherits the default storage class of the bucket.
++#. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
+ 
+    .. note::
+ 
+       An object can have a different storage class from its bucket. You can specify a storage class for an object when uploading it, or you can change the object storage class after the object is uploaded.
+ 
+-#. Add a file or folder to be uploaded by dragging it to the **Upload Object** area.
++#. In the **Upload Object** area, drag and drop the files or folders you want to upload.
+ 
+    You can also click **add file** in the **Upload Object** area to select files.
+ 

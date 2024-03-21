@@ -1,0 +1,24 @@
+diff a/umn/source/obs_console_operation_guide/managing_objects/creating_a_folder.rst b/umn/source/obs_console_operation_guide/managing_objects/creating_a_folder.rst	(rejected hunks)
+@@ -18,13 +18,13 @@ Procedure
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ #. In the navigation pane, choose **Objects**.
+-#. Click **Create Folder**, or click a folder in the object list to open it, and then click **Create Folder**.
++#. Click **Create Folder**, or click a folder in the object list to open it and click **Create Folder**.
+ #. In the **Folder Name** text box, enter a name for the folder.
+ 
+    -  You can create single-level or multi-level folders.
+-   -  The name cannot contain the following special characters: ``\:*?"<>|+``
++   -  The name cannot contain the following special characters: ``\:*?"<>|``
+    -  The name cannot start or end with a period (.) or slash (/).
+-   -  The absolute path of the folder cannot exceed 1023 characters.
++   -  The folder's absolute path cannot exceed 1,023 characters.
+    -  Any single slash (/) separates and creates multiple levels of folders at once.
+    -  The name cannot contain two or more consecutive slashes (/).
+ 
+@@ -33,4 +33,4 @@ Procedure
+ Follow-up Procedure
+ -------------------
+ 
+-You can click **Copy Path** on the right to copy the path of the folder. You can share the path with other users. Then they open the bucket where the object is stored and enter the path in the search box to find the object.
++You can click **Copy Path** on the right to copy the path of the folder and share it with others. Then they can open the bucket where the folder is stored and enter the path in the search box above the object list to find the folder.

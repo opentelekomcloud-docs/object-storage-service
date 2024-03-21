@@ -1,0 +1,57 @@
+diff a/umn/source/obs_console_operation_guide/cross-origin_resource_sharing/configuring_cors.rst b/umn/source/obs_console_operation_guide/cross-origin_resource_sharing/configuring_cors.rst	(rejected hunks)
+@@ -17,7 +17,7 @@ Procedure
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ 
+-#. On the right of the **Overview** page, click **CORS Rules** in the **Basic Configurations** area. The **CORS Rules** page is displayed.
++#. In the **Basic Configurations** area, click **CORS Rules**. The **CORS Rules** page is displayed.
+ 
+    Alternatively, you can choose **Basic Configurations** > **CORS Rules** in the navigation pane.
+ 
+@@ -43,9 +43,9 @@ Procedure
+       +===================================+=============================================================================================================================================================================================+
+       | Allowed Origin                    | Mandatory                                                                                                                                                                                   |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Requests from this origin can access the bucket.                                                                                                                                            |
++      |                                   | Specifies the origins from which requests can access the bucket.                                                                                                                            |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Multiple matching rules are allowed. One rule occupies one line, and allows one wildcard character (**\***) at most. Example:                                                               |
++      |                                   | Multiple matching rules are allowed. One rule occupies one line, and allows one wildcard character (**\***) at most. An example is given as follows:                                        |
+       |                                   |                                                                                                                                                                                             |
+       |                                   | .. code-block::                                                                                                                                                                             |
+       |                                   |                                                                                                                                                                                             |
+@@ -54,21 +54,21 @@ Procedure
+       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+       | Allowed Method                    | Mandatory                                                                                                                                                                                   |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Specifies the acceptable operation type of buckets and objects.                                                                                                                             |
++      |                                   | Specifies the allowed request methods for buckets and objects.                                                                                                                              |
+       |                                   |                                                                                                                                                                                             |
+       |                                   | The methods include Get, Post, Put, Delete, and Head.                                                                                                                                       |
+       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+       | Allowed Header                    | Optional                                                                                                                                                                                    |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Specifies the allowed header of cross-origin requests.                                                                                                                                      |
++      |                                   | Specifies the allowed headers in cross-origin requests.                                                                                                                                     |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Only CORS requests matching the allowed header are valid.                                                                                                                                   |
++      |                                   | Only CORS requests matching the allowed headers are valid.                                                                                                                                  |
+       |                                   |                                                                                                                                                                                             |
+       |                                   | You can enter multiple allowed headers (one per line) and each line can contain one wildcard character (``*``) at most. Spaces and special characters including **&:<** are not allowed.    |
+       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+       | Exposed Header                    | Optional                                                                                                                                                                                    |
+       |                                   |                                                                                                                                                                                             |
+-      |                                   | Specifies the exposed header in CORS responses, providing additional information for clients.                                                                                               |
++      |                                   | Specifies the exposed headers in CORS responses, providing additional information for clients.                                                                                              |
+       |                                   |                                                                                                                                                                                             |
+       |                                   | By default, a browser can access only headers **Content-Length** and **Content-Type**. If the browser wants to access other headers, you need to configure those headers in this parameter. |
+       |                                   |                                                                                                                                                                                             |
+@@ -81,7 +81,7 @@ Procedure
+ 
+ #. Click **OK**.
+ 
+-   Message "The CORS rule created successfully." is displayed. The configuration of CORS takes effect within two minutes.
++   Message "The CORS rule created successfully." is displayed. The CORS configuration takes effect within two minutes.
+ 
+    After CORS is successfully configured, only the addresses specified in **Allowed Origin** can access a bucket in OBS using the methods specified in **Allowed Method**. For example, you can configure CORS parameters for bucket **testbucket** as follows:
+ 

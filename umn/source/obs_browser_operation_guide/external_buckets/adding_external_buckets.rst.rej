@@ -1,0 +1,10 @@
+diff a/umn/source/obs_browser_operation_guide/external_buckets/adding_external_buckets.rst b/umn/source/obs_browser_operation_guide/external_buckets/adding_external_buckets.rst	(rejected hunks)
+@@ -12,7 +12,7 @@ Prerequisites
+ 
+ You have obtained the permissions to read and write the external bucket that you want to add.
+ 
+-For example: Account **A** wants to add bucket **testbucket** of account **B**. Account **B** must authorize account **A** the permission to read bucket **testbucket**. If account **A** needs to upload object to bucket **testbucket**, account **B** needs to authorize account **A** the permission to write the bucket. Account **A** is the owner of the uploaded objects, and needs to authorize account **B** the permission to read and write the objects.
++For example: Account **A** wants to add bucket **testbucket** of account **B**. Account **B** must grant account **A** the permission to read bucket **testbucket**. If account **A** needs to upload object to bucket **testbucket**, account **B** needs to grant account **A** the permission to write the bucket. Account **A** is the owner of the uploaded objects, and needs to grant account **B** the permission to read and write the objects.
+ 
+ .. note::
+ 

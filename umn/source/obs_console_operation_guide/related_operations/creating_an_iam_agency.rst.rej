@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/related_operations/creating_an_iam_agency.rst b/umn/source/obs_console_operation_guide/related_operations/creating_an_iam_agency.rst	(rejected hunks)
+@@ -11,7 +11,7 @@ Creating an Agency for Cross-Region Replication
+ -----------------------------------------------
+ 
+ #. In the **Create Cross-Region Replication Rule** dialog box on OBS Console, click **Create IAM agencies** to jump to the **Agencies** page on the IAM console.
+-#. Click **Create Agency** to create an agency.
++#. Click **Create Agency**.
+ #. Enter an agency name.
+ #. Select **Cloud service** for the **Agency Type**.
+ #. Select **Object Storage Service (OBS)** for **Cloud Service**.

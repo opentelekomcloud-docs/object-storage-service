@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/url_validation/configuring_url_validation.rst b/umn/source/obs_console_operation_guide/url_validation/configuring_url_validation.rst	(rejected hunks)
+@@ -17,7 +17,7 @@ Procedure
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ 
+-#. In the right **Basic Configurations** area, click **URL Validation**. The **URL Validation** page is displayed.
++#. In the **Basic Configurations** area, click **URL Validation**. The **URL Validation** page is displayed.
+ 
+ #. Click |image1| next to the text box of **Whitelisted Referers** or **Blacklisted Referers**, and enter the referers.
+ 

@@ -1,0 +1,27 @@
+diff a/umn/source/obs_browser_operation_guide/permission_control/configuring_a_bucket_policy.rst b/umn/source/obs_browser_operation_guide/permission_control/configuring_a_bucket_policy.rst	(rejected hunks)
+@@ -5,7 +5,7 @@
+ Configuring a Bucket Policy
+ ===========================
+ 
+-A bucket policy defines the access control policy of resources (buckets and objects) in OBS.
++A bucket policy defines access control over resources (buckets and objects) in OBS.
+ 
+ Procedure
+ ---------
+@@ -51,13 +51,13 @@ Procedure
+       |                        |                                                                                                                                                                                                 |                       |
+       |                        | Either **Principal** or **NotPrincipal** must be selected to specify the user on whom the bucket policy statement takes effect or does not take effect.                                         |                       |
+       +------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+-      | Action/NotAction       | OBS operations on which the bucket policy statement takes effect                                                                                                                                | Mandatory             |
++      | Action/NotAction       | OBS actions which the bucket policy is applied to.                                                                                                                                              | Mandatory             |
+       |                        |                                                                                                                                                                                                 |                       |
+-      |                        | Either **Action** or **NotAction** must be selected to specify whether the bucket policy statement takes effect on the OBS operation.                                                           |                       |
++      |                        | Either **Action** or **NotAction** must be selected to specify whether the bucket policy applies to the OBS action.                                                                             |                       |
+       +------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+       | Resource/NotResource   | Objects on which the bucket policy statement takes effect                                                                                                                                       | Mandatory             |
+       |                        |                                                                                                                                                                                                 |                       |
+-      |                        | Either **Resource** or **NotResource** must be selected to specify whether the bucket policy statement takes effect on the OBS resources.                                                       |                       |
++      |                        | Either **Resource** or **NotResource** must be selected to specify whether the bucket policy applies to the OBS resources.                                                                      |                       |
+       +------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+       | Condition              | The conditions under which the bucket policy takes effect                                                                                                                                       | Optional              |
+       +------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+

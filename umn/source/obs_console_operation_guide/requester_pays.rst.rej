@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/requester_pays.rst b/umn/source/obs_console_operation_guide/requester_pays.rst	(rejected hunks)
+@@ -48,7 +48,7 @@ Configuring Requester Pays
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ 
+-#. In the right **Basic Configurations** area, click **Requester Pays**. The **Requester Pays** dialog box is displayed.
++#. In the **Basic Configurations** area, click **Requester Pays**. The **Requester Pays** dialog box is displayed.
+ 
+ 
+    .. figure:: /_static/images/en-us_image_0250427066.png

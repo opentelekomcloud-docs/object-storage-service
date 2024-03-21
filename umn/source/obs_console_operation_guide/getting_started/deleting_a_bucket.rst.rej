@@ -1,0 +1,9 @@
+diff a/umn/source/obs_console_operation_guide/getting_started/deleting_a_bucket.rst b/umn/source/obs_console_operation_guide/getting_started/deleting_a_bucket.rst	(rejected hunks)
+@@ -25,6 +25,6 @@ Procedure
+ 
+    .. note::
+ 
+-      The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes after the deletion.
++      The name of a deleted bucket can be reused for another bucket or parallel file system at least 30 minutes after the deletion.
+ 
+ #. Click **Yes** to confirm the deletion.

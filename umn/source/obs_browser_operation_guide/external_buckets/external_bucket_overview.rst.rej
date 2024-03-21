@@ -1,0 +1,7 @@
+diff a/umn/source/obs_browser_operation_guide/external_buckets/external_bucket_overview.rst b/umn/source/obs_browser_operation_guide/external_buckets/external_bucket_overview.rst	(rejected hunks)
+@@ -66,4 +66,4 @@ Operations that can be performed by the authorized user on the external bucket:
+ -  You (the user who adds the bucket) can perform only authorized actions on original objects in the bucket. If you want to have additional operation permissions for objects in the bucket, you need to have the permissions authorized by the object owner.
+ -  If you upload an object to the added external bucket, the read access to the object and the object ACL will be automatically authorized to the bucket owner and configured in the object ACL settings.
+ -  If you upload an encrypted object to the added external bucket, the bucket owner cannot access the object because the bucket owner does not have the key.
+--  To download an object from the external bucket, the user who adds the bucket must be authorized the permission to read the object, and encrypted objects cannot be downloaded.
++-  To download an object from the external bucket you added, you must have the permission to read the object. You cannot download encrypted objects from the external bucket.

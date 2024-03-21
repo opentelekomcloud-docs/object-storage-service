@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/event_notifications/configuring_smn-enabled_event_notification.rst b/umn/source/obs_console_operation_guide/event_notifications/configuring_smn-enabled_event_notification.rst	(rejected hunks)
+@@ -17,7 +17,7 @@ Procedure
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ 
+-#. In the right **Basic Configurations** area, click **Event Notification**. The **Event Notification** page is displayed.
++#. In the **Basic Configurations** area, click **Event Notification**. The **Event Notification** page is displayed.
+ 
+    Alternatively, you can choose **Basic Configurations** > **Event Notification** in the navigation pane.
+ 

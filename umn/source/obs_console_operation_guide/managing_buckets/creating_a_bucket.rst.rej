@@ -1,0 +1,7 @@
+diff a/umn/source/obs_console_operation_guide/managing_buckets/creating_a_bucket.rst b/umn/source/obs_console_operation_guide/managing_buckets/creating_a_bucket.rst	(rejected hunks)
+@@ -81,4 +81,4 @@ After the bucket is created, you can change its storage class by performing the
+    .. note::
+ 
+       -  Changing the storage class of a bucket does not change the storage class of existing objects in the bucket.
+-      -  An object inherits the bucket storage class by default, if no other storage class is specified for the object upon its upload. When the bucket storage class is changed, newly uploaded objects inherit the new bucket storage class by default.
++      -  If you do not specify a storage class for an object when uploading it, it inherits the bucket's storage class by default. After the bucket's storage class is changed, newly uploaded objects will inherit the new storage class of the bucket by default.

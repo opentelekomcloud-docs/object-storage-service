@@ -1,0 +1,21 @@
+diff a/umn/source/service_overview/permissions_management.rst b/umn/source/service_overview/permissions_management.rst	(rejected hunks)
+@@ -11,7 +11,7 @@ You can create IAM users for your employees, and assign permissions to these use
+ 
+ If your account does not require individual IAM users for permissions management, skip this section.
+ 
+-IAM is offered for free. You pay only for the resources in your account. For more information about IAM, see section "Service Overview" in the *Identity and Access Management User Guide*.
++IAM is a free service. You only pay for the resources in your account. For more information about IAM, see section "Service Overview" in the *Identity and Access Management User Guide*.
+ 
+ OBS Permissions
+ ---------------
+@@ -156,8 +156,8 @@ The following table lists operations that can be performed under each set of OBS
+    | Obtaining the requester-pays configuration information      | Yes                  | Yes          | Yes               | No                                                                                | No                                                                                | No                                                                                |
+    +-------------------------------------------------------------+----------------------+--------------+-------------------+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+ 
+-Managing OBS Resource Permissions
+----------------------------------
++OBS Resource Permissions Management
++-----------------------------------
+ 
+ Access to OBS buckets and objects can be controlled by IAM user permissions, bucket policies, and ACLs.
+ 

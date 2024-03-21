@@ -1,0 +1,16 @@
+diff a/umn/source/obs_console_operation_guide/object_metadata/object_metadata_overview.rst b/umn/source/obs_console_operation_guide/object_metadata/object_metadata_overview.rst	(rejected hunks)
+@@ -5,7 +5,7 @@
+ Object Metadata Overview
+ ========================
+ 
+-Object metadata is a set of name-value pairs that are part of object management.
++Object metadata is a set of name-value pairs that describe the object and is used for object management.
+ 
+ Currently, only the metadata defined by the system is supported.
+ 
+@@ -55,4 +55,4 @@ The metadata defined by the system is classified into the following types: syste
+ .. note::
+ 
+    -  When versioning is enabled for a bucket, you can set metadata for objects which are **Latest Version**, but cannot set metadata for objects which are **Historical Version**.
+-   -  You cannot set object metadata for a **Cold** object.
++   -  Metadata cannot be configured for Cold objects.

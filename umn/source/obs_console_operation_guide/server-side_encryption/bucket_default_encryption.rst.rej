@@ -1,0 +1,32 @@
+diff a/umn/source/obs_console_operation_guide/server-side_encryption/bucket_default_encryption.rst b/umn/source/obs_console_operation_guide/server-side_encryption/bucket_default_encryption.rst	(rejected hunks)
+@@ -5,18 +5,18 @@
+ Bucket Default Encryption
+ =========================
+ 
+-OBS allows you to configure default encryption for a bucket. After the configuration, objects uploaded to this bucket are automatically encrypted using the specified KMS key, making data storage more secure.
++OBS allows you to configure default encryption for a bucket. After the default encryption is enabled for the bucket, objects uploaded to this bucket are automatically encrypted using the specified KMS key, making data storage more secure.
+ 
+-You can enable default encryption when creating a bucket (see :ref:`Creating a Bucket <en-us_topic_0045853662>`), or enable or disable default encryption after a bucket is created.
++You can enable default encryption when creating a bucket (see :ref:`Creating a Bucket <en-us_topic_0045853662>`), or enable or disable default encryption after the bucket is created.
+ 
+-OBS encrypts only the objects uploaded after the default encryption is enabled, and does not encrypt those uploaded before. After default encryption is disabled, the encryption status of existing objects keeps unchanged, and you can still manually encrypt objects upon upload.
++OBS only encrypts the objects uploaded after the default encryption is enabled for the bucket, and does not encrypt those uploaded before. After you disable a bucket's default encryption, the encryption status of existing objects keeps unchanged, and you can separately encrypt objects when uploading them to the bucket.
+ 
+ Enabling Default Encryption for a Bucket
+ ----------------------------------------
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+ 
+-#. In the right **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
++#. In the **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
+ 
+ #. Select **Enable**.
+ 
+@@ -28,6 +28,6 @@ Disabling Default Encryption for a Bucket
+ -----------------------------------------
+ 
+ #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+-#. In the right **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
++#. In the **Basic Configurations** area, click **Default Encryption**. The **Default Encryption** dialog box is displayed.
+ #. Select **Disable**.
+ #. Click **OK**.

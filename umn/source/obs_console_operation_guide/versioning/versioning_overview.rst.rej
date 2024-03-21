@@ -1,0 +1,7 @@
+diff a/umn/source/obs_console_operation_guide/versioning/versioning_overview.rst b/umn/source/obs_console_operation_guide/versioning/versioning_overview.rst	(rejected hunks)
+@@ -85,4 +85,4 @@ If versions of objects in a bucket do not need to be controlled, you can suspend
+ Differences Between Scenarios When Versioning Is Suspended and Disabled
+ -----------------------------------------------------------------------
+ 
+-If you delete an object when versioning is suspended, a **null** version with the **Delete Marker** is generated regardless of whether the object has historical versions. But, if versioning is disabled, the same operation will not generate a version with the **Delete Marker**.
++If you delete an object after versioning is suspended for the bucket, a delete marker will be generated, no matter whether the object has historical versions. But, if versioning is disabled, the same operation will not generate a delete marker.

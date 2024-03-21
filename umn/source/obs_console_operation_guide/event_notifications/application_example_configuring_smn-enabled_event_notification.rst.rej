@@ -1,0 +1,12 @@
+diff a/umn/source/obs_console_operation_guide/event_notifications/application_example_configuring_smn-enabled_event_notification.rst b/umn/source/obs_console_operation_guide/event_notifications/application_example_configuring_smn-enabled_event_notification.rst	(rejected hunks)
+@@ -32,9 +32,8 @@ Procedure
+ 
+    Create a folder.
+ 
+-   Click the bucket created in :ref:`Step 2 <obs_03_0333__li29947515>` to go to the **Overview** page. Choose **Objects** > **Create Folder**, enter a folder name, and click **OK**, as shown in :ref:`Figure 2 <obs_03_0333__fig28070790193136>`. In the following example, **SMN** is the folder name.
++   Click the name of the bucket created in :ref:`2 <obs_03_0333__li29947515>` to go to the **Overview** page. Then, choose **Objects** and click **Create Folder**. In the displayed dialog box, enter a folder name and click **OK**. In the following example, **SMN** is the folder name.
+ 
+-   .. _obs_03_0333__fig28070790193136:
+ 
+    .. figure:: /_static/images/en-us_image_0129556228.png
+       :alt: **Figure 2** Creating a folder

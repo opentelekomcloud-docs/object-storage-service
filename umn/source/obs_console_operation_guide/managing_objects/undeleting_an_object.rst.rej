@@ -1,0 +1,27 @@
+diff a/umn/source/obs_console_operation_guide/managing_objects/undeleting_an_object.rst b/umn/source/obs_console_operation_guide/managing_objects/undeleting_an_object.rst	(rejected hunks)
+@@ -22,7 +22,7 @@ When versioning is enabled for a bucket, OBS works slightly different when delet
+    -  To permanently delete the file or folder, delete it again from the **Deleted Objects** list. For details, see :ref:`Deleting an Object or Folder <en-us_topic_0045853756>`.
+    -  To recover the deleted file, undelete it from the **Deleted Objects** list. For details, see :ref:`Procedure <en-us_topic_0066176932__section50464659154530>`.
+ 
+--  Deleting an object version: The version will be permanently deleted. If the deleted version is the latest one, the next latest version becomes the latest version.
++-  Deleting an object version: The version will be permanently deleted and cannot be recovered. If the deleted version is the latest one, the next latest version becomes the latest version.
+ 
+ **Object Recovery with Versioning Enabled**
+ 
+@@ -30,7 +30,7 @@ When a bucket has the versioning function enabled, deleting a file from the **Ob
+ 
+ Note the following points when you undelete objects:
+ 
+-#. Only deleted files but not folders can be undeleted.
++#. Only files can be undeleted but not folders.
+ 
+    After you undelete a deleted file, the file is recovered and will appear in the **Objects** list. Then you can perform basic operations on the file as you normally do on other objects. If the file was stored in a folder before the deletion, it will be recovered to its original path after you undelete it.
+ 
+@@ -75,5 +75,5 @@ Related Operations
+ #. Click the deleted file that you want to recover. The file information is displayed.
+ #. On the **Versions** tab, view all versions of the file.
+ 
+-   -  If you delete a version with the **Delete Marker**, the file is recovered and retained in the **Objects** list.
+-   -  If you delete a version without the **Delete Marker**, that version is permanently deleted.
++   -  If you delete a version with the **Delete Marker**, the file will be recovered and retained in the **Objects** list.
++   -  If you delete a version without the **Delete Marker**, that version will be permanently deleted.

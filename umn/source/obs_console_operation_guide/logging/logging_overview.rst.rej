@@ -1,0 +1,10 @@
+diff a/umn/source/obs_console_operation_guide/logging/logging_overview.rst b/umn/source/obs_console_operation_guide/logging/logging_overview.rst	(rejected hunks)
+@@ -13,7 +13,7 @@ After logging is enabled, the log delivery user group will be automatically gran
+ 
+ OBS can record bucket access requests in logs for request analysis and log audit.
+ 
+-Logs occupy some OBS storage space rented by users, causing extra fees. For this reason, OBS does not collect bucket access logs by default.
++Logs occupy the OBS storage that incurs costs, so OBS does not collect bucket access logs by default.
+ 
+ After logging is configured, you can view operation logs in the bucket that stores the logs in approximately fifteen minutes.
+ 
