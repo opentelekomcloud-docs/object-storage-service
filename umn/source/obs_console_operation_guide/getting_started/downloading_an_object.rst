@@ -17,7 +17,7 @@ Procedure
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Objects**.
-#. Select the files you want to download, and then click **Download** or **More** > **Download As** to download the files.
+#. Select the file you want to download, and click **Download** or choose **More** > **Download As** on the right.
 
    .. note::
 

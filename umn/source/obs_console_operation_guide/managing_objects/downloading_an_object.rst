@@ -5,7 +5,7 @@
 Downloading an Object
 =====================
 
-You can download files from OBS Console to the system default path or a custom download path of your local computer.
+You can download files from OBS Console to the system default path or a custom download path on your local computer.
 
 Limitations and Constraints
 ---------------------------

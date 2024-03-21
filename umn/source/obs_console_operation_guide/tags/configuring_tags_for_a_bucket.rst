@@ -5,14 +5,14 @@
 Configuring Tags for a Bucket
 =============================
 
-You can add tags to a bucket when creating the bucket. For details, see :ref:`Creating a Bucket <obs_03_0306>`. Also you can add tags to a bucket after it has been created. This topic describes how to add tags to a bucket after it has been created.
+When creating a bucket, you can add tags to it. For details, see :ref:`Creating a Bucket <obs_03_0306>`. You can also add tags to a bucket after it has been created. This topic describes how to add tags to an existing bucket.
 
 Procedure
 ---------
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 
-#. In the right **Basic Configurations** area, click **Tags**. The **Tags** page is displayed.
+#. In the **Basic Configurations** area, click **Tags**.
 
    Alternatively, you can choose **Basic Configurations** > **Tagging** in the navigation pane.
 

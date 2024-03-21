@@ -32,7 +32,7 @@ Procedure
 
    .. _en-us_topic_0045853860__t810c07199d9d4fb4949e45cc402582a0:
 
-   .. table:: **Table 1** Parameters in CORS rules
+   .. table:: **Table 1** Parameters in a CORS rule
 
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Description                                                                                                                                                                                           |
@@ -63,6 +63,14 @@ Procedure
 
 #. Click **OK** to save the rules.
 
-   After CORS is successfully configured, only the addresses specified in **Allowed Origin** can access a bucket in OBS using the method specified in **Allowed Method**. For example, you configure CORS parameters for bucket **testbucket** as follows: **Allowed Origin: www.example.com**; **Allowed Method: GET**; **Allowed Header**: left blank; **Exposed Header**: left blank; **Cache Duration (s): 100**. Then OBS only allows GET requests from **www.example.com** to access bucket **testbucket**, without restrictions on request headers. The client can cache the CORS response for 100 seconds.
+   After CORS is successfully configured, only the addresses specified for **Allowed Origin** can access the bucket using the methods specified for **Allowed Method**. For example, you configure a CORS rule for bucket **testbucket** as follows:
+
+   -  **Allowed Origin: www.example.com**
+   -  **Allowed Method: GET**
+   -  **Allowed Header**: left blank
+   -  **Exposed Header**: left blank
+   -  **Cache Duration (s): 100**
+
+   Then, OBS only allows GET requests from **www.example.com** to access bucket **testbucket** and does not limit request headers. The client can cache CORS responses for 100 seconds.
 
 #. In the displayed dialog box, click **Close** to close the dialog box.

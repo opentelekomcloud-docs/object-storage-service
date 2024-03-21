@@ -20,9 +20,9 @@ Procedure
 #. In the dialog box that is displayed, enter a folder name and click **OK**.
 
    -  You can create single-level or multi-level folders.
-   -  The name cannot contain the following special characters: ``\:*?"<>|+``
+   -  The name cannot contain the following special characters: ``\:*?"<>|``
    -  The name cannot start or end with a period (.) or slash (/).
-   -  The absolute path of the folder cannot exceed 1023 characters.
+   -  The folder's absolute path cannot exceed 1,023 characters.
    -  Any single slash (/) separates and creates multiple levels of folders at once.
    -  The name cannot contain two or more consecutive slashes (/).
 
