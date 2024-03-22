@@ -18,7 +18,7 @@ Prerequisites
 -------------
 
 -  At least one bucket has been created.
--  If you want to classify files, you can create folders and upload files to different folders. For details about how to create a folder, see :ref:`Creating a Folder <obs_03_0316>`
+-  If you want to classify files, you can create folders and upload files to different folders. For details, see :ref:`Creating a Folder <obs_03_0316>`.
 
 Procedure
 ---------
@@ -27,7 +27,7 @@ Procedure
 
 #. In the navigation pane, choose **Objects**.
 
-#. Go to the folder to which objects are uploaded. Click **Upload Object**. The **Upload Object** dialog box is displayed.
+#. Go to the folder where you want to upload files and click **Upload Object**. The **Upload Object** dialog box is displayed.
 
    .. note::
 
@@ -39,13 +39,13 @@ Procedure
 
       **Figure 1** Uploading objects
 
-#. Select a storage class. If you do not specify a storage class, the object you upload inherits the default storage class of the bucket.
+#. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
 
    .. note::
 
       An object can have a different storage class from its bucket. You can specify a storage class for an object when uploading it, or you can change the object storage class after the object is uploaded.
 
-#. Add a file or folder to be uploaded by dragging it to the **Upload Object** area.
+#. In the **Upload Object** area, drag and drop the files or folders you want to upload.
 
    You can also click **add file** in the **Upload Object** area to select files.
 
@@ -60,7 +60,7 @@ Procedure
 Related Operations
 ------------------
 
-When uploading an object, you can specify a storage class for it. After the object is uploaded, you can also change its storage class. The procedure is as follows:
+When uploading an object, you can specify a storage class for it. After the object is uploaded, you can also change its storage class by doing as follows:
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Objects**.
@@ -69,8 +69,18 @@ When uploading an object, you can specify a storage class for it. After the obje
 
 .. note::
 
-   -  Objects can be changed from Standard to Warm or Cold storage class, or from Warm to Standard or Cold storage class, but objects in Cold storage class must be restored before being changed to Standard or Warm storage class. Changing from Warm or Cold to other storage classes incurs restore fees. Select an appropriate change option based on your actual needs.
-   -  When the storage class is changed to Cold, the object restore status changes to **Unrestored**.
+   -  You can manually change objects between storage classes:
+
+      -  From Standard to Warm, or Cold
+
+      -  From Warm to Standard, or Cold
+
+      -  From Cold to Standard, or Warm. Before changing Cold objects, you must restore them first.
+
+         Changing objects from Warm or Cold to other storage classes incurs restore costs. Select an appropriate change option based on your actual needs.
+
+   -  After an object is changed to Cold, its restore status changes to **Unrestored**.
+
    -  You can also configure a lifecycle rule to change the storage class of an object. For details, see :ref:`Configuring a Lifecycle Rule <obs_03_0335>`.
 
 Follow-up Procedure
@@ -78,4 +88,4 @@ Follow-up Procedure
 
 You can click **Copy Path** on the right of an object to copy its path.
 
-You can share the path with other users. Then they open the bucket where the object is stored and enter the path in the search box to find the object.
+You can share the path with others. Then they can open the bucket where the object is stored and enter the path in the search box above the object list to find the object.

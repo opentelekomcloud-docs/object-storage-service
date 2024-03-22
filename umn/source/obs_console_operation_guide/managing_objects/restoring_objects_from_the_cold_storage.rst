@@ -5,14 +5,14 @@
 Restoring Objects from the Cold Storage
 =======================================
 
-You must restore a Cold object before you can operate it, including download, access using a URL, as well as ACL and metadata settings.
+You must restore a Cold object before you can download it, access it with a URL, or configure its ACL or metadata.
 
 Limitations and Constraints
 ---------------------------
 
--  You cannot suspend or delete the restore task if a Cold object is being restored.
--  You cannot re-restore an object in the **Restoring** state.
--  After an object is restored, an object copy in the Standard storage class will be generated. This way, there is the object in Cold storage class and also its copy in Standard storage class in the bucket. The copy will be automatically deleted once the restore expires.
+-  If a Cold object is being restored, its restore task cannot be suspended or deleted.
+-  An object being restored cannot be restored again.
+-  After an object is restored, an object copy in the Standard storage class will be generated. This way, there is a Cold object and also its Standard copy in the bucket. The copy will be automatically deleted once the restore expires.
 
 Procedure
 ---------

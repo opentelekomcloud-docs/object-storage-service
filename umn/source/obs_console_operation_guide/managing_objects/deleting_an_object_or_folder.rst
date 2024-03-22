@@ -29,7 +29,7 @@ When versioning is enabled for a bucket, OBS works slightly different when delet
    -  To permanently delete the file or folder, delete it again from the **Deleted Objects** list. For details, see :ref:`Procedure <en-us_topic_0045853756__section56466209>`.
    -  To recover the deleted file, undelete it from the **Deleted Objects** list. For details, see :ref:`Undeleting an Object <en-us_topic_0066176932>`.
 
--  Deleting an object version: The version will be permanently deleted. If the deleted version is the latest one, the next latest version becomes the latest version.
+-  Deleting an object version: The version will be permanently deleted and cannot be recovered. If the deleted version is the latest one, the next latest version becomes the latest version.
 
 .. _en-us_topic_0045853756__section56466209:
 
@@ -40,13 +40,17 @@ Procedure
 
 #. In the navigation pane, choose **Objects**.
 
-#. Select the file or folder you want to delete, and choose **More** > **Delete** on the right.
+#. Select the file or folder you want to delete and choose **More** > **Delete** on the right.
 
    You can select multiple files or folders and click **Delete** above the object list to batch delete them.
 
 #. Click **Yes** to confirm the deletion.
 
-#. If versioning is enabled for the bucket, delete the deleted files or folders again from the **Deleted Objects** list to permanently delete them.
+   .. caution::
+
+      If you delete an object from a bucket with versioning enabled, the object is not permanently deleted but retained in the **Deleted Objects** list. All versions of the object are still kept in the bucket and are billed for storage. If you need to permanently delete the object, see the following steps.
+
+#. If versioning is enabled for the bucket, delete the files or folders again from the **Deleted Objects** list to permanently delete them.
 
    a. Click **Deleted Objects**.
 

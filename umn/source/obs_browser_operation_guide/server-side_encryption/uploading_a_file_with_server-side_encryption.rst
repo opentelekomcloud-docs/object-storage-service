@@ -5,12 +5,35 @@
 Uploading a File with Server-Side Encryption
 ============================================
 
-OBS allows users to encrypt objects on the server side so that the objects can be securely stored in OBS.
+OBS allows you to encrypt objects on the server side so that the objects can be securely stored in OBS.
 
 Prerequisites
 -------------
 
-In the region where the OBS is deployed, add the **KMS Administrator** permission to the user group. For details about how to add permissions, see the *IAM User Guide*.
+The **KMS Administrator** permission has been granted for the region where OBS is deployed. For details, see the *Identity and Access Management User Guide*.
+
+.. note::
+
+   A custom KMS Policy with a minimum required set of allowed actions for users to be able to upload and download objects with Server-Side Encryption is:
+
+   .. code-block::
+
+      {
+          "Version": "1.1",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "kms:dek:crypto",
+                      "kms:dek:create",
+                      "kms:cmk:get",
+                      "kms:cmk:list",
+                      "kms:cmk:generate",
+                      "kms:cmk:crypto"
+                  ]
+              }
+          ]
+      }
 
 Procedure
 ---------
@@ -34,7 +57,7 @@ Procedure
 
 #. Verify the encryption status.
 
-   After HTTPS and KMS encryption are enabled, objects uploaded to OBS are encrypted with keys provided by KMS. By default, the key **obs/default** is selected for encryption.
+   After HTTPS and KMS encryption are enabled, objects uploaded to OBS are encrypted with keys provided by KMS. By default, the key **obs/default** is used for encryption.
 
    After objects are uploaded, click |image2| on the right of the object list. In the **Properties** dialog box that is displayed, you can view the object encryption status. **Yes** indicates that server-side encryption has been implemented for the object. **No** indicates that server-side encryption has not been implemented for the object. The object encryption status cannot be changed.
 

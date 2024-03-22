@@ -8,7 +8,7 @@ Managing Fragments
 Background Information
 ----------------------
 
-Data can be uploaded to OBS using multipart uploads. Fragments are generated, if a multipart upload fails because of the following reasons (included but not limited to):
+Data can be uploaded to OBS using multipart uploads. There will be fragments generated, if a multipart upload fails because of the following causes (included but not limited to):
 
 -  The network is in poor conditions, and the connection to the OBS server is interrupted frequently.
 -  The upload task is manually suspended.
@@ -28,8 +28,8 @@ Procedure
 
 #. In the navigation pane, choose **Objects**.
 
-#. Click **Fragments**, select the fragment that you want to delete, and then click **Delete** on the right of the fragment.
+#. Click **Fragments**, select the fragment that you want to delete, and click **Delete** on the right.
 
-   You can also select multiple fragments and click **Delete** above fragment list to batch delete them.
+   You can also select multiple fragments and click **Delete** above the fragment list to batch delete them.
 
 #. Click **Yes** to confirm the deletion.
