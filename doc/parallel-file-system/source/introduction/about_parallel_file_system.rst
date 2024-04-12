@@ -5,6 +5,8 @@
 About Parallel File System
 ==========================
 
-Parallel File System (PFS), a sub-product of OBS, is a high-performance file system, with only milliseconds of access latency. PFS can support terabytes of bandwidth and can handle millions of IOPS, which makes it ideal for processing high-performance computing (HPC) workloads.
+OBS Parallel File System (PFS), a sub-product of OBS, is a high-performance file system, with only milliseconds of access latency in the case of suitable networking and computing packages. OBS PFS can support a huge bandwidth and handle a huge amount of IOPS on the storage side, making it ideal for processing high-performance computing (HPC) workloads.
+
+Please consult with OTC Support about the suitable packages to achieve the expected performance upon your needs because the default OBS QoS settings may need to be modified to higher demands accordingly and because of the limitations of the ECS/CCE/Network systems which need to be scaled accordingly.
 
 You can access data in a parallel file system using standard OBS APIs.
