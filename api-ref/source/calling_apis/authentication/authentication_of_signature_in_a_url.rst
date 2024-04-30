@@ -68,7 +68,7 @@ The StringToSign is constructed according to the following rules. :ref:`Table 2 
         Content-MD5 + "\n" +
         Content-Type + "\n" +
         Expires + "\n" +
-        CanonicalizedHeaders +   CanonicalizedResource;
+        CanonicalizedHeaders + CanonicalizedResource;
 
 .. _obs_04_0011__table34479832212511:
 
