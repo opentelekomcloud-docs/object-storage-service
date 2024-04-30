@@ -1,4 +1,4 @@
-   :original_name: obs_04_0010.html
+:original_name: obs_04_0010.html
 
 .. _obs_04_0010:
 
