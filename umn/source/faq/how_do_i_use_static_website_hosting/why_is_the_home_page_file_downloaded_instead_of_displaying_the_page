@@ -1,0 +1,8 @@
+:original_name: obs_faq_static_website_hosting_content_type.html
+
+.. _obs_faq_static_website_hosting_content_type:
+
+Why is the Home Page file downloaded instead of displaying the page?
+====================================================================
+
+In order for a browser to correctly handle an HTML file by opening the page instead of downloading the file, it needs to get the correct media type. So when uploading the Home Page file via API, you need to set its Content-Type header to a correct value. The expected content type for an HTML file is text/html.
