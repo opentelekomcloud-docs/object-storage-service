@@ -108,7 +108,7 @@ Procedure
 
          .. note::
 
-            According to different website access frequency and response speed requirements, you can also choose Warm or Cold. For details about storage classes, see :ref:`Storage Classes Overview <en-us_topic_0050937852>`.
+            You can also select the Warm, or Cold storage class based on the website requirements for access frequency and speed. For details about storage classes, see :ref:`Storage Classes Overview <en-us_topic_0050937852>`.
 
       -  **Bucket Policy**: Select **Public Read** to allow any user to access objects in the bucket.
       -  **Default Encryption**: Select **Disable**.
@@ -123,11 +123,11 @@ Procedure
 
    a. Click the bucket name **example** to go to the **Objects** page.
 
-   b. Click **Upload Object**. A dialog box shown in :ref:`Figure 2 <obs_03_0338__fig1759204213351>` is displayed.
+   b. Click **Upload Object**. A dialog box shown in :ref:`Figure 2 <obs_03_0338__fig18806520194814>` is displayed.
 
-      .. _obs_03_0338__fig1759204213351:
+      .. _obs_03_0338__fig18806520194814:
 
-      .. figure:: /_static/images/en-us_image_0154344913.png
+      .. figure:: /_static/images/en-us_image_0153827167.png
          :alt: **Figure 2** Uploading objects
 
          **Figure 2** Uploading objects
@@ -160,13 +160,12 @@ Procedure
 
    c. Click **Configure Static Website Hosting** to open the dialog box.
 
-   d. Enable it by turning on the status switch.
+   d. Enable **Status**.
 
-   e. Set **Hosting By** to **Current bucket**. For details, see :ref:`Figure 3 <obs_03_0338__fig1131112528711>`.
+   e. Set **Hosting By** to **Current bucket**.
 
-      .. _obs_03_0338__fig1131112528711:
 
-      .. figure:: /_static/images/en-us_image_0145847198.png
+      .. figure:: /_static/images/en-us_image_0145846197.png
          :alt: **Figure 3** Configuring static website hosting
 
          **Figure 3** Configuring static website hosting
@@ -187,7 +186,7 @@ Procedure
 
    a. Click the bucket name **example** to go to the **Objects** page. In the navigation pane, choose **Domain Name Mgmt**.
 
-   b. Click **Bind User Domain Name**, and enter **www.example.com** in the **User Domain Name** text box.
+   b. Click **Bind User Domain Name** and set **User Domain Name** to **www.example.com**.
 
 
       .. figure:: /_static/images/en-us_image_0000001121218940.png

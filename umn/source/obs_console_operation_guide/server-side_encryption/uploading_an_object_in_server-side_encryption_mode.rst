@@ -7,7 +7,7 @@ Uploading an Object in Server-Side Encryption Mode
 
 OBS allows you to encrypt objects with server-side encryption so that the objects can be securely stored in OBS.
 
-In a bucket with server-side encryption disabled, objects uploaded to it are not encrypted by default. You can configure server-side encryption when uploading objects. In a bucket with server-side encryption enabled, objects uploaded to it inherit the encryption settings of the bucket. You can also separately configure encryption for the objects.
+In a bucket with server-side encryption disabled, objects uploaded to it are not encrypted by default, but you can configure server-side encryption for the objects when uploading them. In a bucket with server-side encryption enabled, objects uploaded to it can inherit the encryption settings of the bucket, and you can also separately configure encryption for the objects.
 
 Limitations and Constraints
 ---------------------------
@@ -20,6 +20,29 @@ Prerequisites
 -------------
 
 In the region where OBS is deployed, the **KMS Administrator** permission has been added to the user group. For details about how to add permissions, see the *IAM User Guide*.
+
+.. note::
+
+   A custom KMS Policy with a minimum required set of allowed actions for users to be able to upload and download objects with Server-Side Encryption is:
+
+   .. code-block::
+
+      {
+          "Version": "1.1",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "kms:dek:crypto",
+                      "kms:dek:create",
+                      "kms:cmk:get",
+                      "kms:cmk:list",
+                      "kms:cmk:generate",
+                      "kms:cmk:crypto"
+                  ]
+              }
+          ]
+      }
 
 Procedure
 ---------
@@ -48,4 +71,4 @@ Procedure
 
 #. Click **Upload**.
 
-   After the object is uploaded successfully, you can view its encryption status in the object list.
+   After the object is uploaded, you can view its encryption status on its details page.

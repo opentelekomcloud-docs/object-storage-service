@@ -5,13 +5,13 @@
 Tasks Are Not Displayed in the Task List When Objects Are Managed Using OBS Browser
 ===================================================================================
 
-**Question**
-------------
+Question
+--------
 
 Why are the tasks not displayed in the task list when objects are being uploaded, downloaded, or deleted using OBS Browser?
 
-**Answer**
-----------
+Answer
+------
 
 When OBS Browser is used to upload, download, or delete objects, the internal database of OBS Browser is invoked. By default, binary data generated while the database is running is saved in the personal folder of the Windows operating system user.
 

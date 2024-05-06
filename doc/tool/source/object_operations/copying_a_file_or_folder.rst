@@ -17,4 +17,5 @@ Procedure
    .. note::
 
       -  Files or folders in external buckets cannot be copied.
+      -  The restore status of Archive objects cannot be copied.
       -  The source path and target path must be different.

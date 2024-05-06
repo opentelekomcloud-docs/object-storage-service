@@ -30,7 +30,7 @@ Procedure
    +==============+=================================================================+==========+==========================+
    | Management   | Deleting a bucket                                               | bucket   | deleteBucket             |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+
-   | Management   | Deleting the CORS configuration a Bucket                        | bucket   | deleteBucketCors         |
+   | Management   | Deleting the CORS configuration of a bucket                     | bucket   | deleteBucketCors         |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+
    | Management   | Deleting the custom domain name configuration                   | bucket   | deleteBucketCustomdomain |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+
@@ -43,8 +43,6 @@ Procedure
    | Management   | Deleting the tag configuration of a bucket                      | bucket   | deleteBucketTagging      |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+
    | Management   | Deleting the static website hosting configuration of a bucket   | bucket   | deleteBucketWebsite      |
-   +--------------+-----------------------------------------------------------------+----------+--------------------------+
-   | Management   | Deleting bucket data                                            | bucket   | deleteBucketdata         |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+
    | Management   | Creating a bucket                                               | bucket   | createBucket             |
    +--------------+-----------------------------------------------------------------+----------+--------------------------+

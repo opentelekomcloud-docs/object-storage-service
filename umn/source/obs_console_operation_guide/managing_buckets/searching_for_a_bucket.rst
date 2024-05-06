@@ -9,7 +9,7 @@ You can search for a bucket by characters contained in its name.
 
 .. note::
 
-   Currently, searching for buckets by tag is not supported.
+   Currently, bucket search by tag is not supported.
 
 Procedure
 ---------

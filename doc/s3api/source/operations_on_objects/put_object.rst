@@ -28,6 +28,15 @@ Versioning
 
 If a bucket has versioning enabled, the system automatically generates a unique version ID for the requested object in this bucket and returns the version ID in response header **x-amz-version-id**. If a bucket has versioning suspended, the version ID of the requested object in this bucket is **null**. For details about bucket versioning, see section :ref:`PUT Bucket versioning <en-us_topic_0125560444>`.
 
+WORM
+----
+
+If a bucket has WORM enabled, you can configure retention policies for objects in the bucket. You can specify the **x-amz-object-lock-mode** and **x-amz-object-lock-retain-until-date** headers to configure a retention policy when you upload an object. If you do not specify these two headers but have configured a default bucket-level WORM policy, this default policy automatically applies to the object newly uploaded. You can also configure or update a WORM retention policy for an existing object, see section :ref:`Configuring WORM Retention for an Object <en-us_topic_0000001806154009>`.
+
+.. note::
+
+   When you enable WORM for a bucket, OBS automatically enables versioning for the bucket. WORM protects objects based on the object version IDs. Only object versions with any WORM retention policy configured will be protected. Assume that object **test.txt 001** is protected by WORM. If another file with the same name is uploaded, a new object version **test.txt 002** with no WORM policy configured will be generated. In such case, **test.txt 002** is not protected and can be deleted. When you download an object without specifying a version ID, the current object version (**test.txt 002**) will be downloaded.
+
 Request Syntax
 --------------
 
@@ -151,6 +160,18 @@ You can add optional headers to this request. For details about the optional hea
    | x-amz-security-token                            | Header field used to identify the request of a federated user. When the federal authentication function is enabled, users sending such requests are identified as federated users.                                                                                          | Optional. This parameter must be carried in the request sent by federated users. |
    |                                                 |                                                                                                                                                                                                                                                                             |                                                                                  |
    |                                                 | Type: string                                                                                                                                                                                                                                                                |                                                                                  |
+   +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+   | x-amz-object-lock-mode                          | WORM mode that will be applied to the object. Currently, only **COMPLIANCE** is supported. This header must be used together with **x-amz-object-lock-retain-until-date**.                                                                                                  | No, but required when **x-amz-object-lock-retain-until-date** is present.        |
+   |                                                 |                                                                                                                                                                                                                                                                             |                                                                                  |
+   |                                                 | Type: string                                                                                                                                                                                                                                                                |                                                                                  |
+   |                                                 |                                                                                                                                                                                                                                                                             |                                                                                  |
+   |                                                 | Example: **x-amz-object-lock-mode:COMPLIANCE**                                                                                                                                                                                                                              |                                                                                  |
+   +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+   | x-amz-object-lock-retain-until-date             | Indicates the expiration time of the Object Lock retention. The value must be a UTC time that complies with ISO 8601, for example, **2015-07-01T04:11:15Z**. This header must be used together with **x-amz-object-lock-mode**.                                             | No, but required when **x-amz-object-lock-mode** is present.                     |
+   |                                                 |                                                                                                                                                                                                                                                                             |                                                                                  |
+   |                                                 | Type: string                                                                                                                                                                                                                                                                |                                                                                  |
+   |                                                 |                                                                                                                                                                                                                                                                             |                                                                                  |
+   |                                                 | Example: **x-amz-object-lock-retain-until-date:2015-07-01T04:11:15Z**                                                                                                                                                                                                       |                                                                                  |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 
 Request Elements
@@ -308,3 +329,34 @@ Sample Response for Uploading Objects to a Bucket with Versioning Suspended
     ETag: "0b55edbacf50d5086ea83ee08e55cbbd"
     Date: Thu, 13 Jan 2014 09:11:32 GMT
     Content-Length: 0
+
+Sample Request for Uploading an Object (with a WORM Retention Policy Configured)
+--------------------------------------------------------------------------------
+
+.. code-block:: text
+
+   PUT /object01 HTTP/1.1
+   User-Agent: curl/7.29.0
+   Host: examplebucket.obs.region.example.com
+   Accept: */*
+   Date: WED, 01 Jul 2015 04:11:15 GMT
+   Authorization: authorization
+   Content-Length: 10240
+   x-amz-object-lock-mode:COMPLIANCE
+   x-amz-object-lock-retain-until-date:2022-09-24T16:10:25Z
+   Expect: 100-continue
+
+   [1024 Byte data content]
+
+Sample Response for Uploading an Object (with a WORM Retention Policy Configured)
+---------------------------------------------------------------------------------
+
+::
+
+   HTTP/1.1 200 OK
+   Server: OBS
+   x-amz-request-id: BF2600000164364C10805D385E1E3C67
+   ETag: "d41d8cd98f00b204e9800998ecf8427e"
+   x-amz-id-2: 32AAAWJAMAABAAAQAAEAABAAAQAAEAABCTzu4Jp2lquWuXsjnLyPPiT3cfGhqPoY
+   Date: WED, 01 Jul 2015 04:11:15 GMT
+   Content-Length: 0

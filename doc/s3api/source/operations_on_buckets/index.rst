@@ -45,12 +45,19 @@ The requests that are sent to OBS by users must comply with REST specifications 
 -  :ref:`PUT Bucket tagging <en-us_topic_0125560290>`
 -  :ref:`GET Bucket tagging <en-us_topic_0125560249>`
 -  :ref:`DELETE Bucket tagging <en-us_topic_0125560426>`
+-  :ref:`PUT Bucket Replication <en-us_topic_0000001684183953>`
+-  :ref:`GET Bucket Replication <en-us_topic_0000001635744308>`
+-  :ref:`DELETE Bucket Replication <en-us_topic_0000001684063985>`
+-  :ref:`PUT Bucket request payment <en-us_topic_0250433782>`
+-  :ref:`GET Bucket request payment <en-us_topic_0250433783>`
 -  :ref:`PUT Bucket Encryption <en-us_topic_0000001080838596>`
 -  :ref:`GET Bucket Encryption <en-us_topic_0000001080550512>`
 -  :ref:`DELETE Bucket Encryption <en-us_topic_0000001127815293>`
 -  :ref:`PUT Bucket Custom Domain <en-us_topic_0000001168067883>`
 -  :ref:`GET Bucket Custom Domain <en-us_topic_0000001168027913>`
 -  :ref:`DELETE Bucket Custom Domain <en-us_topic_0000001121228134>`
+-  :ref:`Configuring a Default WORM Policy for a Bucket <en-us_topic_0000001806313033>`
+-  :ref:`Obtaining the Default WORM Policy of a Bucket <en-us_topic_0000001759314566>`
 
 .. toctree::
    :maxdepth: 1
@@ -94,9 +101,16 @@ The requests that are sent to OBS by users must comply with REST specifications 
    put_bucket_tagging
    get_bucket_tagging
    delete_bucket_tagging
+   put_bucket_replication
+   get_bucket_replication
+   delete_bucket_replication
+   put_bucket_request_payment
+   get_bucket_request_payment
    put_bucket_encryption
    get_bucket_encryption
    delete_bucket_encryption
    put_bucket_custom_domain
    get_bucket_custom_domain
    delete_bucket_custom_domain
+   configuring_a_default_worm_policy_for_a_bucket
+   obtaining_the_default_worm_policy_of_a_bucket

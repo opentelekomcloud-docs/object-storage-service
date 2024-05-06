@@ -137,7 +137,7 @@ Sample Request
    Host: examplebucket.obs.region.example.com
    Accept: */*
    Date:  Thu, 21 Feb 2019 03:05:34 GMT
-   Authorization: OBS H4IPJX0TQTHTHEBQQCEC:DpSAlmLX/BTdjxU5HOEwflhM0WI=
+   Authorization: authorization
 
 Sample Response
 ---------------

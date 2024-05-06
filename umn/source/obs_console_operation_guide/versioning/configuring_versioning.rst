@@ -30,7 +30,7 @@ Procedure
 Related Operations
 ------------------
 
-After versioning is enabled, on the object details page that is displayed, click **Versions**, and then you can delete and download versions of the object.
+After versioning is configured for a bucket, you can go to the object details page, click the **Versions** tab, and then delete and download object versions.
 
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Objects**.
