@@ -20,17 +20,17 @@ After versioning is enabled for a bucket:
 
 -  OBS creates a unique version ID for each uploaded object. Namesake objects are not overwritten and are distinguished by their own version IDs.
 -  You can download objects by specifying version IDs. By default, the latest object is downloaded if the version ID is not specified.
--  Objects can be deleted by version ID. If an object is deleted with no version ID specified, the object is only attached with a deletion marker and a unique version ID but is not physically deleted.
+-  You can specify a version ID to permanently delete a specific object. If an object is deleted with no version ID specified, only a delete marker with a unique version ID is generated, but the object is not physically deleted.
 -  The latest objects in a bucket are returned by default after a GET Object request. You can also send a request to obtain a bucket's objects with all version IDs.
--  Except deletion markers and object metadata, storage space occupied by objects with all version IDs is charged.
+-  Except delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
 
 After versioning is suspended for a bucket:
 
 -  Existing objects with version IDs are not affected.
 -  The system creates version ID **null** to an uploaded object and the object will be overwritten after a namesake one is uploaded.
 -  You can download objects by specifying version IDs. By default, the latest object is downloaded if the version ID is not specified.
--  Objects can be deleted by version ID. If an object is deleted with no version ID specified, the object is attached with a deletion marker whose version ID is **null**. The object with version ID **null** is physically deleted.
--  Except deletion markers and object metadata, storage space occupied by objects with all version IDs is charged.
+-  You can specify a version ID to delete a specific object. If an object is deleted with no version ID specified, OBS creates a delete marker with a version ID of **null** and deletes the object whose version ID is **null**.
+-  Except delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
 
 Only the bucket owner can set versioning for the bucket.
 
@@ -52,7 +52,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request contains no message parameters.
+This request contains no parameters.
 
 Request Headers
 ---------------
@@ -73,13 +73,13 @@ This request contains elements to configure the bucket versioning in XML format.
    +=========================+===========================================+=======================+
    | VersioningConfiguration | Root node for configuring versioning      | Yes                   |
    |                         |                                           |                       |
-   |                         | Ancestor node: none                       |                       |
+   |                         | Parent: none                              |                       |
    +-------------------------+-------------------------------------------+-----------------------+
    | Status                  | Versioning status of the bucket           | Yes                   |
    |                         |                                           |                       |
    |                         | Type: string                              |                       |
    |                         |                                           |                       |
-   |                         | Ancestor node: VersioningConfiguration    |                       |
+   |                         | Parent: VersioningConfiguration           |                       |
    |                         |                                           |                       |
    |                         | Value options: **Enabled**, **Suspended** |                       |
    +-------------------------+-------------------------------------------+-----------------------+

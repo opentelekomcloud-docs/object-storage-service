@@ -79,31 +79,31 @@ In this request, you must configure bucket tags in the request body. The tag con
    |                       |                                 |                       |
    |                       | Type: container                 |                       |
    |                       |                                 |                       |
-   |                       | Ancestor: none                  |                       |
+   |                       | Parent: none                    |                       |
    +-----------------------+---------------------------------+-----------------------+
    | TagSet                | Element of the tag set          | Yes                   |
    |                       |                                 |                       |
    |                       | Type: container                 |                       |
    |                       |                                 |                       |
-   |                       | Ancestor: Tagging               |                       |
+   |                       | Parent: Tagging                 |                       |
    +-----------------------+---------------------------------+-----------------------+
    | Tag                   | Information element of Tag      | Yes                   |
    |                       |                                 |                       |
    |                       | Type: container                 |                       |
    |                       |                                 |                       |
-   |                       | Ancestor: TagSet                |                       |
+   |                       | Parent: TagSet                  |                       |
    +-----------------------+---------------------------------+-----------------------+
    | Key                   | Tag name                        | Yes                   |
    |                       |                                 |                       |
    |                       | Type: string                    |                       |
    |                       |                                 |                       |
-   |                       | Ancestor: Tag                   |                       |
+   |                       | Parent: Tag                     |                       |
    +-----------------------+---------------------------------+-----------------------+
    | Value                 | Tag value                       | Yes                   |
    |                       |                                 |                       |
    |                       | Type: string                    |                       |
    |                       |                                 |                       |
-   |                       | Ancestor: Tag                   |                       |
+   |                       | Parent: Tag                     |                       |
    +-----------------------+---------------------------------+-----------------------+
 
 Response Syntax

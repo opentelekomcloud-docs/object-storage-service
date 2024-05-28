@@ -12,7 +12,7 @@ This operation sets or updates the default storage class of a bucket.
 
 To perform this operation, you must have the **PutBucketStoragePolicy** permission. By default, only the bucket owner can perform this operation. The bucket owner can grant the permission to other users by configuring the bucket policy or user policy.
 
-After the default storage class has been set for a bucket, if the storage class of an object is not specified during uploading, copying, or initialization of multi-part upload, the object storage class is the same as the default storage class of the bucket.
+If you do not specify a storage class when uploading or copying an object, or initiating a multipart upload, the object inherits the bucket's storage class.
 
 The default storage class of a bucket is Standard.
 

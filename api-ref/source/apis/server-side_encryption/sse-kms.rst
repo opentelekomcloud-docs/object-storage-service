@@ -12,7 +12,9 @@ With SSE-KMS, OBS uses the keys provided by Key Management Service (KMS) for ser
 
 .. note::
 
-   When a custom key in a non-default IAM project is used to encrypt objects, only the key owner can upload or download the encrypted objects.
+   When a custom KMS key in a non-default IAM project is used to encrypt objects, only the key owner can upload or download the encrypted objects.
+
+   When the default KMS key in a region is used to encrypt an object, this default key belongs to the object owner. Only the key owner (also the object owner) can upload or download this object.
 
 Newly Added Headers
 -------------------

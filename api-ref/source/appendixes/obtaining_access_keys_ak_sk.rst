@@ -11,9 +11,14 @@ When you call APIs, you need to use the AK and SK for authentication. To obtain 
 #. Click on the login username in the upper right corner and choose **My Credentials** from the drop-down list.
 #. Choose **Access Keys**.
 #. Click **Create Access Key**.
-#. Enter the login password.
-#. Enter the verification code your mobile phone, or email received, and click **OK**.
-#. View the access key file that was automatically downloaded.
+#. Enter an access key description (optional) and click **OK**.
+#. Enter the verification code your mobile phone, virtual MFA device, or email received, and click **OK**.
+
+   .. note::
+
+      This step is required only when you have enabled operation protection.
+
+#. Click **Download** to obtain the access key file.
 
    .. note::
 

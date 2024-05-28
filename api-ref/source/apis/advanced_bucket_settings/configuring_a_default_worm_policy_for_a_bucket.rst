@@ -8,7 +8,7 @@ Configuring a Default WORM Policy for a Bucket
 Functions
 ---------
 
-This operation enables WORM for a bucket and allows you to configure the default WORM policy and a retention period.
+This operation allows you to configure the default WORM policy and a retention period for a bucket.
 
 With the bucket's default WORM policy, if you do not specify a WORM policy or a retention period when you upload an object to the bucket, the default policy will be automatically applied to the newly uploaded object. In an object-level WORM policy, a specific date is required to make the object protected before the date. In the default bucket-level WORM policy, a retention period is required, and the protection for an object starts when the object is uploaded to the bucket.
 

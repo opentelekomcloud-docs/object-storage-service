@@ -284,7 +284,7 @@ Signature Calculation in Java
 
     private static final List<String> SUB_RESOURCES = Collections.unmodifiableList(Arrays.asList(
       "CDNNotifyConfiguration", "acl", "attname",  "cors", "customdomain", "delete",
-      "deletebucket", "encryption", "length", "lifecycle", "location", "logging",
+      "deletebucket", "encryption", "inventory", "length", "lifecycle", "location", "logging",
       "metadata", "mirrorBackToSource", "modify", "name", "notification", "obscompresspolicy",
       "partNumber", "policy", "position", "quota","rename", "replication", "requestPayment", "response-cache-control",
       "response-content-disposition","response-content-encoding", "response-content-language", "response-content-type",
@@ -455,10 +455,12 @@ Signature Calculation in Java
        }
 
        public static void main(String[] args) throws Exception {
-
            SignDemo demo = new SignDemo();
-           demo.ak = "<your-access-key-id>";
-           demo.sk = "<your-secret-key-id>";
+
+                   /* Hard-coded or plaintext AK and SK are risky. For security purposes, encrypt your AK and SK and store them in the configuration file or environment variables.
+                   In this example, the AK and SK are stored in environment variables for identity authentication. Before running the code in this example, configure environment variables OTCCLOUD_SDK_AK and OTCCLOUD_SDK_SK. */
+           demo.ak = System.getenv("OTCCLOUD_SDK_AK");
+           demo.sk = System.getenv("OTCCLOUD_SDK_SK");
 
            String bucketName = "bucket-test";
            String objectName = "hello.jpg";
@@ -489,7 +491,9 @@ Signature Algorithm in Python
    from datetime import datetime
    IS_PYTHON2 = sys.version_info.major == 2 or sys.version < '3'
 
-   yourSecretAccessKeyID = '275hSvB6EEOorBNsMDEfOaICQnilYaPZhXUaSK64'
+   # Hard-coded or plaintext AK and SK are risky. For security purposes, encrypt your AK and SK and store them in the configuration file or environment variables.
+   # In this example, the AK and SK are stored in environment variables for identity authentication. Before running the code in this example, configure environment variables OTCCLOUD_SDK_AK and OTCCLOUD_SDK_SK.
+   yourSecretAccessKeyID = os.getenv('OTCCLOUD_SDK_SK')
    httpMethod = "PUT"
    contentType = "application/xml"
    # "date" is the time when the request was actually generated
