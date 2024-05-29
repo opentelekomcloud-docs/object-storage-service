@@ -14,7 +14,7 @@ This operation is used to create a bucket with a specified name.
 
    -  By default, a user can have a maximum of 100 buckets.
    -  The name of a deleted bucket can be reused for a bucket or a parallel file system at least 30 minutes after the deletion.
-   -  You can enable WORM when you create a bucket, but you cannot enable WORM for an existing bucket. In a bucket with WORM enabled, you can further configure retention policies for objects you upload to this bucket. For more information, see the WORM sections. Once enabled, WORM cannot be disabled for a bucket. When you create a bucket with WORM enabled, OBS automatically enables versioning for the bucket and the versioning cannot be suspended for that bucket. When you create a parallel file system, you cannot enable WORM for it.
+   -  You can enable WORM when you create a bucket, but you cannot enable WORM for an existing bucket. In a bucket with WORM enabled, you can further configure retention policies for objects you upload to this bucket. For more information, see :ref:`Configuring a Default WORM Policy for a Bucket <obs_04_0167>`. Once enabled, WORM cannot be disabled for a bucket. When you create a bucket with WORM enabled, OBS automatically enables versioning for the bucket and the versioning cannot be suspended for that bucket. When you create a parallel file system, you cannot enable WORM for it.
 
 A bucket name must be unique in OBS. If a user creates a bucket with the same name as that of an existing bucket under the same account and in the same region, a 200 code (indicating success) is returned. In scenarios other than the preceding one, the request for creating a bucket with the same name as that of an existing one will receive the 409 code (indicating that a namesake bucket already exists). To set an access control policy for the bucket to be created, you can add the **x-obs-acl** parameter to request headers.
 
@@ -23,7 +23,7 @@ Storage Class
 
 You can create buckets with different storage classes. The **x-obs-storage-class** header in a bucket creation request specifies the bucket's storage class. If you do not specify a storage class when you upload an object to the bucket, the object inherits the storage class of the bucket. The storage class options are as follows: **STANDARD** (Standard), **WARM** (Warm), **COLD** (Cold). If the **x-obs-storage-class** header is not in the request, a Standard bucket will be created.
 
-If the storage class of an object is not specified when it is uploaded to a bucket (see :ref:`Uploading Objects - PUT <obs_04_0080>`), the object will be stored in the default storage class of the bucket.
+If the storage class of an object is not specified when it is uploaded to a bucket (see :ref:`Uploading an Object - PUT <obs_04_0080>`), the object will be stored in the default storage class of the bucket.
 
 -  OBS Standard features low access latency and high throughput. It is most suitable for storing frequently accessed (multiple times per month) hot files. Potential application scenarios include big data, mobile applications, trending videos, and social media images.
 -  OBS Warm storage class is suitable for storing data that is infrequently accessed (less than 12 times a year) yet has quick response requirements. Potential application scenarios include file synchronization or sharing and enterprise backup. It provides the same durability, access latency, and throughput as the Standard storage class but at a lower price. However, the Warm storage class has lower availability than the Standard one.

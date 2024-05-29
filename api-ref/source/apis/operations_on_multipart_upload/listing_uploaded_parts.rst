@@ -115,49 +115,49 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                                |
    |                                   | Type: container                                                                                                                                                |
    |                                   |                                                                                                                                                                |
-   |                                   | Children: Bucket, Key, UploadId, PartNumberMarker, NextPartNumberMarker, MaxParts, IsTruncated, Part                                                           |
+   |                                   | Child: Bucket, Key, UploadId, PartNumberMarker, NextPartNumberMarker, MaxParts, IsTruncated, and Part                                                          |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: none                                                                                                                                                 |
+   |                                   | Parent: none                                                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Bucket                            | Name of the bucket                                                                                                                                             |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key                               | Object name                                                                                                                                                    |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | UploadId                          | ID of the multipart upload                                                                                                                                     |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Initiator                         | Initiator of the multipart upload                                                                                                                              |
    |                                   |                                                                                                                                                                |
    |                                   | Type: container                                                                                                                                                |
    |                                   |                                                                                                                                                                |
-   |                                   | Children: ID                                                                                                                                                   |
+   |                                   | Child: ID                                                                                                                                                      |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Owner                             | The value of this parameter is the same as that of **Initiator**.                                                                                              |
    |                                   |                                                                                                                                                                |
    |                                   | Type: container                                                                                                                                                |
    |                                   |                                                                                                                                                                |
-   |                                   | Children: ID                                                                                                                                                   |
+   |                                   | Child: ID                                                                                                                                                      |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ID                                | ID of the domain where the owner belongs                                                                                                                       |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: Initiator or Owner                                                                                                                                   |
+   |                                   | Parent: Initiator or Owner                                                                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | StorageClass                      | Storage class                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
@@ -165,39 +165,39 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                                |
    |                                   | Value options: **STANDARD**, **WARM**, **COLD**                                                                                                                |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | PartNumberMarker                  | Part number after which listing parts begins                                                                                                                   |
    |                                   |                                                                                                                                                                |
    |                                   | Type: integer                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | NextPartNumberMarker              | Value of **PartNumberMarker** in the next request when the returned result is incomplete                                                                       |
    |                                   |                                                                                                                                                                |
    |                                   | Type: integer                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | MaxParts                          | Maximum number of parts returned in a response                                                                                                                 |
    |                                   |                                                                                                                                                                |
    |                                   | Type: integer                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | IsTruncated                       | Whether the returned part list is truncated. The value **true** indicates that the list was truncated and **false** indicates that the list was not truncated. |
    |                                   |                                                                                                                                                                |
    |                                   | Type: boolean                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Part                              | Container for elements related to a particular part.                                                                                                           |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Children: PartNumber, LastModified, ETag, Size                                                                                                                 |
+   |                                   | Child: PartNumber, LastModified, ETag, and Size                                                                                                                |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult                                                                                                                                      |
+   |                                   | Parent: ListPartsResult                                                                                                                                        |
    |                                   |                                                                                                                                                                |
    |                                   | **PartNumber** identifies a part.                                                                                                                              |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -205,25 +205,25 @@ This response uses elements to return information about uploaded parts. :ref:`Ta
    |                                   |                                                                                                                                                                |
    |                                   | Type: integer                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult.Part                                                                                                                                 |
+   |                                   | Parent: ListPartsResult.Part                                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | LastModified                      | When a part was uploaded                                                                                                                                       |
    |                                   |                                                                                                                                                                |
    |                                   | Type: date                                                                                                                                                     |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult.Part                                                                                                                                 |
+   |                                   | Parent: ListPartsResult.Part                                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ETag                              | ETag value of the uploaded parts. It is the unique identifier of the part content and is used to verify data consistency during the combination of parts.      |
    |                                   |                                                                                                                                                                |
    |                                   | Type: string                                                                                                                                                   |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult.Part                                                                                                                                 |
+   |                                   | Parent: ListPartsResult.Part                                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Size                              | Size of an uploaded part                                                                                                                                       |
    |                                   |                                                                                                                                                                |
    |                                   | Type: integer                                                                                                                                                  |
    |                                   |                                                                                                                                                                |
-   |                                   | Ancestor: ListPartsResult.Part                                                                                                                                 |
+   |                                   | Parent: ListPartsResult.Part                                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Error Responses

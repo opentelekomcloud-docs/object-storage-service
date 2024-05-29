@@ -81,25 +81,25 @@ This response contains the following elements to detail bucket encryption config
    |                                    |                                                                                                                                                |
    |                                    | Type: container                                                                                                                                |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: none                                                                                                                                 |
+   |                                    | Parent: none                                                                                                                                   |
    |                                    |                                                                                                                                                |
-   |                                    | Children: Rule                                                                                                                                 |
+   |                                    | Child: Rule                                                                                                                                    |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | Rule                               | Sub-element of the default encryption configuration of a bucket.                                                                               |
    |                                    |                                                                                                                                                |
    |                                    | Type: container                                                                                                                                |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: ServerSideEncryptionConfiguration                                                                                                    |
+   |                                    | Parent: ServerSideEncryptionConfiguration                                                                                                      |
    |                                    |                                                                                                                                                |
-   |                                    | Children: ApplyServerSideEncryptionByDefault                                                                                                   |
+   |                                    | Child: ApplyServerSideEncryptionByDefault                                                                                                      |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | ApplyServerSideEncryptionByDefault | Sub-element of the default encryption configuration of a bucket.                                                                               |
    |                                    |                                                                                                                                                |
    |                                    | Type: container                                                                                                                                |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: Rule                                                                                                                                 |
+   |                                    | Parent: Rule                                                                                                                                   |
    |                                    |                                                                                                                                                |
-   |                                    | Children: SSEAlgorithm, KMSMasterKeyID                                                                                                         |
+   |                                    | Child: SSEAlgorithm and KMSMasterKeyID                                                                                                         |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | SSEAlgorithm                       | The server-side encryption algorithm used for encryption configuration of a bucket.                                                            |
    |                                    |                                                                                                                                                |
@@ -107,19 +107,19 @@ This response contains the following elements to detail bucket encryption config
    |                                    |                                                                                                                                                |
    |                                    | Value options: **kms**                                                                                                                         |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                                                                                   |
+   |                                    | Parent: ApplyServerSideEncryptionByDefault                                                                                                     |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | KMSMasterKeyID                     | ID of the customer master key (CMK) used for SSE-KMS.                                                                                          |
    |                                    |                                                                                                                                                |
    |                                    | Type: string                                                                                                                                   |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                                                                                   |
+   |                                    | Parent: ApplyServerSideEncryptionByDefault                                                                                                     |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | ProjectID                          | ID of the project where the KMS master key belongs when SSE-KMS is used.                                                                       |
    |                                    |                                                                                                                                                |
    |                                    | Type: string                                                                                                                                   |
    |                                    |                                                                                                                                                |
-   |                                    | Ancestor: ApplyServerSideEncryptionByDefault                                                                                                   |
+   |                                    | Parent: ApplyServerSideEncryptionByDefault                                                                                                     |
    |                                    |                                                                                                                                                |
    |                                    | .. note::                                                                                                                                      |
    |                                    |                                                                                                                                                |

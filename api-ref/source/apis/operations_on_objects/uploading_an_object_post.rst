@@ -2,8 +2,8 @@
 
 .. _obs_04_0081:
 
-Uploading Objects - POST
-========================
+Uploading an Object - POST
+==========================
 
 Functions
 ---------
@@ -37,7 +37,7 @@ With the PUT method, you need to specify the object name in the URL, but object 
 
    POST / HTTP/1.1
 
-For details about PUT upload, see :ref:`Uploading Objects - PUT <obs_04_0080>`.
+For details about PUT upload, see :ref:`Uploading an Object - PUT <obs_04_0080>`.
 
 Versioning
 ----------
@@ -388,7 +388,7 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the message headers listed in :ref:`Table 3 <obs_04_0081__table35215532173747>` may be used.
+In addition to the common response headers, the headers listed in :ref:`Table 3 <obs_04_0081__table35215532173747>` may be used.
 
 .. _obs_04_0081__table35215532173747:
 
@@ -702,7 +702,7 @@ Sample Request: Specifying an Object Expiration Time
 
    object01
    --148828969260233905620870
-   Content-Disposition: form-data; name="AwsAccessKeyId"
+   Content-Disposition: form-data; name="ObsAccessKeyId"
 
    55445349414d5354554254455354303030303033
    --148828969260233905620870
@@ -768,7 +768,7 @@ Sample Request: Specifying a Status Code
 
    obj
    ----------------------------285613759795901770404350
-   Content-Disposition: form-data; name="AwsAccessKeyId"
+   Content-Disposition: form-data; name="ObsAccessKeyId"
 
    XXXXXXXXXXXXXXX000003
    ----------------------------285613759795901770404350
@@ -813,8 +813,8 @@ Sample Response: Specifying a Status Code
    x-forward-status: 0x40020000000001
    x-dae-api-type: REST.POST.OBJECT
 
-Sample Request: Configuring a WORM Retention Policy When Uploading an Object
-----------------------------------------------------------------------------
+Sample Request: Uploading an Object (with a WORM Retention Policy Configured)
+-----------------------------------------------------------------------------
 
 .. code-block:: text
 
@@ -833,7 +833,7 @@ Sample Request: Configuring a WORM Retention Policy When Uploading an Object
 
    obj
    ----------------------------940435396775653808840608
-   Content-Disposition: form-data; name="AwsAccessKeyId"
+   Content-Disposition: form-data; name="ObsAccessKeyId"
 
    XXXXXXXXXXXXXXX000003
    ----------------------------940435396775653808840608
@@ -863,8 +863,8 @@ Sample Request: Configuring a WORM Retention Policy When Uploading an Object
    Upload to OBS
    ----------------------------940435396775653808840608--
 
-Sample Response: Configuring a WORM Retention Policy When Uploading an Object
------------------------------------------------------------------------------
+Sample Response: Uploading an Object (with a WORM Retention Policy Configured)
+------------------------------------------------------------------------------
 
 .. code-block::
 

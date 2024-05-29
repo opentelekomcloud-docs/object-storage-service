@@ -13,9 +13,11 @@ You can perform this operation to delete an object. If you try to delete an obje
 Versioning
 ----------
 
-When versioning is enabled for a bucket, a deletion marker with a unique version number is generated when an object is deleted without specifying the version. However, the object is not actually deleted. If versioning is suspended for a bucket and no version is specified when you delete an object, the object whose version number is **null** is deleted, and a deletion marker with version number **null** is generated.
+When versioning is enabled for a bucket, a delete request that does not specify a version ID cannot permanently delete the object. Instead, OBS creates a delete marker with a unique version ID. When versioning is suspended for a bucket, a delete request that does not specify a version ID deletes the object whose version ID is **null** and creates a delete marker with a version ID of **null**.
 
 To delete an object of a specified version, the **versionId** parameter can be used to specify the desired version.
+
+To restore a deleted object, you need to specify the delete marker version in the **versionId** parameter when deleting it.
 
 WORM
 ----
@@ -95,7 +97,7 @@ If versioning is enabled for the bucket, the headers listed in :ref:`Table 2 <ob
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+
    | x-obs-version-id                  | Object version ID. If the object has no version number specified, the response does not contain this header.               |
    |                                   |                                                                                                                            |
-   |                                   | Valid value: character string                                                                                              |
+   |                                   | Valid value: string                                                                                                        |
    |                                   |                                                                                                                            |
    |                                   | Default value: none                                                                                                        |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+
@@ -132,3 +134,49 @@ Sample Response
    x-obs-request-id: 8DF400000163D3F51DEA05AC9CA066F1
    x-obs-id-2: 32AAAUgAIAABAAAQAAEAABAAAQAAEAABCSgkM4Dij80gAeFY8pAZIwx72QhDeBZ5
    Date: WED, 01 Jul 2015 04:19:21 GMT
+
+Sample Request: Specifying **versionId** to Delete a Specific Object Version
+----------------------------------------------------------------------------
+
+.. code-block:: text
+
+   DELETE /object2?versionId=G001118A49821905FFFFD28739D419DA HTTP/1.1
+   Authorization: OBS H4IPJX0TQTHTHEBQQCEC:iqSPeUBl66PwXDApxjRKk6hlcN4=
+   User-Agent: curl/7.29.0
+   Host: examplebucket.obs.region.example.com
+   Date: WED, 01 Jul 2015 02:37:22 GMT
+   Content-Type: application/xml
+
+Sample Response: Specifying **versionId** to Delete a Specific Object Version
+-----------------------------------------------------------------------------
+
+.. code-block::
+
+   x-obs-id-2: 32AAAUgAIAABAAAQAAEAABAAAQAAEAABCS3WJqDiMsxgGHKQrlqST9veFKpDgE50
+   x-obs-request-id: 0000018A4997390DD306CCDA0DEC814F
+   Server: OBS
+   Date: WED, 01 Jul 2015 02:37:22 GMT
+   x-obs-version-id: G001118A49821905FFFFD28739D419DA
+
+Sample Request: Specifying **versionId** to Delete a Delete Marker
+------------------------------------------------------------------
+
+.. code-block:: text
+
+   DELETE /object2?versionId=G001118A6456208AFFFFD24829FCF614
+   Authorization: OBS H4IPJX0TQTHTHEBQQCEC:iqSPeUBl66PwXDApxjRKk6hlcN4=
+   User-Agent: curl/7.29.0
+   Host: examplebucket.obs.region.example.com
+   Date: WED, 01 Jul 2015 02:37:22 GMT
+   Content-Type: application/xml
+
+Sample Response: Specifying **versionId** to Delete a Delete Marker
+-------------------------------------------------------------------
+
+.. code-block::
+
+   x-obs-id-2: 32AAAUgAIAABAAAQAAEAABAAAQAAEAABCS3WJqDiMsxgGHKQrlqST9veFKpDgE50
+   x-obs-request-id: 0000018A4997390DD306CCDA0DEC814F
+   Server: OBS
+   Date: WED, 01 Jul 2015 02:37:22 GMT
+   x-obs-version-id: G001118A6456208AFFFFD24829FCF614

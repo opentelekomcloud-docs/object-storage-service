@@ -37,11 +37,11 @@ The following table lists headers that are required when you use SSE-C to encryp
 
 APIs where the newly added headers apply:
 
--  :ref:`Uploading Objects - PUT <obs_04_0080>`
--  :ref:`Uploading Objects - POST <obs_04_0081>`
--  :ref:`Copying Objects <obs_04_0082>` (The newly added headers apply to object copies.)
+-  :ref:`Uploading an Object - PUT <obs_04_0080>`
+-  :ref:`Uploading an Object - POST <obs_04_0081>`
+-  :ref:`Copying an Object <obs_04_0082>`: The newly added headers apply to the object copy.
 -  :ref:`Querying Object Metadata <obs_04_0084>`
--  :ref:`Downloading Objects <obs_04_0083>`
+-  :ref:`Downloading an Object <obs_04_0083>`
 -  :ref:`Initiating a Multipart Upload <obs_04_0098>`
 -  :ref:`Uploading Parts <obs_04_0099>`
 -  :ref:`Copying Parts <obs_04_0100>`: The newly added headers apply to target parts.

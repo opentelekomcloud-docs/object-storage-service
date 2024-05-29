@@ -30,6 +30,10 @@ Advanced Bucket Settings
 -  :ref:`Configuring Bucket Storage Quota <obs_04_0052>`
 -  :ref:`Querying Bucket Storage Quota <obs_04_0053>`
 -  :ref:`Obtaining Storage Information of a Bucket <obs_04_0054>`
+-  :ref:`Configuring Bucket Inventories <obs_04_0055>`
+-  :ref:`Obtaining a Specific Inventory of a Bucket <obs_04_0056>`
+-  :ref:`Listing All Inventories of a Bucket <obs_04_0057>`
+-  :ref:`Deleting Bucket Inventories <obs_04_0058>`
 -  :ref:`Configuring a Custom Domain Name for a Bucket <obs_04_0059>`
 -  :ref:`Obtaining the Custom Domain Name of a Bucket <obs_04_0060>`
 -  :ref:`Deleting the Custom Domain Name of a Bucket <obs_04_0061>`
@@ -70,6 +74,10 @@ Advanced Bucket Settings
    configuring_bucket_storage_quota
    querying_bucket_storage_quota
    obtaining_storage_information_of_a_bucket
+   configuring_bucket_inventories
+   obtaining_a_specific_inventory_of_a_bucket
+   listing_all_inventories_of_a_bucket
+   deleting_bucket_inventories
    configuring_a_custom_domain_name_for_a_bucket
    obtaining_the_custom_domain_name_of_a_bucket
    deleting_the_custom_domain_name_of_a_bucket
