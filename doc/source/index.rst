@@ -13,5 +13,4 @@ Object Storage Service (OBS) is an object-based storage service that provides cu
       :permissions-configuration-guide: This document describes different methods offered by OBS to help resource owners grant resource permissions to others as required, keeping data secure.
       :api-ref: This document describes the Representational State Transfer (REST) application programming interfaces (APIs) supported by Object Storage Service, including request and response formats as well as parameters.
       :s3api: This document describes the Representational State Transfer (REST) application programming interfaces (APIs) supported by Object Storage Service (compatible with Amazon S3), including request and response formats as well as parameters.
-      :swiftapi: This document describes the Representational State Transfer (REST) application programming interfaces (APIs) supported by Object Storage Service (compatible with OpenStack Swift), including request and response formats as well as parameters.
       :tool-guide: This document introduces OBS Browser+, a GUI tool for managing OBS. This tool provides complete functions for managing your buckets and objects in OBS.
