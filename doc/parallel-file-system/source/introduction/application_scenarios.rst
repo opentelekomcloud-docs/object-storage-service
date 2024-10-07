@@ -5,14 +5,8 @@
 Application Scenarios
 =====================
 
-PFS is highly compatible, scalable, and reliable, and delivers amazing performance. PFS is well suited to HPC and media asset archiving scenarios.
+PFS is highly compatible, scalable, and reliable, and delivers amazing performance.
 
-**The main application scenarios of PFS are as follows:**
+**It is mainly used in the following scenarios:**
 
-Video surveillance: public security, business environments, and households
-
-Video on demand (VOD): over-the-top (OTT) delivery and media assets library
-
-HPC: DNA sequencing and computer-aided engineering (CAE) scenarios in manufacturing
-
-Big data: log analysis, content recommendation, operation report, user profile, and interactive analysis
+Big data: log analysis, content recommendation, operation reports, user profiling, and interactive analysis

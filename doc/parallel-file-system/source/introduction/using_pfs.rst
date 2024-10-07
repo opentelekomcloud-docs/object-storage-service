@@ -5,20 +5,20 @@
 Using PFS
 =========
 
-PFS provides the console and REST APIs for managing and accessing data. Your applications can be seamlessly interconnected with PFS. No modifications to your applications are needed. You can process files stored in PFS anytime, anywhere, and quickly obtain the processed files. PFS supports both POSIX and OBS APIs, so you can process files the same way you process objects. There is flexible conversion supported between objects and files.
+PFS provides both a console and REST APIs for managing and accessing data, so that your applications can seamlessly interconnect with PFS without requiring any modifications. This allows you to process files stored in PFS anytime, anywhere and retrieve the processed files quickly. PFS supports both Portable Operating System Interface (POSIX) and OBS APIs, so you can process files the same way you process objects. This achieves interoperability between objects and files.
 
-You can use PFS in the following ways:
+The table below describes the ways to use PFS in detail.
 
 .. note::
 
-   Access permissions for OBS buckets also apply to parallel file systems. Before using a parallel file system, ensure that you have the required permissions to access OBS buckets.
+   Access permissions for OBS also apply to PFS. Before using PFS, make sure that you have the permissions required to access OBS resources.
 
-.. table:: **Table 1** How to use PFS
+.. table:: **Table 1** Ways to use PFS
 
-   +---------+---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-   | Method  | Function                                                                                                            | Reference                                            |
-   +=========+=====================================================================================================================+======================================================+
-   | Console | On the console, you can create parallel file systems, and you can also view and manage your file systems and files. | :ref:`Creating a Parallel File System <obs_13_0002>` |
-   +---------+---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-   | OBS API | Use parallel file systems by calling OBS APIs.                                                                      | :ref:`Supported APIs <obs_13_0004>`                  |
-   +---------+---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
+   +-------------+-----------------------------------------------------------------------+-------------------------------------------------------------+
+   | Way         | Function                                                              | Reference                                                   |
+   +=============+=======================================================================+=============================================================+
+   | PFS Console | On the console, you can create parallel file systems and manage them. | :ref:`Creating a Parallel File System <obs_13_0002>`        |
+   +-------------+-----------------------------------------------------------------------+-------------------------------------------------------------+
+   | OBS API     | You can make API calls to use parallel file systems.                  | :ref:`Compatibility Between OBS APIs and PFS <obs_13_0004>` |
+   +-------------+-----------------------------------------------------------------------+-------------------------------------------------------------+
