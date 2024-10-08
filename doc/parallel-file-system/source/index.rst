@@ -6,6 +6,6 @@ Object Storage Service - Parallel File System (PFS)
    :maxdepth: 1
 
    introduction/index
-   managing_parallel_file_systems_on_obs_console/index
-   managing_parallel_file_systems_by_apis/index
+   using_pfs_on_a_console/index
+   using_pfs_with_obs_apis/index
    change_history

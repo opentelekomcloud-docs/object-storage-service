@@ -5,7 +5,7 @@
 Introduction
 ============
 
--  :ref:`About Parallel File System <obs_13_0007>`
+-  :ref:`About PFS <obs_13_0007>`
 -  :ref:`Application Scenarios <obs_13_0008>`
 -  :ref:`Constraints <obs_13_0009>`
 -  :ref:`Using PFS <obs_13_0010>`
@@ -14,7 +14,7 @@ Introduction
    :maxdepth: 1
    :hidden: 
 
-   about_parallel_file_system
+   about_pfs
    application_scenarios
    constraints
    using_pfs
