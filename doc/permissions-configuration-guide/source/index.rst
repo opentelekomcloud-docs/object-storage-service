@@ -5,10 +5,9 @@ Object Storage Service - Permissions Configuration Guide
 .. toctree::
    :maxdepth: 1
 
-   introduction_to_obs_access_control
-   permission_control_mechanisms/index
+   differences_between_obs_permissions_control_methods
+   permission_control_methods/index
    access_requests/index
-   typical_permission_control_scenarios
-   configuration_cases_in_typical_permission_control_scenarios/index
+   permission_configuration_in_typical_scenarios/index
    appendix/index
    change_history
