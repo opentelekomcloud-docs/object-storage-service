@@ -8,28 +8,28 @@ Accessing OBS Using Temporary Access Keys
 Temporary Access Keys
 ---------------------
 
-OBS can be accessed through temporary access keys and the security token, which can be obtained on IAM. You can assign the temporary access keys (including the security token) to a third-party application and an IAM user, so they can access OBS within a specified period of time.
+You can assign temporary security credentials (including an AK, an SK, and a security token) to a third-party application or an IAM user, so that they can access OBS only for a specified period of time.
 
-You can obtain the temporary access keys and security token by calling the IAM API in `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.
+You can obtain temporary security credentials by calling an IAM API. For details, see `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.
 
-Temporary AK/SK and security token comply with the least privilege principle and can be used to temporarily access OBS. When you use a temporary AK/SK pair to call an API for authentication, you must use the temporary AK/SK and security token at the same time and add the **x-obs-security-token** field to the request header.
+The least privilege principle is granted for temporary security credentials to ensure security. Both a temporary AK/SK pair and a security token are required to call an API for authentication, which means that the request header needs to include **x-obs-security-token** field.
 
 Temporary access keys have the following advantages over permanent access keys of IAM users:
 
--  Temporary access keys are valid for 15 minutes to 24 hours. You do not need to expose the permanent access keys of IAM users, reducing security risks.
--  When obtaining temporary access keys, you can pass policy parameters to further restrict the temporary permissions granted to users. This ensures that IAM users can effectively control permissions granted to other users.
+-  Temporary access keys are valid for 15 minutes to 24 hours. Permanent access keys of IAM users are not exposed, reducing the risk of identity theft or fraud.
+-  When obtaining temporary access keys, you can send the policy parameter to request for the least temporary permissions that can be granted to IAM users.
 
 For details, see `Authenticating a Request <https://docs.otc.t-systems.com/api_obs/obs/en-us_topic_0125560435.html>`__.
 
-Permissions of the Temporary Access Keys
-----------------------------------------
+Permissions of Temporary Access Keys
+------------------------------------
 
-When an IAM user calls the IAM API in `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__, the user can specify parameter **policy** to add a temporary policy for the temporary access keys to further restrict the permissions granted to other users. The format and content of a temporary policy are consistent with those specified in :ref:`IAM Permissions <obs_40_0003>`.
+When an IAM user calls the IAM API for `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__, the user can send the **policy** parameter to add a temporary policy to further restrict the permissions that can be granted to other users. The format and content of a temporary policy should be consistent with those specified in :ref:`IAM Permissions <obs_40_0003>`.
 
--  If policy parameters are not specified, no temporary policies are used. The temporary access keys inherit the IAM user's permissions.
--  If policy parameters are specified, a temporary policy is enabled. Then the temporary access keys confine the granted permissions according to the temporary policy and the IAM user permissions.
+-  If the **policy** parameter is not specified, the temporary access keys have the IAM user's permissions.
+-  If the **policy** parameter is specified, the temporary access keys' permissions are the overlaps between the temporary policy's permissions and the IAM user's permissions.
 
-As shown in the following figure, circle 1 indicates the original permissions of an IAM user, and circle 2 indicates the temporary permissions specified by a temporary policy. The overlapped part 3 is the scope of permissions enabled by the temporary access keys.
+As shown in the following figure, circle 1 indicates an IAM user's permissions, and circle 2 indicates the temporary policy's permissions. The overlapping part 3 is the permissions of the temporary access keys.
 
 
 .. figure:: /_static/images/en-us_image_0269157281.png
@@ -37,28 +37,28 @@ As shown in the following figure, circle 1 indicates the original permissions of
 
    **Figure 1** Intersection of IAM user permissions and temporary policy permissions
 
-Temporary access keys comply with the least privilege principle. Configure a temporary policy within the original permission scope of an IAM user. Otherwise you may be confused about why permissions enabled by a temporary policy are not effective. As illustrated by the following figure, the finally effective permissions are the authorized temporary permissions.
+Temporary access keys have the least privilege. You are advised to restrict a temporary policy's permissions within an IAM user's permissions. If a temporary policy's permissions are not all within the IAM user's permissions, the temporary access keys' permissions are definitely not the temporary policy's permissions. As illustrated by the following figure, the finally granted permissions are the temporary policy's permissions.
 
 
 .. figure:: /_static/images/en-us_image_0269160697.png
-   :alt: **Figure 2** Restricting temporary permissions within the scope of IAM user permissions
+   :alt: **Figure 2** Restricting temporary permissions within IAM user permissions
 
-   **Figure 2** Restricting temporary permissions within the scope of IAM user permissions
+   **Figure 2** Restricting temporary permissions within IAM user permissions
 
-A temporary policy authentication starts from the Deny statements. Unspecified permissions are denied by default.
+For a temporary policy's permissions, Deny always overrides Allow. Unspecified permissions are all Deny permissions by default.
 
 .. note::
 
-   Therefore, you are advised to specify only the allowed permission.
+   Therefore, you are advised to specify only Allow permissions.
 
 Application Scenarios
 ---------------------
 
-Temporary access keys are used to authorize third parties to temporarily access OBS. For example, some companies have their user management systems, which manage device app users and local enterprise users. These users do not have IAM user permissions, so IAM users can grant temporary access keys to these users when they need to access OBS.
+Temporary access keys are authorized to third parties to allow them to temporarily access OBS. For example, some companies have user management systems that manage app users and local users. These users do not have IAM user permissions, so IAM can grant temporary access keys to allow these users to temporarily access OBS.
 
 **Typical application scenario:**
 
-A company has a large number of device apps that need to access OBS. Different apps represent different end users who require different access permissions. In this case, temporary access keys can be used to access OBS.
+A company has a large number of apps that need to access OBS. Different apps require different access permissions. In this case, temporary access keys can be granted to app users to allow them to temporarily access OBS.
 
 
 .. figure:: /_static/images/en-us_image_0268971273.jpg
@@ -66,9 +66,9 @@ A company has a large number of device apps that need to access OBS. Different a
 
    **Figure 3** Application scenarios of temporary access keys
 
-#. If the customer's server can obtain permanent access keys for IAM users, the server can send requests to IAM to generate different temporary access keys for different apps.
+#. The customer server has permanent access keys, so it can request IAM to generate different temporary access keys for different apps.
 
-   IAM users can obtain the temporary access keys and security token by calling the IAM API in `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__. When calling this API, pass the **policy** parameter to set a temporary policy. An example is provided as follows:
+   IAM users can call the IAM API for `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__. IAM users can also send the **policy** parameter to request for temporary policy's permissions. An example is provided as follows:
 
    .. code-block::
 
@@ -87,11 +87,11 @@ A company has a large number of device apps that need to access OBS. Different a
 
    The policy's syntax and format are the same as those specified in :ref:`IAM Permissions <obs_40_0003>`.
 
-#. IAM generates temporary access keys with different permissions and validity periods based on the passed policy parameters and returns the access keys to the customer server.
+#. IAM generates temporary access keys with different permissions and validity periods based on the **policy** parameter and returns the access keys to the customer server.
 
-#. Then the customer server distributes the temporary access keys to device apps that require such permissions.
+#. The customer server distributes the temporary access keys to apps.
 
-#. A device app can use the temporary access keys to access OBS through OBS SDKs or APIs. Temporary access keys are valid for a short period of time. If the device app needs to prolong its use of OBS, it should send a request to the customer server for updating temporary access keys before they expire.
+#. Apps can use the temporary access keys to access OBS through OBS SDKs or APIs. Temporary access keys are valid for the specified period of time. If the apps need to prolong the access to OBS, they should request to the customer server to update temporary access keys before they expire.
 
 Configuration Example
 ---------------------
