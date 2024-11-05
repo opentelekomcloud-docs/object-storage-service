@@ -8,7 +8,7 @@ Restoring Cold Objects
 Functions
 ---------
 
-To obtain the content of an object in the Cold storage class, you need to restore the object first and then you can download it. After an object is restored, a copy of the object is saved in the Standard storage class. By doing so, the object in the Cold storage class and its copy in the Standard storage class co-exist in the bucket. The copy will be automatically deleted once its retention period expires.
+To obtain the content of an object in the Cold storage class, you need to restore the object first and then you can download it. After an object is restored, a copy of the object is saved in the Standard storage class. By doing so, the object in the Cold storage class and its copy in the Standard storage class co-exist in the bucket. The copy will be automatically deleted once its retention period ends.
 
 Versioning
 ----------
@@ -36,13 +36,25 @@ Request Syntax
 Request Parameters
 ------------------
 
-+-----------------------+----------------------------------------------+-----------------------+
-| Parameter             | Description                                  | Mandatory             |
-+=======================+==============================================+=======================+
-| versionId             | Version ID of the Cold object to be restored | No                    |
-|                       |                                              |                       |
-|                       | Type: string                                 |                       |
-+-----------------------+----------------------------------------------+-----------------------+
++-----------------+-----------------+--------------------+-------------------------------------------------------------------------------------------+
+| Parameter       | Type            | Mandatory (Yes/No) | Description                                                                               |
++=================+=================+====================+===========================================================================================+
+| versionId       | String          | No                 | **Explanation**:                                                                          |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | Version ID of the Cold object to be restored                                              |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | **Restrictions**:                                                                         |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | None                                                                                      |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | **Value range**:                                                                          |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | None                                                                                      |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | **Default value**:                                                                        |
+|                 |                 |                    |                                                                                           |
+|                 |                 |                    | None. If this parameter is not configured, the latest version of the object is specified. |
++-----------------+-----------------+--------------------+-------------------------------------------------------------------------------------------+
 
 Request Headers
 ---------------
@@ -54,31 +66,70 @@ Request Elements
 
 .. table:: **Table 1** Request elements
 
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Element               | Description                                                                                                | Mandatory             |
-   +=======================+============================================================================================================+=======================+
-   | RestoreRequest        | Container for the restore information                                                                      | Yes                   |
-   |                       |                                                                                                            |                       |
-   |                       | Type: container                                                                                            |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Days                  | Indicates the storage duration of the restored object. The minimum value is 1 and the maximum value is 30. | Yes                   |
-   |                       |                                                                                                            |                       |
-   |                       | Type: integer                                                                                              |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | RestoreJob            | Container for the restore options                                                                          | No                    |
-   |                       |                                                                                                            |                       |
-   |                       | Type: container                                                                                            |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Tier                  | Restore options: **Expedited** \| **Standard**                                                             | No                    |
-   |                       |                                                                                                            |                       |
-   |                       | **Expedited** indicates that objects can be quickly restored from Archive storage within 1 to 5 minutes.   |                       |
-   |                       |                                                                                                            |                       |
-   |                       | **Standard** indicates that objects can be restored from Archive storage within 3 to 5 hours.              |                       |
-   |                       |                                                                                                            |                       |
-   |                       | The default value is **Standard**.                                                                         |                       |
-   |                       |                                                                                                            |                       |
-   |                       | Type: string                                                                                               |                       |
-   +-----------------------+------------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------+-----------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Element         | Type            | Mandatory (Yes/No) | Description                                                                                                                                                                                |
+   +=================+=================+====================+============================================================================================================================================================================================+
+   | RestoreRequest  | Container       | Yes                | **Explanation**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | Container for the restore information                                                                                                                                                      |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Restrictions**:                                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Value range**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Default value**:                                                                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   +-----------------+-----------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Days            | Integer         | Yes                | **Explanation**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | After an object is restored, a Standard copy of it is generated. This parameter specifies how long the Standard copy can be retained, that is, the validity period of the restored object. |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Restrictions**:                                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Value range**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | The value ranges from 1 to 30, in days.                                                                                                                                                    |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Default value**:                                                                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   +-----------------+-----------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | RestoreJob      | Container       | No                 | **Explanation**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | Container for the restore options                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Restrictions**:                                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Value range**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Default value**:                                                                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | None                                                                                                                                                                                       |
+   +-----------------+-----------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Tier            | String          | No                 | **Explanation**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | Retrieval speed tier. You can select a tier that suits your retrieval needs.                                                                                                               |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Value range**:                                                                                                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | -  **Expedited** indicates that objects can be quickly restored from Archive storage within 1 to 5 minutes.                                                                                |
+   |                 |                 |                    | -  **Standard** indicates that objects can be restored from Archive storage within 3 to 5 hours.                                                                                           |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | **Default value**:                                                                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                                                            |
+   |                 |                 |                    | Standard                                                                                                                                                                                   |
+   +-----------------+-----------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Syntax
 ---------------
@@ -106,27 +157,39 @@ Error Responses
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Error Code               | Description                                                                                                        | HTTP Status Code      |
    +==========================+====================================================================================================================+=======================+
-   | RestoreAlreadyInProgress | The object is being restored. The request conflicts with another.                                                  | 409 Conflict          |
+   | RestoreAlreadyInProgress | **Explanation**:                                                                                                   | 409 Conflict          |
+   |                          |                                                                                                                    |                       |
+   |                          | The object is being restored. The request conflicts with another.                                                  |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: Object restore is already in progress                                                                |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | ObjectHasAlreadyRestored | The objects have been restored and the retention period of the objects cannot be shortened.                        | 409 Conflict          |
+   | ObjectHasAlreadyRestored | **Explanation**:                                                                                                   | 409 Conflict          |
+   |                          |                                                                                                                    |                       |
+   |                          | The objects have been restored and the retention period of the objects cannot be shortened.                        |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: After restoring an archived object, you cannot shorten the restoration period of the archived object |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | MalformedXML             | Invalid value for the **Days** field (not an integer)                                                              | 400 Bad Request       |
+   | MalformedXML             | **Explanation**:                                                                                                   | 400 Bad Request       |
+   |                          |                                                                                                                    |                       |
+   |                          | Invalid value for the **Days** field (supposed to be an integer)                                                   |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: The XML you provided was not well-formed or did not validate against our published schema            |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | InvalidArgument          | The value of the **Days** field is not within the range of 1 to 30.                                                | 400 Bad Request       |
+   | InvalidArgument          | **Explanation**:                                                                                                   | 400 Bad Request       |
+   |                          |                                                                                                                    |                       |
+   |                          | Invalid value for the **Days** field (valid range: 1 to 30).                                                       |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: restoration days should be at least 1 and at most 30                                                 |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | MalformedXML             | Invalid value for the **Tier** field.                                                                              | 400 Bad Request       |
+   | MalformedXML             | **Explanation**:                                                                                                   | 400 Bad Request       |
+   |                          |                                                                                                                    |                       |
+   |                          | Invalid value for the **Tier** field.                                                                              |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: The XML you provided was not well-formed or did not validate against our published schema            |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | InvalidObjectState       | The restored object is not in the Cold storage.                                                                    | 403 Forbidden         |
+   | InvalidObjectState       | **Explanation**:                                                                                                   | 403 Forbidden         |
+   |                          |                                                                                                                    |                       |
+   |                          | The restored object is not in the Cold storage.                                                                    |                       |
    |                          |                                                                                                                    |                       |
    |                          | ErrorMessage: Restore is not allowed, as object's storage class is not COLD                                        |                       |
    +--------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+

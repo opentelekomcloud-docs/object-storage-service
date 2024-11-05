@@ -5,16 +5,16 @@
 Authentication of Signature in a URL
 ====================================
 
-OBS allows users to construct a URL for a specific operation. The URL contains information such as the user's AK, signature, validity period, and resources. Any user who obtains the URL can perform the operation. After receiving the request, the OBS deems that the operation is performed by the user who issues the URL. For example, if the URL of an object download request carries signature information is constructed, the user who obtains the URL can download the object, but the URL is valid only within the expiration time specified by the parameter of **Expires**. The URL that carries the signature is used to allow others to use the pre-issued URL for identity authentication when the SK is not provided, and perform the predefined operation.
+You can create a presigned URL for a specific operation. This kind of URL includes the user AK, signature, validity period, resources and other information. It allows any user who gets it to perform the specified operation (such as download) as if they are its creator. Presigned URLs enable authentication without secret access keys. Such URLs, however, must be used before expiration.
 
-The format of the message where a signature is contained in the URL:
+A request with a presigned URL is formed as follows:
 
 .. code-block:: text
 
    GET /ObjectKey?AccessKeyId=AccessKeyID&Expires=ExpiresValue&Signature=signature HTTP/1.1
    Host: bucketname.obs.region.example.com
 
-The format of the message where a temporary AK/SK pair and a security token are used in the URL for downloading objects:
+A download request with a URL that uses a temporary AK/SK pair and security token is formed as follows:
 
 .. code-block:: text
 
@@ -30,24 +30,24 @@ The format of the message where a temporary AK/SK pair and a security token are 
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Parameter             | Description                                                                                                                                                                                                  | Mandatory             |
    +=======================+==============================================================================================================================================================================================================+=======================+
-   | AccessKeyId           | AK information of the issuer. OBS determines the identity of the issuer based on the AK and considers that the URL is accessed by the issuer.                                                                | Yes                   |
+   | AccessKeyId           | The access key of the URL creator. OBS uses it to verify the identity.                                                                                                                                       | Yes                   |
    |                       |                                                                                                                                                                                                              |                       |
    |                       | Type: string                                                                                                                                                                                                 |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Expires               | Indicates when the temporarily authorized URL expires, in seconds. The time must be in Coordinated Universal Time (UTC) format and later than 00:00:00 on January 1, 1970.                                   | Yes                   |
+   | Expires               | When the URL expires, in UTC (how many seconds have elapsed since 00:00:00 UTC on January 1, 1970)                                                                                                           | Yes                   |
    |                       |                                                                                                                                                                                                              |                       |
    |                       | Type: string                                                                                                                                                                                                 |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Signature             | The signature generated using the SK and the expiration time.                                                                                                                                                | Yes                   |
+   | Signature             | The signature based on the user SK and **Expires**                                                                                                                                                           | Yes                   |
    |                       |                                                                                                                                                                                                              |                       |
    |                       | Type: string                                                                                                                                                                                                 |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | x-obs-security-token  | During temporary authentication, the temporary AK/SK and security token must be used at the same time and the **x-obs-security-token** field must be added to the request header.                            | No                    |
+   | x-obs-security-token  | A temporary AK/SK pair must be used with a security token, indicated by the **x-obs-security-token** header.                                                                                                 | No                    |
    |                       |                                                                                                                                                                                                              |                       |
    |                       | For details about how to obtain a temporary AK/SK pair and security token, see `Obtaining a Temporary AK/SK Pair and Security Token <https://docs.otc.t-systems.com/api/iam/en-us_topic_0097949518.html>`__. |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-The process of calculating a signature is as follows:
+A signature is calculated as follows:
 
 #. .. _obs_04_0011__li587641544619:
 
@@ -59,7 +59,7 @@ The process of calculating a signature is as follows:
 
 #. .. _obs_04_0011__li187621516463:
 
-   Use the SK to calculate the HMAC-SHA1 signature on the result of :ref:`2 <obs_04_0011__li4876101544611>`.
+   Use the SK to calculate HMAC-SHA1 based on the result of :ref:`2 <obs_04_0011__li4876101544611>`.
 
 #. .. _obs_04_0011__li208761159468:
 
@@ -67,7 +67,7 @@ The process of calculating a signature is as follows:
 
 #. Encode the result of :ref:`4 <obs_04_0011__li208761159468>` in URL to obtain the signature.
 
-The StringToSign is constructed according to the following rules. :ref:`Table 2 <obs_04_0011__table34479832212511>` describes the parameters.
+The format of StringToSign is shown below. :ref:`Table 2 <obs_04_0011__table34479832212511>` describes the parameters.
 
 .. code-block::
 
@@ -185,7 +185,7 @@ curl http(s)://examplebucket.obs.\ *region*.example.com/objectkey?AccessKeyId=Ac
 
 .. note::
 
-   If you want to use the pre-defined URL generated by the signature carried in the URL in the browser, do not use Content-MD5, Content-Type, or CanonicalizedHeaders that can only be carried in the header to calculate the signature. Otherwise, the browser cannot carry these parameters. After the request is sent to the server, a message is displayed indicating that the signature is incorrect.
+   If you want to open a pre-defined URL using your browser, you must not use **Content-MD5**, **Content-Type**, or **CanonicalizedHeaders** headers to calculate a signature. This is because the browser cannot carry them. If you do so, the server will return a signature error.
 
 Signature Calculation in Java
 -----------------------------
@@ -430,11 +430,11 @@ Signature Calculation in Java
            String bucketName = "bucket-test";
            String objectName = "hello.jpg";
 
-                   // A header cannot be carried if you want to use a URL to access OBS with a browser. If a header is added to headers, the signature does not match. To use headers, it must be processed by the client.
+           // A header cannot be included if you want to use a URL to access OBS with a browser. If a header is added to headers, the signature does not match. To use headers, it must be processed by the client.
            Map<String, String[]> headers = new HashMap<String, String[]>();
            Map<String, String> queries = new HashMap<String, String>();
 
-                   // Expiration time. Set it to expire in 24 hours.
+           // Expiration time. Set it to expire in 24 hours.
            long expires = (System.currentTimeMillis() + 86400000L) / 1000;
            String signature = demo.querySignature("GET", headers, queries, bucketName, objectName, expires);
            System.out.println(signature);

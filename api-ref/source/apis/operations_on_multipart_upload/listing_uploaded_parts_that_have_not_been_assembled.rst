@@ -2,13 +2,13 @@
 
 .. _obs_04_0101:
 
-Listing Uploaded Parts
-======================
+Listing Uploaded Parts that Have Not Been Assembled
+===================================================
 
 Functions
 ---------
 
-You can perform this operation to query all parts associated to a multipart upload. The size of each part listed by this API is the same as the size of the part uploaded.
+You can use this API to query all parts of an uncompleted multipart upload task. The size of each part listed by this API is the same as the size of the part uploaded.
 
 Request Syntax
 --------------

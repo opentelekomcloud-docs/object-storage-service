@@ -169,9 +169,9 @@ This response uses elements to return results of deleted objects in a batch. :re
 Error Responses
 ---------------
 
-1. If the resolution result of an XML request contains more than 1000 objects, OBS returns **400 Bad Request**.
+1. If the resolution result of an XML request contains more than 1,000 objects, OBS returns **400 Bad Request**.
 
-2. If the object key in an XML request is invalid (for example, containing more than 1024 characters), OBS returns **400 Bad Request**.
+2. If the object key in an XML request is invalid (for example, containing more than 1,024 characters after being encoded with UTF-8), OBS returns **400 Bad Request**.
 
 3. If the request header does not contain Content-MD5, OBS returns **400 Bad Request**.
 

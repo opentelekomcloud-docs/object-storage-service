@@ -19,6 +19,9 @@ Operations on Objects
 -  :ref:`Modifying an Object <obs_04_0092>`
 -  :ref:`Truncating an Object <obs_04_0093>`
 -  :ref:`Renaming an Object <obs_04_0094>`
+-  :ref:`Adding Object Tags <obs_04_0172>`
+-  :ref:`Obtaining Object Tags <en-us_topic_0000001399487626>`
+-  :ref:`Deleting Object Tags <en-us_topic_0000001399647606>`
 -  :ref:`Configuring WORM Retention for an Object <obs_04_0166>`
 
 .. toctree::
@@ -39,4 +42,7 @@ Operations on Objects
    modifying_an_object
    truncating_an_object
    renaming_an_object
+   adding_object_tags
+   obtaining_object_tags
+   deleting_object_tags
    configuring_worm_retention_for_an_object

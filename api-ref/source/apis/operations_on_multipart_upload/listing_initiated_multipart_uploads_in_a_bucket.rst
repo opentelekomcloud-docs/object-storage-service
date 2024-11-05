@@ -8,7 +8,7 @@ Listing Initiated Multipart Uploads in a Bucket
 Functions
 ---------
 
-This operation queries all the multipart upload tasks that are initialized but have not been merged or canceled in a bucket.
+You can use this API to query all initiated multipart uploads that have not been completed or canceled in a bucket.
 
 Request Syntax
 --------------
