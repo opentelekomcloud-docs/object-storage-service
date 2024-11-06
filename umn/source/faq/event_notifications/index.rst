@@ -2,8 +2,8 @@
 
 .. _obs_faq_0900:
 
-Event Notification
-==================
+Event Notifications
+===================
 
 -  :ref:`Which Events Can Trigger Event Notifications? <obs_faq_0051>`
 

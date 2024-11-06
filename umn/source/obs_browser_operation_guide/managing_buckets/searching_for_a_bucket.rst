@@ -16,7 +16,7 @@ Procedure
 
 #. Click |image1|.
 
-   The found buckets are displayed in the bucket list. If you want to search for another bucket, click |image2| to delete the keyword you entered and enter a bucket name again.
+   The found buckets are displayed in the bucket list. If you want to search for other buckets, click |image2| in the search box to delete the keyword you have entered and enter a new one.
 
    If you want to leave the object list page and quickly switch to another bucket, you can click |image3| on the left side to expand the hidden bucket list and search for the desired bucket in the search box above the bucket list.
 

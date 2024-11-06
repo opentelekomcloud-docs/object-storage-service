@@ -2,15 +2,15 @@
 
 .. _obs_03_0322:
 
-Uploading an Object in Server-Side Encryption Mode
-==================================================
+Enabling Server-Side Encryption When Uploading an Object
+========================================================
 
 OBS allows you to encrypt objects with server-side encryption so that the objects can be securely stored in OBS.
 
-In a bucket with server-side encryption disabled, objects uploaded to it are not encrypted by default, but you can configure server-side encryption for the objects when uploading them. In a bucket with server-side encryption enabled, objects uploaded to it can inherit the encryption settings of the bucket, and you can also separately configure encryption for the objects.
+When you upload an object to a bucket with server-side encryption disabled, you can separately configure server-side encryption for the object. If the bucket has server-side encryption enabled, the object you upload inherits encryption from the bucket by default. You can also configure new encryption for the object.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 -  The object encryption status cannot be changed.
 -  A key in use cannot be deleted. Otherwise, the object encrypted with this key cannot be downloaded.
@@ -55,11 +55,11 @@ Procedure
 
 #. Add the files to be uploaded.
 
-#. Select **KMS encryption** and select a key that you have created on KMS.
+#. Enable **KMS encryption** and select a key that you have created on KMS.
 
    .. note::
 
-      If the default encryption has been enabled for the bucket, uploaded objects are automatically encrypted.
+      If the bucket has server-side encryption enabled, any object you upload will inherit the KMS encryption from the bucket by default.
 
    After **KMS encryption** is selected, **obs/default** is selected by default as the key for the encryption. You can also click **Create KMS Key** to switch to the KMS management console and create a customer master key. Then go back to OBS Console and select the key from the drop-down list.
 

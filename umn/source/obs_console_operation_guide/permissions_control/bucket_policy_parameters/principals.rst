@@ -19,13 +19,13 @@ Cloud Service User
 
 -  Other account
 
-   When the **Principal** is set to **Other account**, you can enter the ID of other accounts. If you want to apply the bucket policy to IAM users under that account, you need to enter the user IDs, and use commas (,) to separate one from another.
+   When the **Principal** is set to **Other account**, you can enter the ID of other accounts. If you want to grant access only to the IAM users under that account, you also need to enter one or more IAM user IDs. Multiple IDs should be separated with commas (,).
 
    .. note::
 
-      An authorized user can go to the **My Credential** page to obtain the domain ID and user ID after login.
+      An authorized user can go to the **My Credentials** page to obtain the account ID and user ID after login as an IAM user.
 
-      For **Account ID**, enter the **Domain ID** that can be found on the **My Credential** page.
+      The account ID is the **Domain ID** that can be found on the **My Credentials** page.
 
 -  Anyone (anonymous users)
 

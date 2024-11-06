@@ -44,7 +44,7 @@ Procedure
 
    Click **Select Folder**, select a folder, and click **OK**.
 
-#. Select a storage class. If no storage class is selected, the object inherits the bucket storage class by default.
+#. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
 
 #. Click **OK** to upload the file or folder.
 
@@ -61,16 +61,6 @@ You can modify the storage class of the object after uploading the file or folde
 
 .. note::
 
-   -  You can manually change objects between storage classes:
-
-      -  From Standard to Warm, or Cold
-
-      -  From Warm to Standard, or Cold
-
-      -  From Cold to Standard, or Warm. Before changing Cold objects, you must restore them first.
-
-         Changing objects from Warm or Cold to other storage classes incurs restore costs. Select an appropriate change option based on your actual needs.
-
+   -  From Cold to Standard or Warm. Before changing Cold objects, you must restore them first.
    -  After an object is changed to Cold, its restore status changes to **Unrestored**.
-
    -  You can also configure a lifecycle rule to change the storage class of an object. For details, see :ref:`Lifecycle Management Overview <obs_03_0425>`.

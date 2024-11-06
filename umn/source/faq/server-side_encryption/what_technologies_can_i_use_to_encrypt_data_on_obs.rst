@@ -2,8 +2,8 @@
 
 .. _obs_faq_0044:
 
-What Encryption Technologies Can I Use to Encrypt Data on OBS?
-==============================================================
+What Technologies Can I Use to Encrypt Data on OBS?
+===================================================
 
 Before uploading your data to OBS, you can encrypt the data to ensure security during transmission and storage. OBS support various encryption technologies used on clients.
 

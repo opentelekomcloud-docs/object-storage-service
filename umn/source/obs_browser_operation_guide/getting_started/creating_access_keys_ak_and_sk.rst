@@ -15,8 +15,8 @@ AKs and SKs support the authentication mechanism of Identity and Access Manageme
 -  An Access Key ID (AK) defines a user that accesses the OBS system. An AK belongs to only one user, but one user can have multiple AKs. The OBS system recognizes the users who access the system by their AKs.
 -  A Secret Access Key (SK) is the key used by users to access OBS. It is the authentication information generated based on the AK and the request header. An SK and an AK group into a pair of access keys.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 Each user can create a maximum of two valid AK/SK pairs.
 

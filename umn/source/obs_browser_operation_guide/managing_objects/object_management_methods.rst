@@ -31,7 +31,7 @@ OBS Browser supports three methods of object management.
 
 #. Use the shortcut menu to manage objects.
 
-   Right-click the blank area in the row where the object to be managed resides. A shortcut menu is displayed for managing the object. For details, see :ref:`Figure 3 <obs_03_0060__fig56131650141216>`.
+   Right-click the blank area in the row that contains the object to be managed. A shortcut menu is displayed. For details, see :ref:`Figure 3 <obs_03_0060__fig56131650141216>`.
 
    .. _obs_03_0060__fig56131650141216:
 

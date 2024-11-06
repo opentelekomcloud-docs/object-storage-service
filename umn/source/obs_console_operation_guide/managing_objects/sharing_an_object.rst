@@ -21,11 +21,11 @@ The temporary authentication information contains the **AccessKeyId**, **Expires
 
 After an object is shared on OBS Console, the system will generate a URL that contains the temporary authentication information, valid for five minutes since its generation by default. Each time you change the validity period of a URL, OBS obtains the authentication information again to generate a new URL for sharing, which takes effect since the time when the validity period is changed.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
--  An object shared from OBS Console can be valid for one minute to 18 hours. If you need a longer validity period, use OBS Browser+ that allows a validity period from one minute to 30 days. Or, you can configure a :ref:`bucket policy or object policy <en-us_topic_0045853745>` to grant other users access to the object permanently.
--  Only buckets of version 3.0 support object sharing. You can view the bucket version in the **Basic Information** area on the **Overview** page of a bucket.
+-  An object shared from OBS Console can be valid for one minute to 18 hours. If you need a longer validity period, use OBS Browser+ that allows a validity period from one minute to 30 days. If you want a shared object to be permanently valid, you can configure a :ref:`bucket policy or object policy <en-us_topic_0045853745>`.
+-  Only version 3.0 buckets support file sharing. You can view the bucket version in the **Basic Information** area on the **Overview** page of a bucket.
 -  Encrypted objects cannot be shared.
 -  To share a cold object, restore it first.
 

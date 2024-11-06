@@ -5,10 +5,10 @@
 External Bucket Overview
 ========================
 
-The bucket owner can authorize other accounts the read and write access to the bucket. If you are authorized with such permissions, you can add the bucket on OBS Browser as an external bucket. After the external bucket is added successfully, you can operate the bucket on OBS Browser. For details about what actions you can perform on the external bucket, check the permission settings.
+After you are granted by a bucket owner the read and write access to a bucket, you can add this bucket on OBS Browser as your external bucket. You can then operate this external bucket on OBS Browser. For details about what actions you can perform, check the actions authorized during the permission configuration.
 
-Authorizing Permissions Required for Adding a Bucket as an External Bucket on OBS Browser
------------------------------------------------------------------------------------------
+Granting Permissions Required for Adding an External Bucket
+-----------------------------------------------------------
 
 The read and write access to a bucket can be granted through the bucket ACL or bucket policy.
 
@@ -57,13 +57,13 @@ Permissions controlled by a standard bucket policy are as follows:
 
 If a custom bucket policy is used to authorize such permissions, the ListBucket, GetObject, and GetObjectVersion actions must be allowed. More actions can be allowed according to your actual needs.
 
-Operations That Can Be Performed on the External Bucket
--------------------------------------------------------
+Performing Operations on the External Bucket
+--------------------------------------------
 
-Operations that can be performed by the authorized user on the external bucket:
+The following are some restrictions when you (the user who adds the bucket) operate the external bucket:
 
--  You can add an external bucket but cannot restore objects from the Cold storage class in the bucket. You can view the object restore status only when the owner of those objects authorizes you the permission to read the objects.
--  You (the user who adds the bucket) can perform only authorized actions on original objects in the bucket. If you want to have additional operation permissions for objects in the bucket, you need to have the permissions authorized by the object owner.
--  If you upload an object to the added external bucket, the read access to the object and the object ACL will be automatically authorized to the bucket owner and configured in the object ACL settings.
--  If you upload an encrypted object to the added external bucket, the bucket owner cannot access the object because the bucket owner does not have the key.
--  To download an object from the external bucket you added, you must have the permission to read the object. You cannot download encrypted objects from the external bucket.
+-  You cannot restore Cold objects that are not yours in the external bucket. You can view the object restore status only when the owner of those Cold objects grants you the read permission for the objects.
+-  You can perform only authorized actions on existing objects in the external bucket. If you want to perform additional operations on an object, you need to get corresponding permissions granted by the object owner.
+-  If you upload an object to the external bucket, the object ACL permissions will be automatically granted to the bucket owner, including the read permission for the object and the read and write permissions for the object ACL.
+-  The encrypted objects you uploaded to the external bucket cannot be accessed by the bucket owner, because the bucket owner does not have the key.
+-  To download an object from the external bucket, you must have the read permission for the object. You cannot download encrypted objects from the external bucket.

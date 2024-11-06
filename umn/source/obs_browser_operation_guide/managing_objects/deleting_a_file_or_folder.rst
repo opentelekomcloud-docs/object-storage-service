@@ -10,7 +10,7 @@ This section describes how to delete a file or folder.
 Background Information
 ----------------------
 
-Deleting a folder will delete all files in the folder. Ensure that all files in a folder can be deleted before deleting the folder.
+Deleting a folder will also delete the files in it. Ensure that all files in a folder are not needed before deleting the folder.
 
 Deleting unnecessary files or folders saves space and costs.
 

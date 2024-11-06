@@ -16,9 +16,9 @@ For example: Account **A** wants to add bucket **testbucket** of account **B**. 
 
 .. note::
 
-   An external bucket (version 3.0 or later) can be added only when its standard bucket policy is set to **Public Read and Write**.
+   Only a bucket 3.0 or later can be added as an external bucket after its standard bucket policy is set to public read/write.
 
-   If the standard bucket policy of an external bucket is set to **Public Read and Write** upon its creation, you need to manually change the standard bucket policy to **Private** and then change it back to **Public Read and Write** again, so that it can be added.
+   Suppose a bucket's standard bucket policy is set to public read/write during the bucket creation. To add this bucket as an external bucket, its standard bucket policy must be manually changed to private and then changed back to public read/write.
 
 Procedure
 ---------

@@ -56,11 +56,11 @@ Actions Related to Buckets
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | GetBucketWebsite           | Obtains the static website configuration of the bucket.                                              |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | PutBucketWebsite           | Configures the static website hosting for the bucket.                                                |
+   |         | PutBucketWebsite           | Configures static website hosting for a bucket.                                                      |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | DeleteBucketWebsite        | Deletes the static website hosting configuration of the bucket.                                      |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
-   |         | GetLifecycleConfiguration  | Obtains the lifecycle rules of the bucket.                                                           |
+   |         | GetLifecycleConfiguration  | Obtains the lifecycle rules of a bucket.                                                             |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
    |         | PutLifecycleConfiguration  | Configures a lifecycle rule for a bucket.                                                            |
    +---------+----------------------------+------------------------------------------------------------------------------------------------------+
@@ -103,5 +103,5 @@ Actions Related to Objects
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
    |         | ListMultipartUploadParts | Lists uploaded parts.                                                                                       |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | AbortMultipartUpload     | Cancels a multipart upload task.                                                                            |
+   |         | AbortMultipartUpload     | Aborts a multipart upload.                                                                                  |
    +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+

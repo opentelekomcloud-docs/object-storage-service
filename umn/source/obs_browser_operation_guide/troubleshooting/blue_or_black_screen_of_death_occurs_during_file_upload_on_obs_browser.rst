@@ -13,9 +13,9 @@ Why does blue or black screen of death occur when files are uploaded using OBS B
 Answer
 ------
 
-When OBS Browser is used to upload a large number of files or a few of big files, most of the memory is used. Check whether the available memory space of the PC is greater than or equal to 512 MB. If the available memory space of the PC is smaller than 512 MB, close some application programs to release the memory, or add new memory or virtual memory to the PC.
+When OBS Browser is used to upload a large number of files or a few of big files, most of the memory is used. Check whether the available memory of your PC is smaller than 512 MB. If it was, close some application programs to free up the memory, or add new memory or virtual memory to the PC.
 
-If the problem persists after memory is added, collect dump files by performing the following procedure, and contact customer service personnel for locating and solving this problem.
+If the problem persists after there is more memory, collect dump files by performing the following procedure, and contact customer service for locating and solving this problem.
 
 #. Right-click **Computer** and choose **Properties** from the shortcut menu. In the dialog box that is displayed, click the **Advanced** tab. On the **Advanced** tab page, click **Settings**. In the dialog box that is displayed, view the path under **Dump file**.
 

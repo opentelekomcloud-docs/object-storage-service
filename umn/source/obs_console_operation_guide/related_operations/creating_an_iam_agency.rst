@@ -15,7 +15,7 @@ Creating an Agency for Cross-Region Replication
 #. Enter an agency name.
 #. Select **Cloud service** for the **Agency Type**.
 #. Select **Object Storage Service (OBS)** for **Cloud Service**.
-#. Set a validity period.
+#. Select a validity period.
 #. In the **Permissions** area, select **Project View**, locate **Global service [Global]**, and click **Modify Permissions** in the **Operation** column. The **Modify Permissions** window is displayed.
 #. Click **Select Policy/Role** in the **Operation** column of the row where **Global service [Global]** is displayed. Search for **Tenant Administrator** and check the box next to it, and click **OK**.
 #. (Optional) If **Replicate KMS encrypted objects** is selected when configuring the cross-region replication rule, the **KMS Administrator** policy set must be configured in the regions where the source bucket and destination bucket are located.

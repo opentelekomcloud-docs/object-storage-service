@@ -15,7 +15,7 @@ The owner of an object is the account that uploads the object, who may not be th
 Bucket Policies
 ---------------
 
-A bucket policy is attached to a bucket and objects in the bucket. By leveraging bucket policies, the owner of a bucket can grant IAM users or other accounts the permissions to operate the bucket and objects in the bucket.
+Bucket policies apply to buckets and the objects in them. By leveraging bucket policies, the owner of a bucket can grant IAM users or other accounts the permissions to operate the bucket and objects in the bucket.
 
 **Application Scenarios**
 
@@ -72,7 +72,7 @@ The following three modes are provided to facilitate quick configuration:
 
 .. note::
 
-   On OBS Console, when you use a custom bucket policy to grant other users the permissions to operate resources in a bucket, you also need to grant these users the bucket read permission **ListBucket** (leaving the resource name blank indicates that the policy takes effect on the entire bucket). Otherwise, the users may have no permission to access the bucket from OBS Console.
+   On OBS Console, when you use a custom bucket policy to grant other users the permissions to operate resources in a bucket, you also need to grant these users the bucket read permission **ListBucket** (leaving the resource name blank indicates that the policy is applied to the entire bucket). Otherwise, the users may have no permission to access the bucket from OBS Console.
 
 Object Policies
 ---------------

@@ -7,7 +7,7 @@ Managing Accounts
 
 Account names on OBS Browser are used to distinguish one from another, which are irrelevant to the registered cloud service account. An OBS Browser account has one pair of AK and SK, but a pair of AK and SK can be used by multiple OBS Browser accounts. A maximum of 10 accounts can be added to OBS Browser.
 
-OBS Browser uses the AK and SK for identity authentication. AKs and SKs are the access keys created by on the management console (on **My Credential** page) by cloud service accounts and IAM users. For details, see :ref:`Creating Access Keys (AK and SK) <obs_03_0405>`.
+OBS Browser uses the AK and SK for identity authentication. AKs and SKs are the access keys created by cloud service accounts or IAM users on the **My Credentials** page of the management console. For details, see :ref:`Creating Access Keys (AK and SK) <obs_03_0405>`.
 
 #. AKs and SKs are required for logging in to OBS Browser to access OBS resources.
 #. Once an AK and SK are entered, IAM receives the AK and SK, finds the cloud service account or IAM user that owns the pair of AK and SK, and checks which OBS permissions the account or IAM user has.
@@ -50,8 +50,8 @@ Adding an Account
 
             **Figure 2** Adding a new account - Other object storage services
 
-   -  AK and SK: Enter the AK and SK created on the **My Credential** page after you register with a cloud service. For details about how to obtain AKs and SKs, see :ref:`Creating Access Keys (AK and SK) <obs_03_0405>`.
-   -  **Remember my secret access key** is selected by default. If you do not select **Remember my secret access key**, you must input the secret access key each time you log in to OBS Browser.
+   -  AK and SK: Enter the AK and SK created on the **My Credentials** page after you sign up with a cloud service. For details about how to obtain AKs and SKs, see :ref:`Creating Access Keys (AK and SK) <obs_03_0405>`.
+   -  **Remember my secret access key** is selected by default. If you deselect it, you must enter the secret access key each time you log in to OBS Browser.
 
 #. Click **OK**.
 

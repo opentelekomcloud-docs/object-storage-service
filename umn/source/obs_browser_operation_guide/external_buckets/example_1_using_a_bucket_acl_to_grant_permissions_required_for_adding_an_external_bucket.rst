@@ -2,10 +2,10 @@
 
 .. _obs_03_0134:
 
-Application Example 1: Authorizing Access Permissions Required for Adding an External Bucket Through the Bucket ACL
-===================================================================================================================
+Example 1: Using a Bucket ACL to Grant Permissions Required for Adding an External Bucket
+=========================================================================================
 
-A bucket ACL can be used to grant the read and write access to a bucket. If only the read access to the bucket is granted, the authorized user can only add the bucket and list objects in the bucket, but cannot upload objects to the bucket. If the read and write access to the bucket is granted, the authorized user can upload objects to the bucket. Permissions controlled by a bucket ACL are as follows:
+A bucket ACL can be used to grant the read and write access to a bucket. If only the read access to the bucket is granted, the authorized user can only add the bucket and list objects in the bucket, but cannot upload objects to the bucket. To upload objects to the bucket, the authorized user also needs the write access to the bucket. Permissions controlled by a bucket ACL are as follows:
 
 .. table:: **Table 1** Permissions controlled by a bucket ACL
 
@@ -36,9 +36,9 @@ Procedure
 
    .. note::
 
-      If you want to authorize such access to all users, in the **Public Permissions** area, authorize the **Anonymous User** the read and write access to the bucket.
+      If you want to authorize such access to all users, in the **Public Permissions** area, grant the **Anonymous User** the read and write access to the bucket.
 
-      **Account ID** corresponds to **Domain ID** on the **My Credential** page.
+      **Account ID** corresponds to **Domain ID** on the **My Credentials** page.
 
 #. Click **Save**.
 

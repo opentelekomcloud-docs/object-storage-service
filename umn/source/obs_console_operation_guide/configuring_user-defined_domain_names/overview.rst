@@ -17,10 +17,10 @@ Assume that you have a domain name **www.example.com** and you upload an image *
 #. On the DNS server, add a CNAME record and map **www.example.com** to the domain name of the bucket.
 #. Send a request for image **image.png**. After the request for **http://www.example.com/image.png** reaches OBS, OBS finds the mapping between the **www.example.com** and the bucket's domain name, and redirects the request to the **image.png** file stored in the bucket. This way, a request for **http://www.example.com/image.png** actually accesses **http://**\ *Bucket domain name*\ **/image.png**.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
-#. Only buckets with version 3.0 or later support user-defined domain name configuration. The version number of a bucket is displayed in the **Basic Information** area.
-#. User-defined domain names currently allow requests over only HTTP, but not HTTPS.
+#. Only buckets whose version is 3.0 or later support the configuration of user-defined domain names. The version number of a bucket is displayed in the **Basic Information** area.
+#. User-defined domain names currently allow requests over HTTP, instead of HTTPS.
 #. A user-defined domain name can be bound to only one bucket.
 #. The suffix of a user-defined domain name can contain 2 to 6 uppercase or lowercase letters.

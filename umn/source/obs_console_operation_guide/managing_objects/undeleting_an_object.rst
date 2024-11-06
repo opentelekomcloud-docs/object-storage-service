@@ -73,7 +73,7 @@ Related Operations
 #. In the navigation pane, choose **Objects**.
 #. Click **Deleted Objects**.
 #. Click the deleted file that you want to recover. The file information is displayed.
-#. On the **Versions** tab, view all versions of the file.
+#. On the **Versions** tab page, view all versions of the file.
 
    -  If you delete a version with the **Delete Marker**, the file will be recovered and retained in the **Objects** list.
    -  If you delete a version without the **Delete Marker**, that version will be permanently deleted.

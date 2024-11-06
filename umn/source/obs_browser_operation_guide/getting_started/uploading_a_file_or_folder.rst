@@ -10,7 +10,7 @@ Background Information
 
 -  Files are uploaded in multiparts on OBS Browser. OBS Browser supports the upload of a single file with the maximum size of 48.8 TB.
 -  OBS Browser supports resumable transfer. If the upload task is suspended or fails, restart the task. According to the part information recorded in the task, the successfully uploaded parts will not be uploaded again, and other parts will be requested for uploading.
--  If you want to classify files, you can create folders and upload files to the folders. The procedure is as follows:
+-  If you want to classify files, you can create folders and upload files to different folders. The procedure is as follows:
 
    #. Log in to OBS Browser.
    #. Click the bucket in which you want to create a folder. Click **Create Folder**.
@@ -49,6 +49,6 @@ Procedure
 
    Click **Select Folder**, select a folder, and click **OK**.
 
-#. Select a storage class. If no storage class is selected, the object inherits the bucket storage class by default.
+#. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
 
 #. Click **OK** to upload the file or folder.

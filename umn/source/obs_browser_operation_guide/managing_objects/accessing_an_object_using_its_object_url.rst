@@ -28,8 +28,8 @@ Procedure
 
       **Figure 1** Object properties
 
-   -  If you select **Other object storage services** when logging in to OBS Browser, the object URL is in the format of https://*storage server IP address* or *domain name*/*bucket name*/*directory level*/*object name*. If the object is in the root directory of the bucket, the URL does not contain a *directory level*.
-   -  If you select **OBS** when logging in to OBS Browser, the object URL is in the format of https://*bucket name.domain name*/*directory level*/*object name.* If the object is in the root directory of the bucket, the URL does not contain a *directory level*.
+   -  If you select **Other object storage services** when logging in to OBS Browser, the object URL is in the format of https://*storage server IP address* or *domain name*/*bucket name*/*directory level*/*object name*. If the object is in the root directory of the bucket, its URL does not contain any directory level.
+   -  If you select **OBS** when logging in to OBS Browser, the object URL is in the format of https://*bucket name.domain name*/*directory level*/*object name.* If the object is in the root directory of the bucket, its URL does not contain any directory level.
 
    .. note::
 

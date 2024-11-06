@@ -5,7 +5,7 @@
 Deleting a File or Folder
 =========================
 
-Deleting a folder will delete all files in the folder. Ensure that all files in a folder are not needed before deleting the folder.
+Deleting a folder will also delete the files in it. Ensure that all files in a folder are not needed before deleting the folder.
 
 Procedure
 ---------

@@ -111,7 +111,7 @@ Procedure
             You can also select the Warm, or Cold storage class based on the website requirements for access frequency and speed. For details about storage classes, see :ref:`Storage Classes Overview <en-us_topic_0050937852>`.
 
       -  **Bucket Policy**: Select **Public Read** to allow any user to access objects in the bucket.
-      -  **Default Encryption**: Select **Disable**.
+      -  **Server-Side Encryption**: Choose **Disable**.
 
    d. Click **Create Now** to complete the creation.
 
@@ -140,7 +140,7 @@ Procedure
 
          -  The static website files cannot be encrypted for upload.
          -  The website home page file (**index.html**) and 404 error page (**error.html**) must be stored in the root directory of the bucket.
-         -  It is recommended that you select **Standard** for the storage class. If the storage class of a static website file is Cold, you need to restore the static website file before you can access it. For details, see :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`.
+         -  It is recommended that you select **Standard** for the storage class. If the storage class of a static website file is Cold, you need to restore the static website file before you can access it. For details, see :ref:`Restoring an Object from Cold Storage <obs_03_0320>`.
 
    d. Click **Upload** to complete the upload.
 
@@ -158,7 +158,7 @@ Procedure
 
    b. In the navigation pane, choose **Basic Configurations** > **Static Website Hosting**. The **Static Website Hosting** page is displayed.
 
-   c. Click **Configure Static Website Hosting** to open the dialog box.
+   c. Click **Configure Static Website Hosting**. The **Configure Static Website Hosting** dialog box is displayed.
 
    d. Enable **Status**.
 
@@ -236,7 +236,7 @@ Procedure
 
    Verify that the configuration is successful.
 
-   -  Enter the following URL in the address box of the browser: **www.example.com**, to check whether the default homepage can be accessed. See :ref:`Figure 5 <obs_03_0338__fig37569995102120>`.
+   -  Open **www.example.com** using a browser to verify that the default homepage can be accessed. See :ref:`Figure 5 <obs_03_0338__fig37569995102120>`.
 
       .. _obs_03_0338__fig37569995102120:
 
@@ -245,7 +245,7 @@ Procedure
 
          **Figure 5** Default homepage
 
-   -  In the web browser, enter a static file access address that does not exist in a bucket. For example, enter **www.example.com/imgs** to verify that the 404 error page (error.html) can be returned. :ref:`Figure 6 <obs_03_0338__fig117531153115316>` displays the error page.
+   -  Visit a static file that does not exist in the bucket, for example, opening **www.example.com/imgs** in a browser, to verify that the 404 error page can be returned. See :ref:`Figure 6 <obs_03_0338__fig117531153115316>`.
 
       .. _obs_03_0338__fig117531153115316:
 

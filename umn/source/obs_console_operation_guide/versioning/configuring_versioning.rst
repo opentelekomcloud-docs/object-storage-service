@@ -23,7 +23,7 @@ Procedure
 
 #. Click **OK** to enable versioning for the bucket.
 
-#. Click an object to go to the object details page. On the **Versions** tab, view all versions of the object.
+#. Click an object to go to the object details page. On the **Versions** tab page, view all versions of the object.
 
 .. _obs_03_0327__section29772226:
 
@@ -35,7 +35,7 @@ After versioning is configured for a bucket, you can go to the object details pa
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Objects**.
 #. In the object list, click the object you want to go to the object details page.
-#. On the **Versions** tab, view all versions of the object.
+#. On the **Versions** tab page, view all versions of the object.
 #. Perform the following operations on object versions:
 
    a. Download a desired version of the object by clicking **Download** in the **Operation** column.
@@ -44,4 +44,4 @@ After versioning is configured for a bucket, you can go to the object details pa
 
          If the version you want to download is in the Cold storage class, restore it first.
 
-   b. Delete a version of the object by clicking **Delete** in the **Operation** column. If you delete the latest version, the most recent version becomes the latest version.
+   b. Delete a version of the object by choosing **Delete** in the **Operation** column. If you delete the latest version, the most recent version will become the latest version.

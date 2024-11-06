@@ -13,4 +13,4 @@ When a user attempts to log in to OBS Browser, the login page does not respond.
 Answer
 ------
 
-Delete the **obs** folder in the **AppData\\Local** directory on the C drive to clear OBS Browser related data. Then log in to OBS Browser again and reconfigure required information. If you want to retain the account information, save the **accounts**, **setting**, and **temp files** in the **obs** folder before deleting the folder. Start OBS Browser again and overwrite the three files in the **obs** folder.
+Delete the **obs** folder in the **AppData\\Local** directory on the C drive to clear OBS Browser related data. Then log in to OBS Browser again and reconfigure required information. If you want to retain the account information, save the **accounts**, **setting**, and **temp** files in the **obs** folder before deleting the folder. Start OBS Browser again and overwrite the three files in the **obs** folder.

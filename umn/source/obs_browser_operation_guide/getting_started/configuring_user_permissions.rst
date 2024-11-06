@@ -7,7 +7,7 @@ Configuring User Permissions
 
 If your cloud service account does not need individual IAM users, then you may skip this section. Your permissions to use OBS functions are not affected.
 
-If IAM users are required, you need to grant them access permissions for OBS, because OBS is separately deployed from other cloud resources.
+OBS is separately deployed from other cloud resources. If IAM users are required, you need to grant them access permissions for OBS.
 
 Process
 -------

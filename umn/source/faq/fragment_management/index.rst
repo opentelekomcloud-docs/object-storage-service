@@ -2,8 +2,8 @@
 
 .. _obs_faq_0700:
 
-How Do I Use Fragment Management?
-=================================
+Fragment Management
+===================
 
 -  :ref:`Why Are Fragments Generated? <obs_faq_0037>`
 -  :ref:`How Do I Manage Fragments? <obs_faq_0046>`
