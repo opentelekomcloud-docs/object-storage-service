@@ -2,10 +2,10 @@
 
 .. _obs_03_0331:
 
-Configuring Tags for a Bucket
-=============================
+Adding Tags to a Bucket
+=======================
 
-When creating a bucket, you can add tags to it. For details, see :ref:`Creating a Bucket <obs_03_0306>`. You can also add tags to a bucket after it has been created. This topic describes how to add tags to an existing bucket.
+When creating a bucket, you can add tags to it. For details, see :ref:`Creating a Bucket <obs_03_0306>`. You can also add tags to a bucket after it has been created. This section describes how to add tags to an existing bucket.
 
 Procedure
 ---------

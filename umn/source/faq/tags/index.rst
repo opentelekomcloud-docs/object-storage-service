@@ -2,8 +2,8 @@
 
 .. _obs_03_0038:
 
-How Do I Use Tags?
-==================
+Tags
+====
 
 -  :ref:`Can I Search for a Bucket by Tag? <obs_03_0039>`
 -  :ref:`What Can I Do with Tags? <obs_03_0040>`

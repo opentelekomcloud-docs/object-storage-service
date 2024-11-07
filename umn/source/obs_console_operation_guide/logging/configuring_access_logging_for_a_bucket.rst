@@ -49,4 +49,4 @@ Procedure
 Related Operations
 ------------------
 
-If you do not need to record logs, click **Disable** in the **Logging** dialog box and then click **OK**. After logging is disabled, logs are not recorded, but existing logs in the target bucket will be retained.
+If you do not need to record logs, in the **Logging** dialog box, select **Disable** and then click **OK**. After logging is disabled, logs are not recorded, but existing logs in the target bucket will be retained.

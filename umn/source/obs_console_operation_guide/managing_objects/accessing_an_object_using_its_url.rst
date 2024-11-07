@@ -25,7 +25,7 @@ Procedure
 
 #. Click the object to be shared. The object information is displayed on the top part of the page. You can find the link for accessing the object in the **Link** area, as shown in :ref:`Figure 1 <obs_03_0319__fig36534596192426>`.
 
-   Anonymous users can access the object by clicking this link. An object link (URL) is in the format of **https://**\ *Bucket name*.\ *Domain name*/*Directory level*/*Object name*. If the object is stored in the root directory of the bucket, its URL does not contain any directory level.
+   Anonymous users can access the object by clicking this link. An object link (URL) is in the format of **https://**\ *Bucket name*.\ *Domain name*/*Directory level*/*Object name*. If the object is in the root directory of the bucket, its URL does not contain any directory level.
 
    .. _obs_03_0319__fig36534596192426:
 

@@ -5,7 +5,7 @@
 Configuring Logging
 ===================
 
-After logging is enabled for a bucket, OBS automatically converts the bucket's logs into objects in a fixed naming format and then writes these objects into a destination bucket.
+After logging is enabled for a bucket, OBS automatically converts the bucket's logs into an object in a fixed naming format and then writes the object to the specified bucket.
 
 Prerequisites
 -------------

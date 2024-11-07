@@ -55,7 +55,7 @@ Procedure
 
    .. note::
 
-      -  When a URL is used to access a bucket, the bucket name will become a part of the URL. According to the DNS rule, URLs do not support uppercase letters and cannot be used to access a bucket whose name contains uppercase letters. Therefore, a bucket name can contain only lowercase letters, digits, hyphens (-), and periods (.) For example, if you attempt to access bucket **MyBucket** using the URL, bucket **mybucket** will be accessed instead, causing an access error.
+      -  When a URL is used to access a bucket, the bucket name will become a part of the URL. According to the DNS rule, URLs do not support uppercase letters and cannot be used to access a bucket whose name contains uppercase letters. Therefore, a bucket name can contain only lowercase letters, digits, hyphens (-), and periods (.) For example, if you attempt to access bucket **MyBucket** using a URL, the URL will parse **MyBucket** as **mybucket**. This results in an access error.
       -  DNS naming can standardize the bucket naming globally, facilitating the resolution when accessing a bucket. Users can benefit from new functions and optimized features, and static website hosting is then applicable to buckets.
       -  Once you create a bucket, you cannot change the name of it. Make sure that the bucket name you set is appropriate.
 

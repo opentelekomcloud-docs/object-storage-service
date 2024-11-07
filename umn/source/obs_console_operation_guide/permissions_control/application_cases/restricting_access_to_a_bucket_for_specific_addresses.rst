@@ -13,7 +13,7 @@ Procedure
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
-#. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
+#. Click **Create Bucket Policy**.
 #. Configure parameters listed in the table below.
 
    .. table:: **Table 1** Restricting access to a bucket for specific addresses

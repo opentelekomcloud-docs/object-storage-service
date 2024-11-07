@@ -6,13 +6,13 @@ Server-Side Encryption
 ======================
 
 -  :ref:`Server-Side Encryption Overview <en-us_topic_0066036553>`
--  :ref:`Bucket Default Encryption <obs_03_0088>`
--  :ref:`Uploading an Object in Server-Side Encryption Mode <obs_03_0322>`
+-  :ref:`Bucket Server-Side Encryption <obs_03_0088>`
+-  :ref:`Enabling Server-Side Encryption When Uploading an Object <obs_03_0322>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    server-side_encryption_overview
-   bucket_default_encryption
-   uploading_an_object_in_server-side_encryption_mode
+   bucket_server-side_encryption
+   enabling_server-side_encryption_when_uploading_an_object

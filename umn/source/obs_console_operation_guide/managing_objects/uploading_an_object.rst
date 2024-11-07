@@ -7,11 +7,11 @@ Uploading an Object
 
 This section describes how to upload local files to OBS over the Internet. These files can be texts, images, videos, or any other type of files.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 -  OBS Console allows you to upload files in a batch. Up to 100 files can be uploaded at a time, with the total size of no more than 5 GB. If the file size exceeds 5 GB, use OBS Browser or the multipart upload of OBS SDKs and APIs for upload.
--  If versioning is disabled for your bucket and you upload a new file with the same name as the one you previously uploaded to your bucket, the new file automatically overwrites the previous file and does not retain its ACL information. If you upload a new folder using the same name that was used with a previous folder in the bucket, the two folders will be merged, and files in the new folder will overwrite namesake files in the previous folder.
+-  If versioning is disabled for your bucket and you upload a new file with the same name as the one you previously uploaded to your bucket, the new file automatically overwrites the previous one and does not retain its ACL information. If you upload a new folder using the same name that was used with a previous folder in the bucket, the two folders will be merged, and files in the new folder will overwrite those with the same name in the previous folder.
 -  After versioning is enabled for your bucket, if the new file you upload has the same name as the one you previously uploaded to the bucket, a new file version will be added in the bucket. For details, see :ref:`Versioning Overview <en-us_topic_0045853504>`.
 
 Prerequisites
@@ -47,13 +47,13 @@ Procedure
 
 #. In the **Upload Object** area, drag and drop the files or folders you want to upload.
 
-   You can also click **add file** in the **Upload Object** area to select files.
+   You can also click **add files** to select files.
 
-#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Uploading an Object in Server-Side Encryption Mode <obs_03_0322>`.
+#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Enabling Server-Side Encryption When Uploading an Object <obs_03_0322>`.
 
    .. note::
 
-      If the default encryption has been enabled for the bucket, uploaded objects are automatically encrypted.
+      If the bucket has server-side encryption enabled, any object you upload will inherit the KMS encryption from the bucket by default.
 
 #. Click **Upload**.
 
@@ -69,18 +69,13 @@ When uploading an object, you can specify a storage class for it. After the obje
 
 .. note::
 
-   -  You can manually change objects between storage classes:
+   -  You can manually change objects between storage classes.
 
-      -  From Standard to Warm, or Cold
-
-      -  From Warm to Standard, or Cold
-
-      -  From Cold to Standard, or Warm. Before changing Cold objects, you must restore them first.
-
-         Changing objects from Warm or Cold to other storage classes incurs restore costs. Select an appropriate change option based on your actual needs.
+      -  From Standard to Warm or Cold
+      -  From Warm to Standard or Cold
+      -  From Cold to Standard or Warm. Before changing Cold objects, you must restore them first.
 
    -  After an object is changed to Cold, its restore status changes to **Unrestored**.
-
    -  You can also configure a lifecycle rule to change the storage class of an object. For details, see :ref:`Configuring a Lifecycle Rule <obs_03_0335>`.
 
 Follow-up Procedure

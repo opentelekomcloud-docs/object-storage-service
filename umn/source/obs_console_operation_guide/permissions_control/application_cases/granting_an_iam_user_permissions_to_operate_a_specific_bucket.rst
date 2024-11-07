@@ -15,10 +15,10 @@ Procedure
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
-#. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
-#. Configure parameters listed in the table below to grant an IAM user the permission to access the bucket (to list objects in the bucket).
+#. Click **Create Bucket Policy**.
+#. Configure parameters listed in the table below to grant IAM users the permissions to access the bucket (to list objects in the bucket). Retain the default values for the other parameters.
 
-   .. table:: **Table 1** Parameters for granting permission to access a bucket
+   .. table:: **Table 1** Parameters for granting the object listing permission
 
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                                            |
@@ -45,7 +45,7 @@ Procedure
 
       Before granting this permission to a user, ensure that the user has the permission to access the bucket.
 
-   .. table:: **Table 2** Parameters for granting permission to upload objects
+   .. table:: **Table 2** Parameters for granting the object upload permission
 
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Value                                                                                                                                                                                                    |

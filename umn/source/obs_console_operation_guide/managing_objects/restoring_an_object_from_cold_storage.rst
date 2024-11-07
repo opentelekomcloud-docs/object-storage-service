@@ -2,13 +2,13 @@
 
 .. _obs_03_0320:
 
-Restoring Objects from the Cold Storage
-=======================================
+Restoring an Object from Cold Storage
+=====================================
 
 You must restore a Cold object before you can download it, access it with a URL, or configure its ACL or metadata.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 -  If a Cold object is being restored, its restore task cannot be suspended or deleted.
 -  An object being restored cannot be restored again.
@@ -56,7 +56,7 @@ Procedure
 
 #. Click **OK**.
 
-   The **Restoration Status** column in the object list displays the restore statuses of objects.
+   The **Restoration Status** field in the object details page displays the restore status of the object.
 
    You can click |image1| to manually refresh the restore status.
 

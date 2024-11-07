@@ -10,7 +10,7 @@ Background Information
 
 Data can be uploaded to OBS using multipart uploads. Fragments are generated, if a multipart upload fails because of the following reasons (included but not limited to):
 
--  The network is in poor condition, and connection to the OBS server is frequently interrupted.
+-  The network is in poor conditions, and the connection to the OBS server is interrupted frequently.
 -  The upload task is manually suspended.
 -  The device is faulty.
 -  The device is powered off suddenly.

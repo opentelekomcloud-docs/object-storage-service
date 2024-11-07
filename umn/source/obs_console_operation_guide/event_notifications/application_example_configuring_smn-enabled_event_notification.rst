@@ -66,7 +66,7 @@ Procedure
 
       .. note::
 
-         -  A folder path ends with a slash (/). Therefore, if you want to configure the event notification for operations on folders and you need to filter folders by suffix, the suffix must also end with a slash (/).
+         -  A folder path ends with a slash (/). Therefore, if you want to configure event notification rules for operations on folders and you need to filter folders by suffix, the suffix must also end with a slash (/).
          -  If neither the **Prefix** nor the **Suffix** is configured, the event notification rule applies to all objects in the bucket.
 
       .. _obs_03_0333__fig377201314360:

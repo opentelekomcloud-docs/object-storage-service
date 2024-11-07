@@ -45,12 +45,12 @@ Procedure
 
    -  **Applies To**: Can be set to **Object name prefix** or **Bucket**.
 
-      -  **Object name prefix**: Objects with this specified prefix will be managed by the lifecycle rule. The prefix cannot start with a slash (/) or contain two consecutive slashes (//), and cannot contain the following special characters: ``\:*?"<>|``
+      -  **Object name prefix**: Objects with this specified prefix will be managed by the lifecycle rule. The prefix cannot start with a slash (/) or contain two consecutive slashes (//), and cannot contain the following special characters: \\ : \* ? " < > \|
       -  **Bucket**: All objects in the bucket will be managed by the lifecycle rule.
 
    .. note::
 
-      -  If the specified prefix is overlapping with the prefix set in an existing lifecycle rule, OBS regards these two rules as one and forbids you to configure the one you are configuring. For example, if there is already a rule with prefix **abc** in OBS, you cannot configure another rule whose prefix starts with **abc**.
+      -  If the specified prefix overlaps with the prefix of an existing lifecycle rule, OBS regards these two rules as one and forbids you to configure the one you are configuring. For example, if there is already a rule with prefix **abc** in OBS, you cannot configure another rule whose prefix starts with **abc**.
       -  If there is already a lifecycle rule based on an object prefix, you are not allowed to configure another rule that is applied to the entire bucket.
       -  If a lifecycle rule has been configured for the entire bucket, no more rules that apply to object name prefix can be added.
 
@@ -62,8 +62,12 @@ Procedure
       -  You can configure either the **Current Version** or **Historical Version**, or both of them.
 
    -  **Transition to Warm**: After this number of days since the last update, objects meeting specified conditions will be transitioned to Warm. This number must be at least 30.
-   -  **Transition to Cold**: After this number of days since the last update, objects meeting specified conditions will be transitioned to Cold. If you configure to transition objects first to Warm and then Cold, the objects must stay Warm at least 30 days before they can be transitioned to Cold. If only transition to Cold is used, but transition to Warm is not, there is no limit on the number of days for transition.
-   -  **Delete Objects After (Days)**: After this number of days since the last update, objects meeting certain conditions will be expired and then deleted. This number must be larger than that specified for any of the transition operations.
+   -  **Transition to Cold**: After this number of days since the last update, objects meeting specified conditions will be transitioned to Cold. If you configure to transition objects first to Warm and then Cold, the objects must stay Warm at least 30 days before they can be transitioned to Cold. If transition to Cold is used, but transition to Warm is not, there is no limit on the number of days for transition.
+   -  **Delete Objects After (Days)**: After this number of days since the last update, objects meeting certain conditions will be expired and then deleted. This number must be an integer larger than that specified for any of the transition operations.
+
+   .. note::
+
+      The object update time refers to when common objects were uploaded or when historical objects became historical.
 
    For example, on January 7, 2015, you saved the following files in OBS:
 
@@ -88,13 +92,13 @@ Procedure
 
    .. note::
 
-      In theory, it takes 24 hours at most to execute a lifecycle rule. Because OBS calculates the lifecycle of an object from the next 00:00 (UTC time) after the object is uploaded, there may be a delay in transitioning objects between storage classes and deleting expired objects. Generally, the delay does not exceed 48 hours. If you make changes to an existing lifecycle rule, the rule will take effect again.
+      In theory, it takes 24 hours at most to execute a lifecycle rule. After an object is updated, OBS calculates its lifecycle from the next 00:00 (UTC time), so there may be a delay of up to 48 hours in transitioning objects between storage classes or deleting expired objects. If you make changes to an existing lifecycle rule, the rule will take effect again.
 
 #. Click **OK** to complete the lifecycle rule configuration.
 
 Follow-up Procedure
 -------------------
 
-You can click **Edit** in the **Operation** column of a lifecycle rule to edit the rule. You can also click **Disable** or **Enable** to disable or enable it.
+You can click **Edit**, **Delete**, or **Disable** (or **Enable**) in the **Operation** column of a lifecycle rule to edit, delete, disable (or enable) the rule.
 
-If you want to delete more than one lifecycle rule at a time, select them and click **Delete** above the list.
+You can also select multiple lifecycle rules at a time and click **Delete** or **Disable** (or **Enable**) above the list to batch delete or disable (or enable) them.

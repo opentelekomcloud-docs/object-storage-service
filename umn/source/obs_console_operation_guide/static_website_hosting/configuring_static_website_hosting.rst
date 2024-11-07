@@ -7,7 +7,7 @@ Configuring Static Website Hosting
 
 You can configure static website hosting for a bucket and then use the bucket's domain name to access static websites hosted in the bucket.
 
-The configuration of static website hosting takes two minutes at most to take effect.
+It can take up to two minutes for the configuration of static website hosting to take effect.
 
 Prerequisites
 -------------
@@ -16,7 +16,7 @@ Web page files required for static website hosting have been uploaded to the spe
 
 The static website files hosted in the bucket are accessible to anonymous users.
 
-Static web page files in the Cold storage class have been restored. For more information, see :ref:`Restoring Objects from the Cold Storage <obs_03_0320>`.
+Static web page files in the Cold storage class have been restored. For more information, see :ref:`Restoring an Object from Cold Storage <obs_03_0320>`.
 
 Procedure
 ---------
@@ -27,7 +27,7 @@ Procedure
 
    Grant the read permission for static website files to anonymous users. For details, see :ref:`Granting Anonymous Users Permission to Access Objects <obs_03_0132>`.
 
-   If the bucket contains only static website files, configure the **Public Read** policy for the bucket so that all files in it can be accessed publicly.
+   If the bucket contains only static website files, configure the **Public Read** policy for the bucket so that all files in it are publicly accessible.
 
    a. Choose **Permissions** > **Bucket Policies**.
 

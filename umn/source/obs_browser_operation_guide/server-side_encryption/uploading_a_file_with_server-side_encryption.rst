@@ -57,13 +57,13 @@ Procedure
 
 #. Verify the encryption status.
 
-   After HTTPS and KMS encryption are enabled, objects uploaded to OBS are encrypted with keys provided by KMS. By default, the key **obs/default** is used for encryption.
+   After HTTPS and KMS encryption are enabled, all objects uploaded to OBS will be encrypted with keys provided by KMS. By default, the key **obs/default** is used for encryption.
 
    After objects are uploaded, click |image2| on the right of the object list. In the **Properties** dialog box that is displayed, you can view the object encryption status. **Yes** indicates that server-side encryption has been implemented for the object. **No** indicates that server-side encryption has not been implemented for the object. The object encryption status cannot be changed.
 
    .. note::
 
-      HTTPS must be enabled when you enable KMS encryption to upload objects. Therefore, if you deselect **Enable HTTPS**, **Enable KMS encryption** is deselected automatically.
+      To enable KMS encryption, you must enable HTTPS. Therefore, if you deselect **Enable HTTPS**, **Enable KMS encryption** will be deselected accordingly.
 
 
    .. figure:: /_static/images/en-us_image_0129858610.png

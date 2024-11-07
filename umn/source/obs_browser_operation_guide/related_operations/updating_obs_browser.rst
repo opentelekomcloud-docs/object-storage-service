@@ -12,7 +12,7 @@ Procedure
 
 Every time you log in to OBS Browser, the system automatically checks for update by default. If the current version is not the latest, upgrade the software as instructed.
 
-You can log in to OBS Browser, click |image1| in the upper corner of the page, select **System Configuration**, click **Other** in the **System Configuration** dialog box that is displayed, and deselect **Automatic Update Check**. Then you can manually upgrade OBS Browser as follows:
+If you do not want the automatic update check, you can log in to OBS Browser, click |image1| in the upper corner of the page, select **System Configuration**, click **Other** in the displayed dialog box, and deselect **Automatic Update Check**. Then you can manually upgrade OBS Browser by doing as follows:
 
 #. Log in to OBS Browser.
 

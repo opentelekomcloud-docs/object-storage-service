@@ -5,18 +5,18 @@
 Granting Anonymous Users Permission to Access Objects
 =====================================================
 
-An enterprise stores a large volume of map data in OBS, and offers the data for public query. This enterprise sets a read permission for anonymous users, and provides the data URLs on the Internet. Then all users can read or download the data through the URLs.
+An enterprise stores a large volume of file data in OBS, and offers the data for public query. This enterprise sets a read permission for anonymous users, and provides the data URLs on the Internet. Then all users can read or download the data through the URLs.
 
 Procedure
 ---------
 
 #. Log in to OBS Console and click **Create Bucket** to create a bucket.
 
-#. In the bucket list, click the name of the newly created bucket. On the displayed object management page, upload the map data to the new bucket. The map data is stored as an object.
+#. In the bucket list, click the name of the newly created bucket. On the displayed object management page, upload the file data to the new bucket. The file data is stored as an object.
 
 #. Click the object name. The object details page is displayed.
 
-#. Under **Object ACL** > **Public Permissions**, click **Edit** to grant the object read permission for anonymous users, as shown in :ref:`Figure 1 <obs_03_0132__fig58496641194012>`.
+#. Under **Object ACL** > **Public Permissions**, click **Edit** to grant the object read permission to anonymous users, as shown in :ref:`Figure 1 <obs_03_0132__fig58496641194012>`.
 
    .. _obs_03_0132__fig58496641194012:
 

@@ -13,8 +13,8 @@ Procedure
 #. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
 #. In the navigation pane, choose **Permissions**.
 #. Choose **Bucket Policies** > **Custom Bucket Policies**.
-#. Click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
-#. Configure parameters according to the following table, so that you can grant anonymous users the permission to access the folder and objects in it:
+#. Click **Create Bucket Policy**.
+#. Configure parameters according to the following table, so that you can grant anonymous users the permission to access the folder and objects in it. Retain the default values for the other parameters.
 
    .. table:: **Table 1** Parameters for granting permission to access a bucket
 

@@ -34,4 +34,4 @@ If you want to delete a large number of objects from a bucket, you can configure
    |                                   | Days: 1                                                                                                           |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-One day later, objects in the bucket are successfully deleted based on the rule. If you do not need this lifecycle rule, you can disable it or delete it.
+One day later, objects in the bucket are successfully deleted based on the rule. If you no longer need this lifecycle rule, you can disable it or delete it.

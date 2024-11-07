@@ -10,8 +10,8 @@ Scenarios
 
 The requester-pays configuration allows the requester to pay for data transfer and API calls associated with accessing the requested OBS resources, while the bucket owner only pays for data storage. If your bucket is the source for large-scale data sharing, you can enable requester-pays for the bucket, so that the requester pays for data access in the bucket. Otherwise, you, the bucket owner, will pay for all costs associated with the bucket.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 -  Only buckets of version 3.0 support the requester-pays function.
 
@@ -41,7 +41,7 @@ Limitations and Constraints
 
       <Object Content>
 
--  If the bucket owner or an IAM user under the same account as the bucket owner accesses a requester-pays bucket, the **x-obs-request-payer: requester** header is not required. In such case, no matter whether this header is included in the request, the response does not include the header.
+-  If the bucket owner or an IAM user under the bucket owner account accesses the requester-pays bucket, the **x-obs-request-payer: requester** header is not required. In such case, no matter whether this header is included in the request, the response does not include the **x-obs-request-charged: requester** header.
 
 Configuring Requester Pays
 --------------------------

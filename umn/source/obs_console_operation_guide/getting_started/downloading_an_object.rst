@@ -7,8 +7,8 @@ Downloading an Object
 
 You can download files from OBS Console to your local computer.
 
-Limitations and Constraints
----------------------------
+Constraints
+-----------
 
 Objects in the Cold storage class can be downloaded only when they are in the **Restored** state.
 

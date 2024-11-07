@@ -10,7 +10,7 @@ Background Information
 
 The Cold storage class is applicable to archiving rarely-accessed (such as once a year) data. The application scenarios include data archiving and long-term data retention for backup, allowing users to safely store data at a low price. However, it can take up to hours to restore data from the Cold storage class.
 
-If an object in the Cold storage class is being restored, you cannot suspend or delete the restoration task.
+If a Cold object is being restored, its restore task cannot be suspended or deleted.
 
 You cannot restore an object that is in the **Restoring** state.
 

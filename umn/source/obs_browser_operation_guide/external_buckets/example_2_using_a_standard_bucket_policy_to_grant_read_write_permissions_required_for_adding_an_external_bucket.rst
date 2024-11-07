@@ -2,8 +2,8 @@
 
 .. _obs_03_0135:
 
-Application Example 2: Authorizing Access Permissions Required for Adding an External Bucket Through the Standard Bucket Policy
-===============================================================================================================================
+Example 2: Using a Standard Bucket Policy to Grant Read/Write Permissions Required for Adding an External Bucket
+================================================================================================================
 
 A standard bucket policy can be used to grant the read and write access to a bucket. The standard bucket policy grants the public read and write access to the bucket, that is, all users can access the bucket. Permissions controlled by a standard bucket policy are as follows:
 

@@ -13,10 +13,10 @@ Why is no upload task created and nothing displayed on the page after a large nu
 Answer
 ------
 
-- Check whether the total name length of all files uploaded exceed approximately 25,500 characters.
+- Check whether the total name length of all files uploaded exceeds approximately 25,500 characters.
 
 If the total name length is above this limit, OBS will stop responding to the upload request.
 
-- Check whether the total number of files uploaded exceed 500.
+- Check whether the total number of files uploaded exceeds 500.
 
 OBS Browser allows a maximum of 500 files that can be uploaded at a time. To upload more files than this limit, place the files in a folder and then upload the folder to OBS.

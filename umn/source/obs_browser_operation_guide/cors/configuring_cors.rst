@@ -18,7 +18,7 @@ Procedure
 
    .. note::
 
-      You can set a maximum of 100 CORS rules for one bucket.
+      A bucket can have a maximum of 100 CORS rules configured.
 
 #. In the **Add CORS Rule** dialog box that is displayed, enter CORS rules.
 

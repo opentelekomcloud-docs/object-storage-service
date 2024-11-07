@@ -19,7 +19,7 @@ Procedure
 #. You can select a task type from the drop-down list box in the upper right corner to query the running tasks.
 #. **Optional**: Select a running task and click |image2| to suspend the task. For a paused task, you can click |image3| to continue the task.
 #. **Optional**: Select a running task and click |image4| to delete the task.
-#. **Optional**: If the task fails, select the failed task, move the pointer over |image5| to view the failure cause, and click |image6| to run the task again.
+#. **Optional**: If the task fails, select the failed task, move the cursor over |image5| to view the failure cause, or click |image6| to run the task again.
 #. **Optional**: You can select multiple tasks and click **Run All**, **Suspend All**, or **Cancel All** above the list.
 
    .. note::
