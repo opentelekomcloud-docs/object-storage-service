@@ -60,11 +60,11 @@ The request uses one header, as described in the following table.
 
 .. table:: **Table 1** Request header for cross-region replication
 
-   +-------------+-------------------------------------------------------------------------+-----------+
-   | Element     | Description                                                             | Mandatory |
-   +=============+=========================================================================+===========+
-   | Content-MD5 | Base64-encoded 128-bit MD5 digest of the message according to RFC 1864. | Yes       |
-   +-------------+-------------------------------------------------------------------------+-----------+
+   +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | Element     | Description                                                                                                                                                                                                                   | Mandatory |
+   +=============+===============================================================================================================================================================================================================================+===========+
+   | Content-MD5 | Base64-encoded 128-bit MD5 digest of the message calculated based on RFC 1864. For details about how to calculate the value of **Content-MD5**, see :ref:`Content-MD5 Algorithm in Java <obs_04_0010__section1255031191518>`. | Yes       |
+   +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 Request Elements
 ----------------
@@ -116,7 +116,7 @@ This request contains elements to specify the replication configuration for the 
    +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Prefix                      | Prefix of an object key name, applicable to one or more objects. If the **Prefix** is left blank, the cross-region replication rule is applied to the whole bucket.        | Yes                   |
    |                             |                                                                                                                                                                            |                       |
-   |                             | The maximum length of a prefix is 1024 characters. Duplicated prefixes are not supported.                                                                                  |                       |
+   |                             | The prefix should be a UTF-8-encoded character sequence of 1 to 1,024 characters. Duplicate prefixes are not supported.                                                    |                       |
    |                             |                                                                                                                                                                            |                       |
    |                             | Type: string                                                                                                                                                               |                       |
    |                             |                                                                                                                                                                            |                       |

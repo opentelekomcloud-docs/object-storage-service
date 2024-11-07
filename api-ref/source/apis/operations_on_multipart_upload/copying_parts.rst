@@ -8,7 +8,7 @@ Copying Parts
 Functions
 ---------
 
-After creating a multipart upload job, you can specify its upload ID and upload a part to the job in OBS. Alternatively, you can make an API call to add a part (part of an object or the whole object).
+After a multipart upload task is created, you can upload parts for this task using the obtained multipart upload ID. Alternatively, you can make an API call to add a part (part of an object or the whole object).
 
 This operation supports server-side encryption.
 
@@ -206,37 +206,39 @@ The response to the request uses common headers. For details, see :ref:`Table 1 
 
 .. table:: **Table 3** Additional response headers
 
-   +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Header                                          | Description                                                                                                                                                                              |
-   +=================================================+==========================================================================================================================================================================================+
-   | x-obs-server-side-encryption                    | This header is included in a response if SSE-KMS is used.                                                                                                                                |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Type: string                                                                                                                                                                             |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Example: **x-obs-server-side-encryption:kms**                                                                                                                                            |
-   +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-server-side-encryption-kms-key-id         | Indicates the master key ID. This header is included in a response when SSE-KMS is used.                                                                                                 |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Type: string                                                                                                                                                                             |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Format: *regionID*\ **:**\ *domainID*\ **:key/**\ *key_id*                                                                                                                               |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | *regionID* indicates the ID of the region where the key belongs. *domainID* indicates the ID of the tenant where the key belongs. *key_id* indicates the key ID used in this encryption. |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Example: **x-obs-server-side-encryption-kms-key-id:region:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0**                                                    |
-   +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-server-side-encryption-customer-algorithm | Indicates the encryption algorithm. This header is included in a response when SSE-C is used.                                                                                            |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Type: string                                                                                                                                                                             |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Example: **x-obs-server-side-encryption-customer-algorithm:AES256**                                                                                                                      |
-   +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of the key for encrypting objects. This header is included in a response when SSE-C is used.                                                                     |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Type: string                                                                                                                                                                             |
-   |                                                 |                                                                                                                                                                                          |
-   |                                                 | Example: **x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                                      |
-   +-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header                                          | Description                                                                                                                                                                   |
+   +=================================================+===============================================================================================================================================================================+
+   | x-obs-server-side-encryption                    | This header is included in a response if SSE-KMS is used.                                                                                                                     |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Type: string                                                                                                                                                                  |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Example: **x-obs-server-side-encryption:kms**                                                                                                                                 |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-server-side-encryption-kms-key-id         | **Explanation**:                                                                                                                                                              |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | ID of a specified key used for SSE-KMS encryption.                                                                                                                            |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | **Restrictions**:                                                                                                                                                             |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | This header can only be used when you specify **kms** for the **x-obs-server-side-encryption** header.                                                                        |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | **Default value**:                                                                                                                                                            |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | If you specify **kms** for encryption but do not specify a key ID, the default master key will be used. If there is not a default master key, OBS will create one and use it. |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-server-side-encryption-customer-algorithm | Indicates the encryption algorithm. This header is included in a response when SSE-C is used.                                                                                 |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Type: string                                                                                                                                                                  |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-algorithm:AES256**                                                                                                           |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-server-side-encryption-customer-key-MD5   | Indicates the MD5 value of the key for encrypting objects. This header is included in a response when SSE-C is used.                                                          |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Type: string                                                                                                                                                                  |
+   |                                                 |                                                                                                                                                                               |
+   |                                                 | Example: **x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==**                                                                                           |
+   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
 -----------------

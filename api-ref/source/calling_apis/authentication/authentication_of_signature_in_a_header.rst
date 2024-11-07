@@ -11,17 +11,23 @@ In the header, the signature is carried in the authorization header field of the
 
 .. code-block::
 
-   Authorization: OBS AccessKeyID:signature
+   Authorization: OBS AccessKeyID:Signature
 
-The signature calculation process is as follows:
+The process of calculating a signature is as follows:
 
-1. Construct the request character string (StringToSign).
+#. .. _obs_04_0010__li162697142015:
 
-2. Perform UTF-8 encoding on the result obtained from the preceding step.
+   Construct the StringToSign.
 
-3. Use the SK to perform the HMAC-SHA1 signature calculation on the result obtained from step 2.
+#. .. _obs_04_0010__li5269617200:
 
-4. Perform Base64 encoding on the result of step 3 to obtain the signature.
+   Encode the result of :ref:`1 <obs_04_0010__li162697142015>` in UTF-8.
+
+#. .. _obs_04_0010__li1226919112203:
+
+   Use the SK to calculate the HMAC-SHA1 signature on the result of :ref:`2 <obs_04_0010__li5269617200>`.
+
+#. Encode the result of :ref:`3 <obs_04_0010__li1226919112203>` in Base64 to obtain the signature.
 
 The StringToSign is constructed according to the following rules. :ref:`Table 1 <obs_04_0010__table34479832212511>` describes the parameters.
 
@@ -67,7 +73,7 @@ The StringToSign is constructed according to the following rules. :ref:`Table 1 
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    |                                   | <Bucket name + Object name> + [Subresource 1] + [Subresource 2] + ...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-   |                                   | #. Bucket name and object name, for example, \ **/bucket/object**\ . If no object name is specified, for example, \ **/bucket/**\ , the entire bucket is listed. If no bucket name is specified either, the value of this field is \ **/**\ .                                                                                                                                                                                                                                                                                                                                                                                                 |
+   |                                   | #. Bucket name and object name, for example, **/bucket/object**. If no object name is specified, for example, **/bucket/**, the entire bucket is listed. If no bucket name is specified either, the value of this field is **/**.                                                                                                                                                                                                                                                                                                                                                                                                             |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    |                                   | #. If a subresource (such as **?acl** and **?logging**) exists, the subresource must be added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -202,6 +208,8 @@ The following tables provide some examples of generating StringToSign.
    |                                          | /obs.ccc.com/object.txt                     |
    +------------------------------------------+---------------------------------------------+
 
+.. _obs_04_0010__section1255031191518:
+
 Content-MD5 Algorithm in Java
 -----------------------------
 
@@ -233,7 +241,7 @@ The signature is generated as follows based on the StringToSign and SK. The hash
 
    Signature = Base64( HMAC-SHA1( YourSecretAccessKeyID, UTF-8-Encoding-Of( StringToSign ) ) )
 
-For example, to create a private bucket named **newbucketname2** in a region, the client request format is as follows:
+For example, to create a private bucket named **newbucketname2** in a region, the format of a client request is as follows:
 
 .. code-block:: text
 
@@ -244,7 +252,6 @@ For example, to create a private bucket named **newbucketname2** in a region, th
    x-obs-acl:private
    x-obs-storage-class:STANDARD
    Authorization: OBS UDSIAMSTUBTEST000254:ydH8ffpcbS6YpeOMcEZfn0wE90c=
-
    <CreateBucketConfiguration xmlns="http://obs.region.example.com/doc/2015-06-30/">
        <Location>region</Location>
    </CreateBucketConfiguration>
@@ -271,48 +278,41 @@ Signature Calculation in Java
    import javax.crypto.Mac;
    import javax.crypto.spec.SecretKeySpec;
 
-   import org.omg.CosNaming.IstringHelper;
-
-
    public class SignDemo {
 
        private static final String SIGN_SEP = "\n";
 
        private static final String OBS_PREFIX = "x-obs-";
 
-    private static final String DEFAULT_ENCODING = "UTF-8";
+       private static final String DEFAULT_ENCODING = "UTF-8";
 
-    private static final List<String> SUB_RESOURCES = Collections.unmodifiableList(Arrays.asList(
-      "CDNNotifyConfiguration", "acl", "attname",  "cors", "customdomain", "delete",
-      "deletebucket", "encryption", "inventory", "length", "lifecycle", "location", "logging",
-      "metadata", "mirrorBackToSource", "modify", "name", "notification", "obscompresspolicy",
-      "partNumber", "policy", "position", "quota","rename", "replication", "requestPayment", "response-cache-control",
-      "response-content-disposition","response-content-encoding", "response-content-language", "response-content-type",
-      "response-expires","restore", "storageClass", "storagePolicy", "storageinfo", "tagging", "torrent", "truncate",
-      "uploadId", "uploads", "versionId", "versioning", "versions", "website",
-      "x-obs-security-token", "object-lock", "retention"));
+       private static final List<String> SUB_RESOURCES = Collections.unmodifiableList(Arrays.asList(
+           "CDNNotifyConfiguration", "acl", "attname",  "cors", "customdomain", "delete",
+       "deletebucket", "encryption", "inventory", "length", "lifecycle", "location", "logging",
+       "metadata", "mirrorBackToSource", "modify", "name", "notification", "obscompresspolicy",
+       "partNumber", "policy", "position", "quota","rename", "replication", "requestPayment", "response-cache-control",
+       "response-content-disposition","response-content-encoding", "response-content-language", "response-content-type",
+       "response-expires","restore", "storageClass", "storagePolicy", "storageinfo", "tagging", "torrent", "truncate",
+       "uploadId", "uploads", "versionId", "versioning", "versions", "website",
+        "x-obs-security-token", "object-lock", "retention"));
 
-    private String ak;
+       private String ak;
 
-    private String sk;
+       private String sk;
 
-     public String urlEncode(String input) throws UnsupportedEncodingException
-       {
-     return URLEncoder.encode(input, DEFAULT_ENCODING)
-           .replaceAll("%7E", "~") //for browser
-           .replaceAll("%2F", "/")
-           .replaceAll("%20", "+");
+        public String urlEncode(String input) throws UnsupportedEncodingException {
+           return URLEncoder.encode(input, DEFAULT_ENCODING)
+               .replaceAll("%7E", "~") //for browser
+               .replaceAll("%2F", "/")
+               .replaceAll("%20", "+");
        }
 
-    private String join(List<?> items, String delimiter)
-       {
+       private String join(List<?> items, String delimiter) {
            StringBuilder sb = new StringBuilder();
-           for (int i = 0; i < items.size(); i++)
-           {
-    String item = items.get(i).toString();
+           for (int i = 0; i < items.size(); i++) {
+               String item = items.get(i).toString();
                sb.append(item);
-               if (i < items.size() - 1)
-               {
+               if (i < items.size() - 1) {
                    sb.append(delimiter);
                }
            }
@@ -323,7 +323,7 @@ Signature Calculation in Java
            return input != null && !input.equals("");
        }
 
-       public String hamcSha1(String input) throws NoSuchAlgorithmException, InvalidKeyException, UnsupportedEncodingException {
+       public String hmacSha1(String input) throws NoSuchAlgorithmException, InvalidKeyException, UnsupportedEncodingException {
            SecretKeySpec signingKey = new SecretKeySpec(this.sk.getBytes(DEFAULT_ENCODING), "HmacSHA1");
            Mac mac = Mac.getInstance("HmacSHA1");
            mac.init(signingKey);
@@ -331,7 +331,7 @@ Signature Calculation in Java
        }
 
        private String stringToSign(String httpMethod, Map<String, String[]> headers, Map<String, String> queries,
-               String bucketName, String objectName) throws Exception{
+           String bucketName, String objectName) throws Exception{
            String contentMd5 = "";
            String contentType = "";
            String date = "";
@@ -363,7 +363,6 @@ Signature Calculation in Java
                }
 
                if(key.startsWith(OBS_PREFIX)) {
-
                    for(String value : entry.getValue()) {
                        if(value != null) {
                            temp.add(value.trim());
@@ -377,7 +376,6 @@ Signature Calculation in Java
            if(canonicalizedHeaders.containsKey("x-obs-date")) {
                date = "";
            }
-
 
            // handle method/content-md5/content-type/date
            StringBuilder stringToSign = new StringBuilder();
@@ -419,46 +417,45 @@ Signature Calculation in Java
                    if(this.isValid(entry.getValue())) {
                        stringToSign.append("=").append(entry.getValue());
                    }
-                                   stringToSign.append("&");
+                   stringToSign.append("&");
                }
-                           stringToSign.deleteCharAt(stringToSign.length()-1);
+               stringToSign.deleteCharAt(stringToSign.length()-1);
            }
 
-   //     System.out.println(String.format("StringToSign:%s%s", SIGN_SEP, stringToSign.toString()));
+           //    System.out.println(String.format("StringToSign:%s%s", SIGN_SEP, stringToSign.toString()));
 
            return stringToSign.toString();
        }
 
        public String headerSignature(String httpMethod, Map<String, String[]> headers, Map<String, String> queries,
-               String bucketName, String objectName) throws Exception {
+           String bucketName, String objectName) throws Exception {
 
            //1. stringToSign
            String stringToSign = this.stringToSign(httpMethod, headers, queries, bucketName, objectName);
 
            //2. signature
-           return String.format("OBS %s:%s", this.ak, this.hamcSha1(stringToSign));
+           return String.format("OBS %s:%s", this.ak, this.hmacSha1(stringToSign));
        }
 
-
        public String querySignature(String httpMethod, Map<String, String[]> headers, Map<String, String> queries,
-               String bucketName, String objectName, long expires) throws Exception {
+           String bucketName, String objectName, long expires) throws Exception {
            if(headers.containsKey("x-obs-date")) {
                headers.put("x-obs-date", new String[] {String.valueOf(expires)});
-           }else {
+           } else {
                headers.put("date", new String[] {String.valueOf(expires)});
            }
            //1. stringToSign
            String stringToSign = this.stringToSign(httpMethod, headers, queries, bucketName, objectName);
 
            //2. signature
-           return this.urlEncode(this.hamcSha1(stringToSign));
+           return this.urlEncode(this.hmacSha1(stringToSign));
        }
 
        public static void main(String[] args) throws Exception {
            SignDemo demo = new SignDemo();
 
                    /* Hard-coded or plaintext AK and SK are risky. For security purposes, encrypt your AK and SK and store them in the configuration file or environment variables.
-                   In this example, the AK and SK are stored in environment variables for identity authentication. Before running the code in this example, configure environment variables OTCCLOUD_SDK_AK and OTCCLOUD_SDK_SK. */
+           In this example, the AK and SK are stored in environment variables for identity authentication. Before running the code in this example, configure environment variables OTCCLOUD_SDK_AK and OTCCLOUD_SDK_SK. */
            demo.ak = System.getenv("OTCCLOUD_SDK_AK");
            demo.sk = System.getenv("OTCCLOUD_SDK_SK");
 
@@ -484,6 +481,7 @@ Signature Algorithm in Python
 
 ::
 
+   import os
    import sys
    import hashlib
    import hmac
@@ -502,11 +500,12 @@ Signature Algorithm in Python
    CanonicalizedResource = "/newbucketname2"
    canonical_string = httpMethod + "\n" + "\n" + contentType + "\n" + date + "\n" + canonicalizedHeaders + CanonicalizedResource
    if IS_PYTHON2:
-        hashed = hmac.new(yourSecretAccessKeyID, canonical_string, hashlib.sha1)
-        encode_canonical = binascii.b2a_base64(hashed.digest())[:-1]
+       hashed = hmac.new(yourSecretAccessKeyID, canonical_string, hashlib.sha1)
+       encode_canonical = binascii.b2a_base64(hashed.digest())[:-1]
    else:
-        hashed = hmac.new(yourSecretAccessKeyID.encode('UTF-8'), canonical_string.encode('UTF-8'),hashlib.sha1)
-        encode_canonical = binascii.b2a_base64(hashed.digest())[:-1].decode('UTF-8')
+       hashed = hmac.new(yourSecretAccessKeyID.encode('UTF-8'), canonical_string.encode('UTF-8'), hashlib.sha1)
+       encode_canonical = binascii.b2a_base64(hashed.digest())[:-1].decode('UTF-8')
+
    print(encode_canonical)
 
 The calculation result of the signature is **ydH8ffpcbS6YpeOMcEZfn0wE90c=**, which varies depending on the execution time.

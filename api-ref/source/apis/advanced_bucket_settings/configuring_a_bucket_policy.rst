@@ -8,7 +8,7 @@ Configuring a Bucket Policy
 Functions
 ---------
 
-This operation creates or modifies policies for buckets. If the specified bucket already has a policy, the policy in the request will overwrite the existing one. There is no limit on the number of bucket policies (statements) for a bucket. However, the total size of JSON descriptions of all bucket policies in a bucket cannot exceed 20 KB.
+This operation creates or modifies policies for buckets. The existing policy in a bucket is overwritten by the policy in the request. You can add as many statements as you would like to a bucket. All these statements in JSON cannot exceed 20 KB.
 
 To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for configuring bucket policies.
 
