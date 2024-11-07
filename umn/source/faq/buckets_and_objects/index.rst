@@ -13,7 +13,7 @@ Buckets and Objects
 -  :ref:`Can I Modify the Region of a Bucket? <obs_faq_0133>`
 -  :ref:`How Do I Obtain the Access Path to an Object? <obs_faq_0031>`
 -  :ref:`Why Can't I Search for Certain Objects in My Bucket? <obs_faq_0136>`
--  :ref:`What is the Best Practice to Delete Objects and Deal with Versioning? <obs_faq_best_practice_del_obj>`
+-  :ref:`What Is the Best Practice to Delete Objects and Deal with Versioning? <obs_03_100528>`
 
 .. toctree::
    :maxdepth: 1
