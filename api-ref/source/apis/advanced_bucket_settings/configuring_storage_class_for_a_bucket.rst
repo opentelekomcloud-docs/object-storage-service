@@ -50,17 +50,17 @@ This request needs an additional element to specify the default bucket storage c
 
 .. table:: **Table 1** Additional request elements
 
-   +-----------------------+----------------------------------------------------------------------------------------------------------+-----------------------+
-   | Element               | Description                                                                                              | Mandatory             |
-   +=======================+==========================================================================================================+=======================+
-   | StorageClass          | Specifies the default storage class for a bucket.                                                        | Yes                   |
-   |                       |                                                                                                          |                       |
-   |                       | Type: string                                                                                             |                       |
-   |                       |                                                                                                          |                       |
-   |                       | Value options: **STANDARD**, **WARM**, **COLD**                                                          |                       |
-   |                       |                                                                                                          |                       |
-   |                       | The available storage classes are as follows: Standard (**STANDARD**), Warm (**WARM**), Cold (**COLD**). |                       |
-   +-----------------------+----------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------+
+   | Element               | Description                                                                                          | Mandatory             |
+   +=======================+======================================================================================================+=======================+
+   | StorageClass          | Specifies the default storage class for a bucket.                                                    | Yes                   |
+   |                       |                                                                                                      |                       |
+   |                       | Type: string                                                                                         |                       |
+   |                       |                                                                                                      |                       |
+   |                       | Value options: **STANDARD**, **WARM**, **COLD**                                                      |                       |
+   |                       |                                                                                                      |                       |
+   |                       | The storage class options are as follows: **STANDARD** (Standard), **WARM** (Warm), **COLD** (Cold). |                       |
+   +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------+
 
 Response Syntax
 ---------------

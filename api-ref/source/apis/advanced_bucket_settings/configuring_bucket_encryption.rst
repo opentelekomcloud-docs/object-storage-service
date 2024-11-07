@@ -10,12 +10,12 @@ Functions
 
 OBS uses the PUT method to create or update the default server-side encryption for a bucket.
 
-After you configure encryption for a bucket, objects uploaded to this bucket will be encrypted with the bucket encryption settings you specified. Available encryption methods include server-side encryption with KMS-managed keys (SSE-KMS) and server-side encryption with customer-provided keys (SSE-C). For details, see :ref:`Server-Side Encryption <obs_04_0104>`.
+After you configure encryption for a bucket, objects uploaded to this bucket will be encrypted with the bucket encryption settings you specified. Currently, OBS supports server-side encryption with KMS-managed keys (SSE-KMS). For details, see :ref:`Server-Side Encryption <obs_04_0104>`.
 
 To perform this operation, you must have the **PutEncryptionConfiguration** permission. By default, the bucket owner has this permission and can grant it to others.
 
-Request Syntax (SSE-KMS)
-------------------------
+Request Syntax (SSE-KMS AES256)
+-------------------------------
 
 .. code-block:: text
 
@@ -86,7 +86,10 @@ In this request, you need to carry the bucket encryption configuration in the re
    |                                    |                                                                                                                                                                        |                       |
    |                                    | Type: string                                                                                                                                                           |                       |
    |                                    |                                                                                                                                                                        |                       |
-   |                                    | Value options: **kms**                                                                                                                                                 |                       |
+   |                                    | Value options:                                                                                                                                                         |                       |
+   |                                    |                                                                                                                                                                        |                       |
+   |                                    | -  **kms**: SSE-KMS encryption and the AES256 algorithm are used. To use the SM4 algorithm, you need to configure **KMSDataEncryption**.                               |                       |
+   |                                    | -  **AES256**: SSE-OBS encryption and the AES256 algorithm are used.                                                                                                   |                       |
    |                                    |                                                                                                                                                                        |                       |
    |                                    | Parent: ApplyServerSideEncryptionByDefault                                                                                                                             |                       |
    +------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -147,8 +150,8 @@ Error Responses
 
 No special error responses are returned. For details about error responses, see :ref:`Table 2 <obs_04_0115__d0e843>`.
 
-Sample Request
---------------
+Sample Request (SSE-KMS AES256)
+-------------------------------
 
 .. code-block:: text
 
@@ -170,8 +173,8 @@ Sample Request
        </Rule>
    </ServerSideEncryptionConfiguration>
 
-Sample Response
----------------
+Sample Response (SSE-KMS AES256)
+--------------------------------
 
 ::
 

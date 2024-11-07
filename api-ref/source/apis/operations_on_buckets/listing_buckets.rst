@@ -8,7 +8,7 @@ Listing Buckets
 Functions
 ---------
 
-You can perform this operation to list all buckets that you have created.
+You can perform this operation to list all buckets that you have created across all regions.
 
 Request Syntax
 --------------
@@ -19,6 +19,12 @@ Request Syntax
    Host: obs.region.example.com
    Date: date
    Authorization: authorization
+
+.. note::
+
+   Regardless of the endpoint you specified, a list of buckets spanning all regions is returned.
+
+   Do not list buckets during bucket creation.
 
 Request Parameters
 ------------------
@@ -35,7 +41,7 @@ The operation message header is the same as that of a common request. For detail
 .. table:: **Table 1** Additional request headers
 
    +-----------------------+-----------------------------------------------------------------------------------------------+-----------------------+
-   | Header                | Description                                                                                   | Mandatory             |
+   | Header                | Description                                                                                   | Mandatory (Yes/No)    |
    +=======================+===============================================================================================+=======================+
    | x-obs-bucket-type     | This header field is used to specify the content to be obtained.                              | No                    |
    |                       |                                                                                               |                       |
@@ -45,8 +51,6 @@ The operation message header is the same as that of a common request. For detail
    |                       | -  **POSIX**: Obtain the list of all parallel file systems.                                   |                       |
    |                       |                                                                                               |                       |
    |                       | If this header is not carried, the list of all buckets and parallel file systems is obtained. |                       |
-   |                       |                                                                                               |                       |
-   |                       | Type: string                                                                                  |                       |
    |                       |                                                                                               |                       |
    |                       | Example: **x-obs-bucket-type: POSIX**                                                         |                       |
    +-----------------------+-----------------------------------------------------------------------------------------------+-----------------------+
@@ -136,7 +140,7 @@ This response contains the XML list of buckets owned by the user. :ref:`Table 2 
    |                                   | Type: string                                       |
    |                                   |                                                    |
    |                                   | -  **OBJECT**: indicates a bucket.                 |
-   |                                   | -  **POSIX**: indicates a parallel file system.    |
+   |                                   | -  **POSIX**: a parallel file system.              |
    +-----------------------------------+----------------------------------------------------+
 
 Error Responses
