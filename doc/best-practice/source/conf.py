@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-best-practice.tex',
-     u'Object Storage Service - Best Practice',
+    u'Object Storage Service - Best Practice',
      u'OpenTelekomCloud', 'manual'),
 ]
 

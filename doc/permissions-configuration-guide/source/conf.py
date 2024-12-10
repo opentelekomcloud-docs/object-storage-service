@@ -109,8 +109,8 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'obs-perms-cfg.tex',
-     u'Object Storage Service - Permissions Configuration Guide',
+     'obs-permissions-configuration-guide.tex',
+    u'Object Storage Service - Permissions Configuration Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

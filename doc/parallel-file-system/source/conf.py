@@ -109,8 +109,8 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'obs-pfs.tex',
-     u'Object Storage Service - Parallel File System (PFS)',
+     'obs-parallel-file-system.tex',
+    u'Object Storage Service - Parallel File System (PFS)',
      u'OpenTelekomCloud', 'manual'),
 ]
 

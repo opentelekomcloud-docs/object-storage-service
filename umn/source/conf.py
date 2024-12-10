@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-umn.tex',
-     u'Object Storage Service - User Guide',
+    u'Object Storage Service - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

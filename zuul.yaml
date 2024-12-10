@@ -4,6 +4,15 @@
     default-branch: main
     templates:
       - helpcenter-base-jobs
+    vars:
+      sphinx_pdf_files:
+        - obs-umn.pdf
+        - obs-tool-guide.pdf
+        - obs-parallel-file-system.pdf
+        - obs-s3api.pdf
+        - obs-best-practice.pdf
+        - obs-api-ref.pdf
+        - obs-permissions-configuration-guide.pdf
     check:
       jobs:
         - noop

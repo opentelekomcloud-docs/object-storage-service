@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-tool-guide.tex',
-     u'Object Storage Service - Tool Guide (OBS Browser)',
+    u'Object Storage Service - Tool Guide (OBS Browser)',
      u'OpenTelekomCloud', 'manual'),
 ]
 
