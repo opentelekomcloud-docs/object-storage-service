@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-s3api.tex',
-     u'Object Storage Service - S3 API Reference',
+    u'Object Storage Service - S3 API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 

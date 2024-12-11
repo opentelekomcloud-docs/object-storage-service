@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'obs-swiftapi.tex',
-     u'Object Storage Service - API Reference (Swift) - Deprecated - Will be removed at 2023 Nov. 10!',
+    u'Object Storage Service - API Reference (Swift) - Deprecated - Will be removed at 2023 Nov. 10!',
      u'OpenTelekomCloud', 'manual'),
 ]
 
