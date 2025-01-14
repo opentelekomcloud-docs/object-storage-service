@@ -7,6 +7,7 @@ Object Storage Service (OBS) is an object-based storage service that provides cu
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: obs
       :umn: This document describes the concepts, functions, and basic operations about how to manage Object Storage Service (OBS) using the management console and client.
       :parallel-file-system: This document describes the Parallel File System (PFS), a sub-product of OBS, which is a high-performance file system, with only milliseconds of access latency.
