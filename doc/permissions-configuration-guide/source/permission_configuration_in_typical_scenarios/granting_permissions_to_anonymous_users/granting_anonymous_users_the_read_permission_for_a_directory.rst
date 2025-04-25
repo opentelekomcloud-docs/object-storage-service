@@ -15,36 +15,45 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. On the **Bucket Policies** page, click **Create**.
 
-#. Configure parameters according to the following table, so that you can grant anonymous users the permission to access the folder and objects in it.
+#. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436146565.png
-      :alt: **Figure 1** Granting public read permissions on a specific directory for anonymous users
+   .. figure:: /_static/images/en-us_image_0000002142518978.png
+      :alt: **Figure 1** Configuring a bucket policy
 
-      **Figure 1** Granting public read permissions on a specific directory for anonymous users
+      **Figure 1** Configuring a bucket policy
 
-   .. table:: **Table 1** Parameters for granting the permission to access a specified directory
+   .. table:: **Table 1** Parameters for configuring a bucket policy
 
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Value                                                                                                                                 |
-      +===================================+=======================================================================================================================================+
-      | Policy Mode                       | Select **Read-only**.                                                                                                                 |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  Choose **Include** > **Cloud service user**.                                                                                       |
-      |                                   | -  **Account ID**: Enter **\*** to indicate all anonymous users.                                                                      |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | -  **Include**                                                                                                                        |
-      |                                   | -  Select **Specific resources**.                                                                                                     |
-      |                                   | -  Set this parameter to all objects in the selected folder. If the folder name is **folder-001**, enter the value **folder-001/\***. |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                         |
+      +===================================+=====================================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here.                      |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                                                |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                                                   |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **All accounts**.                                                                                         |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Current bucket** and **Specified objects**.                                                             |
+      |                                   | -  Set the resource path to **folder-001/\*** (as an example), indicating all objects in the **folder-001** folder. |
+      |                                   |                                                                                                                     |
+      |                                   |    .. note::                                                                                                        |
+      |                                   |                                                                                                                     |
+      |                                   |       You can click **Add** to specify multiple resource paths.                                                     |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Use a template**.                                                                                       |
+      |                                   | -  Select **Directory Read-Only**.                                                                                  |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Confirm and click **Create**.
 
 Verification
 ------------

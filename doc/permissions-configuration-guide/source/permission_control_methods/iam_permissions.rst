@@ -21,7 +21,7 @@ You can grant permissions to users by roles and policies.
 
 .. note::
 
-   Due to data caching, a role and policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user, an enterprise project, or a user group.
+   Due to data caching, a role and policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user or a user group.
 
 IAM presets system permissions for each cloud service so that you can quickly configure basic permissions. :ref:`Table 1 <obs_40_0003__table143320246431>` describes all system permissions of OBS.
 

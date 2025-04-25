@@ -15,22 +15,43 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. On the **Bucket Policies** page, click **Create**.
 
-#. On the **Bucket Policies** tab page, select the **Public Read** policy for the bucket in the **Standard Bucket Policies** area.
+#. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436305909.png
-      :alt: **Figure 1** Granting public read permissions on buckets to anonymous users
+   .. figure:: /_static/images/en-us_image_0000002177832637.png
+      :alt: **Figure 1** Configuring a bucket policy
 
-      **Figure 1** Granting public read permissions on buckets to anonymous users
+      **Figure 1** Configuring a bucket policy
+
+   .. table:: **Table 1** Parameters for configuring a bucket policy
+
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                    |
+      +===================================+================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here. |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                           |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                              |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **All accounts**.                                                                    |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Entire bucket (including the objects in it)**.                                     |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Use a template**.                                                                  |
+      |                                   | -  Select **Public Read**.                                                                     |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+
+#. Confirm and click **Create**.
 
 Verification
 ------------
 
-#. After the permission is set, in the **Basic Information** area of the bucket overview page, locate **Access Domain Name**. Share the URL of the access domain name over the Internet so that all Internet users can access the bucket.
+#. After the permission is set, in the **Domain Name Details** area of the bucket overview page, locate **Access Domain Name**. Share the URL of the access domain name over the Internet so that all Internet users can access the bucket.
 #. On the **Objects** tab page of the bucket, click the target object name and find the object link. Share the object link over the Internet so that all Internet users can access the object.

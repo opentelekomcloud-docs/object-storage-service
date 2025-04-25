@@ -178,93 +178,149 @@ Actions can be specified in either of the following ways:
 
 .. table:: **Table 2** Description of bucket-related actions
 
-   +---------+----------------------------+-------------------------------------------------------------+
-   | Type    | Value                      | Description                                                 |
-   +=========+============================+=============================================================+
-   | General | \*                         | Indicates all actions on a bucket.                          |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | Get\*                      | Indicates all GET actions on a bucket.                      |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | Put\*                      | Indicates all PUT actions on a bucket.                      |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | List\*                     | Indicates all LIST actions on a bucket.                     |
-   +---------+----------------------------+-------------------------------------------------------------+
-   | Bucket  | CreateBucket               | Creates a bucket.                                           |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | DeleteBucket               | Deletes a bucket.                                           |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | ListBucket                 | Lists objects in a bucket, and obtains the bucket metadata. |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | ListBucketVersions         | Lists versioned objects in a bucket.                        |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | ListBucketMultipartUploads | Lists multipart upload tasks.                               |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketAcl               | Gets the ACL information of a bucket.                       |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutBucketAcl               | Configures ACL for a bucket.                                |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketCORS              | Gets the CORS configuration of a bucket.                    |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutBucketCORS              | Configures CORS for a bucket.                               |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketVersioning        | Gets the versioning information of a bucket.                |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutBucketVersioning        | Configures versioning for a bucket.                         |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketLocation          | Gets the location of a bucket.                              |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketLogging           | Gets the logs of a bucket.                                  |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutBucketLogging           | Configures logging for a bucket.                            |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetBucketWebsite           | Obtains the static website configuration of a bucket.       |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutBucketWebsite           | Configures static website hosting for a bucket.             |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | DeleteBucketWebsite        | Cancels static website hosting for a bucket.                |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | GetLifecycleConfiguration  | Obtains the lifecycle rules of a bucket.                    |
-   +---------+----------------------------+-------------------------------------------------------------+
-   |         | PutLifecycleConfiguration  | Configures a lifecycle rule for a bucket.                   |
-   +---------+----------------------------+-------------------------------------------------------------+
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   | Type    | Value                           |                                       | Description                                                     |
+   +=========+=================================+=======================================+=================================================================+
+   | General | \*                              |                                       | Indicates all actions on a bucket.                              |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Get\*                           |                                       | Indicates all GET actions on a bucket.                          |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Put\*                           |                                       | Indicates all PUT actions on a bucket.                          |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | List\*                          |                                       | Indicates all LIST actions on a bucket.                         |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   | Bucket  | Operations on buckets           | ListBucket                            | Lists objects in a bucket, and obtains the bucket metadata.     |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucket                          | Deletes a bucket.                                               |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | GetBucketLocation                     | Gets the location of a bucket.                                  |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | GetBucketStorage                      | Obtains bucket storage information.                             |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket policies                 | GetBucketPolicy                       | Gets a bucket policy.                                           |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketPolicy                       | Configures a bucket policy.                                     |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucketPolicy                    | Deletes a bucket policy.                                        |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket ACL                      | GetBucketAcl                          | Gets the ACL information of a bucket.                           |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketAcl                          | Configures ACL for a bucket.                                    |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket logs                     | GetBucketLogging                      | Gets the logs of a bucket.                                      |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketLogging                      | Configures logging for a bucket.                                |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Lifecycle rules                 | GetLifecycleConfiguration             | Obtains the lifecycle rules of a bucket.                        |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutLifecycleConfiguration             | Configures a lifecycle rule for a bucket.                       |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Static website hosting          | GetBucketWebsite                      | Obtains the static website configuration of a bucket.           |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketWebsite                      | Configures static website hosting for a bucket.                 |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucketWebsite                   | Cancels static website hosting for a bucket.                    |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket versioning               | GetBucketVersioning                   | Gets the versioning information of a bucket.                    |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketVersioning                   | Configures versioning for a bucket.                             |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | ListBucketVersions                    | Lists object versions in a bucket.                              |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket tags                     | GetBucketTagging                      | Gets bucket tags.                                               |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketTagging                      | Configures tags for a bucket.                                   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucketTagging                   | Deletes bucket tags.                                            |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | CORS rules                      | GetBucketCORS                         | Gets the CORS configuration of a bucket.                        |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketCORS                         | Configures CORS for a bucket.                                   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Message notifications           | GetBucketNotification                 | Gets event notifications of a bucket.                           |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketNotification                 | Configures event notifications for a bucket.                    |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket storage class            | GetBucketStoragePolicy                | Gets the default storage class of a bucket.                     |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketStoragePolicy                | Configures the default storage class for a bucket.              |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket storage quota            | GetBucketQuota                        | Gets storage quotas of a bucket.                                |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketQuota                        | Configures storage quotas for a bucket.                         |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | User-defined domain names       | GetBucketCustomDomainConfiguration    | Gets the user-defined domain name of a bucket.                  |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketCustomDomainConfiguration    | Binds a user-defined domain name to a bucket.                   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucketCustomDomainConfiguration | Unbinds a user-defined domain name from a bucket.               |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket encryption               | GetEncryptionConfiguration            | Obtains the server-side encryption configuration of a bucket.   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutEncryptionConfiguration            | Configures server-side encryption for a bucket.                 |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Default bucket retention policy | GetBucketObjectLockConfiguration      | Obtains the default retention settings of a bucket.             |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketObjectLockConfiguration      | Configures a default retention policy for a bucket.             |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Bucket inventories              | GetBucketInventoryConfiguration       | Gets the inventory configuration of a bucket.                   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutBucketInventoryConfiguration       | Configures inventories for a bucket.                            |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteBucketInventoryConfiguration    | Deletes the inventory configuration of a bucket.                |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         | Other                           | GetReplicationConfiguration           | Gets the cross-region replication configuration of a bucket.    |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | PutReplicationConfiguration           | Configures cross-region replication for a bucket.               |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | DeleteReplicationConfiguration        | Deletes the cross-region replication configuration of a bucket. |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
+   |         |                                 | ListBucketMultipartUploads            | Lists multipart upload tasks.                                   |
+   +---------+---------------------------------+---------------------------------------+-----------------------------------------------------------------+
 
 **Object Actions**
 
 .. table:: **Table 3** Description of object-related actions
 
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   | Type    | Value                    | Description                                                                                                 |
-   +=========+==========================+=============================================================================================================+
-   | General | \*                       | Indicates all actions on an object.                                                                         |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | Get\*                    | Indicates all GET actions on an object.                                                                     |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | Put\*                    | Indicates all PUT actions on an object.                                                                     |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | List\*                   | Indicates all LIST actions on an object.                                                                    |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   | Object  | GetObject                | Gets the content and metadata of an object.                                                                 |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | GetObjectVersion         | Gets the content and metadata of a specified object version.                                                |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | PutObject                | Performs PUT upload, POST upload, multipart upload, initialization of uploaded parts, and merging of parts. |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | GetObjectAcl             | Gets the ACL information of an object.                                                                      |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | GetObjectVersionAcl      | Gets the ACL information of a specified object version.                                                     |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | PutObjectAcl             | Configures ACL for an object.                                                                               |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | PutObjectVersionAcl      | Configures ACL for a specified object version.                                                              |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | DeleteObject             | Deletes an object.                                                                                          |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | DeleteObjectVersion      | Deletes a specified object version.                                                                         |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | ListMultipartUploadParts | Lists uploaded parts.                                                                                       |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
-   |         | AbortMultipartUpload     | Cancels a multipart upload.                                                                                 |
-   +---------+--------------------------+-------------------------------------------------------------------------------------------------------------+
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   | Type    | Value                   |                          | Description                                                                                                    |
+   +=========+=========================+==========================+================================================================================================================+
+   | General | \*                      |                          | Indicates all actions on an object.                                                                            |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Get\*                   |                          | Indicates all GET actions on an object.                                                                        |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Put\*                   |                          | Indicates all PUT actions on an object.                                                                        |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | List\*                  |                          | Indicates all LIST actions on an object.                                                                       |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   | Object  | Operations on objects   | GetObject                | Gets the content and metadata of an object.                                                                    |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | PutObject                | Performs PUT upload, POST upload, multipart upload, initialization of uploaded parts, and assembling of parts. |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | RestoreObject            | Restores Cold objects.                                                                                         |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | DeleteObject             | Deletes an object.                                                                                             |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Object ACL              | GetObjectAcl             | Gets the ACL information of an object.                                                                         |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | PutObjectAcl             | Configures ACL for an object.                                                                                  |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Versioning              | GetObjectVersion         | Gets the content and metadata of a specified object version.                                                   |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | DeleteObjectVersion      | Deletes a specified object version.                                                                            |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Object version ACL      | GetObjectVersionAcl      | Gets the ACL information of a specified object version.                                                        |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | PutObjectVersionAcl      | Configures ACL for a specified object version.                                                                 |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Object retention policy | PutObjectRetention       | Configures a retention policy for an object.                                                                   |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         | Other                   | AbortMultipartUpload     | Cancels a multipart upload.                                                                                    |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | ListMultipartUploadParts | Lists uploaded parts.                                                                                          |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
+   |         |                         | ModifyObjectMetadata     | Modifies object metadata.                                                                                      |
+   +---------+-------------------------+--------------------------+----------------------------------------------------------------------------------------------------------------+
 
 Resource/NotResource
 --------------------
@@ -330,19 +386,36 @@ Condition
 
 In addition to the effect, principals, resources, and actions, you can also specify the conditions for a bucket policy to take effect. The bucket policy is applied only when its condition expressions match the values contained in the request. Conditions are optional. You can choose whether to configure them.
 
-For example, if account A needs to have full control over an object uploaded by account B to bucket **example** of account A, the **x-obs-acl** key must be specified in the upload request and the policy effect must be set to **Allow** for account A. The complete condition expression is as follows:
+For example, if account A needs to have full control over an object uploaded by account B to bucket **example** of account A, the **acl** key must be specified in the upload request and the policy effect must be set to **Allow** for account A. The complete condition expression is as follows:
 
-================== ========= =========================
-Condition Operator Key       Value
-================== ========= =========================
-StringEquals       x-obs-acl bucket-owner-full-control
-================== ========= =========================
+================== === =========================
+Condition Operator Key Value
+================== === =========================
+StringEquals       acl bucket-owner-full-control
+================== === =========================
 
-A condition consists of condition operator, key, and value. If there are multiple identical keys in the same condition operator, only the last key is retained. Condition operators and keys are correlated. If you select a string type, for example, **StringEquals**, for a condition operator, the key can only be a string type, for example, **UserAgent**. Likewise, if you select a key of the date type, for example, **CurrentTime**, the condition operator can only be a date type, for example, **DateEquals**.
+A condition consists of condition operator, key, and value. Condition operators and keys are correlated. If you select a string type, for example, **StringEquals**, for a condition operator, the key can only be a string type, for example, **UserAgent**. Likewise, if you select a key of the date type, for example, **CurrentTime**, the condition operator can only be a date type, for example, **DateEquals**.
 
--  **Condition operators**
+A condition can contain multiple combinations of a condition key, a condition operator, and a condition value. The **Condition** combination in the following figure indicates that the request time ranges from **2015-07-01T12:00:00Z** to **2018-04-16T15:00:00Z** and the request IP address range is **192.168.176.0/24** or **192.168.143.0/24**.
 
-   A condition operator, a condition key, and a condition value together constitute a complete condition statement. A policy can be applied only when its request conditions are met. :ref:`Table 4 <obs_40_0041__en-us_topic_0118394684_table18965458>` lists the condition operators available for statements. String condition operators are not case-sensitive unless otherwise specified.
+.. code-block::
+
+   "Condition" : {
+     "DateGreaterThan" : {
+     "CurrentTime" : "2015-07-01T12:00:00Z"
+     },
+     "DateLessThan": {
+     "CurrentTime" : "2018-04-16T15:00:00Z"
+     },
+     "IpAddress" : {
+     "SourceIp" : ["192.168.176.0/24","192.168.143.0/24"]
+     }
+   }
+
+Condition Operators
+-------------------
+
+A condition operator, a condition key, and a condition value together constitute a complete condition statement. A policy can be applied only when its request conditions are met. :ref:`Table 4 <obs_40_0041__en-us_topic_0118394684_table18965458>` lists the condition operators available for statements. If a condition operator corresponds to multiple identical keys, only the last key is retained.
 
 .. _obs_40_0041__en-us_topic_0118394684_table18965458:
 
@@ -396,55 +469,38 @@ A condition consists of condition operator, key, and value. If there are multipl
    |                       | NotIpAddress              | All IP addresses excluding the specified IP address or range                                                                                                                                 |
    +-----------------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. note::
+Condition Keys
+--------------
 
-   Elements in a condition are case sensitive. The date format complies with the ISO 8601 standard, for example, **2015-07-01T12:00:00Z**.
+Condition keys can be classified into general keys, keys related to actions on buckets, and keys related to actions on objects. :ref:`Table 5 <obs_40_0041__table6707152645718>` lists the general keys.
 
-Each condition can contain multiple key-value pairs. The **Condition** combination in the following figure indicates that the request time ranges from **2015-07-01T12:00:00Z** to **2018-04-16T15:00:00Z** and the request IP address range is **192.168.176.0/24** or **192.168.143.0/24**.
-
-.. code-block::
-
-   "Condition" : {
-     "DateGreaterThan" : {
-     "CurrentTime" : "2015-07-01T12:00:00Z"
-     },
-     "DateLessThan": {
-     "CurrentTime" : "2018-04-16T15:00:00Z"
-     },
-     "IpAddress" : {
-     "SourceIp" : ["192.168.176.0/24","192.168.143.0/24"]
-     }
-   }
-
--  **Condition keys**
-
-Keys in a condition can be classified into general keys, keys related to actions on buckets, and keys related to actions on objects.
-
-The following table lists the keys that are not related to actions.
+.. _obs_40_0041__table6707152645718:
 
 .. table:: **Table 5** General keys
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Key                   | Type                  | Description                                                                                                                                  |
-   +=======================+=======================+==============================================================================================================================================+
-   | CurrentTime           | Date                  | Date when the request is received by the server. The date format must comply with ISO 8601.                                                  |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | EpochTime             | Numeric               | Time when the request is received by the server, which is expressed as seconds since 1970.01.01 00:00:00 UTC, regardless of the leap seconds |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | SecureTransport       | Bool                  | Whether the request is encrypted using SSL                                                                                                   |
-   |                       |                       |                                                                                                                                              |
-   |                       |                       | .. note::                                                                                                                                    |
-   |                       |                       |                                                                                                                                              |
-   |                       |                       |    The value can be either **true** or **false**. Any other values you enter will become **false** by default.                               |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | SourceIp              | IP address            | Source (client) IP address of the request                                                                                                    |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | UserAgent             | String                | Requested client software agent                                                                                                              |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Referer               | String                | Link from which the request is sent                                                                                                          |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Key                   | Type                  | Description                                                                                                                                    |
+   +=======================+=======================+================================================================================================================================================+
+   | CurrentTime           | Date                  | Date when the request was received by the server. The date format must comply with ISO 8601.                                                   |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EpochTime             | Numeric               | Time when the request was received by the server, which was expressed as seconds since 1970.01.01 00:00:00 UTC, regardless of the leap seconds |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | SecureTransport       | Bool                  | Whether the request was encrypted using SSL                                                                                                    |
+   |                       |                       |                                                                                                                                                |
+   |                       |                       | .. note::                                                                                                                                      |
+   |                       |                       |                                                                                                                                                |
+   |                       |                       |    The value can be either **true** or **false**. Any other values you enter will become **false** by default.                                 |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | SourceIp              | IP address            | Source (client) IP address of the request                                                                                                      |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | UserAgent             | String                | Requested client software agent                                                                                                                |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Referer               | String                | Link from which the request was sent                                                                                                           |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Keys in a condition must be used in certain actions. The following table lists the mapping between actions and the keys in a condition.
+Action-related condition keys can be used only when a specific action is selected. :ref:`Table 6 <obs_40_0041__table1972610267573>` and :ref:`Table 7 <obs_40_0041__table14742526145718>` list the mapping between actions and condition keys.
+
+.. _obs_40_0041__table1972610267573:
 
 .. table:: **Table 6** Keys related to bucket actions
 
@@ -465,34 +521,36 @@ Keys in a condition must be used in certain actions. The following table lists t
    +--------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    |                    | max-keys        | Type: Numeric. Sets the maximum number of objects. Returned objects are listed in alphabetic order.                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                             |
    +--------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | PutBucketAcl       | x-obs-acl       | Type: String. Configures the bucket ACL. When modifying a bucket ACL, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|log-delivery-write**. | None                                                                                                                                                                                                                                                                                                                                                                                        |
+   | PutBucketAcl       | acl             | Type: String. Configures the bucket ACL. When modifying a bucket ACL, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|log-delivery-write**. | None                                                                                                                                                                                                                                                                                                                                                                                        |
    +--------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _obs_40_0041__table14742526145718:
 
 .. table:: **Table 7** Keys related to object actions
 
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Action              | Optional Key                 | Description                                                                                                                                                                                                                                                                                                                       |
-   +=====================+==============================+===================================================================================================================================================================================================================================================================================================================================+
-   | PutObject           | x-obs-acl                    | Type: String. Configures the object ACL. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**.                                      |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   |                     | x-obs-copy-source            | Type: String. Specifies names of the source bucket and the source object. Format: **/**\ *bucketname*\ **/**\ *keyname*                                                                                                                                                                                                           |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   |                     | x-obs-metadata-directive     | Type: String. Specifies whether to copy the metadata of the source object or replace with the metadata in the request. The value can be **COPY** or **REPLACE**.                                                                                                                                                                  |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   |                     | x-obs-server-side-encryption | Type: String. Specifies that objects in a bucket are encrypted using SSE-KMS before they are stored. The value is **kms**.                                                                                                                                                                                                        |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | PutObjectAcl        | x-obs-acl                    | Type: String. Configures the object ACL. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**.                                      |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | GetObjectVersion    | versionId                    | Type: String. Obtains the object with the specified version ID.                                                                                                                                                                                                                                                                   |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | GetObjectVersionAcl | versionId                    | Type: String. Obtains the ACL of the object with the specified version ID.                                                                                                                                                                                                                                                        |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | PutObjectVersionAcl | versionId                    | Type: String. Specifies a version ID.                                                                                                                                                                                                                                                                                             |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   |                     | x-obs-acl                    | Type: String. Configures the ACL of the object with the specified version ID. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**. |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | DeleteObjectVersion | versionId                    | Type: String. Deletes the object with the specified version ID.                                                                                                                                                                                                                                                                   |
-   +---------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Action              | Optional Key           | Description                                                                                                                                                                                                                                                                                                                       |
+   +=====================+========================+===================================================================================================================================================================================================================================================================================================================================+
+   | PutObject           | acl                    | Type: String. Configures the object ACL. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**.                                      |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                     | copy-source            | Type: String. Specifies names of the source bucket and the source object. Format: **/**\ *bucketname*\ **/**\ *keyname*                                                                                                                                                                                                           |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                     | metadata-directive     | Type: String. Specifies whether to copy the metadata of the source object or replace with the metadata in the request. The value can be **COPY** or **REPLACE**.                                                                                                                                                                  |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                     | server-side-encryption | Type: String. Specifies that objects in a bucket are encrypted using SSE-KMS before they are stored. The value is **kms**.                                                                                                                                                                                                        |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | PutObjectAcl        | acl                    | Type: String. Configures the object ACL. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**.                                      |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | GetObjectVersion    | versionId              | Type: String. Obtains the object with the specified version ID.                                                                                                                                                                                                                                                                   |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | GetObjectVersionAcl | versionId              | Type: String. Obtains the ACL of the object with the specified version ID.                                                                                                                                                                                                                                                        |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | PutObjectVersionAcl | versionId              | Type: String. Specifies a version ID.                                                                                                                                                                                                                                                                                             |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                     | acl                    | Type: String. Configures the ACL of the object with the specified version ID. When uploading an object, you can use the request that contains a canned ACL setting in its header. Value options of a canned ACL setting: **private|public-read|public-read-write|bucketowner-read|bucket-owner-full-control|log-delivery-write**. |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | DeleteObjectVersion | versionId              | Type: String. Deletes the object with the specified version ID.                                                                                                                                                                                                                                                                   |
+   +---------------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Policy Permission Judgment Logic
 --------------------------------

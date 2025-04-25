@@ -29,41 +29,52 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. On the **Bucket Policies** page, click **Create**.
 
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001385525368.png
+   .. figure:: /_static/images/en-us_image_0000002141218890.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
 
-   .. table:: **Table 1** Parameters for creating a bucket policy
+   .. table:: **Table 1** Parameters for configuring a bucket policy
 
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                   |
-      +===================================+===============================================================================================================================================================================+
-      | Policy Mode                       | Select **Read-only**.                                                                                                                                                         |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  Choose **Include** > **Cloud service user**.                                                                                                                               |
-      |                                   | -  **Account ID**: Enter one account ID only, or enter an asterisk (*) to indicate that the policy takes effect on all users (including both registered and anonymous users). |
-      |                                   | -  **User ID**: Enter one or more user IDs separated by a comma (,).                                                                                                          |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | -  **Include**                                                                                                                                                                |
-      |                                   |                                                                                                                                                                               |
-      |                                   | -  **Resource Name**: Enter the object or the set of objects that will be accessed.                                                                                           |
-      |                                   |                                                                                                                                                                               |
-      |                                   |    For one object, enter *object name*.                                                                                                                                       |
-      |                                   |                                                                                                                                                                               |
-      |                                   |    For a set of objects, enter ``object name prefix + *, * + object name suffix, or *``.                                                                                      |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                            |
+      +===================================+========================================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here.                         |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                                                   |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                                                      |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **Current account**.                                                                                         |
+      |                                   | -  IAM users: Select an IAM user that you want to grant permissions to.                                                |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Specified objects**.                                                                                       |
+      |                                   | -  Enter an object name prefix for the resource path.                                                                  |
+      |                                   |                                                                                                                        |
+      |                                   |    .. note::                                                                                                           |
+      |                                   |                                                                                                                        |
+      |                                   |       -  You can click **Add** to specify multiple resource paths.                                                     |
+      |                                   |                                                                                                                        |
+      |                                   |       -  You can specify a specific object, an object set, or a directory. **\*** indicates all objects in the bucket. |
+      |                                   |                                                                                                                        |
+      |                                   |          To specify a specific object, enter the object name.                                                          |
+      |                                   |                                                                                                                        |
+      |                                   |          To specify a set of objects, enter *Object name prefix*\ **\***, **\***\ *Object name suffix*, or **\***.     |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Use a template**.                                                                                          |
+      |                                   | -  Select **Object Read-Only**.                                                                                        |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Confirm and click **Create**.
 
 .. _obs_40_0017__section220405220511:
 
@@ -80,7 +91,7 @@ To perform read operations on OBS Console or OBS Browser+, you must add the **ob
 
 #. On the top menu bar, choose **Service List** > **Management & Deployment** > **Identity and Access Management**.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Policies/Roles**.
 
 #. Click **Create Custom Policy** in the upper right corner.
 
