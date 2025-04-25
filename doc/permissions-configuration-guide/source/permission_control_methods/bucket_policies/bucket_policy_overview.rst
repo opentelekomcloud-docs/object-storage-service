@@ -2,11 +2,11 @@
 
 .. _obs_40_0004:
 
-Bucket Policies
-===============
+Bucket Policy Overview
+======================
 
-Overview
---------
+Bucket Policies
+---------------
 
 A bucket policy applies to an OBS bucket and the objects in the bucket. Bucket policies let a bucket owner grant IAM users or other accounts permissions on the bucket and its objects.
 
@@ -14,6 +14,7 @@ A bucket policy applies to an OBS bucket and the objects in the bucket. Bucket p
 
    -  Creating a bucket and obtaining a bucket list are service-level operations. To obtain such operation permissions, you need to configure :ref:`IAM permissions <obs_40_0014>`.
    -  Due to data caching, it takes 5 minutes at most for a bucket policy to take effect.
+
 
 Bucket Policy Overview
 ----------------------

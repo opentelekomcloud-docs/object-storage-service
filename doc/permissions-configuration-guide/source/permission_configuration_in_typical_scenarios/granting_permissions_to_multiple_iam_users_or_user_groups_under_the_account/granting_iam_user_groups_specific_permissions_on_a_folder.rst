@@ -20,7 +20,7 @@ Precautions
 
 After configuration, IAM users can perform allowed operations using APIs. If they log in to OBS Console or OBS Browser+ to perform those operations, a message will be displayed indicating that they do not have required permissions.
 
-This is because when they log in to OBS Console or OBS Browser+, APIs (such as **ListAllMyBuckets** and **ListBucket**) are called to load the bucket list and object list and some other APIs will also be called on other pages, but their permissions do not cover those APIs. In such case, the message is diplayed.
+This is because when they log in to OBS Console or OBS Browser+, APIs (such as **ListAllMyBuckets** and **ListBucket**) are called to load the bucket list and object list and some other APIs will also be called on other pages, but their permissions do not cover those APIs. In such case, the message is displayed.
 
 To allow IAM users to operate buckets and objects on OBS Console or OBS Browser+, add at least the **obs:bucket:ListAllMyBuckets** and **obs:bucket:ListBucket** permissions to the custom policy. (In this case, these two permissions are configured in permissions 2 and 3.)
 

@@ -29,36 +29,41 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. Click **Create**.
 
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436220057.png
+   .. figure:: /_static/images/en-us_image_0000002175159869.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
 
-   .. table:: **Table 1** Parameters for creating a bucket policy
+   .. table:: **Table 1** Parameters for configuring a bucket policy
 
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                   |
-      +===================================+===============================================================================================================================================================================+
-      | Policy Mode                       | Select **Read and write**.                                                                                                                                                    |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  Choose **Include** > **Cloud service user**.                                                                                                                               |
-      |                                   | -  **Account ID**: Enter one account ID only, or enter an asterisk (*) to indicate that the policy takes effect on all users (including both registered and anonymous users). |
-      |                                   | -  **User ID**: Enter one or more user IDs separated by a comma (,).                                                                                                          |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | -  **Include**                                                                                                                                                                |
-      |                                   | -  **Resource Name**: Enter **\***.                                                                                                                                           |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                    |
+      +===================================+================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here. |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                           |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                              |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **Current account**.                                                                 |
+      |                                   | -  IAM users: Select an IAM user that you want to grant permissions to.                        |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Entire bucket (including the objects in it)**.                                     |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Use a template**.                                                                  |
+      |                                   | -  Select **Bucket Read/Write**.                                                               |
+      +-----------------------------------+------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Confirm and click **Create**.
 
 .. _obs_40_0015__section220405220511:
 
@@ -75,7 +80,7 @@ To perform read and write operations on OBS Console or OBS Browser+, you must ad
 
 #. On the top menu bar, choose **Service List** > **Management & Deployment** > **Identity and Access Management**.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Policies/Roles**.
 
 #. Click **Create Custom Policy** in the upper right corner.
 

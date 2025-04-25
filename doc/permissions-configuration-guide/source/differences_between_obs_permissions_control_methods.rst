@@ -96,7 +96,7 @@ For details about these elements, see :ref:`Bucket Policy Parameters <obs_40_004
    +-----------------+-----------------------------+-----------+----------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
    | Bucket ACLs     | -  Accounts                 | Allow     | Specified bucket                             | -  Identify whether a bucket exists.                                                      | Not supported |
    |                 | -  Anonymous users          |           |                                              | -  List objects in a bucket, and obtain the bucket metadata.                              |               |
-   |                 | -  Log delivery user groups |           |                                              | -  List versioned objects in a bucket.                                                    |               |
+   |                 | -  Log delivery user groups |           |                                              | -  List object versions in a bucket.                                                      |               |
    |                 |                             |           |                                              | -  List multipart uploads.                                                                |               |
    |                 |                             |           |                                              | -  Upload using PUT and POST, upload multiparts, and initialize and merge uploaded parts. |               |
    |                 |                             |           |                                              | -  Delete an object.                                                                      |               |
@@ -114,7 +114,7 @@ Considering the advantages and disadvantages of the elements, you are advised to
 
 -  Select IAM permissions to:
 
-   -  Grant the same permissions to numerous IAM users under the same account.
+   -  Grant the permissions to IAM users under the same account.
    -  Grant the same permissions to all OBS resources or multiple buckets.
    -  Configure OBS service-level permissions, such as creating and listing buckets.
    -  Restrict the permissions of temporary access keys used for OBS access.
@@ -123,18 +123,6 @@ Considering the advantages and disadvantages of the elements, you are advised to
 
    -  Grant permissions across accounts or to anonymous users.
    -  Grant different permissions to different IAM users under the same account.
-
--  Are you still unsure what to select?
-
-   Identify what you are most concerned about:
-
-   -  If you want to control what a user can do, choose IAM permissions.
-
-      You can search for an IAM user and check the permissions of the user group to which the user belongs to see what the user can do.
-
-   -  If you want to control access to a bucket, choose bucket policies.
-
-      You can query the bucket and check the bucket policy to know who can access the bucket.
 
 .. note::
 

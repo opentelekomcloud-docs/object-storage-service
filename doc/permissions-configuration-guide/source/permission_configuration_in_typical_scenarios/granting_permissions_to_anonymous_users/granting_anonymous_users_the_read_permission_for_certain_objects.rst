@@ -15,23 +15,51 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket to be operated. The **Overview** page of the bucket is displayed.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, click **Objects**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. Click the name of the object to be operated.
+#. On the **Bucket Policies** page, click **Create**.
 
-#. On the **Object ACL** tab page, click the target object and click **Object ACL**.
-
-#. In **Public Permissions** > **Anonymous User**, click **Edit** and select the object read permission for anonymous users.
+#. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436307565.png
-      :alt: **Figure 1** Granting the public read permission on objects to anonymous users
+   .. figure:: /_static/images/en-us_image_0000002142681682.png
+      :alt: **Figure 1** Configuring a bucket policy
 
-      **Figure 1** Granting the public read permission on objects to anonymous users
+      **Figure 1** Configuring a bucket policy
 
-#. Click **Save** to save the permission setting.
+   .. table:: **Table 1** Parameters for configuring a bucket policy
+
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                        |
+      +===================================+====================================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here.                     |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                                               |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                                                  |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **All accounts**.                                                                                        |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Specified objects**.                                                                                   |
+      |                                   | -  Enter an object name prefix for the resource path.                                                              |
+      |                                   |                                                                                                                    |
+      |                                   |    .. note::                                                                                                       |
+      |                                   |                                                                                                                    |
+      |                                   |       a. You can click **Add** to specify multiple resource paths.                                                 |
+      |                                   |                                                                                                                    |
+      |                                   |       b. You can specify a specific object or an object set. **\*** indicates all objects in the bucket.           |
+      |                                   |                                                                                                                    |
+      |                                   |          For one object, enter *object name*.                                                                      |
+      |                                   |                                                                                                                    |
+      |                                   |          To specify a set of objects, enter *Object name prefix*\ **\***, **\***\ *Object name suffix*, or **\***. |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Use a template**.                                                                                      |
+      |                                   | -  Select **Object Read-Only**.                                                                                    |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+#. Confirm and click **Create**.
 
 Verification
 ------------

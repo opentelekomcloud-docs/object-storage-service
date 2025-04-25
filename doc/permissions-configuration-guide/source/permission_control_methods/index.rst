@@ -6,7 +6,7 @@ Permission Control Methods
 ==========================
 
 -  :ref:`IAM Permissions <obs_40_0003>`
--  :ref:`Bucket Policies <obs_40_0004>`
+-  :ref:`Bucket Policies <obs_40_0042>`
 -  :ref:`ACLs <obs_40_0005>`
 
 .. toctree::
@@ -14,5 +14,5 @@ Permission Control Methods
    :hidden: 
 
    iam_permissions
-   bucket_policies
+   bucket_policies/index
    acls

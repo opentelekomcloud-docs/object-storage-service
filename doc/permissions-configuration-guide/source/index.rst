@@ -9,5 +9,4 @@ Object Storage Service - Permissions Configuration Guide
    permission_control_methods/index
    access_requests/index
    permission_configuration_in_typical_scenarios/index
-   appendix/index
    change_history

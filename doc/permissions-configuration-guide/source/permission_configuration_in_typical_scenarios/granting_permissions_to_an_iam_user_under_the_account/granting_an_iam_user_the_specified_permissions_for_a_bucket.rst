@@ -31,45 +31,48 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. On the **Bucket Policies** page, click **Create**.
 
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001385678272.png
+   .. figure:: /_static/images/en-us_image_0000002139934518.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
 
-   .. table:: **Table 1** Parameters for creating a bucket policy
+   .. table:: **Table 1** Parameters for configuring a bucket policy
 
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                   |
-      +===================================+===============================================================================================================================================================================+
-      | Policy Mode                       | Select **Customized**.                                                                                                                                                        |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Effect                            | Select **Allow**.                                                                                                                                                             |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  Choose **Include** > **Cloud service user**.                                                                                                                               |
-      |                                   | -  **Account ID**: Enter one account ID only, or enter an asterisk (*) to indicate that the policy takes effect on all users (including both registered and anonymous users). |
-      |                                   | -  **User ID**: Enter one or more user IDs separated by a comma (,).                                                                                                          |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | Select **Include** > **Entire bucket**.                                                                                                                                       |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Actions                           | -  **Include**                                                                                                                                                                |
-      |                                   | -  **Action Name**:                                                                                                                                                           |
-      |                                   |                                                                                                                                                                               |
-      |                                   |    -  DeleteBucket                                                                                                                                                            |
-      |                                   |    -  ListBucketVersions (required when an authorized user needs to access OBS from OBS Console or OBS Browser+)                                                              |
-      |                                   |                                                                                                                                                                               |
-      |                                   | To configure other permissions, select the corresponding actions. For details, see :ref:`Action/NotAction <obs_40_0041__en-us_topic_0118394684_section1623516525350>`.        |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                     |
+      +===================================+=================================================================================================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here.                                                                                  |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                                                                                                            |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                                                                                                               |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **Current account**.                                                                                                                                                  |
+      |                                   | -  IAM users: Select an IAM user that you want to grant permissions to.                                                                                                         |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Current bucket**.                                                                                                                                                   |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Customize**.                                                                                                                                                        |
+      |                                   | -  Select actions:                                                                                                                                                              |
+      |                                   |                                                                                                                                                                                 |
+      |                                   |    -  DeleteBucket                                                                                                                                                              |
+      |                                   |    -  ListBucketVersions (to list object versions in the bucket)                                                                                                                |
+      |                                   |                                                                                                                                                                                 |
+      |                                   |       .. note::                                                                                                                                                                 |
+      |                                   |                                                                                                                                                                                 |
+      |                                   |          To configure other permissions, select the corresponding actions. For details, see :ref:`Action/NotAction <obs_40_0041__en-us_topic_0118394684_section1623516525350>`. |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Confirm and click **Create**.
 
 .. _obs_40_0016__section220405220511:
 
@@ -82,7 +85,7 @@ To delete buckets on OBS Console or OBS Browser+, you need to allow the **obs:bu
 
 #. On the top menu bar, choose **Service List** > **Management & Deployment** > **Identity and Access Management**.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Policies/Roles**.
 
 #. Click **Create Custom Policy** in the upper right corner.
 

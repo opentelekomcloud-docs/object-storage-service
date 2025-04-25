@@ -27,47 +27,63 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Overview** page.
+#. In the bucket list, click the bucket name you want to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** page, click **Create Bucket Policy** under **Custom Bucket Policies**.
+#. On the **Bucket Policies** page, click **Create**.
 
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001385862242.png
+   .. figure:: /_static/images/en-us_image_0000002142430154.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
 
-   .. table:: **Table 1** Parameters for creating a bucket policy
+   .. table:: **Table 1** Parameters for configuring a bucket policy
 
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                               |
-      +===================================+===========================================================================================================================================================================================================+
-      | Policy Mode                       | Select **Customized**.                                                                                                                                                                                    |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Effect                            | Select **Allow**.                                                                                                                                                                                         |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  Select **Include** > **Other account**.                                                                                                                                                                |
-      |                                   | -  **Account ID**: Enter the ID of the account which you want to grant permissions to. You can obtain it from the **My Credentials** page of the account.                                                 |
-      |                                   | -  **User ID**: Enter the account ID. You can obtain it from the **My Credentials** page of the account.                                                                                                  |
-      |                                   |                                                                                                                                                                                                           |
-      |                                   |    .. note::                                                                                                                                                                                              |
-      |                                   |                                                                                                                                                                                                           |
-      |                                   |       In this example, permissions are granted to an account, excluding any IAM user under the account. Therefore, the user ID is the same as the account ID.                                             |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | Select **Include** > **Entire bucket**.                                                                                                                                                                   |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Actions                           | -  **Include**                                                                                                                                                                                            |
-      |                                   | -  **Action Name**:                                                                                                                                                                                       |
-      |                                   |                                                                                                                                                                                                           |
-      |                                   |    -  PutBucketAcl                                                                                                                                                                                        |
-      |                                   |    -  GetBucketAcl                                                                                                                                                                                        |
-      |                                   |    -  ListBucket (required when the authorized account wants to access the OBS bucket on OBS Browser+ by mounting an external bucket)                                                                     |
-      |                                   |                                                                                                                                                                                                           |
-      |                                   | To configure other permissions, select the corresponding actions. For details about the actions supported by OBS, see :ref:`Action/NotAction <obs_40_0041__en-us_topic_0118394684_section1623516525350>`. |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                   |
+      +===================================+===============================================================================================================================================================================================================+
+      | Policy view                       | Select **Visual Editor** or **JSON** based on your own habits. **Visual Editor** is used here.                                                                                                                |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a policy name.                                                                                                                                                                                          |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Select **Allow**.                                                                                                                                                                                             |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | -  Select **Other accounts**.                                                                                                                                                                                 |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |    Enter the account ID and IAM user ID in the format of *Account ID/IAM user ID*. To specify multiple IAM users, enter each one on a separate line. An asterisk (``*``) indicates all accounts or IAM users. |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |    .. note::                                                                                                                                                                                                  |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |       The account ID and IAM user ID can be obtained on the **My Credentials** page. The following describes different authorization scenarios:                                                               |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |       -  **Granting permissions to all accounts and IAM users**: Enter **\*/\***.                                                                                                                             |
+      |                                   |       -  **Granting permissions to an account and all IAM users under the account**: Enter *Account ID*\ **/\***.                                                                                             |
+      |                                   |       -  **Granting permissions to a specific IAM user under an account**: Enter *Account ID/IAM user ID*.                                                                                                    |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   | -  **Delegated accounts**: Enter the ID of a delegating account and an agency name.                                                                                                                           |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |    .. note::                                                                                                                                                                                                  |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |       The format is *Account ID/Agency name*. To specify multiple agencies, enter each one on a separate line.                                                                                                |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   | -  You can specify one or more common accounts or delegated accounts. Either of the two types of accounts must be specified.                                                                                  |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Select **Current bucket**.                                                                                                                                                                                 |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | -  Choose **Customize**.                                                                                                                                                                                      |
+      |                                   | -  Select actions:                                                                                                                                                                                            |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |    -  PutBucketAcl (to configure a bucket ACL)                                                                                                                                                                |
+      |                                   |    -  GetBucketAcl (to obtain the bucket ACL information)                                                                                                                                                     |
+      |                                   |    -  (Optional) ListBucket (to list objects in the bucket and obtain the bucket metadata)                                                                                                                    |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |    .. note::                                                                                                                                                                                                  |
+      |                                   |                                                                                                                                                                                                               |
+      |                                   |       To grant other permissions, select required actions based on :ref:`actions supported by OBS <obs_40_0041__en-us_topic_0118394684_section1623516525350>`.                                                |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Confirm and click **Create**.
