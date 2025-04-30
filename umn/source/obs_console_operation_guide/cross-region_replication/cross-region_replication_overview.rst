@@ -2,8 +2,8 @@
 
 .. _obs_03_0002:
 
-Cross-Region Replication Overview
-=================================
+Cross-Region Replication Overview - Sold-out
+============================================
 
 OBS offers disaster recovery across regions, catering to your needs for remote backup.
 
