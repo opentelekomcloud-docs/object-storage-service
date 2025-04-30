@@ -2,8 +2,8 @@
 
 .. _obs_03_0003:
 
-Configuring Cross-Region Replication
-====================================
+Configuring Cross-Region Replication - Sold-out
+===============================================
 
 To replicate objects from a source bucket to a destination bucket in a different region, you can configure a single cross-region replication rule that is applied to all objects in the bucket, or you can configure multiple rules that are applied to a set of objects by specifying a prefix.
 
