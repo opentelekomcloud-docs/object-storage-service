@@ -2,8 +2,8 @@
 
 .. _obs_03_0001:
 
-Cross-Region Replication
-========================
+Cross-Region Replication - Sold-out
+===================================
 
 -  :ref:`Cross-Region Replication Overview <obs_03_0002>`
 -  :ref:`Configuring Cross-Region Replication <obs_03_0003>`
