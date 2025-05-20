@@ -52,9 +52,7 @@ Prerequisites
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Click **Deleted Objects**.
 
@@ -69,8 +67,7 @@ Related Operations
 
 **Recover a file by deleting its version with the Delete Marker:**
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 #. Click **Deleted Objects**.
 #. Click the deleted file that you want to recover. The file information is displayed.
 #. On the **Versions** tab page, view all versions of the file.

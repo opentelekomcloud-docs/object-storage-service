@@ -10,37 +10,34 @@ You can configure a bucket policy to restrict access to a bucket for specific ad
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-#. In the navigation pane, choose **Permissions**.
-#. Choose **Bucket Policies** > **Custom Bucket Policies**.
-#. Click **Create Bucket Policy**.
-#. Configure parameters listed in the table below.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
+#. Click **Create**.
+#. Configure the following parameters in the **Create Bucket Policy** dialog box.
 
    .. table:: **Table 1** Restricting access to a bucket for specific addresses
 
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Parameter                         | Value                                                                                          |
-      +===================================+================================================================================================+
-      | Policy Mode                       | **Customized**                                                                                 |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Effect                            | Deny                                                                                           |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Principal                         | -  **Include** > **Other account**                                                             |
-      |                                   | -  If the account ID is set to **\***, the policy setting takes effect on all anonymous users. |
-      |                                   | -  Leave the user ID blank.                                                                    |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Resources                         | -  **Include**                                                                                 |
-      |                                   | -  Leave the field blank, indicating the policy takes effect on the entire bucket.             |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Actions                           | -  **Include**                                                                                 |
-      |                                   | -  Select the asterisk (*), indicating all actions are involved.                               |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
-      | Conditions                        | -  **Conditional Operator**: **IpAddress**                                                     |
-      |                                   | -  **Key**: **SourceIP**                                                                       |
-      |                                   | -  **Value**: **114.115.1.0/24**                                                               |
-      +-----------------------------------+------------------------------------------------------------------------------------------------+
+      +-----------------------------------+----------------------------------------------------------------+
+      | Parameter                         | Description                                                    |
+      +===================================+================================================================+
+      | Configuration method              | Choose **Visual Editor**.                                      |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Policy Name                       | Enter a custom name.                                           |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Effect                            | Deny                                                           |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Principal                         | Select **All accounts**.                                       |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Resources                         | Select **Entire bucket (including the objects in it)**.        |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Actions                           | Select **Customize** and then **\*** (indicating all actions). |
+      +-----------------------------------+----------------------------------------------------------------+
+      | Conditions                        | -  **Conditional Operator**: **IpAddress**                     |
+      |                                   | -  **Key**: **SourceIP**                                       |
+      |                                   | -  **Value**: **114.115.1.0/24**                               |
+      +-----------------------------------+----------------------------------------------------------------+
 
-#. Click **OK**.
+#. Click **Create** in the lower right corner.
 
 Verification
 ------------

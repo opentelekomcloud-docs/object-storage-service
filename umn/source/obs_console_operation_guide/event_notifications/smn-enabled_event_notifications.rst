@@ -5,6 +5,10 @@
 SMN-Enabled Event Notifications
 ===============================
 
+.. note::
+
+   SMN-enabled event notifications are about to be taken offline. You can now view or delete existing SMN notification rules, but cannot modify existing rules or add any new rules.
+
 Simple Message Notification (SMN) is a reliable and extensible message notification service that can handle a huge number of messages. It significantly simplifies system coupling and can automatically push messages to endpoints via email or text message.
 
 OBS leverages SMN to provide event notifications. In OBS, you can use SMN to send event notifications to specified subscribers, so that you will be informed of any critical operations (such as upload and deletion) that occur on specified buckets in real time. For example, you can configure an event notification rule to send messages through SMN to the specified email address whenever an upload operation occurs on the specified bucket.

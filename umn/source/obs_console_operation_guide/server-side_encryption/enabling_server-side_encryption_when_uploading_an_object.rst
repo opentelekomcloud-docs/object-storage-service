@@ -47,24 +47,20 @@ In the region where OBS is deployed, the **KMS Administrator** permission has be
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Click **Upload Object**. The **Upload Object** dialog box is displayed.
 
 #. Add the files to be uploaded.
 
-#. Enable **KMS encryption** and select a key that you have created on KMS.
+#. Choose **SSE-KMS**. You can select the default key in the current region to encrypt the objects you upload to the bucket. If you do not have a default key, OBS automatically creates one the first time you upload an object. You can also choose **Custom** to use a custom key for encryption. If there is no custom key available, click **Create KMS Key** to create one.
 
    .. note::
 
-      If the bucket has server-side encryption enabled, any object you upload will inherit the KMS encryption from the bucket by default.
-
-   After **KMS encryption** is selected, **obs/default** is selected by default as the key for the encryption. You can also click **Create KMS Key** to switch to the KMS management console and create a customer master key. Then go back to OBS Console and select the key from the drop-down list.
+      If the bucket has server-side encryption configured, the object you upload will inherit encryption from the bucket by default.
 
 
-   .. figure:: /_static/images/en-us_image_0130187638.png
+   .. figure:: /_static/images/en-us_image_0000002113097516.png
       :alt: **Figure 1** Encrypting an object to be uploaded
 
       **Figure 1** Encrypting an object to be uploaded

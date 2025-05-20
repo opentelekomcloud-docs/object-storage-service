@@ -12,10 +12,7 @@ On OBS Console, you can manually delete unneeded files or folders to release spa
 
 Alternatively, you can configure lifecycle rules to periodically, automatically delete some or all of the files and folders from a bucket. For details, see :ref:`Configuring a Lifecycle Rule <obs_03_0335>`.
 
-In big data scenarios, parallel file systems usually have deep directory levels and each directory has a large number of files. In such case, deleting directories from parallel file systems may fail due to timeout. To address this problem, you are advised to delete directories in either of the following ways:
-
-#. On the Hadoop client that has OBSA, an OBS client plugin, embedded, run the **hadoop fs - rmr obs://{**\ *Name of a parallel file system*\ **}/{**\ *Directory name*\ **}** command.
-#. Configure :ref:`a lifecycle rule <obs_03_0335>` for directories so that they can be deleted in background based on the preset lifecycle rule.
+In big data scenarios, parallel file systems usually have deep directory levels and each directory has a large number of files. In such case, deleting directories from parallel file systems may fail due to timeout. To address this problem, you are advised to configure :ref:`a lifecycle rule <obs_03_0335>` for directories so that they can be deleted in background based on the preset lifecycle rule.
 
 Background Information
 ----------------------
@@ -36,9 +33,7 @@ When versioning is enabled for a bucket, OBS works slightly different when delet
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Select the file or folder you want to delete and choose **More** > **Delete** on the right.
 
@@ -48,7 +43,7 @@ Procedure
 
    .. caution::
 
-      If you delete an object from a bucket with versioning enabled, the object is not permanently deleted but retained in the **Deleted Objects** list. All versions of the object are still kept in the bucket and are billed for storage. If you need to permanently delete the object, see the following steps.
+      If you delete an object from a bucket with versioning enabled, the object is not permanently deleted but retained in the **Deleted Objects** list. All versions of the object are still kept in the bucket and are billed for storage. If you need to permanently delete the object, complete the following steps:
 
 #. If versioning is enabled for the bucket, delete the files or folders again from the **Deleted Objects** list to permanently delete them.
 

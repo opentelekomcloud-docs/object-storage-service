@@ -36,10 +36,6 @@ Procedure
 
    You can upload a maximum of 500 files or folders at a time.
 
-   .. note::
-
-      If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters to ensure compatibility.
-
 #. .. _obs_03_0414__obs_03_0024_li018223074620:
 
    Click **Select Folder**, select a folder, and click **OK**.

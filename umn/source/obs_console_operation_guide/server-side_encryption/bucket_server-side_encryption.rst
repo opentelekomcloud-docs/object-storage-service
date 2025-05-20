@@ -14,20 +14,23 @@ OBS only encrypts the objects uploaded after server-side encryption is enabled f
 Enabling Server-Side Encryption for a Bucket
 --------------------------------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+
+#. In the navigation pane, choose **Overview**.
 
 #. In the **Basic Configurations** area, click **Server-Side Encryption**. The **Server-Side Encryption** dialog box is displayed.
 
-#. Select **Enable**.
+#. Select **SSE-KMS**.
 
-   Key **obs/default** is selected by default for KMS encryption. You can also click **Create KMS Key** to switch to the KMS management console and create a customer master key. Then go back to OBS Console and select the key from the drop-down list.
+   You can select **Default** to use the default key in the current region to encrypt the objects you upload. If you do not have a default key, OBS automatically creates one the first time you upload an object. You can also choose **Custom** to use a custom key for encryption. If there is no custom key available, click **Create KMS Key** to create one.
 
 #. Click **OK**.
 
 Disabling Server-Side Encryption for a Bucket
 ---------------------------------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the navigation pane, choose **Overview**.
 #. In the **Basic Configurations** area, click **Server-Side Encryption**. The **Server-Side Encryption** dialog box is displayed.
 #. Select **Disable**.
 #. Click **OK**.
