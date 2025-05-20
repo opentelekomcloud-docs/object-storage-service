@@ -10,17 +10,14 @@ When creating a bucket, you can add tags to it. For details, see :ref:`Creating 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the **Basic Configurations** area, click **Tags**.
+#. In the navigation pane, choose **Basic Configurations** > **Tagging**.
 
-   Alternatively, you can choose **Basic Configurations** > **Tagging** in the navigation pane.
+#. Click **Add Tag**. The **Add Tag** dialog box is displayed.
 
-#. Click **Add Tag**. The **Add Tag** dialog box is displayed. See :ref:`Figure 1 <obs_03_0331__fig8687910182820>` for details.
 
-   .. _obs_03_0331__fig8687910182820:
-
-   .. figure:: /_static/images/en-us_image_0129545688.png
+   .. figure:: /_static/images/en-us_image_0000002169013913.png
       :alt: **Figure 1** Add Tag
 
       **Figure 1** Add Tag

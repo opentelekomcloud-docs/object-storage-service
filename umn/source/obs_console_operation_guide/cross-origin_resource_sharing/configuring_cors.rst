@@ -15,11 +15,9 @@ Static website hosting has been configured. For details, see :ref:`Configuring S
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the **Basic Configurations** area, click **CORS Rules**. The **CORS Rules** page is displayed.
-
-   Alternatively, you can choose **Basic Configurations** > **CORS Rules** in the navigation pane.
+#. In the navigation pane, choose **Permissions** > **CORS Rules**.
 
 #. Click **Create**. The **Create CORS Rule** dialog box is displayed. See :ref:`Figure 1 <en-us_topic_0066036542__fig2425430173411>` for details.
 
@@ -83,4 +81,4 @@ Procedure
 
    Message "The CORS rule created successfully." is displayed. The CORS configuration will take effect within two minutes.
 
-   Then, only the addresses specified in **Allowed Origin** can access the OBS bucket over the methods specified in **Allowed Method**. Suppose you need to configure a CORS rule for bucket **testbucket** and you set **Allowed Origin** to **https://www.example.com**, **Allowed Method** to **GET**, **Allowed Header** and **Exposed Header** both to **\***, and **Cache Duration (s)** to **100**. Then, only GET requests from **https://www.example.com** are allowed to access bucket **testbucket**. In addition, there are no limits put on headers in the requests, and the client where the requests are from can cache the CORS response for 100 seconds.
+   Then, only the addresses specified in **Allowed Origin** can access the OBS bucket over the methods specified in **Allowed Method**. Suppose you are configuring a CORS rule for bucket **testbucket** by setting **Allowed Origin** to **https://www.example.com**, **Allowed Method** to **GET**, **Allowed Header** and **Exposed Header** both to **\***, and **Cache Duration (s)** to **100**. Then, only GET requests from **https://www.example.com** are allowed to access bucket **testbucket**. In addition, there are no limits on headers in a request, and the client which the requests are from can cache the CORS response for 100 seconds.

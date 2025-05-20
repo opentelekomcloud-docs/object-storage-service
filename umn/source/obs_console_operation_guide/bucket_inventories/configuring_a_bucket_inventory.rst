@@ -8,9 +8,9 @@ Configuring a Bucket Inventory
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the navigation pane, click **Inventories**. The inventory list is displayed.
+#. In the navigation pane, choose **Inventories**. The inventory list is displayed.
 
 #. Click **Create**. The **Create Inventory** dialog box is displayed.
 

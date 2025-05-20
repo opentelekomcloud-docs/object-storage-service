@@ -108,7 +108,7 @@ Procedure
 
          .. note::
 
-            You can also select the Warm, or Cold storage class based on the website requirements for access frequency and speed. For details about storage classes, see :ref:`Storage Classes Overview <en-us_topic_0050937852>`.
+            You can also select the Warm, or Cold storage class based on the website requirements for access frequency and speed. For details about storage classes, see :ref:`Storage Classes <en-us_topic_0050937852>`.
 
       -  **Bucket Policy**: Select **Public Read** to allow any user to access objects in the bucket.
       -  **Server-Side Encryption**: Choose **Disable**.
@@ -127,10 +127,10 @@ Procedure
 
       .. _obs_03_0338__fig18806520194814:
 
-      .. figure:: /_static/images/en-us_image_0153827167.png
-         :alt: **Figure 2** Uploading objects
+      .. figure:: /_static/images/en-us_image_0000002275909777.png
+         :alt: **Figure 2** Uploading an object
 
-         **Figure 2** Uploading objects
+         **Figure 2** Uploading an object
 
    c. Drag the prepared static website files to the **Upload Object** area.
 
@@ -186,13 +186,13 @@ Procedure
 
    a. Click the bucket name **example** to go to the **Objects** page. In the navigation pane, choose **Domain Name Mgmt**.
 
-   b. Click **Bind User Domain Name** and set **User Domain Name** to **www.example.com**.
+   b. Click **Configure User Domain Name** and set **User Domain Name** to **www.example.com**.
 
 
       .. figure:: /_static/images/en-us_image_0000001121218940.png
-         :alt: **Figure 4** Binding a user domain name
+         :alt: **Figure 4** Configuring a user domain name
 
-         **Figure 4** Binding a user domain name
+         **Figure 4** Configuring a user domain name
 
    c. Click **OK**. The user-defined domain name is bound to the bucket.
 

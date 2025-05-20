@@ -19,7 +19,7 @@ The source bucket version is 3.0 or later, and cross-region replication is avail
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. In the navigation pane, click **Cross-Region Replication**.
 

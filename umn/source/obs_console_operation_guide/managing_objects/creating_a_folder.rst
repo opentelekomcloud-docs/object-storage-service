@@ -16,8 +16,7 @@ Background Information
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 #. Click **Create Folder**, or click a folder in the object list to open it and click **Create Folder**.
 #. In the **Folder Name** text box, enter a name for the folder.
 

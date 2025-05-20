@@ -7,7 +7,7 @@ OBS Browser Operation Guide
 
 -  :ref:`Introduction to OBS Browser <obs_03_0401>`
 -  :ref:`Getting Started <obs_03_0403>`
--  :ref:`Storage Classes Overview <obs_03_0012>`
+-  :ref:`Storage Classes <obs_03_0012>`
 -  :ref:`Managing Buckets <obs_03_0406>`
 -  :ref:`Managing Objects <obs_03_0412>`
 -  :ref:`Server-Side Encryption <obs_03_0419>`
@@ -27,7 +27,7 @@ OBS Browser Operation Guide
 
    introduction_to_obs_browser/index
    getting_started/index
-   storage_classes_overview
+   storage_classes
    managing_buckets/index
    managing_objects/index
    server-side_encryption/index

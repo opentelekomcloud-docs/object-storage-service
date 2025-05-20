@@ -8,20 +8,20 @@ Configuring a User-Defined Domain Name
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. In the navigation pane, choose **Domain Name Mgmt**.
 
-#. Click **Bind User Domain Name**. In the displayed dialog box, enter the domain name to configure, as shown in :ref:`Figure 1 <obs_03_0032__fig53010339108>`.
+#. Click **Configure User Domain Name** in the upper part of the page. Then, enter the domain name to configure, as shown in :ref:`Figure 1 <obs_03_0032__fig53010339108>`.
 
    The suffix of a user-defined domain name can contain 2 to 6 uppercase or lowercase letters.
 
    .. _obs_03_0032__fig53010339108:
 
    .. figure:: /_static/images/en-us_image_0000001458743966.png
-      :alt: **Figure 1** Binding a user domain name
+      :alt: **Figure 1** Configuring a user-defined domain name
 
-      **Figure 1** Binding a user domain name
+      **Figure 1** Configuring a user-defined domain name
 
 #. Click **OK**.
 
