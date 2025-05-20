@@ -12,14 +12,12 @@ Constraints
 
 -  If a Cold object is being restored, its restore task cannot be suspended or deleted.
 -  An object being restored cannot be restored again.
--  After an object is restored, an object copy in the Standard storage class will be generated. This way, there is a Cold object and also its Standard copy in the bucket. The copy will be automatically deleted once the restore expires.
+-  After an object is restored, an object copy in the Standard storage class will be generated. This way, there is a Cold object and also its Standard copy in the bucket. The copy will be automatically deleted once the restoration expires.
 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Select the file you want to restore, and click **Restore** on the right. The following dialog box shown in :ref:`Figure 1 <obs_03_0320__fig37793164192736>` is displayed.
 

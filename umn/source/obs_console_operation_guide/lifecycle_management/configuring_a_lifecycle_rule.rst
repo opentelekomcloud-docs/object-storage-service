@@ -16,17 +16,14 @@ Lifecycle rules do not transition Cold objects to other storage classes.
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the **Basic Configurations** area, click **Lifecycle Rules**. The **Lifecycle Rules** page is displayed.
+#. In the navigation pane, choose **Basic Configurations** > **Lifecycle Rules**.
 
-   Alternatively, you can choose **Basic Configurations** > **Lifecycle Rules** in the navigation pane.
+#. Click **Create**.
 
-#. Click **Create**. A dialog box shown in :ref:`Figure 1 <obs_03_0335__fig1529154319415>` is displayed.
 
-   .. _obs_03_0335__fig1529154319415:
-
-   .. figure:: /_static/images/en-us_image_0000001631360616.png
+   .. figure:: /_static/images/en-us_image_0000002134300396.png
       :alt: **Figure 1** Creating a lifecycle rule
 
       **Figure 1** Creating a lifecycle rule
@@ -43,10 +40,12 @@ Procedure
 
       It identifies a lifecycle rule. A rule name can contain a maximum of 255 characters.
 
-   -  **Applies To**: Can be set to **Object name prefix** or **Bucket**.
+   -  **Prefix**: It is optional.
 
-      -  **Object name prefix**: Objects with this specified prefix will be managed by the lifecycle rule. The prefix cannot start with a slash (/) or contain two consecutive slashes (//), and cannot contain the following special characters: \\ : \* ? " < > \|
-      -  **Bucket**: All objects in the bucket will be managed by the lifecycle rule.
+      -  If this field is configured, objects with the specified prefix will be managed by the lifecycle rule. The prefix cannot start with a slash (/) or contain two consecutive slashes (//), and cannot contain the following special characters: \\ : \* ? " < > \|
+      -  If this field is not configured, all objects in the bucket will be managed by the lifecycle rule.
+
+   -  **Tag** (optional): You can apply a lifecycle rule to the objects with specific tags. A maximum of 10 tags can be added. Once tags are added, the deletion of expired fragments cannot be configured.
 
    .. note::
 
@@ -64,10 +63,7 @@ Procedure
    -  **Transition to Warm**: After this number of days since the last update, objects meeting specified conditions will be transitioned to Warm. This number must be at least 30.
    -  **Transition to Cold**: After this number of days since the last update, objects meeting specified conditions will be transitioned to Cold. If you configure to transition objects first to Warm and then Cold, the objects must stay Warm at least 30 days before they can be transitioned to Cold. If transition to Cold is used, but transition to Warm is not, there is no limit on the number of days for transition.
    -  **Delete Objects After (Days)**: After this number of days since the last update, objects meeting certain conditions will be expired and then deleted. This number must be an integer larger than that specified for any of the transition operations.
-
-   .. note::
-
-      The object update time refers to when common objects were uploaded or when historical objects became historical.
+   -  **Delete Fragments After (Days)**: After this number of days since the fragment generation, OBS will automatically delete fragments in the bucket.
 
    For example, on January 7, 2015, you saved the following files in OBS:
 

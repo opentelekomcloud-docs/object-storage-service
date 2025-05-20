@@ -10,13 +10,11 @@ You can configure a custom bucket policy by coding. The size of a custom bucket 
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the navigation pane, choose **Permissions**.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
-#. On the **Bucket Policies** tab page, configure a custom bucket policy according to your needs.
-
-   On the right of **Custom Bucket Policies**, select **Coding mode** to configure the policy in the coding mode.
+#. Click **Create** and click the **JSON** tab.
 
 #. Edit the bucket policy. Below gives a bucket policy example in JSON:
 
@@ -60,16 +58,16 @@ Procedure
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Principal                         | Users the bucket policy is applied to. You can obtain the user ID on the **My Credentials** page by logging in to the console as the user to be authorized. Principals should be configured as follows: |
       |                                   |                                                                                                                                                                                                         |
-      |                                   | -  **domain/**\ *Account ID* (indicating that the principal is an account)                                                                                                                              |
-      |                                   | -  **domain/**\ *Account ID*\ **:user/**\ *User ID* (indicating that the principal is a user under an account)                                                                                          |
+      |                                   | -  **domain/**\ *Domain ID* (indicating that the principal is an account)                                                                                                                               |
+      |                                   | -  **domain/**\ *Domain ID*\ **:user/**\ *User ID* (indicating that the principal is a user under an account)                                                                                           |
       |                                   |                                                                                                                                                                                                         |
       |                                   | .. note::                                                                                                                                                                                               |
       |                                   |                                                                                                                                                                                                         |
-      |                                   |    *Account ID* is the **Domain ID** that you can find on the **My Credentials** page.                                                                                                                  |
+      |                                   |    *Domain ID* is the **Account ID** that you can find on the **My Credentials** page.                                                                                                                  |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Condition                         | Conditions under which the bucket policy takes effect. For details, see :ref:`Conditions <obs_03_0120>`.                                                                                                |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Resource                          | Resources the bucket policy is applied to. For details, see :ref:`Resources <obs_03_0118>`.                                                                                                             |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **Save**.
+#. Click **Create**.

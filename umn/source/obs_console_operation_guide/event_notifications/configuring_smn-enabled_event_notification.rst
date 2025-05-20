@@ -15,11 +15,9 @@ For details, see :ref:`SMN-Enabled Event Notifications <en-us_topic_0045853816>`
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the **Basic Configurations** area, click **Event Notification**. The **Event Notification** page is displayed.
-
-   Alternatively, you can choose **Basic Configurations** > **Event Notification** in the navigation pane.
+#. In the navigation pane, choose **Basic Configurations** > **Event Notification**. The **Event Notification** page is displayed.
 
 #. Click **Create**. The **Create Event Notification** dialog box is displayed. See :ref:`Figure 1 <en-us_topic_0066088963__fig17847723015>` for details.
 

@@ -8,9 +8,7 @@ Configuring Object Metadata
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Click the object to be operated, and then click the **Metadata** tab.
 
@@ -23,4 +21,4 @@ Procedure
 
       **Figure 1** Adding metadata
 
-#. Click **Save**.
+#. Click **OK**.

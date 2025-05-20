@@ -13,7 +13,7 @@ Procedure
 ---------
 
 #. Log in to OBS Console.
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 #. In the **Custom Bucket Policies** area, click **Create Bucket Policy**. The **Create Bucket Policy** dialog box is displayed.
 #. Configure the parameters listed in the table below to grant other accounts the bucket access permissions.

@@ -32,10 +32,10 @@ Procedure
 
    Create a folder.
 
-   Click the name of the bucket created in :ref:`2 <obs_03_0333__li29947515>` to go to the **Overview** page. Then, choose **Objects** and click **Create Folder**. In the displayed dialog box, enter a folder name and click **OK**. In the following example, **SMN** is the folder name.
+   Click the name of the bucket created in :ref:`2 <obs_03_0333__li29947515>` to go to the **Objects** page. Then, click **Create Folder**. In the displayed dialog box, enter a folder name and click **OK**. In the following example, **SMN** is the folder name.
 
 
-   .. figure:: /_static/images/en-us_image_0129556228.png
+   .. figure:: /_static/images/en-us_image_0000001180502786.png
       :alt: **Figure 2** Creating a folder
 
       **Figure 2** Creating a folder

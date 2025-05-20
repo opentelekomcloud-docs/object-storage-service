@@ -24,21 +24,9 @@ Prerequisites
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Go to the folder where you want to upload files and click **Upload Object**. The **Upload Object** dialog box is displayed.
-
-   .. note::
-
-      If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters to ensure compatibility.
-
-
-   .. figure:: /_static/images/en-us_image_0153827167.png
-      :alt: **Figure 1** Uploading objects
-
-      **Figure 1** Uploading objects
 
 #. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
 
@@ -50,10 +38,22 @@ Procedure
 
    You can also click **add files** to select files.
 
-#. (Optional) Select **KMS encryption** to encrypt the uploaded file. For details, see :ref:`Enabling Server-Side Encryption When Uploading an Object <obs_03_0322>`.
+#. **Server-Side Encryption**: Choose **SSE-KMS** or **Disable**. For details, see :ref:`Enabling Server-Side Encryption When Uploading an Object <obs_03_0322>`.
 
    .. note::
 
-      If the bucket has server-side encryption enabled, any object you upload will inherit the KMS encryption from the bucket by default.
+      If the bucket has server-side encryption configured, the object you upload will inherit encryption from the bucket by default.
+
+#. (Optional) To configure object tags, or metadata, click **Next: (Optional) Configure Advanced Settings**.
+
+   Add metadata ContentDisposition, ContentLanguage, WebsiteRedirectLocation, ContentEncoding, or ContentType as needed. For more information, see :ref:`Object Metadata <en-us_topic_0049066876>`. Metadata is a set of name-value pairs. The metadata value cannot be left blank. You can add two or more metadata entries by clicking **Add**.
+
+   Configuring tags: Tags are used to identify objects with tag keys and values. For details, see :ref:`Adding Tags to an Object <obs_41_0054>`.
+
+
+   .. figure:: /_static/images/en-us_image_0000002235397602.png
+      :alt: **Figure 1** Configuring metadata, WORM retention, or object tags
+
+      **Figure 1** Configuring metadata, WORM retention, or object tags
 
 #. Click **Upload**.

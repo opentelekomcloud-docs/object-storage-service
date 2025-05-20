@@ -5,53 +5,96 @@
 Viewing Basic Information of a Bucket
 =====================================
 
-On OBS Console, you can view details about a bucket.
+On OBS Console, you can view details about a bucket, including basic bucket information and configurations. You can also export all buckets of the current account and view their basic information in the exported Excel file.
 
-Procedure
----------
+Viewing Bucket Details
+----------------------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. Under **Basic Information**, view the basic bucket information.
+#. In the navigation pane, choose **Overview**.
+
+#. On the top of the page, view the bucket information, including the bucket name, storage class, region, and creation time.
 
 
-   .. figure:: /_static/images/en-us_image_0129457318.png
-      :alt: **Figure 1** Basic information about the bucket
+   .. figure:: /_static/images/en-us_image_0000002112645856.png
+      :alt: **Figure 1** Bucket information
 
-      **Figure 1** Basic information about the bucket
+      **Figure 1** Bucket information
 
-   .. table:: **Table 1** Parameter description
+   .. table:: **Table 1** Bucket information
 
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                                                              |
-      +===================================+==========================================================================================================================================================================================================================================+
-      | Bucket Name                       | Name of the bucket.                                                                                                                                                                                                                      |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Storage Class                     | Storage class of the bucket, which can be **Standard**, **Warm**, or **Cold**.                                                                                                                                                           |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Bucket Version                    | Version number of the bucket. **3.0** indicates the latest bucket version, and **--** indicates versions earlier than 3.0.                                                                                                               |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Region                            | Region where the bucket resides.                                                                                                                                                                                                         |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Used Capacity                     | Total storage space occupied by objects of all versions in a bucket.                                                                                                                                                                     |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Objects                           | The total number of objects (including folders and all object versions) stored in a bucket.                                                                                                                                              |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Owner                             | Owner refers to the account that created the bucket.                                                                                                                                                                                     |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Account ID                        | Unique identity of the bucket owner. It is the same as **Domain ID** on the **My Credentials** page.                                                                                                                                     |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Created                           | Time when the creation of a bucket is completed.                                                                                                                                                                                         |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Versioning                        | Versioning status                                                                                                                                                                                                                        |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Endpoint                          | This parameter specifies the endpoint of the region where the bucket is located. OBS provides an endpoint for each region. An endpoint is a domain name to access OBS in a region and is used to process access requests of that region. |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Access Domain Name                | OBS assigns each bucket with a default domain name. A domain name is the address of a bucket on the Internet. It can be used to access a bucket over the Internet in scenarios such as cloud application development and data sharing.   |
-      |                                   |                                                                                                                                                                                                                                          |
-      |                                   | Structure: *BucketName.Endpoint*                                                                                                                                                                                                         |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +---------------+--------------------------------------------------------------------------------+
+      | Item          | Description                                                                    |
+      +===============+================================================================================+
+      | Bucket name   | Name of the bucket                                                             |
+      +---------------+--------------------------------------------------------------------------------+
+      | Storage class | Storage class of the bucket, which can be **Standard**, **Warm**, or **Cold**. |
+      +---------------+--------------------------------------------------------------------------------+
+      | Region        | Region where the bucket is located                                             |
+      +---------------+--------------------------------------------------------------------------------+
+      | Created       | Creation time of the bucket                                                    |
+      +---------------+--------------------------------------------------------------------------------+
 
-   .. note::
+#. In the **Basic Information** area, view the number of objects, used capacity, bucket version, and account ID.
 
-      The statistics of **Used Capacity** and **Objects** are not real-time data, which are usually updated 15 minutes in delay.
+
+   .. figure:: /_static/images/en-us_image_0000002112647992.png
+      :alt: **Figure 2** Bucket's basic information
+
+      **Figure 2** Bucket's basic information
+
+   .. table:: **Table 2** Parameters in the Basic Information area
+
+      +----------------+----------------------------------------------------------------------------------------------------------------------------+
+      | Parameter      | Description                                                                                                                |
+      +================+============================================================================================================================+
+      | Objects        | The total number of objects (including folders and all object versions) stored in a bucket                                 |
+      +----------------+----------------------------------------------------------------------------------------------------------------------------+
+      | Used Capacity  | Total storage space occupied by objects of all versions in the bucket                                                      |
+      +----------------+----------------------------------------------------------------------------------------------------------------------------+
+      | Bucket Version | Version number of the bucket. **3.0** indicates the latest bucket version, and **--** indicates versions earlier than 3.0. |
+      +----------------+----------------------------------------------------------------------------------------------------------------------------+
+      | Account ID     | Unique identity of the bucket owner. It is the same as **Domain ID** on the **My Credentials** page.                       |
+      +----------------+----------------------------------------------------------------------------------------------------------------------------+
+
+#. In the **Domain Name Details** area, view information about the endpoint, access domain name, and static website hosting domain name. You can also perform related operations by clicking buttons in the **Operation** column.
+
+
+   .. figure:: /_static/images/en-us_image_0000002148131281.png
+      :alt: **Figure 3** Domain name details of the bucket
+
+      **Figure 3** Domain name details of the bucket
+
+#. In the **Basic Configurations** area, view the basic configurations of the bucket, including logging, server-side encryption, requester pays, WORM retention, and versioning. You can click a card to make required configurations.
+
+
+   .. figure:: /_static/images/en-us_image_0000002148261453.png
+      :alt: **Figure 4** Basic configurations of the bucket
+
+      **Figure 4** Basic configurations of the bucket
+
+Exporting a Bucket List
+-----------------------
+
+#. Go to the bucket list.
+
+#. Click **Export** in the upper left corner of the bucket list to export all buckets.
+
+
+   .. figure:: /_static/images/en-us_image_0000002112504678.png
+      :alt: **Figure 5** Exporting all buckets
+
+      **Figure 5** Exporting all buckets
+
+#. Select the buckets to be exported and click **Export** in the upper left corner of the bucket list.
+
+
+   .. figure:: /_static/images/en-us_image_0000002112506422.png
+      :alt: **Figure 6** Exporting the selected buckets
+
+      **Figure 6** Exporting the selected buckets
+
+#. Obtain the bucket list in Excel, which is automatically downloaded to your local computer.
+
+   The file lists all the buckets of the current account and includes the following information: bucket name, storage class, region, used capacity, object quantity, bucket version, and bucket creation time.

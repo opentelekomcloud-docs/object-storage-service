@@ -19,11 +19,9 @@ Anonymous users have the read permission for the object. For details about permi
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the navigation pane, choose **Objects**.
-
-#. Click the object to be shared. The object information is displayed on the top part of the page. You can find the link for accessing the object in the **Link** area, as shown in :ref:`Figure 1 <obs_03_0319__fig36534596192426>`.
+#. Click the object to be shared. On the top part of the page, you can find the object's sharing link in the **Link** area, as shown in :ref:`Figure 1 <obs_03_0319__fig36534596192426>`.
 
    Anonymous users can access the object by clicking this link. An object link (URL) is in the format of **https://**\ *Bucket name*.\ *Domain name*/*Directory level*/*Object name*. If the object is in the root directory of the bucket, its URL does not contain any directory level.
 

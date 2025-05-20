@@ -10,15 +10,16 @@ After logging is enabled for a bucket, OBS automatically converts bucket logs in
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+
+#. In the navigation pane, choose **Overview**.
 
 #. In the **Basic Configurations** area, click **Logging**. The **Logging** dialog box is displayed.
 
-#. Select **Enable**. For details, see :ref:`Figure 1 <obs_03_0329__fig17700501192958>`.
+#. Select **Enable**.
 
-   .. _obs_03_0329__fig17700501192958:
 
-   .. figure:: /_static/images/en-us_image_0130855314.png
+   .. figure:: /_static/images/en-us_image_0000001226260767.png
       :alt: **Figure 1** Logging
 
       **Figure 1** Logging

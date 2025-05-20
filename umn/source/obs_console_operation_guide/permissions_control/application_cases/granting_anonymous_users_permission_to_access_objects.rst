@@ -11,21 +11,10 @@ Procedure
 ---------
 
 #. Log in to OBS Console and click **Create Bucket** to create a bucket.
-
 #. In the bucket list, click the name of the newly created bucket. On the displayed object management page, upload the file data to the new bucket. The file data is stored as an object.
-
 #. Click the object name. The object details page is displayed.
-
-#. Under **Object ACL** > **Public Permissions**, click **Edit** to grant the object read permission to anonymous users, as shown in :ref:`Figure 1 <obs_03_0132__fig58496641194012>`.
-
-   .. _obs_03_0132__fig58496641194012:
-
-   .. figure:: /_static/images/en-us_image_0168390495.png
-      :alt: **Figure 1** Granting the object read permission to anonymous users
-
-      **Figure 1** Granting the object read permission to anonymous users
-
-#. Click **Save** to save the permission setting.
+#. Under **Object ACL** > **User Access** > **Anonymous User**, click **Edit** and set **Access to Object** to **Read** to grant the object read permission for anonymous users.
+#. Click **OK**.
 
 Verification
 ------------

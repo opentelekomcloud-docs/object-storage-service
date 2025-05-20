@@ -15,9 +15,9 @@ Static website hosting has been enabled.
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
-#. In the **Basic Configurations** area, click **URL Validation**. The **URL Validation** page is displayed.
+#. In the navigation pane, choose **Data Security** > **URL Validation**.
 
 #. Click |image1| next to the text box of **Whitelisted Referers** or **Blacklisted Referers**, and enter the referers.
 
@@ -42,5 +42,5 @@ Procedure
 
 #. Click |image2| to save the settings.
 
-.. |image1| image:: /_static/images/en-us_image_0148639849.png
+.. |image1| image:: /_static/images/en-us_image_0217211682.png
 .. |image2| image:: /_static/images/en-us_image_0148639851.png

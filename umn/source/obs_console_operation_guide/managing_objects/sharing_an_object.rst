@@ -32,9 +32,7 @@ Constraints
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-
-#. In the navigation pane, choose **Objects**.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
 
 #. Locate the file to be shared and click **Share** in the **Operation** column.
 

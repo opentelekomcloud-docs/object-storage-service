@@ -10,32 +10,31 @@ If all objects in a folder need to be accessible to anonymous users, you can con
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate. The **Overview** page is displayed.
-#. In the navigation pane, choose **Permissions**.
-#. Choose **Bucket Policies** > **Custom Bucket Policies**.
-#. Click **Create Bucket Policy**.
-#. Configure parameters according to the following table, so that you can grant anonymous users the permission to access the folder and objects in it. Retain the default values for the other parameters.
+#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the navigation pane, choose **Permissions** > **Bucket Policies**.
+#. Click **Create**.
+#. Configure the following parameters in the **Create Bucket Policy** dialog box.
 
-   .. table:: **Table 1** Parameters for granting permission to access a bucket
+   .. table:: **Table 1** Authorizing folder access permissions to anonymous users
 
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Value                                                                                                                                 |
-      +===================================+=======================================================================================================================================+
-      | Policy Mode                       | **Customized**                                                                                                                        |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Effect                            | **Allow**                                                                                                                             |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Principal                         | -  **Include**                                                                                                                        |
-      |                                   | -  Select **Other account**, and enter an asterisk (*) as the account ID, indicating all anonymous users.                             |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Resources                         | -  **Include**                                                                                                                        |
-      |                                   | -  Set this parameter to all objects in the selected folder. If the folder name is **folder-001**, enter the value **folder-001/\***. |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-      | Actions                           | -  **Include**                                                                                                                        |
-      |                                   | -  GetObject                                                                                                                          |
-      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                            |
+      +===================================+========================================================================================================================+
+      | Configuration method              | Choose **Visual Editor**.                                                                                              |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Policy Name                       | Enter a custom name.                                                                                                   |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Effect                            | Allow                                                                                                                  |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Principal                         | Select **All accounts**.                                                                                               |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Resources                         | -  Resource scope: Select **Specified objects**.                                                                       |
+      |                                   | -  Resource path: If the folder name is **folder-001**, enter **folder-001/\***, indicating all objects in the folder. |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      | Actions                           | Select **Customize** and select the **GetObject** action.                                                              |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK**.
+#. Click **Create** in the lower right corner.
 
 Verification
 ------------
