@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001399647606.html
+:original_name: obs_04_0165.html
 
-.. _en-us_topic_0000001399647606:
+.. _obs_04_0165:
 
 Deleting Object Tags
 ====================

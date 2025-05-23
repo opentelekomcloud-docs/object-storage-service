@@ -8,7 +8,7 @@ Copying Parts
 Functions
 ---------
 
-After a multipart upload task is created, you can upload parts for this task using the obtained multipart upload ID. Alternatively, you can make an API call to add a part (part of an object or the whole object).
+After a multipart upload task is created, you can upload parts for this task using the obtained multipart upload ID. Alternatively, you can make an API call to copy a part or a whole uploaded object as a part.
 
 This operation supports server-side encryption.
 
@@ -64,7 +64,7 @@ To copy a part, you need to specify the part number of the target part and the m
 Request Headers
 ---------------
 
-In addition the common message headers, the request uses two extended headers. :ref:`Table 3 <obs_04_0007__table25197309>` describes the common message header.
+In addition to the common message headers, the request uses two extended headers. :ref:`Table 3 <obs_04_0007__table25197309>` describes the common message header.
 
 .. table:: **Table 2** Request headers
 

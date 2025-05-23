@@ -10,6 +10,8 @@ Functions
 
 OBS uses the GET method to obtain the custom domain name of a bucket.
 
+To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for obtaining custom domain names.
+
 Request Syntax
 --------------
 

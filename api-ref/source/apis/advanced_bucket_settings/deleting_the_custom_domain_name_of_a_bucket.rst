@@ -10,6 +10,8 @@ Functions
 
 OBS uses the DELETE method to delete the custom domain name of a bucket.
 
+To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for deleting custom domain names.
+
 Request Syntax
 --------------
 

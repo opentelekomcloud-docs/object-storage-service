@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001399487626.html
+:original_name: obs_04_0164.html
 
-.. _en-us_topic_0000001399487626:
+.. _obs_04_0164:
 
 Obtaining Object Tags
 =====================
@@ -78,9 +78,9 @@ For more information about the object tag elements returned in the response, see
 Error Responses
 ---------------
 
-In addition to common error codes, this API also returns others. :ref:`Table 1 <en-us_topic_0000001399487626__table1488314173514>` lists the common errors and possible causes.
+In addition to common error codes, this API also returns others. :ref:`Table 1 <obs_04_0164__table1488314173514>` lists the common errors and possible causes.
 
-.. _en-us_topic_0000001399487626__table1488314173514:
+.. _obs_04_0164__table1488314173514:
 
 .. table:: **Table 1** Error codes of obtaining object tags
 

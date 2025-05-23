@@ -16,3 +16,5 @@ With SSE-KMS, OBS uses the keys provided by KMS for server-side encryption. You 
 With SSE-C, OBS uses the keys and MD5 values provided by customers for server-side encryption.
 
 When server-side encryption is used, the returned ETag value is not the object's MD5 value.
+
+When server-side encryption is used, you are advised to use HTTPS to transmit and receive data.

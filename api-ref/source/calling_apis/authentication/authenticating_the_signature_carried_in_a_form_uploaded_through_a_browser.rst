@@ -2,8 +2,8 @@
 
 .. _obs_04_0012:
 
-Authentication of Signature Carried in the Table Uploaded Through a Browser
-===========================================================================
+Authenticating the Signature Carried in a Form Uploaded Through a Browser
+=========================================================================
 
 OBS supports browser-based uploads using POST requests. Authenticating such a request uses the signature carried in the form. First, create a policy to specify the requirements for requests, such as bucket name or object name prefix. Then, create a signature based on this policy. The request form to be signed must contain a valid signature and policy. Finally, create a form to upload the object to the bucket.
 
@@ -26,7 +26,7 @@ The process of calculating a signature is as follows:
 .. code-block::
 
    StringToSign = Base64( UTF-8-Encoding-Of( policy ) )
-   Signature = Base64( HMAC-SHA1( YourSecretAccessKeyID, StringToSign ) )
+   Signature = Base64( HMAC-SHA1( Your_SK, StringToSign ) )
 
 The content of the policy is as follows:
 

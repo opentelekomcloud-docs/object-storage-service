@@ -61,7 +61,7 @@ The StringToSign is constructed according to the following rules. :ref:`Table 1 
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    |                                   | If an operation (for example, obtaining an object content) is temporarily authorized, this parameter is not required.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | CanonicalizedHeaders              | OBS request header field in an HTTP request header, referring to header fields starting with **x-obs-**, such as, **x-obs-date**, **x-obs-acl**, and **x-obs-meta-\***. When calling an API, choose a header that is supported by the API as required.                                                                                                                                                                                                                                                                                                                                                                                        |
+   | CanonicalizedHeaders              | HTTP request headers that start with **x-obs-**, such as **x-obs-date**, **x-obs-acl**, and **x-obs-meta-\***. When calling an API, choose a header that is supported by the API as required.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    |                                   | #. All characters of keywords in a request header field must be converted to lowercase letters (content values must be case sensitive, for example, **x-obs-storage-class:STANDARD**). If a request contains multiple header fields, these fields should be organized by keyword in the alphabetical order from a to z.                                                                                                                                                                                                                                                                                                                       |
    |                                   | #. If multiple header fields in a request have the same prefix, combine the header fields into one. For example, **x-obs-meta-name:name1** and **x-obs-meta-name:name2** should be reorganized into **x-obs-meta-name:name1,name2**. Use comma to separate the values.                                                                                                                                                                                                                                                                                                                                                                        |
@@ -239,7 +239,7 @@ The signature is generated as follows based on the StringToSign and SK. The hash
 
 .. code-block::
 
-   Signature = Base64( HMAC-SHA1( YourSecretAccessKeyID, UTF-8-Encoding-Of( StringToSign ) ) )
+   Signature = Base64( HMAC-SHA1( Your_SK, UTF-8-Encoding-Of( StringToSign ) ) )
 
 For example, to create a private bucket named **newbucketname2** in a region, the format of a client request is as follows:
 
@@ -491,7 +491,7 @@ Signature Algorithm in Python
 
    # Hard-coded or plaintext AK and SK are risky. For security purposes, encrypt your AK and SK and store them in the configuration file or environment variables.
    # In this example, the AK and SK are stored in environment variables for identity authentication. Before running the code in this example, configure environment variables OTCCLOUD_SDK_AK and OTCCLOUD_SDK_SK.
-   yourSecretAccessKeyID = os.getenv('OTCCLOUD_SDK_SK')
+   Your_SK = os.getenv('OTCCLOUD_SDK_SK')
    httpMethod = "PUT"
    contentType = "application/xml"
    # "date" is the time when the request was actually generated
@@ -500,10 +500,10 @@ Signature Algorithm in Python
    CanonicalizedResource = "/newbucketname2"
    canonical_string = httpMethod + "\n" + "\n" + contentType + "\n" + date + "\n" + canonicalizedHeaders + CanonicalizedResource
    if IS_PYTHON2:
-       hashed = hmac.new(yourSecretAccessKeyID, canonical_string, hashlib.sha1)
+       hashed = hmac.new(Your_SK, canonical_string, hashlib.sha1)
        encode_canonical = binascii.b2a_base64(hashed.digest())[:-1]
    else:
-       hashed = hmac.new(yourSecretAccessKeyID.encode('UTF-8'), canonical_string.encode('UTF-8'), hashlib.sha1)
+       hashed = hmac.new(Your_SK.encode('UTF-8'), canonical_string.encode('UTF-8'), hashlib.sha1)
        encode_canonical = binascii.b2a_base64(hashed.digest())[:-1].decode('UTF-8')
 
    print(encode_canonical)

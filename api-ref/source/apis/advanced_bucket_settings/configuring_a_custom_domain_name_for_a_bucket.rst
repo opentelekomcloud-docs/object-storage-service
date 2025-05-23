@@ -10,6 +10,8 @@ Functions
 
 OBS uses the PUT method to configure a custom domain name for a bucket. After the configuration is successful, you can access the bucket through the domain name.
 
+To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for configuring custom domain names.
+
 Ensure that the custom domain name can correctly resolve to the OBS service through DNS.
 
 Request Syntax
@@ -30,19 +32,27 @@ Request Parameters
 
 .. table:: **Table 1** Request parameters
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                                                                                        | Mandatory             |
-   +=======================+====================================================================================================================+=======================+
-   | customdomain          | Custom domain name of a bucket.                                                                                    | Yes                   |
-   |                       |                                                                                                                    |                       |
-   |                       | Type: string, which must meet the naming conventions of domain names.                                              |                       |
-   |                       |                                                                                                                    |                       |
-   |                       | Specifications: The value contains a maximum of 256 characters.                                                    |                       |
-   |                       |                                                                                                                    |                       |
-   |                       | No default value.                                                                                                  |                       |
-   |                       |                                                                                                                    |                       |
-   |                       | Constraints: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket. |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------------+---------------------------------------------------------------------------------------------------------+-----------------------+
+   | Parameter             | Description                                                                                             | Mandatory             |
+   +=======================+=========================================================================================================+=======================+
+   | customdomain          | **Explanation**:                                                                                        | Yes                   |
+   |                       |                                                                                                         |                       |
+   |                       | Custom domain name of a bucket.                                                                         |                       |
+   |                       |                                                                                                         |                       |
+   |                       | Type: String, which must meet the naming conventions of domain names.                                   |                       |
+   |                       |                                                                                                         |                       |
+   |                       | **Restrictions**:                                                                                       |                       |
+   |                       |                                                                                                         |                       |
+   |                       | A bucket can have a maximum of 30 domain names. One custom domain name can be used for only one bucket. |                       |
+   |                       |                                                                                                         |                       |
+   |                       | **Value range**:                                                                                        |                       |
+   |                       |                                                                                                         |                       |
+   |                       | The maximum length is 256 bytes.                                                                        |                       |
+   |                       |                                                                                                         |                       |
+   |                       | **Default value**:                                                                                      |                       |
+   |                       |                                                                                                         |                       |
+   |                       | None                                                                                                    |                       |
+   +-----------------------+---------------------------------------------------------------------------------------------------------+-----------------------+
 
 Request Header
 --------------

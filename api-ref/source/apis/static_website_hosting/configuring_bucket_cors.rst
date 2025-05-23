@@ -10,11 +10,11 @@ Functions
 
 Cross-origin resource sharing (CORS) is a standard mechanism proposed by World Wide Web Consortium (W3C) and allows cross-origin requests from clients. For standard web page requests, the scripts and contents at one website cannot interact with those at another website due to the existence of the Same Origin Policy (SOP).
 
-OBS allows buckets to store static web resources. The buckets of OBS can serve as website resources if the buckets are properly used (for details, see :ref:`Configuring Static Website Hosting for a Bucket <obs_04_0071>`). A website in OBS can respond to requests of another websites only after CORS is properly configured.
+OBS allows buckets to store static web resources. The buckets of OBS can serve as website resources if the buckets are properly used (for details, see :ref:`Configuring Static Website Hosting for a Bucket <obs_04_0071>`). A website in OBS can respond to cross-origin requests from another website only after CORS is configured.
 
 Typical application scenarios are as follows:
 
--  With the support of CORS, you can use JavaScript and HTML5 to construct web applications and directly access the resources in OBS without the need to use proxy servers for transfer.
+-  With CORS, you can use JavaScript and HTML5 to construct web applications that allow direct access to resources in OBS without the need to use proxy servers for transfer.
 -  You can enable the dragging function of HTML 5 to directly upload files to the OBS (with the upload progress displayed) or update the OBS contents using web applications.
 -  Hosts external web pages, style sheets, and HTML 5 applications in different origins. Web fonts or pictures on OBS can be shared by multiple websites.
 

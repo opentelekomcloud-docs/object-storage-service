@@ -39,7 +39,7 @@ Request Syntax
 
 .. note::
 
-   The field is optional. If it does not exist, you can obtain the whole content.
+   The **Range** field is optional. If it is not specified, the entire object is downloaded.
 
 Request Parameters
 ------------------

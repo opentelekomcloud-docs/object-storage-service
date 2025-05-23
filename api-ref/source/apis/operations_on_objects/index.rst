@@ -20,8 +20,8 @@ Operations on Objects
 -  :ref:`Truncating an Object <obs_04_0093>`
 -  :ref:`Renaming an Object <obs_04_0094>`
 -  :ref:`Adding Object Tags <obs_04_0172>`
--  :ref:`Obtaining Object Tags <en-us_topic_0000001399487626>`
--  :ref:`Deleting Object Tags <en-us_topic_0000001399647606>`
+-  :ref:`Obtaining Object Tags <obs_04_0164>`
+-  :ref:`Deleting Object Tags <obs_04_0165>`
 -  :ref:`Configuring WORM Retention for an Object <obs_04_0166>`
 
 .. toctree::

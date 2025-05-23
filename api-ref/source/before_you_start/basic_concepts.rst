@@ -32,4 +32,4 @@ Basic Concepts Related to OBS APIs
 
    A region is a geographic area in which cloud resources are deployed. Availability zones (AZs) in the same region can communicate with each other over an intranet, while AZs in different regions are isolated from each other. Deploying cloud resources in different regions can better suit certain user requirements or comply with local laws or regulations.
 
-   Each bucket in OBS must reside in a region. You can specify the region when creating the bucket. Once a bucket is created, its region cannot be changed. Select the most appropriate region for a bucket based on the location, cost, and regulatory compliance requirements. For details about the available regions, see :ref:`Endpoints <obs_04_0003>`.
+   Each bucket in OBS must reside in a region. You can specify the region when creating the bucket. Once a bucket is created, its region cannot be changed. Select the most appropriate region for a bucket based on the location, cost, and regulatory compliance requirements. For details about the available regions, see :ref:`Endpoints <en-us_topic_0031051947__section124911550580>`.

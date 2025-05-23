@@ -10,7 +10,7 @@ Functions
 
 After a multipart upload task is created, you can upload parts for this task using the obtained multipart upload ID. When parts are uploaded in a multipart upload of an object, the upload sequence does not affect part merging, namely, multiple parts can be uploaded concurrently.
 
-Part sizes range from 100 KB to 5 GB. However, when parts are being merged, the size of the last uploaded part ranges from 0 to 5 GB. The upload part ID ranges from 1 to 10,000.
+Ensure that the part size ranges from 100 KB to 5 GB and the size of the last part ranges from 0 to 5 GB. Otherwise, an error will be reported when you assemble parts. The upload part ID ranges from 1 to 10,000.
 
 This operation supports server-side encryption.
 
