@@ -248,3 +248,47 @@ Sample Response 4
    Date: WED, 01 Jul 2015 02:34:34 GMT
    Content-Length: 0
    Server: OBS
+
+Sample Request 5
+----------------
+
+**Granting permissions to a specified agency**
+
+The tenant whose account ID is **783fc6652cf246c096ea836694f71855** has an agency named **exampleAgency**. This example grants the agency the permission to view logs of the **logging.bucket** bucket.
+
+.. code-block:: text
+
+   PUT /?policy HTTP/1.1
+   Host: examplebucket.obs.region.example.com
+   Date: WED, 01 Jul 2015 02:32:25 GMT
+   Authorization: OBS H4IPJX0TQTHTHEBQQCEC:jZiAT8Vx4azWEvPRMWi0X5BpJMA=
+
+   {
+       "Statement": [
+           {
+               "Sid": "Stmt1375240018061",
+               "Action": [
+                   "GetBucketLogging"
+               ],
+               "Effect": "Allow",
+               "Resource": "logging.bucket",
+               "Principal": {
+                   "ID": [
+                       "domain/783fc6652cf246c096ea836694f71855:agency/exampleAgency"
+                   ]
+               }
+           }
+       ]
+   }
+
+Sample Response 5
+-----------------
+
+::
+
+   HTTP/1.1 204 No Content
+   x-obs-request-id: A603000001604A7DFE4A4AF31E301891
+   x-obs-id-2: BKOvGmTlt6sda5X4G89PuMO4fabObGYmnpRGkaMba1LqPt0fCACEuCMllAObRK1n
+   Date: WED, 01 Jul 2015 02:34:34 GMT
+   Content-Length: 0
+   Server: OBS

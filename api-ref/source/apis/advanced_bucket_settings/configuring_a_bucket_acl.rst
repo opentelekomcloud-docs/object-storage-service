@@ -105,7 +105,7 @@ This request carries ACL information in elements to specify an ACL. :ref:`Table 
    +-------------------+-----------------+--------------------+-------------------------------------------------------------------------------------------------+
    | ID                | String          | Yes                | **Explanation**:                                                                                |
    |                   |                 |                    |                                                                                                 |
-   |                   |                 |                    | Tenant ID of the grantee.                                                                       |
+   |                   |                 |                    | Account ID of the authorized user.                                                              |
    |                   |                 |                    |                                                                                                 |
    |                   |                 |                    | **Restrictions**:                                                                               |
    |                   |                 |                    |                                                                                                 |
