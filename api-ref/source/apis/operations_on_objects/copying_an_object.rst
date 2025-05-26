@@ -12,7 +12,7 @@ You can perform this operation to create a copy of an existing object in OBS.
 
 Users can determine whether to copy the metadata of the source object to the target object (by default) or replace the metadata of the target object with the metadata contained in the request. The ACL of the source object is not copied to the target object. By default, the ACL of the target object is private. You can set an ACL for the target object by sending an API request.
 
-The request for copying an object needs to carry the information about the bucket and object to be copied in the header field. The message body cannot be carried.
+The object copy request carries the information about the source bucket and object to be copied in the header field. The message body cannot be carried.
 
 This operation supports server-side encryption.
 

@@ -34,7 +34,7 @@ A download request with a URL that uses a temporary AK/SK pair and security toke
    |                       |                                                                                                                                                                                                              |                       |
    |                       | Type: string                                                                                                                                                                                                 |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Expires               | When the URL expires, in UTC (how many seconds have elapsed since 00:00:00 UTC on January 1, 1970)                                                                                                           | Yes                   |
+   | Expires               | When the URL expires, measured as a Unix timestamp (how many seconds elapsed since 00:00:00 on January 1, 1970). After the specified time elapses, the URL expires.                                          | Yes                   |
    |                       |                                                                                                                                                                                                              |                       |
    |                       | Type: string                                                                                                                                                                                                 |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -126,7 +126,7 @@ Use hash-based message authentication code (HMAC) to calculate the signature bas
 
 .. code-block::
 
-   Signature = URL-Encode( Base64( HMAC-SHA1( YourSecretAccessKeyID, UTF-8-Encoding-Of( StringToSign ) ) ) )
+   Signature = URL-Encode( Base64( HMAC-SHA1( Your_SK, UTF-8-Encoding-Of( StringToSign ) ) ) )
 
 Compared with the Authorization header method:
 
@@ -171,7 +171,7 @@ Calculation rule of the signature
 
 .. code-block::
 
-   Signature = URL-Encode( Base64( HMAC-SHA1( YourSecretAccessKeyID, UTF-8-Encoding-Of( StringToSign ) ) ) )
+   Signature = URL-Encode( Base64( HMAC-SHA1( Your_SK, UTF-8-Encoding-Of( StringToSign ) ) ) )
 
 Calculate the signature and use the host as the prefix of the URL to generate a predefined URL:
 

@@ -10,7 +10,7 @@ Functions
 
 After all parts are uploaded, you can call this API to assemble specified parts into an object. Before performing this operation, you cannot download the uploaded data. When merging parts, you need to copy the additional message header information recorded during the initialization of the multipart upload task to the object metadata. The processing process is the same as that of the common upload object with these message headers. In the case of merging parts concurrently, the Last Write Win policy must be followed but the time for initiating Last Write is specified as the time when a part multipart upload is initiated.
 
-If a multipart upload has not been aborted, the uploaded parts occupy your storage quota. After all parts in the multipart upload are merged to an object, only the object occupies your storage quota. If a part uploaded in a multipart upload is not used in any merging parts multipart uploads, the part will be deleted to release storage quota.
+As long as the multipart upload is not aborted, all uploaded parts occupy the space. However, after you assembled the specified parts, the uploaded but not assembled parts will be deleted to free up space.
 
 You can send a request for downloading all or some data of the generated multipart by specifying a range.
 
@@ -263,7 +263,7 @@ This response uses elements to return the result of assembling parts. :ref:`Tabl
    |                       |                       |                                                                                                                                                                                   |
    |                       |                       | **Restrictions**:                                                                                                                                                                 |
    |                       |                       |                                                                                                                                                                                   |
-   |                       |                       | Format: /*bucketName*/*objectName*                                                                                                                                                |
+   |                       |                       | Format: http://bucketName.obs.\ *region*.example.com/objectName                                                                                                                   |
    |                       |                       |                                                                                                                                                                                   |
    |                       |                       | **Value range**:                                                                                                                                                                  |
    |                       |                       |                                                                                                                                                                                   |
@@ -395,9 +395,9 @@ Sample Response
    Content-Length: 326
 
    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-   <CompleteMultipartUploadResult xmlns="http://obs.example.com/doc/2015-06-30/">
-     <Location>/examplebucket/object02</Location>
-     <Bucket>examplebucket</Bucket>
-     <Key>object02</Key>
-     <ETag>"03f814825e5a691489b947a2e120b2d3-3"</ETag>
+   <CompleteMultipartUploadResult xmlns="http://obs.region.example.com/doc/2015-06-30/">
+       <Location>http://examplebucket.obs.region.example.com/object02</Location>
+       <Bucket>examplebucket</Bucket>
+       <Key>object02</Key>
+       <ETag>"03f814825e5a691489b947a2e120b2d3-3"</ETag>
    </CompleteMultipartUploadResult>
