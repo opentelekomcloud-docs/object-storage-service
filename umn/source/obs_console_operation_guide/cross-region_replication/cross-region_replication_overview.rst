@@ -38,7 +38,7 @@ Constraints
 
 Cross-region replication has the following constraints:
 
--  Currently, only buckets of version 3.0 support cross-region replication. To check the bucket version, go to the **Overview** page of the bucket on OBS Console. Then you can view the bucket version in the **Basic Information** area.
+-  Only buckets of version 3.0 or later support cross-region replication. To check the bucket version, go to the **Overview** page of the bucket on OBS Console. Then you can view the bucket version in the **Basic Information** area.
 
 -  The source bucket and the destination bucket must belong to different regions separately. Data cannot be copied between buckets in the same region.
 
@@ -46,7 +46,7 @@ Cross-region replication has the following constraints:
 
 -  If the region where the destination bucket resides does not support the storage classes, object copies will be stored in the standard storage class.
 
--  The versioning status of the source and destination buckets must keep the same.
+-  The source and destination buckets must have the same versioning status.
 
 -  Objects in a source bucket can be copied to only one destination bucket, and cannot be copied again from the destination bucket to another bucket. For example, bucket A and bucket B are in two different regions. You can copy data from bucket A to bucket B or the other way round. However, data copies in either bucket A or bucket B cannot be replicated anymore.
 
