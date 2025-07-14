@@ -34,4 +34,4 @@ After versioning is configured for a bucket, you can go to the object details pa
          If the version you want to download is in the Cold storage class, restore it first.
 
    b. Share a version of the object by clicking **Share** in the **Operation** column.
-   c. Delete a version of the object by choosing **More** > **Delete** in the **Operation** column. If you delete the latest version, the most recent version will become the latest version.
+   c. Permanently delete a version of the object by choosing **More** > **Delete** in the **Operation** column. The deleted object version cannot be recovered. If you delete the latest version, the most recent version will become the latest version.
