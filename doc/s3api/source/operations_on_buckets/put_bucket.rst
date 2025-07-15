@@ -23,7 +23,7 @@ The name of a bucket must be unique in OBS. If a user repeatedly creates namesak
 Storage Class
 -------------
 
-Users are allowed to create buckets of different storage classes. The **x-default-storage-class** header in a bucket creation request specifies the default storage class for a bucket. The storage class of the objects in a bucket is the same as that of the bucket. There are three storage classes: STANDARD (OBS Standard), STANDARD_IA (OBS Warm), and GLACIER (OBS Cold). If this header is not in the request, the storage class of the bucket created is OBS Standard. When users upload an object to a bucket, if they do not set the storage class of the object (see :ref:`PUT Object <en-us_topic_0125560399>`), the object will use the default storage class of the bucket.
+Users are allowed to create buckets of different storage classes. The **x-default-storage-class** header in a bucket creation request specifies the default storage class for a bucket. There are three storage classes: STANDARD (OBS Standard), STANDARD_IA (OBS Warm), and GLACIER (OBS Cold). If this header is not in the request, the storage class of the bucket created is OBS Standard. When users upload an object to a bucket, if they do not set the storage class of the object (see :ref:`PUT Object <en-us_topic_0125560399>`), the object will use the default storage class of the bucket.
 
 Request Syntax
 --------------
