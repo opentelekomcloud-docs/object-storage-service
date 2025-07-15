@@ -92,7 +92,7 @@ Sample Request
 
 .. code-block:: text
 
-   PUT / HTTP/1.1
+   PUT /?storagePolicy HTTP/1.1
    User-Agent: Jakarta Commons-HttpClient/3.1
    Host: bucketname.obs.example.com
    Accept: */*
