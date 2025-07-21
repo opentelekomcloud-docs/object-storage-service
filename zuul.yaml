@@ -6,13 +6,12 @@
       - helpcenter-base-jobs
     vars:
       sphinx_pdf_files:
+        - obs-permissions-configuration-guide.pdf
+        - obs-api-ref.pdf
         - obs-umn.pdf
+        - obs-s3api.pdf
         - obs-tool-guide.pdf
         - obs-parallel-file-system.pdf
-        - obs-s3api.pdf
-        - obs-best-practice.pdf
-        - obs-api-ref.pdf
-        - obs-permissions-configuration-guide.pdf
     check:
       jobs:
         - noop
