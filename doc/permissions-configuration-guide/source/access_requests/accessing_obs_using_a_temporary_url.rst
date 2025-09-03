@@ -20,7 +20,7 @@ A temporary URL uses V4 temporarily authorized requests. The following is an exa
 
 .. code-block::
 
-   https://oss.regionid.example.region.com/bucketname/objectname?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=xxx&X-Amz-Expires=900&X-Amz-Signature=xxx&X-Amz-SignedHeaders=xxx&response-content-disposition=xxx
+   https://bucketname.oss.regionid.example.region.com/objectname?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=xxx&X-Amz-Expires=900&X-Amz-Signature=xxx&X-Amz-SignedHeaders=xxx&response-content-disposition=xxx
 
 For details about the temporary authentication and parameters, see `V4 Temporarily Authorized Request <https://docs.otc.t-systems.com/en-us/api_obs/obs/en-us_topic_0125560420.html>`__ in the *Object Storage Service API Reference*. A temporary URL also contains the **response-content-disposition** parameter that defines whether an object is to be downloaded or previewed in a browser. The browser obtains the value of **response-content-disposition** based on the **Content-Type** of the shared object.
 
