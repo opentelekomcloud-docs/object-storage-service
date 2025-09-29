@@ -17,7 +17,7 @@ OBS is a global service because it is available in all physical regions. If user
 You can grant permissions to users by roles and policies.
 
 -  Roles: A type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. This mechanism only provides a limited number of service-level roles for authorization. When using roles to grant permissions, you also need to assign other dependency roles. However, roles are not the best choice for fine-grained authorization and secure access control.
--  Policies: A type of fine-grained authorization mechanism that defines permissions required to perform operations on specific cloud resources under certain conditions. This mechanism allows for more flexible policy-based authorization, meeting requirements for secure access control. For example, you can grant OBS users only the permissions to manage a certain type of OBS resources.
+-  Policies: A type of fine-grained authorization mechanism that defines permissions required to perform operations on specific cloud resources under certain conditions. This mechanism allows for more flexible policy-based authorization, meeting requirements for secure access control. For example, you can grant an IAM user only the permissions to manage a specific bucket.
 
 .. note::
 
