@@ -9,7 +9,7 @@ OBS REST APIs support authenticated requests and anonymous requests. Anonymous r
 
 Users can create permanent access keys (a pair of AK and SK) on the **My Credentials** page.
 
--  AK: a unique ID of the secret access key (SK). An AK is used together with an SK to encrypt and sign a request.
+-  AK: a unique ID of the secret access key (SK). An AK is used together with an SK to encrypt and sign a request. For details, see `User Signature Authentication <https://docs.otc.t-systems.com/object-storage-service/api-ref/calling_apis/authentication/user_signature_authentication.html>`__.
 -  SK: a secret access key used together with its AK to verify a request sender and prevent the request from being tampered with.
 
 An AK can also identify an IAM user. OBS identifies an IAM user by their AK and SK, and then checks whether they have the permissions to access the resources they are requesting.
