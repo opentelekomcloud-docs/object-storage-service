@@ -2,8 +2,8 @@
 
 .. _obs_03_1068:
 
-Restoring a File
-================
+Restoring a File or Folder
+==========================
 
 Restore Cold objects before downloading them.
 
@@ -23,9 +23,13 @@ Procedure
 
 #. Go to the object list in the target bucket.
 
-#. Select the file you want to restore and choose **More** > **Restore Object**.
+#. Select the file or folder you want to restore and choose **More** > **Restore Object**.
 
-   |image1|
+
+   .. figure:: /_static/images/en-us_image_0000002126249513.png
+      :alt: **Figure 1** Restoring an object
+
+      **Figure 1** Restoring an object
 
    To restore an object, you must configure the validity period and restore speed. :ref:`Table 1 <obs_03_1068__table4222151134720>` describes relevant parameters.
 
@@ -36,7 +40,7 @@ Procedure
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                         | Description                                                                                                                                                                                                                                                |
       +===================================+============================================================================================================================================================================================================================================================+
-      | Object Name                       | Name of the object to be restored                                                                                                                                                                                                                          |
+      | Object Name                       | Name of the object or path to be restored.                                                                                                                                                                                                                 |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Validity Period                   | Time duration when an object remains in the **Restored** state after it has been restored. The validity period starts when the object is restored. You can set the validity period to an integer ranging from 1 to 30 (days). The default value is **30**. |
       |                                   |                                                                                                                                                                                                                                                            |
@@ -48,9 +52,9 @@ Procedure
       |                                   | -  **Standard**: All Cold data can be restored within 3 to 5 hours.                                                                                                                                                                                        |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **OK** to confirm the restored file.
+#. Click **OK** to confirm the restored file or folder.
 
-   To view the file restore status, click |image2| next to the object and choose **Object Properties** to view the restoration status. You can download the file only after it has been restored.
+   To view the restoration status of the file or folder, click |image1| next to the object and choose **Object Properties** to view the restoration status. You can download the file only after it has been restored.
 
 Follow-Up Procedure
 -------------------
@@ -59,7 +63,8 @@ Within the validity period of a restored object, you can restore the object agai
 
 .. note::
 
-   If a restored object is restored again, its expiration time should be later than the time set for the previous restore. For example, if an object will expire at **4/12/2021 08:00:00 GMT+08:00** after it is restored for the first time, it should expire later than **4/12/2021 08:00:00 GMT+08:00** after the second restore.
+   1. If a restored object is restored again, its expiration time should be later than the time set for the previous restoration. For example, if an object will expire at **4/12/2021 08:00:00 GMT+08:00** after it is restored for the first time, it should expire later than **4/12/2021 08:00:00 GMT+08:00** after the second restore.
 
-.. |image1| image:: /_static/images/en-us_image_0000001267865813.png
-.. |image2| image:: /_static/images/en-us_image_0000001195607816.png
+   2. You are advised not to restore a large number of files in one batch. When more than 10,000 objects are being restored, OBS Browser+ will take a long time to query the restoration progress of such objects. If you indeed need to restore such a large number of files in one batch, you are advised to use SDKs or APIs to query the restoration progress. Alternatively, you can download files after the maximum restoration time that is estimated based on the restoration rate you selected.
+
+.. |image1| image:: /_static/images/en-us_image_0000001195607816.png

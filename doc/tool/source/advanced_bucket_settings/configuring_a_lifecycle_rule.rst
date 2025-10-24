@@ -1,21 +1,20 @@
-:original_name: obs_03_1052.html
+:original_name: obs_03_1050.html
 
-.. _obs_03_1052:
+.. _obs_03_1050:
 
 Configuring a Lifecycle Rule
 ============================
 
 Configure a lifecycle rule for a bucket to manage objects in the bucket.
 
+For more information, see `Lifecycle Management <https://docs.otc.t-systems.com/object-storage-service/umn/obs_console_operation_guide/lifecycle_management/index.html>`__.
+
 Procedure
 ---------
 
 #. Log in to OBS Browser+.
-
 #. Select the bucket you want and choose **More** > **Lifecycle Rules**.
-
 #. Click **Create**.
-
 #. Configure related parameters.
 
    -  **Status**: Select **Enable** to enable this lifecycle rule after the configuration.
@@ -33,25 +32,6 @@ Procedure
       -  **Transition to** **Warm**: This rule transitions the objects meeting the conditions to the Warm storage class after the specified number of days since the last object update.
       -  **Transition to** **Cold**: This rule transitions the objects meeting the conditions to the Cold storage class after the specified number of days since the last object update.
       -  **Expiration Time**: This determines when an object will expire and then be deleted, or the day after which objects matching the rule will be deleted.
-
-   For example, on January 7, 2022, you saved the following files in OBS:
-
-   -  log/test1.log
-   -  log/test2.log
-   -  doc/example.doc
-   -  doc/good.txt
-
-   On January 10, 2022, you saved the following files in OBS:
-
-   -  log/clientlog.log
-
-   -  log/serverlog.log
-
-   -  doc/work.doc
-
-   -  doc/travel.txt
-
-      If you configure a rule on January 10, 2022 and the rule will make the objects with **log/** as their prefix expired and deleted one day later, objects **log/test1.log**, **log/test2.log**, **log/clientlog.log**, and **log/serverlog.log** will be deleted from the files above on January 12, 2022.
 
 #. Click **OK** to save the lifecycle rule.
 

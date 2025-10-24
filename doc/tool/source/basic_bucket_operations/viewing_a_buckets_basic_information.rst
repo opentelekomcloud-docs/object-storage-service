@@ -5,7 +5,7 @@
 Viewing a Bucket's Basic Information
 ====================================
 
-View the basic information about a bucket, such as the bucket type, account ID, region, and storage usage.
+View the basic information about a bucket, such as the bucket type, account ID, region, and used capacity.
 
 Procedure
 ---------
@@ -18,9 +18,10 @@ Procedure
 
    .. _obs_03_1043__fig855244105918:
 
-   **Figure 1** Bucket's basic information
+   .. figure:: /_static/images/en-us_image_0000001902383693.png
+      :alt: **Figure 1** Bucket's basic information
 
-   |image1|
+      **Figure 1** Bucket's basic information
 
    .. table:: **Table 1** Parameter description
 
@@ -45,5 +46,3 @@ Procedure
       +----------------+-------------------------------------------------------------------------------------------------------+
       | Created        | Time when the bucket was created.                                                                     |
       +----------------+-------------------------------------------------------------------------------------------------------+
-
-.. |image1| image:: /_static/images/en-us_image_0000001267355653.png

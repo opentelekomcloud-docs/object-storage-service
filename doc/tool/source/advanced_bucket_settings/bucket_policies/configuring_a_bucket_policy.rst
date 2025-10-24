@@ -16,9 +16,10 @@ Procedure
 
    .. _obs_03_1055__fig11715141135020:
 
-   **Figure 1** Configuring a bucket policy
+   .. figure:: /_static/images/en-us_image_0000002090650108.png
+      :alt: **Figure 1** Configuring a bucket policy
 
-   |image1|
+      **Figure 1** Configuring a bucket policy
 
 #. Enter a bucket policy in the following format.
 
@@ -103,13 +104,15 @@ Procedure
          +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | **logging.bucket3**                  | The bucket on which the policy works. You can change the bucket name as needed.                                                                                                                                                                                                                               |
          +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | **219d520ceac84c5a98b237431a2cf4c2** | ID of an account. You can change it as needed. You can click |image3| next to the target bucket to obtain the **Account ID** on the **Basic Information** page.                                                                                                                                               |
+         | **219d520ceac84c5a98b237431a2cf4c2** | ID of an account. You can change it as needed.                                                                                                                                                                                                                                                                |
+         |                                      |                                                                                                                                                                                                                                                                                                               |
+         |                                      | You can click |image1| next to the target bucket to obtain the **Account ID** on the **Basic Information** page.                                                                                                                                                                                              |
          +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | **71f3901173514e6988115ea2c26d1999** | ID of a user under the account. You can change it as needed. You can choose **My Credentials** from the username in the upper right corner of OBS Console to obtain the **IAM User ID**.                                                                                                                      |
+         | **71f3901173514e6988115ea2c26d1999** | ID of a user under the account. You can change it as needed.                                                                                                                                                                                                                                                  |
+         |                                      |                                                                                                                                                                                                                                                                                                               |
+         |                                      | You can choose **My Credentials** from the username in the upper right corner of OBS Console to obtain the **IAM User ID**.                                                                                                                                                                                   |
          +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   For details about the fields in a bucket policy, see `Bucket Policy Overview <https://docs.otc.t-systems.com/object-storage-service/permissions-configuration-guide/permission_control_mechanisms/bucket_policies.html#bucket-policy-overview>`__.
+   For details about bucket policy parameters, see `Bucket Policy Overview <https://docs.otc.t-systems.com/object-storage-service/permissions-configuration-guide/permission_control_mechanisms/bucket_policies.html#bucket-policy-overview>`__.
 
-.. |image1| image:: /_static/images/en-us_image_0000001223105312.png
-.. |image2| image:: /_static/images/en-us_image_0000001398402429.png
-.. |image3| image:: /_static/images/en-us_image_0000001398402429.png
+.. |image1| image:: /_static/images/en-us_image_0000001398402429.png

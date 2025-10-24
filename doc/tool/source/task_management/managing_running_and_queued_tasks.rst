@@ -21,14 +21,14 @@ Procedure
 
    .. _obs_03_1070__fig19955121304615:
 
-   **Figure 1** Running and queued task list
+   .. figure:: /_static/images/en-us_image_0000001857022932.png
+      :alt: **Figure 1** Running and queued task list
 
-   |image1|
+      **Figure 1** Running and queued task list
 
-#. (Optional) Select one or more tasks and click **Pause** (|image2|). Paused tasks will be displayed on the **Suspended** tab.
+#. (Optional) Select one or more tasks and click **Pause** (|image1|). Paused tasks will be displayed on the **Suspended** tab.
 
-#. (Optional) Select one or more tasks and click **Delete** (|image3|).
+#. (Optional) Select one or more tasks and click **Delete** (|image2|).
 
-.. |image1| image:: /_static/images/en-us_image_0000001223078922.png
-.. |image2| image:: /_static/images/en-us_image_0000001244270631.png
-.. |image3| image:: /_static/images/en-us_image_0000001199031212.png
+.. |image1| image:: /_static/images/en-us_image_0000001244270631.png
+.. |image2| image:: /_static/images/en-us_image_0000001199031212.png

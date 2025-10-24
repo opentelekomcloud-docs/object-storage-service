@@ -27,17 +27,19 @@ Procedure
 
    .. _obs_03_1058__fig11715141135020:
 
-   **Figure 1** External buckets
+   .. figure:: /_static/images/en-us_image_0000001902264233.png
+      :alt: **Figure 1** External buckets
 
-   |image1|
+      **Figure 1** External buckets
 
 #. Click **Add**. In the **Add External Bucket** dialog box, enter the external bucket name and click **OK**, as shown in :ref:`Figure 2 <obs_03_1058__fig174389178182>`.
 
    .. _obs_03_1058__fig174389178182:
 
-   **Figure 2** Adding an external bucket
+   .. figure:: /_static/images/en-us_image_0000001856183718.png
+      :alt: **Figure 2** Adding an external bucket
 
-   |image2|
+      **Figure 2** Adding an external bucket
 
    An external bucket name must be globally unique and:
 
@@ -57,6 +59,3 @@ Example
 -------
 
 If you grant anonymous users the read and write permissions on bucket **test**, anonymous users can log in to OBS Browser+ and add bucket **test** using their own accounts, so they can access the bucket locally. On the external bucket page of OBS Browser+, anonymous users can see bucket **test** in the list and have the write permission for the bucket. They can upload, overwrite, and delete any object in bucket **test**.
-
-.. |image1| image:: /_static/images/en-us_image_0000001222917746.png
-.. |image2| image:: /_static/images/en-us_image_0000001223237726.png

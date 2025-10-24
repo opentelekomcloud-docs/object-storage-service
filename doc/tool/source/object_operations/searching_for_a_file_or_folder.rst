@@ -20,15 +20,15 @@ Procedure
 
    .. _obs_03_1062__fig174389178182:
 
-   **Figure 1** Searching for a file or folder
+   .. figure:: /_static/images/en-us_image_0000001902383785.png
+      :alt: **Figure 1** Searching for a file or folder
 
-   |image2|
+      **Figure 1** Searching for a file or folder
 
-   Matching files or folders are displayed in the list. If you want to search for other files or folders, click |image3| in the search box to delete the keyword you have entered and enter a new one.
+   Matching files or folders are displayed in the list. If you want to search for other files or folders, click |image2| in the search box to delete the keyword you have entered and enter a new one.
 
-   For example, if you want to search for files or folders whose name prefix is **testobject** in bucket **mybucket**, go to the object management page of bucket **mybucket**, enter **testobject** in the search box in the upper right corner, and click |image4|. Files or folders with **testobject** as the name prefix are displayed in the list.
+   For example, if you want to search for files or folders whose name prefix is **testobject** in bucket **mybucket**, go to the object management page of bucket **mybucket**, enter **testobject** in the search box in the upper right corner, and click |image3|. Files or folders with **testobject** as the name prefix are displayed in the list.
 
 .. |image1| image:: /_static/images/en-us_image_0000001240484059.png
-.. |image2| image:: /_static/images/en-us_image_0000001267238509.png
-.. |image3| image:: /_static/images/en-us_image_0000001195284206.png
-.. |image4| image:: /_static/images/en-us_image_0000001195604146.png
+.. |image2| image:: /_static/images/en-us_image_0000001195284206.png
+.. |image3| image:: /_static/images/en-us_image_0000001195604146.png
