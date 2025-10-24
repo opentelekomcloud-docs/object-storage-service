@@ -18,10 +18,9 @@ Procedure
 
    .. _obs_03_1049__fig3347646295529:
 
-   **Figure 1** Configuring an ACL
+   .. figure:: /_static/images/en-us_image_0000001902264225.png
+      :alt: **Figure 1** Configuring an ACL
 
-   |image1|
+      **Figure 1** Configuring an ACL
 
    If no ACL permissions are configured for a new bucket, OBS Browser+ automatically disables the access to the bucket and its objects by any other users except the bucket owner.
-
-.. |image1| image:: /_static/images/en-us_image_0000001223076690.png

@@ -23,15 +23,14 @@ Procedure
 
    .. _obs_03_1060__fig174389178182:
 
-   **Figure 1** Creating a folder
+   .. figure:: /_static/images/en-us_image_0000001902264281.png
+      :alt: **Figure 1** Creating a folder
 
-   |image1|
+      **Figure 1** Creating a folder
 
    -  A folder name cannot contain the following special characters: \\ : \* ? ' < > \|
    -  A folder name cannot start or end with a period (.) or slash (/).
-   -  A folder name cannot exceed 1,023 bytes. The length of a folder name is the sum of the length of its own and the length of its upper-level directories. The total length cannot exceed 1,023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level directory of **folder01** is **folder02**, the name length of folder **folder01** is the length of **folder02/folder01/**.
+   -  A folder name cannot exceed 1,023 bytes. The length of a folder name is the sum of the length of its own name and the length of its upper-level directory names. The total length cannot exceed 1,023 bytes. Directories of different levels are automatically separated by slashes (/). For example, if the upper-level directory of **folder01** is **folder02**, the name length of folder **folder01** is the length of **folder02/folder01/**.
    -  A single slash (/) separates and creates multiple levels of folders.
 
 #. Click **OK**.
-
-.. |image1| image:: /_static/images/en-us_image_0000001267238269.png

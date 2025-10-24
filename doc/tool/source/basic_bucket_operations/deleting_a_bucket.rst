@@ -24,4 +24,4 @@ Procedure
 
       The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes after the deletion.
 
-#. Click **OK** to delete the bucket.
+#. Click **Yes** to delete the bucket.

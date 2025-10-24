@@ -32,15 +32,15 @@ Procedure
 
    .. _obs_03_1044__fig855244105918:
 
-   **Figure 1** Fragment management
+   .. figure:: /_static/images/en-us_image_0000001856024902.png
+      :alt: **Figure 1** Fragment management
 
-   |image2|
+      **Figure 1** Fragment management
 
-#. In the displayed **Warning** dialog box, confirm the delete information and click **OK**.
+#. In the displayed **Warning** dialog box, confirm the delete information and click **Yes**.
 
-#. Click **OK**.
+#. Click **Yes**.
 
    The **Fragments** window is displayed. You can close this window to go back to the OBS Browser+ homepage.
 
 .. |image1| image:: /_static/images/en-us_image_0000001240541671.png
-.. |image2| image:: /_static/images/en-us_image_0000001223075866.png

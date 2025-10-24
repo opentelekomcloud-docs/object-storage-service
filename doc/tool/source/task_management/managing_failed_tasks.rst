@@ -17,22 +17,21 @@ Procedure
 
 #. In the navigation pane, choose **Task Management**.
 
-#. Choose the **Failed** tab, as shown in :ref:`Figure 1 <obs_03_1074__en-us_topic_0045828979_fig6508288711037>`.
+#. Choose the **Failed** tab.
 
-   .. _obs_03_1074__en-us_topic_0045828979_fig6508288711037:
 
-   **Figure 1** Failed task list
+   .. figure:: /_static/images/en-us_image_0000001223239786.png
+      :alt: **Figure 1** Failed task list
 
-   |image1|
+      **Figure 1** Failed task list
 
-#. (Optional) Select one or more tasks and click **Delete** (|image2|).
+#. (Optional) Select one or more tasks and click **Delete** (|image1|).
 
-#. (Optional) Select one or more tasks and click **Retry** (|image3|).
+#. (Optional) Select one or more tasks and click **Retry** (|image2|).
 
 .. caution::
 
    -  A failed task will be automatically retried three times.
 
-.. |image1| image:: /_static/images/en-us_image_0000001223239786.png
-.. |image2| image:: /_static/images/en-us_image_0000001199031210.png
-.. |image3| image:: /_static/images/en-us_image_0000001244110953.png
+.. |image1| image:: /_static/images/en-us_image_0000001199031210.png
+.. |image2| image:: /_static/images/en-us_image_0000001244110953.png

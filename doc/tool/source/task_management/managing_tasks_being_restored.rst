@@ -17,15 +17,15 @@ Procedure
 
 #. In the navigation pane, choose **Task Management**.
 
-#. Choose the **Restoring** tab, as shown in :ref:`Figure 1 <obs_03_1073__en-us_topic_0045828979_fig6508288711037>`.
+#. Choose the **Restoring** tab.
 
-   .. _obs_03_1073__en-us_topic_0045828979_fig6508288711037:
 
-   **Figure 1** List of tasks being restored
+   .. figure:: /_static/images/en-us_image_0000001267559633.png
+      :alt: **Figure 1** List of tasks being restored
 
-   |image1|
+      **Figure 1** List of tasks being restored
 
-#. (Optional) Select one or more tasks and click **Delete** (|image2|).
+#. (Optional) Select one or more tasks and click **Delete** (|image1|).
 
 .. caution::
 
@@ -33,5 +33,4 @@ Procedure
    -  Objects in the **Restoring** state cannot be restored again.
    -  The **Delete** function can delete only local task data.
 
-.. |image1| image:: /_static/images/en-us_image_0000001267559633.png
-.. |image2| image:: /_static/images/en-us_image_0000001199511144.png
+.. |image1| image:: /_static/images/en-us_image_0000001199511144.png

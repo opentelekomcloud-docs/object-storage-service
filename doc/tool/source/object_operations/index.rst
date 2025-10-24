@@ -7,7 +7,7 @@ Object Operations
 
 Objects are basic data units that you operate in OBS. This chapter describes how to manage objects.
 
-Right-click in the blank area of the object list and choose **Create Folder** or **Upload** from the shortcut menu to manage the object.
+Right-click in the blank area of the object list and choose **Create Folder** or **Upload** from the shortcut menu to manage objects.
 
 -  :ref:`Creating a Folder <obs_03_1060>`
 -  :ref:`Uploading a File or Folder <obs_03_1061>`
@@ -17,7 +17,7 @@ Right-click in the blank area of the object list and choose **Create Folder** or
 -  :ref:`Moving a File or Folder <obs_03_1065>`
 -  :ref:`Deleting a File or Folder <obs_03_1066>`
 -  :ref:`Sharing a File or Folder <obs_03_1067>`
--  :ref:`Restoring a File <obs_03_1068>`
+-  :ref:`Restoring a File or Folder <obs_03_1068>`
 
 .. toctree::
    :maxdepth: 1
@@ -31,4 +31,4 @@ Right-click in the blank area of the object list and choose **Create Folder** or
    moving_a_file_or_folder
    deleting_a_file_or_folder
    sharing_a_file_or_folder
-   restoring_a_file
+   restoring_a_file_or_folder
