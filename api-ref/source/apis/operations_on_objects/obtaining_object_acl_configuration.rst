@@ -28,14 +28,14 @@ Request Syntax
 Request Parameters
 ------------------
 
-The request parameter specifies the object ACL to be obtained. For details about the parameters, see :ref:`Table 1 <obs_04_0090__table22962068>`.
+The request parameters required are described in :ref:`Table 1 <obs_04_0090__table22962068>`.
 
 .. _obs_04_0090__table22962068:
 
 .. table:: **Table 1** Request parameters
 
    +-----------------------+------------------------------+-----------------------+
-   | Parameter             | Description                  | Mandatory             |
+   | Parameter             | Description                  | Mandatory (Yes/No)    |
    +=======================+==============================+=======================+
    | versionId             | Version number of an object. | No                    |
    |                       |                              |                       |
@@ -46,6 +46,32 @@ Request Headers
 ---------------
 
 This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
+
+In addition to the common request headers, the header listed in :ref:`Table 2 <obs_04_0090__table101171333196>` may be used.
+
+.. _obs_04_0090__table101171333196:
+
+.. table:: **Table 2** Additional request header
+
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header              | Type            | Mandatory (Yes/No) | Description                                                                                                                                                               |
+   +=====================+=================+====================+===========================================================================================================================================================================+
+   | x-obs-request-payer | String          | No                 | **Definition**:                                                                                                                                                           |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Constraints**:                                                                                                                                                          |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Range**:                                                                                                                                                                |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | requester                                                                                                                                                                 |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Default value**:                                                                                                                                                        |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | None                                                                                                                                                                      |
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request Elements
 ----------------
@@ -83,30 +109,48 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-In addition to the common response headers, the headers listed in :ref:`Table 2 <obs_04_0090__table995015721520>` may be used.
+In addition to the common response headers, the headers listed in :ref:`Table 3 <obs_04_0090__table1784619142918>` may be used.
 
-.. _obs_04_0090__table995015721520:
+.. _obs_04_0090__table1784619142918:
 
-.. table:: **Table 2** Additional response header
+.. table:: **Table 3** Additional response headers
 
-   +-----------------------------------+-----------------------------------+
-   | Header                            | Description                       |
-   +===================================+===================================+
-   | x-obs-version-id                  | Version number of an object.      |
-   |                                   |                                   |
-   |                                   | Valid value: string               |
-   |                                   |                                   |
-   |                                   | Default value: none               |
-   +-----------------------------------+-----------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                                               |
+   +=======================+=======================+===========================================================================================================================================================================+
+   | x-obs-version-id      | String                | **Definition**:                                                                                                                                                           |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | Version number of an object.                                                                                                                                              |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Range**:                                                                                                                                                                |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | The value must contain 32 characters.                                                                                                                                     |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-request-payer   | string                | **Definition**:                                                                                                                                                           |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Constraints**:                                                                                                                                                          |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Range**:                                                                                                                                                                |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | requester                                                                                                                                                                 |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Default value**:                                                                                                                                                        |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | None                                                                                                                                                                      |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
 -----------------
 
-The response message of the request returns the ACL information of the object. :ref:`Table 3 <obs_04_0090__table23161487>` describes the elements.
+The response message of the request returns the ACL information of the object. :ref:`Table 4 <obs_04_0090__table23161487>` describes the elements.
 
 .. _obs_04_0090__table23161487:
 
-.. table:: **Table 3** Response elements
+.. table:: **Table 4** Response elements
 
    +-----------------------------------+---------------------------------------------------------------+
    | Element                           | Description                                                   |

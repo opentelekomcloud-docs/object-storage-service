@@ -30,7 +30,7 @@ Request Parameters
 .. table:: **Table 1** Request parameters
 
    +-----------------------+-----------------------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                                           | Mandatory             |
+   | Parameter             | Description                                                           | Mandatory (Yes/No)    |
    +=======================+=======================================================================+=======================+
    | customdomain          | Specifies the custom domain name to be deleted.                       | Yes                   |
    |                       |                                                                       |                       |

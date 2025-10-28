@@ -12,7 +12,7 @@ Cross-region replication refers to the automatic and asynchronous replication of
 
 .. note::
 
-   An IAM agency is required for configuring cross-region replication. For details, see section "Creating an IAM Agency" in the *Object Storage Service User Guide*.
+   An IAM agency is required for configuring cross-region replication. For details, see **Related Operations** > **Creating an IAM Agency** > **Creating an Agency for Cross-Region Replication** in the *Object Storage Service User Guide*.
 
 To configure cross-region replication for a bucket, the following two requirements must be met:
 
@@ -60,21 +60,21 @@ The request uses one header, as described in the following table.
 
 .. table:: **Table 1** Request header for cross-region replication
 
-   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-   | Element     | Description                                                                                                                                                                                                          | Mandatory |
-   +=============+======================================================================================================================================================================================================================+===========+
-   | Content-MD5 | Base64-encoded 128-bit MD5 value of the request body calculated according to RFC 1864. For details about how to calculate Content-MD5, see :ref:`Content-MD5 Algorithm in Java <obs_04_0010__section1255031191518>`. | Yes       |
-   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+   | Element     | Description                                                                                                                                                                                                          | Mandatory (Yes/No) |
+   +=============+======================================================================================================================================================================================================================+====================+
+   | Content-MD5 | Base64-encoded 128-bit MD5 value of the request body calculated according to RFC 1864. For details about how to calculate Content-MD5, see :ref:`Content-MD5 Algorithm in Java <obs_04_0010__section1255031191518>`. | Yes                |
+   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
 
 Request Elements
 ----------------
 
-This request contains elements to specify the replication configuration for the bucket in XML format. The following table lists request elements:
+The request body contains elements to specify the replication configuration for the bucket in XML format. The following table lists request elements:
 
 .. table:: **Table 2** Bucket replication configuration elements
 
    +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Element                     | Description                                                                                                                                                                | Mandatory             |
+   | Element                     | Description                                                                                                                                                                | Mandatory (Yes/No)    |
    +=============================+============================================================================================================================================================================+=======================+
    | ReplicationConfiguration    | Container for the replication rules. A maximum of 100 rules can be configured. The size of the XML file can reach 50 KB.                                                   | Yes                   |
    |                             |                                                                                                                                                                            |                       |
