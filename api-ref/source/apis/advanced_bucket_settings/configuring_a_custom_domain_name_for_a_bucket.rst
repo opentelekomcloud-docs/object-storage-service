@@ -33,19 +33,19 @@ Request Parameters
 .. table:: **Table 1** Request parameters
 
    +-----------------------+---------------------------------------------------------------------------------------------------------+-----------------------+
-   | Parameter             | Description                                                                                             | Mandatory             |
+   | Parameter             | Description                                                                                             | Mandatory (Yes/No)    |
    +=======================+=========================================================================================================+=======================+
-   | customdomain          | **Explanation**:                                                                                        | Yes                   |
+   | customdomain          | **Definition**:                                                                                         | Yes                   |
    |                       |                                                                                                         |                       |
    |                       | Custom domain name of a bucket.                                                                         |                       |
    |                       |                                                                                                         |                       |
    |                       | Type: String, which must meet the naming conventions of domain names.                                   |                       |
    |                       |                                                                                                         |                       |
-   |                       | **Restrictions**:                                                                                       |                       |
+   |                       | **Constraints**:                                                                                        |                       |
    |                       |                                                                                                         |                       |
    |                       | A bucket can have a maximum of 30 domain names. One custom domain name can be used for only one bucket. |                       |
    |                       |                                                                                                         |                       |
-   |                       | **Value range**:                                                                                        |                       |
+   |                       | **Range**:                                                                                              |                       |
    |                       |                                                                                                         |                       |
    |                       | The maximum length is 256 bytes.                                                                        |                       |
    |                       |                                                                                                         |                       |
@@ -57,7 +57,33 @@ Request Parameters
 Request Header
 --------------
 
-This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
+.. table:: **Table 2** Request headers
+
+   +-----------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header          | Type            | Mandatory (Yes/No) | Description                                                                                                                                                   |
+   +=================+=================+====================+===============================================================================================================================================================+
+   | Content-MD5     | String          | No                 | **Definition:**                                                                                                                                               |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | This header is mandatory when you configure a custom domain name certificate to verify that the content of the request body is consistent with what was sent. |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | Base64-encoded 128-bit MD5 value of the request body calculated according to RFC 1864.                                                                        |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | Example: **n58IG6hfM7vqI4K0vnWpog==**                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | **Constraints**:                                                                                                                                              |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | None                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | **Range:**                                                                                                                                                    |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | None                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | **Default value**:                                                                                                                                            |
+   |                 |                 |                    |                                                                                                                                                               |
+   |                 |                 |                    | None                                                                                                                                                          |
+   +-----------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+For details about other common headers, see :ref:`Table 3 <obs_04_0007__table25197309>`.
 
 Request Elements
 ----------------

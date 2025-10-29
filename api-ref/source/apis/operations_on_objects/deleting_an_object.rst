@@ -50,17 +50,17 @@ Request Parameters
    +-----------------------+-----------------------------------------+-----------------------+
    | Parameter             | Description                             | Mandatory             |
    +=======================+=========================================+=======================+
-   | versionId             | **Explanation**:                        | No                    |
+   | versionId             | **Definition**:                         | No                    |
    |                       |                                         |                       |
    |                       | Version ID of the object to be deleted. |                       |
    |                       |                                         |                       |
    |                       | Type: string                            |                       |
    |                       |                                         |                       |
-   |                       | **Restrictions**:                       |                       |
+   |                       | **Constraints**:                        |                       |
    |                       |                                         |                       |
    |                       | None                                    |                       |
    |                       |                                         |                       |
-   |                       | **Value range**:                        |                       |
+   |                       | **Range**:                              |                       |
    |                       |                                         |                       |
    |                       | The value must contain 32 characters.   |                       |
    |                       |                                         |                       |
@@ -73,6 +73,32 @@ Request Headers
 ---------------
 
 This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
+
+In addition to the common request headers, the header listed in :ref:`Table 2 <obs_04_0085__table101171333196>` may be used.
+
+.. _obs_04_0085__table101171333196:
+
+.. table:: **Table 2** Additional request header
+
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header              | Type            | Mandatory (Yes/No) | Description                                                                                                                                                               |
+   +=====================+=================+====================+===========================================================================================================================================================================+
+   | x-obs-request-payer | String          | No                 | **Definition**:                                                                                                                                                           |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Constraints**:                                                                                                                                                          |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Range**:                                                                                                                                                                |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | requester                                                                                                                                                                 |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Default value**:                                                                                                                                                        |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | None                                                                                                                                                                      |
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request Elements
 ----------------
@@ -92,52 +118,68 @@ Response Headers
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
-If versioning is enabled for the bucket, the headers listed in :ref:`Table 2 <obs_04_0085__table862048515455>` may also be used.
+If versioning is enabled for the bucket, the headers listed in :ref:`Table 3 <obs_04_0085__table862048515455>` may also be used.
 
 .. _obs_04_0085__table862048515455:
 
-.. table:: **Table 2** Additional response headers
+.. table:: **Table 3** Additional response headers
 
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-   | Header                            | Description                                                                                                               |
-   +===================================+===========================================================================================================================+
-   | x-obs-delete-marker               | **Explanation**:                                                                                                          |
-   |                                   |                                                                                                                           |
-   |                                   | Whether an object has a delete marker. If the object is not marked as deleted, the response does not contain this header. |
-   |                                   |                                                                                                                           |
-   |                                   | Type: boolean                                                                                                             |
-   |                                   |                                                                                                                           |
-   |                                   | **Restrictions**:                                                                                                         |
-   |                                   |                                                                                                                           |
-   |                                   | None                                                                                                                      |
-   |                                   |                                                                                                                           |
-   |                                   | **Value range**:                                                                                                          |
-   |                                   |                                                                                                                           |
-   |                                   | -  **true**                                                                                                               |
-   |                                   | -  **false**                                                                                                              |
-   |                                   |                                                                                                                           |
-   |                                   | **Default value**:                                                                                                        |
-   |                                   |                                                                                                                           |
-   |                                   | false                                                                                                                     |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-   | x-obs-version-id                  | **Explanation**:                                                                                                          |
-   |                                   |                                                                                                                           |
-   |                                   | Object version ID. If the object has no version number specified, the response does not contain this header.              |
-   |                                   |                                                                                                                           |
-   |                                   | Type: string                                                                                                              |
-   |                                   |                                                                                                                           |
-   |                                   | **Restrictions**:                                                                                                         |
-   |                                   |                                                                                                                           |
-   |                                   | None                                                                                                                      |
-   |                                   |                                                                                                                           |
-   |                                   | **Value range**:                                                                                                          |
-   |                                   |                                                                                                                           |
-   |                                   | The value must contain 32 characters.                                                                                     |
-   |                                   |                                                                                                                           |
-   |                                   | **Default value**:                                                                                                        |
-   |                                   |                                                                                                                           |
-   |                                   | None                                                                                                                      |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header                            | Description                                                                                                                                                               |
+   +===================================+===========================================================================================================================================================================+
+   | x-obs-delete-marker               | **Definition**:                                                                                                                                                           |
+   |                                   |                                                                                                                                                                           |
+   |                                   | Whether an object has a delete marker. If the object is not marked as deleted, the response does not contain this header.                                                 |
+   |                                   |                                                                                                                                                                           |
+   |                                   | Type: boolean                                                                                                                                                             |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Constraints**:                                                                                                                                                          |
+   |                                   |                                                                                                                                                                           |
+   |                                   | None                                                                                                                                                                      |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Range**:                                                                                                                                                                |
+   |                                   |                                                                                                                                                                           |
+   |                                   | -  **true**                                                                                                                                                               |
+   |                                   | -  **false**                                                                                                                                                              |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Default value**:                                                                                                                                                        |
+   |                                   |                                                                                                                                                                           |
+   |                                   | false                                                                                                                                                                     |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-version-id                  | **Definition**:                                                                                                                                                           |
+   |                                   |                                                                                                                                                                           |
+   |                                   | Object version ID. If the object has no version number specified, the response does not contain this header.                                                              |
+   |                                   |                                                                                                                                                                           |
+   |                                   | Type: string                                                                                                                                                              |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Constraints**:                                                                                                                                                          |
+   |                                   |                                                                                                                                                                           |
+   |                                   | None                                                                                                                                                                      |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Range**:                                                                                                                                                                |
+   |                                   |                                                                                                                                                                           |
+   |                                   | The value must contain 32 characters.                                                                                                                                     |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Default value**:                                                                                                                                                        |
+   |                                   |                                                                                                                                                                           |
+   |                                   | None                                                                                                                                                                      |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | x-obs-request-payer               | **Definition**:                                                                                                                                                           |
+   |                                   |                                                                                                                                                                           |
+   |                                   | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Constraints**:                                                                                                                                                          |
+   |                                   |                                                                                                                                                                           |
+   |                                   | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Range**:                                                                                                                                                                |
+   |                                   |                                                                                                                                                                           |
+   |                                   | requester                                                                                                                                                                 |
+   |                                   |                                                                                                                                                                           |
+   |                                   | **Default value**:                                                                                                                                                        |
+   |                                   |                                                                                                                                                                           |
+   |                                   | None                                                                                                                                                                      |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
 -----------------

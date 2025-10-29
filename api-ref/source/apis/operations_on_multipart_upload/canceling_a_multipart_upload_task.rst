@@ -23,7 +23,7 @@ Request Syntax
 Request Parameters
 ------------------
 
-This request uses message parameters to specify the multipart upload task number of the segment task. :ref:`Table 1 <obs_04_0103__table46411854>` describes the parameters.
+This request uses message parameters to specify the multipart upload task number. :ref:`Table 1 <obs_04_0103__table46411854>` describes the parameters.
 
 .. _obs_04_0103__table46411854:
 
@@ -42,6 +42,32 @@ Request Headers
 
 This request uses common headers. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
 
+In addition to the common request headers, the header listed in :ref:`Table 2 <obs_04_0103__table101171333196>` may be used.
+
+.. _obs_04_0103__table101171333196:
+
+.. table:: **Table 2** Additional request header
+
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header              | Type            | Mandatory (Yes/No) | Description                                                                                                                                                               |
+   +=====================+=================+====================+===========================================================================================================================================================================+
+   | x-obs-request-payer | String          | No                 | **Definition**:                                                                                                                                                           |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Constraints**:                                                                                                                                                          |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Range**:                                                                                                                                                                |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | requester                                                                                                                                                                 |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | **Default value**:                                                                                                                                                        |
+   |                     |                 |                    |                                                                                                                                                                           |
+   |                     |                 |                    | None                                                                                                                                                                      |
+   +---------------------+-----------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 Request Elements
 ----------------
 
@@ -59,6 +85,32 @@ Response Headers
 ----------------
 
 The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
+
+In addition to the common response headers, the header listed in :ref:`Table 3 <obs_04_0103__table172904210301>` may be used.
+
+.. _obs_04_0103__table172904210301:
+
+.. table:: **Table 3** Additional response header
+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Header                | Type                  | Description                                                                                                                                                               |
+   +=======================+=======================+===========================================================================================================================================================================+
+   | x-obs-request-payer   | string                | **Definition**:                                                                                                                                                           |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | Indicates that the requester agrees to pay for the request and traffic.                                                                                                   |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Constraints**:                                                                                                                                                          |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | If this header is not included in the request when the requester tries to access a requester-pays bucket, the authentication fails and error "403 Forbidden" is returned. |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Range**:                                                                                                                                                                |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | requester                                                                                                                                                                 |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | **Default value**:                                                                                                                                                        |
+   |                       |                       |                                                                                                                                                                           |
+   |                       |                       | None                                                                                                                                                                      |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Elements
 -----------------

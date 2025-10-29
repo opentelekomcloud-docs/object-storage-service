@@ -36,7 +36,7 @@ Request Headers
 
 This request header uses common message fields. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`.
 
-The operation message header is the same as that of a common request. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`. However, this request can contain additional headers. The following table describes the additional headers for this request.
+This request's message header is the same as that of a common request. For details, see :ref:`Table 3 <obs_04_0007__table25197309>`. This request can contain additional headers. The following table describes the additional headers for this request.
 
 .. table:: **Table 1** Additional request headers
 
