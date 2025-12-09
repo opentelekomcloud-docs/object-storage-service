@@ -9,7 +9,7 @@ OBS Browser+ is a GUI-based desktop application that is intuitive and easy to us
 
 OBS Browser+ is applicable to Windows 10, macOS, and Windows Server 2016. :ref:`Table 1 <obs_03_1000__tc6dc7c01fbfb49b7a7aec8350b156258>` lists the specifications required by each OS.
 
-If there are millions of or more tasks in OBS Browser+, much more time is required for searching, which may result in task failures. To avoid this, you are advised to use obsutil.
+If there are millions of or more tasks in OBS Browser+, much more time is required for searching for tasks, which may result in task failures. To avoid this, you are advised to use obsutil.
 
 .. _obs_03_1000__tc6dc7c01fbfb49b7a7aec8350b156258:
 
