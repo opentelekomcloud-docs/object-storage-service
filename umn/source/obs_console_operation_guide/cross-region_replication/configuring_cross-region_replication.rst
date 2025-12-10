@@ -11,6 +11,8 @@ To replicate objects from a source bucket to a destination bucket in a different
 
    A cross-region replication rule may not take effect immediately upon its configuration. Accordingly, the objects that this rule is applied to may not be replicated immediately after the rule is configured.
 
+   Buckets with WORM enabled do not support cross-region replication.
+
 Prerequisites
 -------------
 
