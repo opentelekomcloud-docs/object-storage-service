@@ -39,13 +39,17 @@ Procedure
 
    You can select multiple files or folders and click **Delete** above the object list to batch delete them.
 
-#. Click **Yes** to confirm the deletion.
+#. Click **OK** to confirm the deletion.
 
    .. caution::
 
-      If you delete an object from a bucket with versioning enabled, the object is not permanently deleted but retained in the **Deleted Objects** list. All versions of the object are still kept in the bucket and are billed for storage. If you need to permanently delete the object, complete the following steps:
+      If you delete an object from a bucket with versioning enabled, the object is not permanently deleted but retained in the **Deleted Objects** list. If you need to permanently delete the object to save space, complete the following steps:
 
 #. If versioning is enabled for the bucket, delete the files or folders again from the **Deleted Objects** list to permanently delete them.
+
+   .. note::
+
+      In a bucket with WORM enabled, objects cannot be permanently deleted from the **Deleted Objects** list. To permanently delete an object, enable **Historical Versions**, select the desired object version, and click **Permanently Delete** above the search box. For details, see :ref:`Related Operations <obs_03_0327__section29772226>` or :ref:`Configuring WORM Retention <obs_03_0718>`.
 
    a. Click **Deleted Objects**.
 

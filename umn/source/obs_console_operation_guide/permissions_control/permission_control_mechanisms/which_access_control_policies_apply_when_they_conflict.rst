@@ -2,10 +2,10 @@
 
 .. _obs_03_0114:
 
-Which Permissions Apply When They Conflict?
-===========================================
+Which Access Control Policies Apply When They Conflict?
+=======================================================
 
--  Based on the principle of least privilege, the default access control result is always deny, and an explicit deny statement always takes precedence over an allow statement.
+-  According to the principle of least privilege, the default access control result is "Deny", and an explicit deny statement always takes precedence over an allow statement.
 
    Suppose that IAM policies grant a user the access to an object, a bucket policy denies the user's access to that object, and there is no ACL configured. Then user's access to the object will be denied.
 
