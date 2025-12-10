@@ -17,12 +17,12 @@ An object tag is a key-value pair. To use tags, follow the rules below:
 
    -  If there are multiple tags specified for an object, each tag key must be unique.
    -  A tag key must contain 1 to 36 characters and be case sensitive.
-   -  A tag key can contain only digits, letters, underscores (_), and hyphens (-).
+   -  A tag key can't start or end with a space or contain the following characters: ``,/|<>=*\``
 
 -  Tag value constraints:
 
    -  A tag value can contain 0 to 43 characters and must be case sensitive.
-   -  A tag value can contain only digits, letters, underscores (_), and hyphens (-).
+   -  A tag value can't contain the following characters: ``,/|<>=*\``
 
 Important Notes
 ---------------
@@ -80,18 +80,18 @@ On OBS Console, you can add tags to an object when uploading it (see :ref:`Proce
       +===================================+========================================================================================================================+
       | Tag key                           | The key of an object must be unique and cannot be left blank. You can customize a tag or choose one predefined on TMS. |
       |                                   |                                                                                                                        |
-      |                                   | A tag key:                                                                                                             |
+      |                                   | -  Tag key constraints:                                                                                                |
       |                                   |                                                                                                                        |
-      |                                   | -  If there are multiple tags specified for an object, each tag key must be unique.                                    |
-      |                                   | -  A tag key must contain 1 to 36 characters and be case sensitive.                                                    |
-      |                                   | -  A tag key can contain only digits, letters, underscores (_), and hyphens (-).                                       |
+      |                                   |    -  If there are multiple tags specified for an object, each tag key must be unique.                                 |
+      |                                   |    -  A tag key must contain 1 to 36 characters and be case sensitive.                                                 |
+      |                                   |    -  A tag key can't start or end with a space or contain the following characters: ``,/|<>=*\``                      |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
       | Tag value                         | A tag value can be repetitive or left blank.                                                                           |
       |                                   |                                                                                                                        |
-      |                                   | A tag value:                                                                                                           |
+      |                                   | -  Tag value constraints:                                                                                              |
       |                                   |                                                                                                                        |
-      |                                   | -  A tag value can contain 0 to 43 characters and must be case sensitive.                                              |
-      |                                   | -  A tag value can contain only digits, letters, underscores (_), and hyphens (-).                                     |
+      |                                   |    -  A tag value can contain 0 to 43 characters and must be case sensitive.                                           |
+      |                                   |    -  A tag value can't contain the following characters: ``,/|<>=*\``                                                 |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.

@@ -68,8 +68,12 @@ Cross-region replication has the following constraints:
 
 -  After a replication with **Synchronize Existing Objects** enabled is complete, if the replication policy keeps unchanged, any ACL changes of source objects will be synchronized to object copies. However, ACL changes of source historical objects will not be synchronized to the copies of historical objects.
 
+-  If a copied object in the destination bucket is deleted and a new replication rule that allows replication of existing objects is configured within three days of the deletion, the same version of the deleted object will not be replicated to the destination bucket again.
+
+   For example, you first configure cross-region replication rule **1** to replicate the current version of object **test.txt** from the source bucket to the destination bucket. Later, you delete **test.txt** from the destination bucket and delete rule **1**. Two days afterward, you create cross-region replication rule **2** that allows replication of existing objects. In this case, **test.txt** will not be replicated to the destination bucket again.
+
 Important Notes
 ---------------
 
--  If the cross-region replication rule is enabled but the function of synchronizing existing objects is disabled, the rule takes effect several minutes later. Objects uploaded during this period may not be replicated.
+-  If the cross-region replication rule is enabled but the function of synchronizing existing objects is disabled, there is a delay of about five minutes to apply the rule. Objects uploaded during that delay may not be replicated.
 -  If the cross-region replication rule and the function of synchronizing existing objects are both enabled, existing objects will be replicated 5 minutes later.

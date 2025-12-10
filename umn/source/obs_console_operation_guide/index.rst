@@ -12,6 +12,7 @@ OBS Console Operation Guide
 -  :ref:`Managing Buckets <obs_03_0311>`
 -  :ref:`Managing Objects <obs_03_0315>`
 -  :ref:`Server-Side Encryption <obs_03_0321>`
+-  :ref:`WORM <obs_03_0717>`
 -  :ref:`Object Metadata <obs_03_0323>`
 -  :ref:`Bucket Inventories <obs_03_0082>`
 -  :ref:`Permissions Control <obs_03_0086>`
@@ -44,6 +45,7 @@ OBS Console Operation Guide
    managing_buckets/index
    managing_objects/index
    server-side_encryption/index
+   worm/index
    object_metadata/index
    bucket_inventories/index
    permissions_control/index

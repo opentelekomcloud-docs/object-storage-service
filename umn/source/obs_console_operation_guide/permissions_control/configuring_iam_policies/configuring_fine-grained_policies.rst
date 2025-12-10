@@ -7,7 +7,7 @@ Configuring Fine-Grained Policies
 
 Custom policies can be created to supplement the system-defined policies of OBS.
 
-For details, see `Creating a Custom Policy <https://docs.otc.t-systems.com/identity-access-management/umn/user_guide/fine-grained_policy_management/creating_a_custom_policy.html>`__. The following provides examples of common OBS custom policies.
+For details, see `Creating a Custom Policy <https://docs.otc.t-systems.com/identity-access-management/umn/user_guide/permissions/creating_a_custom_policy.html>`__. The following provides examples of common OBS custom policies.
 
 Example Custom Policies
 -----------------------

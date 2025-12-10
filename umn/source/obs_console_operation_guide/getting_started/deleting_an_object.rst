@@ -7,6 +7,10 @@ Deleting an Object
 
 You can delete unnecessary files one by one or in a batch on OBS Console to save space and money.
 
+.. note::
+
+   When you enable WORM for a bucket, versioning is automatically enabled as well. If a WORM retention policy is configured, object versions cannot be permanently deleted during the retention period. On the object list page, you can enable **Historical Versions** and choose **More** > **Extend Retention Period** in the **Operation** column of a specific object version to check whether this version is within the retention period. If no WORM retention policy is configured, you can delete object versions on the object list page with **Historical Versions** enabled.
+
 Procedure
 ---------
 
@@ -16,7 +20,7 @@ Procedure
 
    You can select multiple files and click **Delete** above the file list to batch delete them.
 
-#. Click **Yes** to confirm the deletion.
+#. Click **OK** to confirm the deletion.
 
 Important Notes
 ---------------

@@ -134,7 +134,7 @@ Procedure
 
    c. Drag the prepared static website files to the **Upload Object** area.
 
-      You can also click **add file** in the **Upload Object** area to select files.
+      You can also click **add files** to select files.
 
       .. note::
 

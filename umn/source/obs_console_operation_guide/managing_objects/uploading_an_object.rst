@@ -45,9 +45,15 @@ Procedure
 
       If the bucket has server-side encryption configured, the object you upload will inherit encryption from the bucket by default.
 
-#. (Optional) To configure object tags, or metadata, click **Next: (Optional) Configure Advanced Settings**.
+#. (Optional) To configure metadata, or WORM retention policies, or object tags, click **Next: (Optional) Configure Advanced Settings**.
 
-   Add metadata ContentDisposition, ContentLanguage, WebsiteRedirectLocation, ContentEncoding, or ContentType as needed. For more information, see :ref:`Object Metadata <en-us_topic_0049066876>`. Metadata is a set of name-value pairs. The metadata value cannot be left blank. You can add two or more metadata entries by clicking **Add**.
+   .. note::
+
+      WORM retention policies can be configured in the advanced settings only when WORM is enabled for the bucket.
+
+   Configuring metadata: Add metadata ContentDisposition, ContentLanguage, WebsiteRedirectLocation, ContentEncoding, or ContentType as needed. For more information, see :ref:`Object Metadata <en-us_topic_0049066876>`. Metadata is a set of name-value pairs. The metadata value cannot be left blank. You can add two or more metadata entries by clicking **Add**.
+
+   Configuring WORM retention: Choose **Inherit from bucket**, or choose **Configure** and then specify a retention period, to automatically protect new objects uploaded to the bucket from being deleted.
 
    Configuring tags: Tags are used to identify objects with tag keys and values. For details, see :ref:`Adding Tags to an Object <obs_41_0054>`.
 
