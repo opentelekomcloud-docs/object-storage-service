@@ -59,7 +59,7 @@ If a custom bucket policy is used to authorize such permissions, the HeadBucket,
 The following are some restrictions when you (the user who adds the bucket) operate the external bucket:
 
 -  You cannot restore Archive objects that are not yours in the external bucket. You can view the object restore status only when the owner of those Archive objects grants you the read permission for the objects.
--  You can perform only authorized actions on existing objects in the external bucket. If you want to perform additional operations on an object, you need to get corresponding permissions granted by the object owner.
+-  You can perform only authorized actions on existing objects in the external bucket. To perform any additional operations on an object, you must obtain the corresponding permissions from the object owner.
 -  If you upload an object to the external bucket, the object ACL permissions will be automatically granted to the bucket owner, including the read permission for the object and the read and write permissions for the object ACL.
--  The encrypted objects you uploaded to the external bucket cannot be accessed by the bucket owner, because the bucket owner does not have the key.
--  To download an object from the external bucket, you must have the read permission for the object. You cannot download encrypted objects from the external bucket.
+-  The encrypted objects you uploaded to the external bucket cannot be accessed by the bucket owner, because the bucket owner lacks the key.
+-  To download an object from the external bucket, you must have read permission for that object. Encrypted objects in the external bucket cannot be downloaded.

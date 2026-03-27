@@ -17,6 +17,6 @@ Procedure
 
 #. Log in to OBS Browser+.
 #. Locate the object you want to share and click |image1| next to the object.
-#. Click **Copy Link** to copy the object link to a browser and open it. Then you can access the object.
+#. Click **Copy Link** to copy the object link to a browser and open it. You can then access the object.
 
 .. |image1| image:: /_static/images/en-us_image_0000001199510166.png

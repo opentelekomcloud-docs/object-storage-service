@@ -23,7 +23,7 @@ Procedure
 
 #. Enter a bucket policy in the following format.
 
-   a. Grant permissions to an account. In the following example, the account (whose account ID is **783fc6652cf246c096ea836694f71855**) is granted the permission required to obtain the log management information about bucket **logging.bucket3**.
+   a. Grant permissions to an account. In the following example, the account with ID **783fc6652cf246c096ea836694f71855** is granted permission to obtain log management information for bucket **logging.bucket3**.
 
       .. code-block::
 

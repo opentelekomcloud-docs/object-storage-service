@@ -24,8 +24,8 @@ Procedure
    .. note::
 
       -  If **Object name prefix** is selected and the specified prefix and the prefix in an existing lifecycle rule overlap, OBS regards the two rules as one and forbids you to configure the current rule. For example, if there is a rule with prefix **abc** in the system, another rule whose prefix contains **abc** cannot be configured.
-      -  If there is already a lifecycle rule whose **Applies To** is set to **Object name prefix**, you are not allowed to configure a new rule whose **Applies To** is set to **Bucket**.
-      -  If there is already a lifecycle rule whose **Applies To** is set to **Bucket**, you are not allowed to configure a new rule whose **Applies To** is set to **Object name prefix**.
+      -  If there is already a lifecycle rule whose **Applies To** is set to **Object name prefix**, you cannot configure a new rule with **Applies To** set to **Bucket**.
+      -  If there is already a lifecycle rule whose **Applies To** is set to **Bucket**, you cannot configure a new rule with **Applies To** set to **Object name prefix**.
 
    -  You can use a lifecycle rule to specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to the Warm or Cold storage class, or are automatically deleted upon expiration.
 

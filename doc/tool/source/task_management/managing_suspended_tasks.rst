@@ -25,7 +25,7 @@ Procedure
 
       **Figure 1** Suspended task list
 
-#. (Optional) Select one or more tasks and click **Run** (|image1|). Executed tasks will be displayed on the **Queuing** or **Pending** tab.
+#. (Optional) Select one or more tasks and click **Run** (|image1|). The executed tasks will appear on the **Queuing** tab or the **Pending** tab.
 
 #. (Optional) Select one or more tasks and click **Delete** (|image2|).
 

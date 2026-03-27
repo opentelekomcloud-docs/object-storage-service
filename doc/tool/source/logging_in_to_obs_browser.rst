@@ -20,7 +20,7 @@ For details, see :ref:`Table 1 <obs_03_1004__table18482104332410>`.
    +===================================================+===========================================================================================+==================================+
    | OBS                                               | :ref:`Login with a Permanent AK/SK Pair <obs_03_1004__s6eee9c5cf28244198d6c28ef50ce2276>` | You have a permanent AK/SK pair. |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+----------------------------------+
-   | Other object storage services compatible with OBS |                                                                                           |                                  |
+   | Other object storage services compatible with OBS | :ref:`Login with a Permanent AK/SK Pair <obs_03_1004__s6eee9c5cf28244198d6c28ef50ce2276>` | You have a permanent AK/SK pair. |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+----------------------------------+
 
 Prerequisites
@@ -42,7 +42,7 @@ In AK/SK login, you need to enter the AK and SK.
 
 .. note::
 
-   #. OBS Browser+ does not support login using a temporary AK/SK pair and a security token.
+   OBS Browser+ does not support login using a temporary AK/SK pair and a security token.
 
 |image1|
 
