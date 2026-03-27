@@ -29,6 +29,6 @@ Procedure
 
 .. caution::
 
-   You are advised to periodically delete the completed tasks from the list. For details, see :ref:`Why Does the Task Processing Speed Slow After the Number of Tasks Exceeds a Million? <obs_03_1011>`
+   You are advised to periodically delete the completed tasks from the list. For details, see :ref:`Why Does the Performance Slow Down After I Run Millions of Tasks? <obs_03_1011>`
 
 .. |image1| image:: /_static/images/en-us_image_0000001244271019.png

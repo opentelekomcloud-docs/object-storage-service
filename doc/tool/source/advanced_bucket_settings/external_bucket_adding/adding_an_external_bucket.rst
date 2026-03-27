@@ -16,7 +16,7 @@ For example, account A needs to add bucket **bucket_share** of account B to itse
 
 Account A can obtain its account ID (same as the owner ID) from the **Basic Information** page of the bucket.
 
-If account B has granted anonymous users the read permission on bucket **bucket_share**, all users registered with OBS can add bucket **bucket_share**. For details about how to grant permissions to anonymous users, see :ref:`Configuring a Bucket ACL <obs_03_1049>`.
+If account B has granted anonymous users the read permission for bucket **bucket_share**, all OBS-registered users can add bucket **bucket_share**. For details about how to grant permissions to anonymous users, see :ref:`Configuring a Bucket ACL <obs_03_1049>`.
 
 Procedure
 ---------

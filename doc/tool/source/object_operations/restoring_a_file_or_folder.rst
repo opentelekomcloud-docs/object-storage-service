@@ -10,7 +10,7 @@ Restore Cold objects before downloading them.
 Context
 -------
 
-Cold storage is secure, durable, and inexpensive for storing data that is rarely accessed (averagely once a year). It is suitable for data archiving and long-term backup. This storage class allows you to safely store your data with low costs. However, it may take hours to restore data stored in this class.
+Cold storage is secure, durable, and inexpensive for storing data that is rarely accessed (averagely once a year). It is suitable for data archiving and long-term backup. This storage class allows you to safely store your data at low cost. However, it may take hours to restore data stored in this class.
 
 If a Cold object is being restored, you cannot suspend or delete the restore task.
 
@@ -23,13 +23,7 @@ Procedure
 
 #. Go to the object list in the target bucket.
 
-#. Select the file or folder you want to restore and choose **More** > **Restore Object**.
-
-
-   .. figure:: /_static/images/en-us_image_0000002126249513.png
-      :alt: **Figure 1** Restoring an object
-
-      **Figure 1** Restoring an object
+#. Select the file or folder you want to restore and choose **More** > **Restore**.
 
    To restore an object, you must configure the validity period and restore speed. :ref:`Table 1 <obs_03_1068__table4222151134720>` describes relevant parameters.
 
@@ -59,12 +53,12 @@ Procedure
 Follow-Up Procedure
 -------------------
 
-Within the validity period of a restored object, you can restore the object again. Each time the object is restored, its validity period will restart. This prolongs the validity period.
+Within the validity period of a restored object, you can restore the object again. Each time the object is restored, its validity period will restart. This extends the validity period.
 
 .. note::
 
-   1. If a restored object is restored again, its expiration time should be later than the time set for the previous restoration. For example, if an object will expire at **4/12/2021 08:00:00 GMT+08:00** after it is restored for the first time, it should expire later than **4/12/2021 08:00:00 GMT+08:00** after the second restore.
+   1. If a restored object is restored again, its expiration time should be later than the time set for the previous restoration. For example, if an object is scheduled to expire at **4/12/2021 08:00:00 GMT+08:00** after it is restored for the first time, it should expire later than **4/12/2021 08:00:00 GMT+08:00** after the second restore.
 
-   2. You are advised not to restore a large number of files in one batch. When more than 10,000 objects are being restored, OBS Browser+ will take a long time to query the restoration progress of such objects. If you indeed need to restore such a large number of files in one batch, you are advised to use SDKs or APIs to query the restoration progress. Alternatively, you can download files after the maximum restoration time that is estimated based on the restoration rate you selected.
+   2. You are advised not to restore a large number of files in one batch. When more than 10,000 objects are being restored, OBS Browser+ will take a long time to query the restoration progress of such objects. If you indeed need to restore such a large number of files in one batch, you are advised to use SDKs or APIs to query the restoration progress.
 
 .. |image1| image:: /_static/images/en-us_image_0000001195607816.png

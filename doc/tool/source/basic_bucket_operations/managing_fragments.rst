@@ -13,7 +13,7 @@ Data is uploaded to OBS using multipart upload. In the event of some situations,
 -  The network is in poor condition, and connection to the OBS server is frequently interrupted.
 -  The upload task is manually suspended.
 -  The device is faulty.
--  The device is powered off suddenly.
+-  The device is suddenly powered off.
 
 With fragment management, you can clear fragments that are generated due to data upload failures.
 
