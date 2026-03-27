@@ -43,4 +43,4 @@ obsutil provides **help** commands for viewing the help documents of each comman
 
    -  For more information about the **help** command, see :ref:`Viewing Command Help Information <obs_11_0025>`.
    -  You can set the **helpLanguage** parameter in the configuration file to configure the language type of the **help** command. For example, **helpLanguage=Chinese** indicates that the language type of the help command is Chinese.
-   -  The supported languages are Chinese and English. The default language is English.
+   -  The currently supported languages are English and Chinese, with English as the default.

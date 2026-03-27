@@ -14,7 +14,7 @@ Function
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    -  Deleting a single multipart upload task
 
@@ -28,7 +28,7 @@ Command Line Structure
 
          obsutil abort obs://bucket[/key] -r [-f] [-o=xxx] [-j=1] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    -  Deleting a single multipart upload task
 
@@ -45,7 +45,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil abort obs://bucket-test/key -u=xxx -f** command to delete a single multipart upload task.
+-  In Windows, run **obsutil abort obs://bucket-test/key -u=xxx -f** to delete a single multipart upload.
 
    .. code-block::
 
@@ -59,7 +59,7 @@ Examples
 
       Task id: 4972589c-c775-41be-a288-bbee3edaaee9
 
--  Take the Windows OS as an example. Run the **obsutil abort obs://bucket-test -r -f** command to delete all multipart upload tasks in the bucket in batches.
+-  In Windows, run **obsutil abort obs://bucket-test -r -f** to delete all multipart uploads in the bucket in batches.
 
    .. code-block::
 
@@ -102,7 +102,7 @@ Parameter Description
 |                       |                                                                              |                                                                                                                                                                                                                                                                                            |
 |                       |                                                                              | .. note::                                                                                                                                                                                                                                                                                  |
 |                       |                                                                              |                                                                                                                                                                                                                                                                                            |
-|                       |                                                                              |    The value is ensured to be greater than or equal to 1.                                                                                                                                                                                                                                  |
+|                       |                                                                              |    The tool ensures that this value is at least 1.                                                                                                                                                                                                                                         |
 +-----------------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | o                     | Optional (additional parameter)                                              | The folder that stores the result files. After the command is executed, result files (possibly success and failure files) will be created in the specified folder. The default value is **.obsutil_output**, a subfolder in the user's home directory where obsutil commands are executed. |
 |                       |                                                                              |                                                                                                                                                                                                                                                                                            |
@@ -114,6 +114,10 @@ Parameter Description
 | config                | Optional (additional parameter)                                              | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                                                             |
 +-----------------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter)                                              | Specifies that requester pays is enabled.                                                                                                                                                                                                                                                  |
+|                       |                                                                              |                                                                                                                                                                                                                                                                                            |
+|                       |                                                                              | **Range**:                                                                                                                                                                                                                                                                                 |
+|                       |                                                                              |                                                                                                                                                                                                                                                                                            |
+|                       |                                                                              | requester                                                                                                                                                                                                                                                                                  |
 +-----------------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response

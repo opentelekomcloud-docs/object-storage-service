@@ -58,13 +58,13 @@ Setting obsutil Commands as Built-in Commands in Linux or macOS
       cp /home/test/obsutil /obsutil
       chmod 711 /obsutil/obsutil
 
-#. Run the **vi /etc/profile** command, type **i** to enter the Insert mode to edit the file. Add **export PATH=$PATH:/obsutil** at the end of the file. Then press **ESC** to exit the editing mode, and then type **:wq!** and press **Enter** to save the file and exit.
+#. Run the **vi /etc/profile** command. Press **i** to enter the Insert mode and add **export PATH=$PATH:/obsutil** at the end of the file. Then press **Esc** to exit the editing mode and type **:wq!** and press **Enter** to save the changes and exit.
 
    .. note::
 
       Skip this step if the new line already exists in the **/etc/profile** file.
 
-#. Run the **echo $PATH** command to query the current environment variables. If **:/obsutil** in included in the query result, indicating that the **/obsutil** environment variable already exists, go to the next step. Otherwise, run the **source /etc/profile** command.
+#. Run the **echo $PATH** command to query the current environment variables. If the query result includes **:/obsutil**, indicating that the **/obsutil** environment variable already exists, go to the next step. Otherwise, run the **source /etc/profile** command.
 
 #. Check whether the configuration is successful: Run the **obsutil help** command in any directory. If the help information is displayed, the configuration is successful.
 
@@ -83,7 +83,7 @@ FAQs
 
 #. How do I delete obsutil commands after setting them as built-in commands?
 
-   -  In Windows:
+   -  Windows:
 
       a. Run the **where obsutil** command to locate the path of obsutil commands.
 
@@ -102,7 +102,7 @@ FAQs
 
             Replace *PATH* with the path of obsutil commands. **E:\\tools\\bin\\obsutil.exe** is used in the preceding example.
 
-   -  In Linux or macOS:
+   -  macOS or Linux
 
       a. Run the **which obsutil** command to locate the path of obsutil commands.
 

@@ -13,13 +13,13 @@ You can use this command to view the commands supported by obsutil or view the h
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil help [command]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil help mb** command to view the help information about the command for creating a bucket.
+-  In Windows, run **obsutil help mb** to view the help information for the command that creates a bucket.
 
    .. code-block::
 

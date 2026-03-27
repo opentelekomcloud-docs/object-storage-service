@@ -27,7 +27,7 @@ Assume that the destination bucket **bucket-dest** contains the following object
 
 Based on the structure of objects in the bucket, different synchronous copy scenarios require different commands.
 
--  To synchronize all files and subfolders in the **src1** folder in bucket **bucket-src** to the **src1** folder in bucket **bucket-dest**, the command is as follows:
+-  To synchronize all files and subfolders from the **src1** folder in the **bucket-src** bucket to the **src1** folder in the **bucket-dest** bucket, use the following command:
 
    .. code-block::
 

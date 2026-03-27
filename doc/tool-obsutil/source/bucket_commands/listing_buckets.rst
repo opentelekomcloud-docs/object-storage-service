@@ -13,13 +13,13 @@ You can use this command to obtain the bucket list. In the list, bucket names ar
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil ls [-s]  [-sc] [-du] [-fs] [-j=1] [-limit=1]  [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil ls -limit=5** command to obtain the bucket list.
+-  In Windows, run **obsutil ls -limit=5** to obtain the bucket list.
 
    .. code-block::
 
@@ -66,7 +66,7 @@ Parameter Description
 |                       |                                                                        |                                                                                                                                                                                  |
 |                       |                                                                        | .. note::                                                                                                                                                                        |
 |                       |                                                                        |                                                                                                                                                                                  |
-|                       |                                                                        |    The value is ensured to be greater than or equal to 1.                                                                                                                        |
+|                       |                                                                        |    The tool ensures that this value is at least 1.                                                                                                                               |
 +-----------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | du                    | Optional (additional parameter)                                        | Quickly returns the total size of listed objects, without displaying detailed object information. This parameter can be used together with other parameters.                     |
 |                       |                                                                        |                                                                                                                                                                                  |

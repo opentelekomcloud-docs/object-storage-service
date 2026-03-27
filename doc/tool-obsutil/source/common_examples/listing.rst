@@ -24,7 +24,7 @@ Assume that bucket **bucket-test** contains the following objects:
 
 Based on the structure of objects in the bucket, different object listing scenarios require different commands.
 
--  To list three objects in bucket **bucket-test**, the command is as follows:
+-  To list three objects in the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -38,7 +38,7 @@ Based on the structure of objects in the bucket, different object listing scenar
       obs://bucket-test/test2.txt
       obs://bucket-test/test3.txt
 
--  To list three objects following **test3.txt** in bucket **bucket-test**, the command is as follows:
+-  To list the three objects that come after **test3.txt** in the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -52,7 +52,7 @@ Based on the structure of objects in the bucket, different object listing scenar
       obs://bucket-test/test5.txt
       obs://bucket-test/test6.txt
 
--  To list the files and subdirectories in the root directory of bucket **bucket-test** in non-recursive mode, that is, files in the subdirectories are not listed, the command is as follows:
+-  To list the files and subdirectories in the root directory of the **bucket-test** bucket in non-recursive mode, meaning files inside subdirectories are not listed, use the following command:
 
    .. code-block::
 

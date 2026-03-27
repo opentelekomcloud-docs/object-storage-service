@@ -27,7 +27,7 @@ Assume that a local folder is in the following structure:
 
 Based on the structure of the preceding local folder and objects in the bucket, different synchronous download scenarios require different commands.
 
--  To synchronize all files and subfolders in the **src1** folder in bucket **bucket-test** to the local **src1** folder, the command is as follows:
+-  To synchronize all files and subfolders from the **src1** folder in the **bucket-test** bucket to the local **src1** folder, use the following command:
 
    .. code-block::
 

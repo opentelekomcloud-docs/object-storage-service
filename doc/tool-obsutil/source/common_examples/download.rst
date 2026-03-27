@@ -26,7 +26,7 @@ Assume that bucket **bucket-test** contains the following objects:
 
 Based on the structure of objects in the bucket, different download scenarios require different commands.
 
--  To download the **test1.txt** file from bucket **bucket-test** to the local **src1** folder, the command is as follows:
+-  To download the **test1.txt** file from the **bucket-test** bucket to the local **src1** folder, use the following command:
 
    .. code-block::
 
@@ -39,7 +39,7 @@ Based on the structure of objects in the bucket, different download scenarios re
       └── src1
           └── test1.txt
 
--  Run the following command to download the **test1.txt** file to your local PC. If there is no **test.txt** on the local PC, the **test1.txt** file is directly downloaded and you can rename it to **test.txt**. If **test.txt** already exists, **test1.txt** is downloaded and overwrites the original local **test.txt** file after renaming.
+-  To download the **test1.txt** file from the **bucket-test** bucket to your local PC, use the following command. If **test.txt** does not exist locally, the **test1.txt** file will be downloaded and saved as **test.txt**. If **test.txt** already exists, the download will overwrite it with the contents of **test1.txt**.
 
    .. code-block::
 
@@ -51,7 +51,7 @@ Based on the structure of objects in the bucket, different download scenarios re
 
       └── test.txt
 
--  To recursively download the entire **src2** folder from bucket **bucket-test** to the local **src1** folder in force mode, the command is as follows:
+-  To recursively download the entire **src2** folder from the **bucket-test** bucket to the local **src1** folder in force mode, use the following command:
 
    .. code-block::
 
@@ -67,7 +67,7 @@ Based on the structure of objects in the bucket, different download scenarios re
                   └── test9.txt
               └── test8.txt
 
--  To recursively download all files and subfolders in the **src2** folder from bucket **bucket-test** to the local **src1** folder in force mode, the command is as follows:
+-  To recursively download all files and subfolders from the **src2** folder of the **bucket-test** bucket to the local **src1** folder in force mode, use the following command:
 
    .. code-block::
 
@@ -82,7 +82,7 @@ Based on the structure of objects in the bucket, different download scenarios re
               └── test9.txt
           └── test8.txt
 
--  To recursively download the all objects in bucket **bucket-test** to the local **src0** folder in force mode, the command is as follows:
+-  To recursively download all objects from the **bucket-test** bucket to the local **src0** folder in force mode, use the following command:
 
    .. code-block::
 
@@ -106,7 +106,7 @@ Based on the structure of objects in the bucket, different download scenarios re
                   └── test9.txt
               └── test8.txt
 
--  Run the following command to exclude the **src2** folder (including all files and folders contained) when downloading the **src1** folder from the **bucket-test** bucket:
+-  To exclude the **src2** folder (including all of its contents) when downloading the **src1** folder from the **bucket-test** bucket, use the following command:
 
    .. code-block::
 

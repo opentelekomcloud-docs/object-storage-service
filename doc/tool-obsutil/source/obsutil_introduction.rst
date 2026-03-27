@@ -76,16 +76,16 @@ Functions
    | :ref:`Logging <obs_11_0056>`                 | Provides logging on your client to record operations on buckets and objects for analysis. |
    +----------------------------------------------+-------------------------------------------------------------------------------------------+
 
-Command Line Structures
------------------------
+Command Line Structure
+----------------------
 
 Below describes how to use commands in obsutil:
 
--  In Windows
+-  Windows
 
    **obsutil** *command* *[parameters...]* *[options...]*
 
--  In Linux or macOS
+-  macOS or Linux
 
    **./\ obsutil** *command [parameters...] [options...]*
 

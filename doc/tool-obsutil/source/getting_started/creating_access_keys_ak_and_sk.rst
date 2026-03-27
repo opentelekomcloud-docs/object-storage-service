@@ -7,6 +7,7 @@ Creating Access Keys (AK and SK)
 
 When you call APIs, you need to use the AK and SK for authentication. To obtain the AK and SK, perform the following steps:
 
+#. Log in to the console.
 #. Click the login username in the upper right corner and choose **My Credentials** from the drop-down list.
 #. Choose **Access Keys**.
 #. Click **Create Access Key**.

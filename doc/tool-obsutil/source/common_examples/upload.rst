@@ -20,7 +20,7 @@ Assume that a local folder is in the following structure:
 
 Based on the preceding folder structure, different upload scenarios require different commands.
 
--  To upload the **test3.txt** file in the local **src1** folder to the root directory of bucket **bucket-test**, the command is as follows:
+-  To upload the **test3.txt** file from the local **src1** folder to the root directory of the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -32,7 +32,7 @@ Based on the preceding folder structure, different upload scenarios require diff
 
       ./obs://bucket-test/test3.txt
 
--  To upload the **test3.txt** file in the local **src1** folder to the root directory of bucket **bucket-test** and rename it to **aaa.txt**, the command is as follows:
+-  To upload the **test3.txt** file from the local **src1** folder to the root directory of the **bucket-test** bucket and rename it to **aaa.txt**, use the following command:
 
    .. code-block::
 
@@ -44,7 +44,7 @@ Based on the preceding folder structure, different upload scenarios require diff
 
       ./obs://bucket-test/aaa.txt
 
--  To upload the **test3.txt** file in the local **src1** folder to the **src** folder in bucket **bucket-test**, the command is as follows:
+-  To upload the **test3.txt** file from the local **src1** folder to the **src** folder in the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -56,7 +56,7 @@ Based on the preceding folder structure, different upload scenarios require diff
 
       ./obs://bucket-test/src/test3.txt
 
--  To recursively upload the entire local **src2** folder to the root directory of bucket **bucket-test** in force mode, the command is as follows:
+-  To recursively upload the entire local **src2** folder to the root directory of the **bucket-test** bucket in force mode, use the following command:
 
    .. code-block::
 
@@ -70,7 +70,7 @@ Based on the preceding folder structure, different upload scenarios require diff
       obs://bucket-test/src2/test1.txt
       obs://bucket-test/src2/test2.txt
 
--  To recursively upload the entire local **src1** folder to the **src** folder in bucket **bucket-test** in force mode, the command is as follows:
+-  To recursively upload the entire local **src1** folder to the **src** folder in the **bucket-test** bucket in force mode, use the following command:
 
    .. code-block::
 
@@ -87,7 +87,7 @@ Based on the preceding folder structure, different upload scenarios require diff
       obs://bucket-test/src/src1/src3/
       obs://bucket-test/src/src1/test3.txt
 
--  To recursively upload the all files and subfolders in the local **src1** folder to the **src** folder in bucket **bucket-test** in force mode, the command is as follows:
+-  To recursively upload all files and subfolders from the local **src1** folder to the **src** folder in the **bucket-test** bucket in force mode, use the following command:
 
    .. code-block::
 
@@ -104,7 +104,7 @@ Based on the preceding folder structure, different upload scenarios require diff
       obs://bucket-test/src/src3/
       obs://bucket-test/src/test3.txt
 
--  To upload the **file1** file to the **bucket-test** bucket, and resume the upload if the upload fails, run the following commands:
+-  To upload the local **file1** file to the **bucket-test** bucket and resume the upload if it fails, use the following command:
 
    .. code-block::
 
@@ -139,7 +139,7 @@ Based on the preceding folder structure, different upload scenarios require diff
       [====================================================] 100% 307.42MB/s 4.88GB/4.88GB 5.308s
       Upload successfully, 4.88GB, n/a, /file1 --> obs://bucket-test/file, cost [6325], status [200], request id [xxxxx]
 
--  To incrementally upload all files from the local **src1** folder to the **src** directory of bucket **bucket-test**, the command is as follows:
+-  To incrementally upload all files and subfolders from the local **src1** folder to the **src** directory of the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -166,7 +166,7 @@ Based on the preceding folder structure, different upload scenarios require diff
       Succeed bytes:   2.09KB
       Metrics [max cost:6 ms, min cost:6 ms, average cost:1.50 ms, average tps:52.63, transferred size :2.09KB]
 
--  Run the following command to exclude the **src2** folder (including all files and folders contained) when uploading the **src1** folder:
+-  To exclude the **src2** folder (along with all of its contents) when uploading the **src1** folder, use the following command:
 
    .. code-block::
 

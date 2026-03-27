@@ -5,7 +5,7 @@
 Using obsutil to Share Directories
 ==================================
 
-The directory sharing function allows the owner of a bucket to share directories in a bucket or the entire bucket with other users by using the authorization code and access code. If you have the valid authorization code and access code of a shared folder, you can use OBS tools (OBS Browser and obsutil) to access the folder, list objects, and download objects. Alternatively, you can directly enter the authorization code in the address box of a web browser to list and download objects.
+Directory sharing allows a bucket owner to share specific directories within a bucket or even the entire bucket with other users by providing an authorization code and an access code. If you have the valid authorization code and access code of a shared folder, you can use OBS tools (OBS Browser and obsutil) to access the folder, list objects, and download objects. Alternatively, you can directly enter the authorization code in the address box of a web browser to list and download objects.
 
 obsutil provides three commands to implement directory sharing. The procedure is as follows:
 
@@ -17,7 +17,7 @@ obsutil provides three commands to implement directory sharing. The procedure is
 
    .. note::
 
-      -  When creating an authorization code, you are advised to end the name of the directory to be shared always with a slash (/). If no directory name is specified in the command (for example, only **obs://bucket** is specified in the command), the entire bucket is shared.
+      -  When creating an authorization code, always end the name of the directory to be shared with a slash (/). If you do not specify a directory name in the command (for example, if the command only includes **obs://bucket**), the entire bucket will be shared.
       -  If you do not use the **ac** option to set the access code, obsutil will prompt you to enter the access code. The access code must be a six-digit string.
       -  For details about this command, see :ref:`Creating an Authorization Code for Directory Sharing <obs_11_0062>`.
 

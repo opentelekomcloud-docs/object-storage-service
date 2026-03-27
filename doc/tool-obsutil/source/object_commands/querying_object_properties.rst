@@ -13,13 +13,13 @@ You can use this command to query the basic properties of an object.
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil stat obs://bucket/key [-acl][-bf=xxx] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil stat obs://bucket-test/key** command to query the basic properties of an object.
+-  In Windows, run **obsutil stat obs://bucket-test/key** to query the basic properties of an object.
 
    .. code-block::
 
@@ -65,7 +65,7 @@ Parameter Description
 +-----------------------+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | acl                   | Optional                        | Queries the access control policies of the object at the same time.                                                                                                                                                                                          |
 +-----------------------+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| bf                    | Optional (additional parameter) | The display format of the object size (in bytes). Possible values are:                                                                                                                                                                                       |
+| bf                    | Optional (additional parameter) | The display format of the object size (in bytes). The value can be:                                                                                                                                                                                          |
 |                       |                                 |                                                                                                                                                                                                                                                              |
 |                       |                                 | -  **human-readable**: The object size is displayed in a human-readable format. For example, the object size is displayed in KB, MB, GB, or TB (for instance, 1 GB), rather than in bytes (for instance, 1,073,741,824 bytes, which is a very large number). |
 |                       |                                 | -  **raw**: The number of bytes is displayed without any conversion or formatting. For example, if the space occupied by an object is 1 GB, the object size is displayed as 1,073,741,824 bytes.                                                             |
@@ -83,6 +83,10 @@ Parameter Description
 | config                | Optional (additional parameter) | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                               |
 +-----------------------+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter) | Specifies that requester pays is enabled.                                                                                                                                                                                                                    |
+|                       |                                 |                                                                                                                                                                                                                                                              |
+|                       |                                 | **Range**:                                                                                                                                                                                                                                                   |
+|                       |                                 |                                                                                                                                                                                                                                                              |
+|                       |                                 | requester                                                                                                                                                                                                                                                    |
 +-----------------------+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
@@ -101,7 +105,7 @@ Response
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | StorageClass                      | The storage class of the object                                                                                                                                                                                                           |
 |                                   |                                                                                                                                                                                                                                           |
-|                                   | Possible values are:                                                                                                                                                                                                                      |
+|                                   | The value can be:                                                                                                                                                                                                                         |
 |                                   |                                                                                                                                                                                                                                           |
 |                                   | -  **standard**: Standard storage class. It features low access latency and high throughput, and is applicable to storing frequently accessed data (multiple accesses per month) or data that is smaller than 1 MB.                       |
 |                                   | -  **warm**: Warm storage class. It is ideal for storing infrequently accessed (less than 12 times a year) data, but when needed, the access has to be fast.                                                                              |

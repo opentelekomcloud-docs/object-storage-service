@@ -20,7 +20,7 @@ Assume that bucket **bucket-test** contains the following multipart upload tasks
    obs://bucket-test/src2/
    obs://bucket-test/src2/task5.txt uploadid6
 
--  Run the following command to list three multipart upload tasks in bucket **bucket-test**:
+-  To list three multipart upload tasks in the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -34,7 +34,7 @@ Assume that bucket **bucket-test** contains the following multipart upload tasks
       obs://bucket-test/task1.txt uploadid2
       obs://bucket-test/task2.txt uploadid3
 
--  To list the rest multipart upload tasks following **uploadid1**, the command is as follows:
+-  To list the remaining multipart upload tasks that follow **uploadid1**, use the following command:
 
    .. code-block::
 
