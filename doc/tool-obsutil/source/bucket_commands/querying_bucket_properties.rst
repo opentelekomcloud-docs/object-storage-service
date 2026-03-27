@@ -13,13 +13,13 @@ You can use this command to query the basic properties of a bucket, including it
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil stat obs://bucket [-acl] [-bf=xxx] [-config=xxx]  [-payer=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -29,7 +29,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil stat obs://bucket-test** command to query the basic properties of bucket **bucket-test**.
+-  In Windows, run **obsutil stat obs://bucket-test** to query the basic properties of the **bucket-test** bucket.
 
    .. code-block::
 
@@ -80,6 +80,10 @@ Parameter Description
 | config                | Optional (additional parameter) | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.      |
 +-----------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter) | Specifies that requester pays is enabled.                                                                                                                                           |
+|                       |                                 |                                                                                                                                                                                     |
+|                       |                                 | **Range**:                                                                                                                                                                          |
+|                       |                                 |                                                                                                                                                                                     |
+|                       |                                 | requester                                                                                                                                                                           |
 +-----------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response

@@ -17,7 +17,7 @@ You can use this command to create a folder in a specified bucket or local file 
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    -  Creating a folder in a specified bucket
 
@@ -31,7 +31,7 @@ Command Line Structure
 
          obsutil mkdir folder_url [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    -  Creating a folder in a specified bucket
 
@@ -48,7 +48,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil mkdir obs://bucket-test/folder1/folder2** command to create a folder in a bucket.
+-  In Windows, run **obsutil mkdir obs://bucket-test/folder1/folder2** to create a folder in the bucket.
 
    .. code-block::
 
@@ -79,4 +79,8 @@ Parameter Description
 | config                | Optional (additional parameter)                           | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`. |
 +-----------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter)                           | Specifies that requester pays is enabled.                                                                                                                                      |
+|                       |                                                           |                                                                                                                                                                                |
+|                       |                                                           | **Range**:                                                                                                                                                                     |
+|                       |                                                           |                                                                                                                                                                                |
+|                       |                                                           | requester                                                                                                                                                                      |
 +-----------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

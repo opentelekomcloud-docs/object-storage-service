@@ -26,7 +26,7 @@ Assume that bucket **bucket-src** contains the following objects:
 
 Based on the structure of objects in the bucket, different copy scenarios require different commands.
 
--  To copy the **test1.txt** file from bucket **bucket-src** to bucket **bucket-dest**, the command is as follows:
+-  To copy the **test1.txt** file from the **bucket-src** bucket to the **bucket-dest** bucket, use the following command:
 
    .. code-block::
 
@@ -38,7 +38,7 @@ Based on the structure of objects in the bucket, different copy scenarios requir
 
       obs://bucket-dest/test1.txt
 
--  To copy the content of the **test1.txt** file in bucket **bucket-src** to the **text.txt** file in bucket **bucket-dest**, the command is as follows:
+-  To copy the contents of the **test1.txt** file in the **bucket-src** bucket to the **test.txt** file in the **bucket-dest** bucket, use the following command:
 
    .. code-block::
 
@@ -50,7 +50,7 @@ Based on the structure of objects in the bucket, different copy scenarios requir
 
       obs://bucket-dest/test.txt
 
--  To copy the **test1.txt** file in bucket **bucket-src** to the **text** folder in bucket **bucket-dest**, the command is as follows:
+-  To copy the **test1.txt** file in the **bucket-src** bucket to the **test** folder in the **bucket-dest** bucket, use the following command:
 
    .. code-block::
 
@@ -62,7 +62,7 @@ Based on the structure of objects in the bucket, different copy scenarios requir
 
       obs://bucket-dest/test/test1.txt
 
--  Run the following command to recursively copy the entire **src2** folder in bucket **bucket-src** to bucket **bucket-dest** in force mode:
+-  To recursively copy the entire **src2** folder from the **bucket-src** bucket to the **bucket-dest** bucket in force mode, use the following command:
 
    .. code-block::
 
@@ -77,7 +77,7 @@ Based on the structure of objects in the bucket, different copy scenarios requir
       obs://bucket-dest/src2/src3/
       obs://bucket-dest/src2/src3/test9.txt
 
--  To recursively copy all files and subfolders in the **src2** folder in bucket **bucket-src** to bucket **bucket-dest** in force mode, the command is as follows:
+-  To recursively copy all files and subfolders from the **src2** folder in the **bucket-src** bucket to the **bucket-dest** bucket in force mode, use the following command:
 
    .. code-block::
 

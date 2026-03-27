@@ -13,7 +13,7 @@ You can use this command to query objects in a bucket with an authorization code
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    -  Enter an authorization code directly.
 
@@ -27,7 +27,7 @@ Command Line Structure
 
          obsutil share-ls file://authorization_code_file_url [-ac=xxx] [-prefix=xxx] [-s] [-d] [-marker=xxx] [-bf=xxx] [-limit=1]  [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    -  Enter an authorization code directly.
 
@@ -122,7 +122,7 @@ Parameter Description
 +------------------------------------+---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | marker                             | Optional (additional parameter) | The start position for listing objects in a bucket using an authorization code. The objects following this start position are sorted in lexicographical order by object name.                                                                                                                      |
 +------------------------------------+---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| bf                                 | Optional (additional parameter) | The display formats of bytes in the listing result. Possible values are:                                                                                                                                                                                                                           |
+| bf                                 | Optional (additional parameter) | The display formats of bytes in the listing result. The value can be:                                                                                                                                                                                                                              |
 |                                    |                                 |                                                                                                                                                                                                                                                                                                    |
 |                                    |                                 | -  human-readable                                                                                                                                                                                                                                                                                  |
 |                                    |                                 | -  raw                                                                                                                                                                                                                                                                                             |

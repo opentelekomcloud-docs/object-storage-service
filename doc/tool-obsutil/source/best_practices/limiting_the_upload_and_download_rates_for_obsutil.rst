@@ -2,8 +2,8 @@
 
 .. _obs_11_0073:
 
-Limiting the Upload and Download Rate for obsutil
-=================================================
+Limiting the Upload and Download Rates for obsutil
+==================================================
 
 obsutil allows you to configure the **rateLimitThreshold** parameter in the **.obsutilconfig** file to limit the upload and download rate.
 

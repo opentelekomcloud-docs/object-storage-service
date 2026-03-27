@@ -13,13 +13,13 @@ You can use this command to query the current version of obsutil.
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil version
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
-Take the Windows OS as an example.
+In Windows, run the following command to view a version number.
 
 .. code-block::
 

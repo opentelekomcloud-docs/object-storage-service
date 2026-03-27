@@ -20,7 +20,7 @@ Assume that bucket **bucket-test** contains the following multipart upload tasks
    obs://bucket-test/src2/
    obs://bucket-test/src2/task5.txt uploadid6
 
-You can run the following command to delete all fragments of multipart upload tasks in the bucket at a time:
+You can run the following command to delete all fragments of multipart upload tasks in the bucket at once:
 
 .. code-block::
 

@@ -32,7 +32,7 @@ Adjust the number of concurrent tasks in the multipart mode according to the fol
 
 **defaultParallels = Min(Number of CPUs x 2, Object size/defaultPartSize x 1.5)**
 
-In the upload, download, and copy commands, parameters **-p** and **-ps** are used to modify the number of concurrent tasks in the multipart mode and part size respectively, and then deliver the multipart task based on the parameter values configured in the command. The default values in the configuration file are used if you do not set them in a command.
+For the upload, download, and copy commands, obsutil provides the **-p** and **-ps** parameters to control the number of concurrent tasks and part size, respectively. obsutil then executes the tasks according to the values you specified. The default values in the configuration file are used if you do not set them in a command.
 
 Adjust the number of concurrent tasks in the multipart mode according to the following formula:
 

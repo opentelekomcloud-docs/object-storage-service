@@ -13,13 +13,13 @@ You can use this command to query multipart upload tasks in a bucket.
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil ls obs://bucket[/prefix] [-s] [-d] -m [-a] [-uploadIdMarker=xxx] [-marker=xxx] [-limit=1]  [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil ls obs://bucket-test -m -limit=10** command to query the multipart upload tasks in the bucket.
+-  In Windows, run **obsutil ls obs://bucket-test -m -limit=10** to list the multipart upload tasks in the bucket.
 
    .. code-block::
 
@@ -105,4 +105,8 @@ Parameter Description
 | config                | Optional (additional parameter)  | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                                                                                                         |
 +-----------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter)  | Specifies that requester pays is enabled.                                                                                                                                                                                                                                                                                              |
+|                       |                                  |                                                                                                                                                                                                                                                                                                                                        |
+|                       |                                  | **Range**:                                                                                                                                                                                                                                                                                                                             |
+|                       |                                  |                                                                                                                                                                                                                                                                                                                                        |
+|                       |                                  | requester                                                                                                                                                                                                                                                                                                                              |
 +-----------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

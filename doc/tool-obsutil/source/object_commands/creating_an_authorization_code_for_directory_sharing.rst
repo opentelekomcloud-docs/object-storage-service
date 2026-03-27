@@ -13,13 +13,13 @@ You can use this command to specify the bucket name, object name prefix, and acc
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil create-share obs://bucket[/prefix] [-ac=xxx] [-vp=xxx] [-dst=xxx] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  In Windows, you can run the **obsutil create-share obs://bucket/test/ -ac=123456 -vp=1m** command to create an authorization code that is valid within one month.
+-  In Windows, run **obsutil create-share obs://bucket/test/ -ac=123456 -vp=1m** to create an authorization code that is valid for one month.
 
    .. code-block::
 
@@ -76,6 +76,10 @@ Parameter Description
 | config                | Optional (additional parameter) | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                                                                                                                                            |
 +-----------------------+---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter) | Specifies that requester pays is enabled.                                                                                                                                                                                                                                                                                                                                 |
+|                       |                                 |                                                                                                                                                                                                                                                                                                                                                                           |
+|                       |                                 | **Range**:                                                                                                                                                                                                                                                                                                                                                                |
+|                       |                                 |                                                                                                                                                                                                                                                                                                                                                                           |
+|                       |                                 | requester                                                                                                                                                                                                                                                                                                                                                                 |
 +-----------------------+---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response

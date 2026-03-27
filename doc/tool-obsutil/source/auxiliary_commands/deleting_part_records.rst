@@ -13,13 +13,13 @@ You can use this command to delete part records from a specified directory.
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil clear [checkpoint_dir] [-u] [-d] [-c] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil clear -u** command to delete the part records of multipart upload tasks in the default directory.
+-  In Windows, run **obsutil clear -u** to delete the checkpoint files for multipart uploads in the default directory.
 
    .. code-block::
 

@@ -13,13 +13,13 @@ You can use this command to set the properties of a bucket, such as storage clas
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil chattri obs://bucket [-sc=xxx] [-acl=xxx] [-aclXml=xxx] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -28,7 +28,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil chattri obs://bucket-test -acl=private** command to change the access control policy of the bucket to private read and write.
+-  In Windows, run **obsutil chattri obs://bucket-test -acl=private** to change the bucket ACL to private read/write.
 
    .. code-block::
 
@@ -46,13 +46,13 @@ Parameter Description
 +=======================+=================================+==================================================================================================================================================================================================================================================================+
 | bucket                | Mandatory                       | The bucket name                                                                                                                                                                                                                                                  |
 +-----------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| sc                    | Optional (additional parameter) | The default storage class of the bucket. Possible values are:                                                                                                                                                                                                    |
+| sc                    | Optional (additional parameter) | The default storage class of the bucket. The value can be:                                                                                                                                                                                                       |
 |                       |                                 |                                                                                                                                                                                                                                                                  |
 |                       |                                 | -  **standard**: Standard storage class. It features low access latency and high throughput, and is applicable to storing frequently accessed data (multiple accesses per month) or data that is smaller than 1 MB.                                              |
 |                       |                                 | -  **warm**: Warm storage class. It is ideal for storing infrequently accessed (less than 12 times a year) data, but when needed, the access has to be fast.                                                                                                     |
 |                       |                                 | -  **cold**: Cold storage class. It provides secure, durable, and inexpensive storage for rarely-accessed (once a year) data.                                                                                                                                    |
 +-----------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| acl                   | Optional (additional parameter) | The predefined access control policy of the bucket. Possible values are:                                                                                                                                                                                         |
+| acl                   | Optional (additional parameter) | The predefined access control policy of the bucket. The value can be:                                                                                                                                                                                            |
 |                       |                                 |                                                                                                                                                                                                                                                                  |
 |                       |                                 | -  private                                                                                                                                                                                                                                                       |
 |                       |                                 | -  public-read                                                                                                                                                                                                                                                   |
@@ -106,6 +106,10 @@ Parameter Description
 | config                | Optional (additional parameter) | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                                   |
 +-----------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter) | Specifies that requester pays is enabled.                                                                                                                                                                                                                        |
+|                       |                                 |                                                                                                                                                                                                                                                                  |
+|                       |                                 | **Range**:                                                                                                                                                                                                                                                       |
+|                       |                                 |                                                                                                                                                                                                                                                                  |
+|                       |                                 | requester                                                                                                                                                                                                                                                        |
 +-----------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::

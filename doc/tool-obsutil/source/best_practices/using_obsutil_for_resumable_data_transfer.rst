@@ -42,4 +42,4 @@ The following example is based on a Windows OS:
 
    -  Priority: Command level parameter **threshold** has higher priority than the **defaultBigfileThreshold** in the configuration file.
    -  The threshold size of a multipart task applies to single files or objects. When the size of a file or object is greater than the threshold value, the multipart algorithm is applied to the file or object.
-   -  The multipart algorithm and resumable data transfer are forcibly bound together. That is, once the multipart algorithm is used, the resumable data transfer is enabled for the task.
+   -  The multipart algorithm and resumable data transfer are tightly coupled. Using the multipart algorithm automatically enables resumable data transfer for the task.

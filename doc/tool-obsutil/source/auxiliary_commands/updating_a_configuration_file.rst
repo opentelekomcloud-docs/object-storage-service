@@ -15,13 +15,13 @@ You can update items in the **.obsutilconfig** file, including the endpoint, AK,
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil config -interactive [-crr] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -30,7 +30,7 @@ Command Line Structure
 Examples
 --------
 
--  Take Windows as an example. Run the **obsutil config -interactive** command to update the access keys and OBS endpoint in the default configuration file.
+-  In Windows, run **obsutil config -interactive** to update the access keys and OBS endpoint in the default configuration file.
 
    .. code-block::
 
@@ -49,7 +49,7 @@ Examples
 
       Update config file successfully!
 
--  Take Linux as an example. Run the **./obsutil config -interactive** command to update the access keys and OBS endpoint in the default configuration file.
+-  In Linux, run **./obsutil config -interactive** to update the access keys and OBS endpoint in the default configuration file.
 
    .. code-block::
 

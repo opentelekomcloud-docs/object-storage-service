@@ -26,7 +26,7 @@ In big data scenarios, parallel file systems usually have deep directory levels 
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    -  Deleting a single object
 
@@ -40,7 +40,7 @@ Command Line Structure
 
          obsutil rm obs://bucket/[key] -r [-j=1] [-f] [-v] [-o=xxx] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    -  Deleting a single object
 
@@ -57,7 +57,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil rm obs://bucket-test/key -f** command to delete a single object named **key** in bucket **bucket-test**.
+-  In Windows, run **obsutil rm obs://bucket-test/key -f** to delete the **key** object in bucket **bucket-test**.
 
    .. code-block::
 
@@ -67,7 +67,7 @@ Examples
 
       Delete object [key] in the bucket [bucket-test] successfully, cost [152], request id [0000016979E1D2B2860BB5181229C72C]
 
--  Take the Windows OS as an example. Run the **obsutil rm obs://bucket-test -r -f** command to delete all objects in bucket **bucket-test**.
+-  In Windows, run **obsutil rm obs://bucket-test -r -f** to delete all objects in bucket **bucket-test**.
 
    .. code-block::
 
@@ -78,7 +78,7 @@ Examples
       Succeed count:   1313      Failed count:    0
       Task id: 95936984-f81a-441a-bba0-1fd8254d9241
 
--  Take the Windows OS as an example. Run the **obsutil rm obs://bucket-test/key -r -f** command to delete all objects and folders prefixed with **key** in bucket **bucket-test**.
+-  In Windows, run **obsutil rm obs://bucket-test/key -r -f** to delete all objects and folders prefixed with **key** in bucket **bucket-test**.
 
    .. code-block::
 
@@ -120,7 +120,7 @@ Parameter Description
 |                       |                                                                  |                                                                                                                                                                                                                                                                                            |
 |                       |                                                                  | .. note::                                                                                                                                                                                                                                                                                  |
 |                       |                                                                  |                                                                                                                                                                                                                                                                                            |
-|                       |                                                                  |    The value is ensured to be greater than or equal to 1.                                                                                                                                                                                                                                  |
+|                       |                                                                  |    The tool ensures that this value is at least 1.                                                                                                                                                                                                                                         |
 +-----------------------+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | v                     | Optional for deleting objects in batches (additional parameter)  | Deletes versions of an object and the delete markers in batches based on a specified object name prefix.                                                                                                                                                                                   |
 +-----------------------+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -141,6 +141,10 @@ Parameter Description
 | config                | Optional (additional parameter)                                  | The user-defined configuration file for executing the current command. For details about parameters that can be configured, see :ref:`Configuration Parameters <obs_11_0035>`.                                                                                                             |
 +-----------------------+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | payer                 | Optional (additional parameter)                                  | Specifies that requester pays is enabled.                                                                                                                                                                                                                                                  |
+|                       |                                                                  |                                                                                                                                                                                                                                                                                            |
+|                       |                                                                  | **Range**:                                                                                                                                                                                                                                                                                 |
+|                       |                                                                  |                                                                                                                                                                                                                                                                                            |
+|                       |                                                                  | requester                                                                                                                                                                                                                                                                                  |
 +-----------------------+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response

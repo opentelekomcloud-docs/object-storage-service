@@ -13,7 +13,7 @@ You can use this command to archive log files to a local PC or to a specified bu
 Command Line Structure
 ----------------------
 
--  In Windows
+-  Windows
 
    -  Archiving to a local PC
 
@@ -27,7 +27,7 @@ Command Line Structure
 
          obsutil archive obs://bucket[/key] [-config=xxx]
 
--  In Linux or macOS
+-  macOS or Linux
 
    -  Archiving to a local PC
 
@@ -44,7 +44,7 @@ Command Line Structure
 Examples
 --------
 
--  Take the Windows OS as an example. Run the **obsutil archive** command to archive log files to the same directory where the tool is executed.
+-  In Windows, run **obsutil archive** to archive log files to the same directory where the tool is executed.
 
    .. code-block::
 

@@ -5,13 +5,13 @@
 Quick Start
 ===========
 
-This section uses the Linux OS as an example to describe how to use obsutil to perform basic operations in OBS. For details, see .
+This section uses Linux as an example to describe how to use obsutil to perform basic operations in OBS.
 
 Prerequisites
 -------------
 
 -  You have obtained obsutil and completed :ref:`initial configuration <obs_11_0005>`.
--  The directory saving obsutil is accessed.
+-  You are in the directory where obsutil is located.
 
 Procedure
 ---------

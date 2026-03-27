@@ -5,7 +5,7 @@
 Can I Rename an Object or a Folder?
 ===================================
 
-Yes. You can run :ref:`the mv command <obs_11_0053>` to rename an object or a folder. The following give two examples in Windows.
+Yes. You can run :ref:`the mv command <obs_11_0053>` to rename an object or a folder. The following gives two examples in Windows.
 
 -  Running **obsutil mv obs://bucket-test/key obs://bucket-test/key2** to rename object **key** to **key2**
 

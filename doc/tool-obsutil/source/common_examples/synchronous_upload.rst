@@ -29,7 +29,7 @@ Assume that bucket **bucket-test** contains the following objects:
 
 Based on the structure of the preceding local folder and objects in the bucket, different synchronous upload scenarios require different commands.
 
--  To synchronize the **test3.txt** file in the local **src1** folder to the root directory of bucket **bucket-test**, the command is as follows:
+-  To synchronize the **test3.txt** file from the local **src1** folder to the root directory of the **bucket-test** bucket, use the following command:
 
    .. code-block::
 
@@ -45,7 +45,7 @@ Based on the structure of the preceding local folder and objects in the bucket, 
       obs://bucket-test/src1/src2/test1.txt
       obs://bucket-test/src1/src3/
 
--  To synchronize all files and subfolders in the local **src1** folder to the **src1** folder in bucket **bucket-test**, the command is as follows:
+-  To synchronize all files and subfolders from the local **src1** folder to the **src1** folder in the **bucket-test** bucket, use the following command:
 
    .. code-block::
 

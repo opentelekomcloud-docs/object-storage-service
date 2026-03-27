@@ -18,7 +18,7 @@ obsutil Initialization Methods
 
 Run the **config** command (for more information about **config**, see :ref:`Updating a Configuration File <obs_11_0023>`):
 
--  In Windows
+-  Windows
 
    Using a permanent AK/SK pair:
 
@@ -32,7 +32,7 @@ Run the **config** command (for more information about **config**, see :ref:`Upd
 
       obsutil config -i=xxxxx -k=xxxxx -t=xxxxx -e=xxxxx
 
--  In Linux or macOS
+-  macOS or Linux
 
    Using a permanent AK/SK pair:
 
@@ -64,15 +64,15 @@ Run the **config** command (for more information about **config**, see :ref:`Upd
 
    -  After the command is executed, there will be the **.obsutilconfig** file created in the directory (**~** in Linux or macOS or **C:\\Users\\<**\ *username*\ **>** in Windows) where obsutil commands run. This file contains all the configuration information of obsutil.
    -  For details about the parameters in the **.obsutilconfig** file, see :ref:`Configuration Parameters <obs_11_0035>`.
-   -  The **.obsutilconfig** file contains the AK/SK information, so it is hidden by default to prevent leakage. To query this file, run the following command in the directory where obsutil commands run.
+   -  The **.obsutilconfig** file contains the AK/SK information, so it is hidden by default to prevent leakage. To query this file, run the following command in the directory where you execute obsutil commands.
 
-      -  In Windows
+      -  Windows
 
          .. code-block::
 
             dir
 
-      -  In Linux or macOS
+      -  macOS or Linux
 
          .. code-block::
 
@@ -88,9 +88,9 @@ Run the **config** command (for more information about **config**, see :ref:`Upd
 
 Method 3: Initialize obsutil in interactive mode.
 
--  In Windows
+-  Windows
 
-   Using a permanent AK/SK pair (you do not need to enter a token, and press **Enter** to skip it):
+   Using a permanent AK/SK pair (you do not need to enter a token, and just press **Enter** to skip it):
 
    .. code-block::
 
@@ -129,7 +129,7 @@ Method 3: Initialize obsutil in interactive mode.
 
       Update config file successfully!
 
--  In Linux or macOS
+-  macOS or Linux
 
    Using a permanent AK/SK pair (you do not need to enter a token, and press **Enter** to skip it):
 
@@ -175,13 +175,13 @@ Checking the Connectivity
 
 After the initial configuration is complete, run the following command to check the connectivity:
 
--  In Windows
+-  Windows
 
    .. code-block::
 
       obsutil ls -s
 
--  In Linux or macOS
+-  macOS or Linux
 
    .. code-block::
 
@@ -190,7 +190,7 @@ After the initial configuration is complete, run the following command to check 
 Check the command output:
 
 -  If it contains "Bucket number", the configuration is correct.
--  If it contains "Http status [403]", the access keys are wrong.
+-  If it contains "Http status [403]", the access keys may be incorrect.
 -  If it contains "A connection attempt failed", OBS cannot be connected. Then, check the network condition.
 -  If it contains "Error: cloud_url [url] is not in well format", the domain name to be accessed is incorrect. Check the domain name in the configuration file.
 

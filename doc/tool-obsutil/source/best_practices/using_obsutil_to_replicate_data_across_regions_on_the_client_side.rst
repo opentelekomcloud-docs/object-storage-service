@@ -9,13 +9,13 @@ obsutil client supports cross-region replication. You can directly replicate dat
 
 #. Run the **obsutil config** command to configure the AK, SK, and endpoint of the source bucket account.
 
-   -  In Windows
+   -  Windows
 
       .. code-block::
 
          obsutil config -interactive -crr
 
-   -  In Linux
+   -  Linux
 
       .. code-block::
 
@@ -23,13 +23,13 @@ obsutil client supports cross-region replication. You can directly replicate dat
 
 #. Run the **obsutil config** command to configure the AK, SK, and endpoint of the destination bucket account.
 
-   -  In Windows
+   -  Windows
 
       .. code-block::
 
          obsutil config -interactive
 
-   -  In Linux
+   -  Linux
 
       .. code-block::
 
@@ -37,13 +37,13 @@ obsutil client supports cross-region replication. You can directly replicate dat
 
 #. Check the connectivity to ensure that the destination bucket is correctly configured.
 
-   -  In Windows
+   -  Windows
 
       .. code-block::
 
          obsutil ls -s
 
-   -  In Linux or macOS
+   -  macOS or Linux
 
       .. code-block::
 
@@ -52,7 +52,7 @@ obsutil client supports cross-region replication. You can directly replicate dat
    Check the command output:
 
    -  If it contains "Bucket number", the configuration is correct.
-   -  If it contains "Http status [403]", the access keys are wrong.
+   -  If it contains "Http status [403]", the access keys may be incorrect.
    -  If it contains "A connection attempt failed", OBS cannot be connected. Then, check the network condition.
    -  If it contains "Error: cloud_url [url] is not in well format", the domain name to be accessed is incorrect. Check the domain name in the configuration file.
 
@@ -62,13 +62,13 @@ obsutil client supports cross-region replication. You can directly replicate dat
 
 #. Run the **cp** command to specify that cross-region replication method is used to copy objects from the source bucket to the destination bucket.
 
-   -  In Windows
+   -  Windows
 
       .. code-block::
 
          obsutil cp obs://src-bucket obs://dst-bucket -f -r -crr
 
-   -  In Linux
+   -  Linux
 
       .. code-block::
 

@@ -14,7 +14,7 @@ Best Practices
 -  :ref:`Configuring an HTTP Proxy for obsutil <obs_11_0068>`
 -  :ref:`Using obsutil to Share Directories <obs_11_0069>`
 -  :ref:`Using obsutil to Replicate Data Across Regions on the Client Side <obs_11_0039>`
--  :ref:`Limiting the Upload and Download Rate for obsutil <obs_11_0073>`
+-  :ref:`Limiting the Upload and Download Rates for obsutil <obs_11_0073>`
 
 .. toctree::
    :maxdepth: 1
@@ -29,4 +29,4 @@ Best Practices
    configuring_an_http_proxy_for_obsutil
    using_obsutil_to_share_directories
    using_obsutil_to_replicate_data_across_regions_on_the_client_side
-   limiting_the_upload_and_download_rate_for_obsutil
+   limiting_the_upload_and_download_rates_for_obsutil

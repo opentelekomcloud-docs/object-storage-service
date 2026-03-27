@@ -14,8 +14,8 @@ You can use this command to create a bucket. A bucket name must be unique in OBS
 
    If you create a bucket and name it the same as an existing one in the same account and region, no error will be reported and status code 200 is returned. The bucket properties comply with those set in the first creation request. In other cases, creating a bucket with the same name as an existing one will receive the status code 409, indicating that the bucket already exists.
 
-Command Line Structures
------------------------
+Command Line Structure
+----------------------
 
 -  Windows
 
