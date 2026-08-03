@@ -51,38 +51,50 @@ Response Syntax
    Content-Length: 425
 
    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-   <LifecycleConfiguration xmlns="http://obs.example.com/doc/2015-06-30/">
-   <Rule>
-   <ID>id</ID>
-   <Prefix>prefix</Prefix>
-   <Status>status</Status>
-   <Expiration>
-   <Date>date</Date>
-   </Expiration>
-   <NoncurrentVersionExpiration>
-   <NoncurrentDays>365</NoncurrentDays>
-   </NoncurrentVersionExpiration>
-   <Transition>
-   <Date>date</Date>
-   <StorageClass>STANDARD_IA</StorageClass>
-   </Transition>
-   <Transition>
-   <Date>date</Date>
-   <StorageClass>GLACIER</StorageClass>
-   </Transition>
-   <NoncurrentVersionTransition>
-   <NoncurrentDays>30</NoncurrentDays>
-   <StorageClass>STANDARD_IA</StorageClass>
-   </NoncurrentVersionTransition>
-   <NoncurrentVersionTransition>
-   <NoncurrentDays>60</NoncurrentDays>
-   <StorageClass>GLACIER</StorageClass>
-   </NoncurrentVersionTransition>
-   <AbortIncompleteMultipartUpload>
-   <DaysAfterInitiation>10</DaysAfterInitiation>
-   </AbortIncompleteMultipartUpload>
-   </Rule>
-   </LifecycleConfiguration>
+    <LifecycleConfiguration xmlns="http://obs.example.com/doc/2015-06-30/">
+        <Rule>
+            <ID>id</ID>
+            <Filter>
+                <And>
+                    <Prefix>prefix</Prefix>
+                    <Tag>
+                        <Key>key1</Key>
+                        <Value>value1</Value>
+                    </Tag>
+                    <Tag>
+                        <Key>key2</Key>
+                        <Value>value2</Value>
+                    </Tag>
+                </And>
+            </Filter>
+            <Status>status</Status>
+            <Expiration>
+                <Date>date</Date>
+            </Expiration>
+            <NoncurrentVersionExpiration>
+                <NoncurrentDays>365</NoncurrentDays>
+            </NoncurrentVersionExpiration>
+            <Transition>
+                <Date>date</Date>
+                <StorageClass>STANDARD_IA</StorageClass>
+            </Transition>
+            <Transition>
+                <Date>date</Date>
+                <StorageClass>GLACIER</StorageClass>
+            </Transition>
+            <NoncurrentVersionTransition>
+                <NoncurrentDays>30</NoncurrentDays>
+                <StorageClass>STANDARD_IA</StorageClass>
+            </NoncurrentVersionTransition>
+            <NoncurrentVersionTransition>
+                <NoncurrentDays>60</NoncurrentDays>
+                <StorageClass>GLACIER</StorageClass>
+            </NoncurrentVersionTransition>
+            <AbortIncompleteMultipartUpload>
+                <DaysAfterInitiation>10</DaysAfterInitiation>
+            </AbortIncompleteMultipartUpload>
+        </Rule>
+    </LifecycleConfiguration>
 
 Response Headers
 ----------------
@@ -191,7 +203,41 @@ This response contains elements to detail bucket lifecycle configuration. :ref:`
    |                                   |                                                                                                                                                                                                                                                             |
    |                                   | Type: String                                                                                                                                                                                                                                                |
    |                                   |                                                                                                                                                                                                                                                             |
-   |                                   | Ancestor: Rule                                                                                                                                                                                                                                              |
+   |                                   | Ancestor: Rule, Filter or And                                                                                                                                                                                                                               |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Filter                            | A specific filter. The lifecycle rule will apply to the objects matching this filter in a bucket.                                                                                                                                                           |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | You can filter objects by object key prefix, object tag, or both. If there are multiple filters in a rule, use the And logic to combine them.                                                                                                               |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Type: XML                                                                                                                                                                                                                                                   |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Parent: Rule                                                                                                                                                                                                                                                |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | And                               | The And logic among filtering criteria.                                                                                                                                                                                                                     |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | The And logic can be used when both the object name prefix and object tag are used.                                                                                                                                                                         |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Type: XML                                                                                                                                                                                                                                                   |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Parent: Filter                                                                                                                                                                                                                                              |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Tag                               | The Tag element.                                                                                                                                                                                                                                            |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Type: container                                                                                                                                                                                                                                             |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Parent: Filter or And                                                                                                                                                                                                                                       |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Key                               | The key of the tag.                                                                                                                                                                                                                                         |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Type: string                                                                                                                                                                                                                                                |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Parent: Tag                                                                                                                                                                                                                                                 |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Value                             | The value of the tag.                                                                                                                                                                                                                                       |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Type: string                                                                                                                                                                                                                                                |
+   |                                   |                                                                                                                                                                                                                                                             |
+   |                                   | Parent: Tag                                                                                                                                                                                                                                                 |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Rule                              | Indicates the container for lifecycle rules.                                                                                                                                                                                                                |
    |                                   |                                                                                                                                                                                                                                                             |
@@ -246,39 +292,51 @@ Sample Response
    x-amz-id-2: UHQoAKndcsk628TszydX75G/Q2+I5MwYJ3IJYqzEkNInMkBMn96hunAVsoiMCHZh
    x-reserved: amazon, aws and amazon web services are trademarks or registered trademarks of Amazon Technologies, Inc
    Content-Type: application/xml
-   Date: Thu, 05 Sep 2015 10:09:36 GMT
+   Date: Thu, 05 Sep 2025 10:09:36 GMT
    Content-Length: 425
 
    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-   <LifecycleConfiguration xmlns="http://obs.example.com/doc/2015-06-30/">
-   <Rule>
-   <ID>delete-test/-1-day</ID>
-   <Prefix>test/</Prefix>
-   <Status>Enabled</Status>
-   <Expiration>
-   <Date>2015-07-12T00:00:00.000Z</Date>
-   </Expiration>
-   <NoncurrentVersionExpiration>
-   <NoncurrentDays>365</NoncurrentDays>
-   </NoncurrentVersionExpiration>
-   <Transition>
-   <Date>2015-07-10T00:00:00.000Z</Date>
-   <StorageClass>STANDARD_IA</StorageClass>
-   </Transition>
-   <Transition>
-   <Date>2015-07-11T00:00:00.000Z</Date>
-   <StorageClass>GLACIER</StorageClass>
-   </Transition>
-   <NoncurrentVersionTransition>
-   <NoncurrentDays>30</NoncurrentDays>
-   <StorageClass>STANDARD_IA</StorageClass>
-   </NoncurrentVersionTransition>
-   <NoncurrentVersionTransition>
-   <NoncurrentDays>60</NoncurrentDays>
-   <StorageClass>GLACIER</StorageClass>
-   </NoncurrentVersionTransition>
-   <AbortIncompleteMultipartUpload>
-   <DaysAfterInitiation>10</DaysAfterInitiation>
-   </AbortIncompleteMultipartUpload>
-   </Rule>
-   </LifecycleConfiguration>
+    <LifecycleConfiguration xmlns="http://obs.example.com/doc/2025-06-30/">
+        <Rule>
+            <ID>lifecycle-id</ID>
+            <Filter>
+                <And>
+                    <Prefix>prefix</Prefix>
+                    <Tag>
+                        <Key>key1</Key>
+                        <Value>value1</Value>
+                    </Tag>
+                    <Tag>
+                        <Key>key2</Key>
+                        <Value>value2</Value>
+                    </Tag>
+                </And>
+            </Filter>
+            <Status>status</Status>
+            <Expiration>
+                <Date>date</Date>
+            </Expiration>
+            <NoncurrentVersionExpiration>
+                <NoncurrentDays>365</NoncurrentDays>
+            </NoncurrentVersionExpiration>
+            <Transition>
+                <Date>date</Date>
+                <StorageClass>STANDARD_IA</StorageClass>
+            </Transition>
+            <Transition>
+                <Date>date</Date>
+                <StorageClass>GLACIER</StorageClass>
+            </Transition>
+            <NoncurrentVersionTransition>
+                <NoncurrentDays>30</NoncurrentDays>
+                <StorageClass>STANDARD_IA</StorageClass>
+            </NoncurrentVersionTransition>
+            <NoncurrentVersionTransition>
+                <NoncurrentDays>60</NoncurrentDays>
+                <StorageClass>GLACIER</StorageClass>
+            </NoncurrentVersionTransition>
+            <AbortIncompleteMultipartUpload>
+                <DaysAfterInitiation>10</DaysAfterInitiation>
+            </AbortIncompleteMultipartUpload>
+        </Rule>
+    </LifecycleConfiguration>
