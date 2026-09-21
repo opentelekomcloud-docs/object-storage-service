@@ -32,7 +32,7 @@ Procedure
          Before configuring an IAM policy, you need to understand what permissions are required. An IAM user only has the permissions defined by the policy. In this example, user **APPServer** only has full permissions on objects in the **APPClient** folder.
 
 
-      .. figure:: /_static/images/en-us_image_0000001435988521.png
+      .. figure:: /_static/images/en-us_image_0000002648149914.png
          :alt: **Figure 1** Configuring a custom policy
 
          **Figure 1** Configuring a custom policy
@@ -80,7 +80,7 @@ Procedure
 
 #. The IAM user (APPServer) obtains temporary access keys (temporary access keys and security token) for **APP-1** and **APP-2**.
 
-   To obtain temporary access keys with different permissions, you need to set a temporary policy by adding the policy parameter in the request body. For details, see `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.
+   To obtain temporary access keys with different permissions, you need to set a temporary policy by adding the **policy** parameter in the request body. For details, see `Obtaining a Temporary AK/SK <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0097949518.html>`__.
 
    The following is a sample request for obtaining a pair of temporary access keys. The temporary policy parameters are displayed in bold.
 
@@ -89,64 +89,62 @@ Procedure
    .. code-block::
 
       {
-          "auth": {
-          "identity": {
-              "policy": {
-              "Version": "1.1",
-              "Statement": [
-               {
-                 "Action": [
-                     "obs:object:*"
-                 ],
-                  "Resource": [
-                     "obs:*:*:object:hi-company/APPClient/APP-1/*"
-                 ],
-                 "Effect": "Allow"
-                  }
-              ]
-              },
-              "token": {
-              "duration-seconds": 900
-
-              },
-              "methods": [
-              "token"
-              ]
-          }
-          }
-      }
+           "auth": {
+               "identity": {
+                   "policy": {
+                       "Version": "1.1",
+                       "Statement": [
+                           {
+                               "Action": [
+                                   "obs:object:*"
+                               ],
+                               "Resource": [
+                                   "obs:*:*:object:hi-company/APPClient/APP-1/*"
+                               ],
+                               "Effect": "Allow"
+                           }
+                       ]
+                   },
+                   "token": {
+                       "duration-seconds": 900
+                   },
+                   "methods": [
+                       "token"
+                   ]
+               }
+           }
+       }
 
    **A sample request for obtaining a pair of temporary access keys for the device app** **APP-2:**
 
    .. code-block::
 
       {
-          "auth": {
-          "identity": {
-              "policy": {
-             "Version": "1.1",
-           "Statement": [
-                  {
-                "Action": [
-                     "obs:object:*"
-                 ],
-                  "Resource": [
-                      "obs:*:*:object:hi-company/APPClient/APP-2/*"
-                  ],
-                 "Effect": "Allow"
-                  }
-             ]
-           },
-              "token": {
-              "duration-seconds": 900
-
-              },
-              "methods": [
-              "token"
-              ]
-          }
-          }
-      }
+           "auth": {
+               "identity": {
+                   "policy": {
+                       "Version": "1.1",
+                       "Statement": [
+                           {
+                               "Action": [
+                                   "obs:object:*"
+                               ],
+                               "Resource": [
+                                   "obs:*:*:object:hi-company/APPClient/APP-2/*"
+                               ],
+                               "Effect": "Allow"
+                           }
+                       ]
+                   },
+                   "token": {
+                       "duration-seconds": 900
+                   },
+                   "methods": [
+                       "token"
+                   ]
+               }
+           }
+       }
 
 Verification
 ------------

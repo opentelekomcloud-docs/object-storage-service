@@ -38,7 +38,7 @@ Procedure
 #. Configure a custom policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436253413.png
+   .. figure:: /_static/images/en-us_image_0000002678389521.png
       :alt: **Figure 1** Configuring a custom policy
 
       **Figure 1** Configuring a custom policy

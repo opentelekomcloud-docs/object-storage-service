@@ -36,7 +36,7 @@ In this example, account **B** (owner of bucket **B**) configures a bucket polic
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Objects** page.
+#. In the bucket list, click the desired bucket name to go to the **Objects** page.
 
 #. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
@@ -45,7 +45,7 @@ In this example, account **B** (owner of bucket **B**) configures a bucket polic
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000002142442622.png
+   .. figure:: /_static/images/en-us_image_0000002648309990.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
@@ -127,7 +127,7 @@ In this example, account **A** needs to grant IAM user **A** the permissions to 
 #. Configure a custom policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001436303585.png
+   .. figure:: /_static/images/en-us_image_0000002648150104.png
       :alt: **Figure 2** Configuring a custom policy
 
       **Figure 2** Configuring a custom policy

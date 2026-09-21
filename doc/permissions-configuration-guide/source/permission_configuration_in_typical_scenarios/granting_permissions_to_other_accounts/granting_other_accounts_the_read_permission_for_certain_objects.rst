@@ -27,7 +27,7 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Objects** page.
+#. In the bucket list, click the desired bucket name to go to the **Objects** page.
 
 #. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
@@ -36,7 +36,7 @@ Procedure
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000002142310216.png
+   .. figure:: /_static/images/en-us_image_0000002648309846.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
@@ -81,9 +81,9 @@ Procedure
       |                                   |                                                                                                                                                                                                               |
       |                                   |       -  You can specify a specific object, an object set, or a directory. **\*** indicates all objects in the bucket.                                                                                        |
       |                                   |                                                                                                                                                                                                               |
-      |                                   |          To specify a specific object, enter the object name.                                                                                                                                                 |
+      |                                   |          For a specific object, enter the object name.                                                                                                                                                        |
       |                                   |                                                                                                                                                                                                               |
-      |                                   |          To specify a set of objects, enter *Object name prefix*\ **\***, **\***\ *Object name suffix*, or **\***.                                                                                            |
+      |                                   |          For a set of objects, enter *<object-name-prefix>*\ **\***, **\***\ *<object-name-suffix>*, or **\***.                                                                                               |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Actions                           | -  Choose **Use a template**.                                                                                                                                                                                 |
       |                                   | -  Select **Object Read-Only**.                                                                                                                                                                               |
