@@ -20,7 +20,7 @@ To grant resource-level permissions to an IAM user, use a bucket policy.
 Precautions
 -----------
 
-After configuration, the IAM user can download objects using APIs. However, if they download objects using OBS Console or OBS Browser+, a message will be displayed indicating that they do not have required permissions.
+After configuration, the IAM user can download objects using APIs. However, if they download objects using OBS Console or OBS Browser+, a message will be displayed indicating that they do not have the required permissions.
 
 When they log in to OBS Console or OBS Browser+, APIs such as **ListAllMyBuckets** and **ListBucket** are called. **ListAllMyBuckets** loads the bucket list while **ListBucket** loads the object list. Some other APIs are also called on other pages. In such case, the message is displayed.
 
@@ -31,7 +31,7 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Objects** page.
+#. In the bucket list, click the desired bucket name to go to the **Objects** page.
 
 #. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
@@ -40,7 +40,7 @@ Procedure
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000002176507061.png
+   .. figure:: /_static/images/en-us_image_0000002678229727.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
@@ -104,36 +104,36 @@ To perform specific operations on OBS Console or OBS Browser+, you must add the 
 #. Configure a custom policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001385676688.png
+   .. figure:: /_static/images/en-us_image_0000002678229771.png
       :alt: **Figure 2** Configuring a custom policy
 
       **Figure 2** Configuring a custom policy
 
    .. table:: **Table 2** Parameters for configuring a custom policy
 
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                                            |
-      +===================================+========================================================================================================================================================================================================================+
-      | Policy Name                       | Enter a policy name.                                                                                                                                                                                                   |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Policy View                       | Select one based on your own habits. **Visual editor** is used here.                                                                                                                                                   |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Policy Content                    | [Permission 1]                                                                                                                                                                                                         |
-      |                                   |                                                                                                                                                                                                                        |
-      |                                   | -  Select **Allow**.                                                                                                                                                                                                   |
-      |                                   | -  Select **Object Storage Service (OBS)**.                                                                                                                                                                            |
-      |                                   | -  Select **obs:bucket:ListAllMyBuckets** from the actions.                                                                                                                                                            |
-      |                                   | -  Select **All** for resources.                                                                                                                                                                                       |
-      |                                   |                                                                                                                                                                                                                        |
-      |                                   | [Permission 2]                                                                                                                                                                                                         |
-      |                                   |                                                                                                                                                                                                                        |
-      |                                   | -  Select **Allow**.                                                                                                                                                                                                   |
-      |                                   | -  Select **Object Storage Service (OBS)**.                                                                                                                                                                            |
-      |                                   | -  Select **obs:bucket:ListBucket** from the actions.                                                                                                                                                                  |
-      |                                   | -  Select **Specific** for **Resources** and select **Specify resource path** for **Bucket**. Click **Add Resource Path**. Enter the bucket name in the **Path** text box for applying the policy only to this bucket. |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Scope                             | Use the default value **Global services**.                                                                                                                                                                             |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                        |
+      +===================================+====================================================================================================================================================================================================================+
+      | Policy Name                       | Enter a policy name.                                                                                                                                                                                               |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Policy View                       | Select one based on your own habits. **Visual editor** is used here.                                                                                                                                               |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Policy Content                    | [Permission 1]                                                                                                                                                                                                     |
+      |                                   |                                                                                                                                                                                                                    |
+      |                                   | -  Select **Allow**.                                                                                                                                                                                               |
+      |                                   | -  Select **Object Storage Service (OBS)**.                                                                                                                                                                        |
+      |                                   | -  Select **obs:bucket:ListAllMyBuckets** from the actions.                                                                                                                                                        |
+      |                                   | -  Select **All** for resources.                                                                                                                                                                                   |
+      |                                   |                                                                                                                                                                                                                    |
+      |                                   | [Permission 2]                                                                                                                                                                                                     |
+      |                                   |                                                                                                                                                                                                                    |
+      |                                   | -  Select **Allow**.                                                                                                                                                                                               |
+      |                                   | -  Select **Object Storage Service (OBS)**.                                                                                                                                                                        |
+      |                                   | -  Select **obs:bucket:ListBucket** from the actions.                                                                                                                                                              |
+      |                                   | -  Select **Specific** for **Resources** and select **Specify resource path** for **Bucket**. Click **Add Resource Path**. Enter the bucket name in the **Path** text box to apply the policy only to this bucket. |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Scope                             | Use the default value **Global services**.                                                                                                                                                                         |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.
 

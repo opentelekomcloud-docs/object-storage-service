@@ -2,13 +2,13 @@
 
 .. _obs_40_0036:
 
-Restricting Access to a Bucket for Specific IP Addresses
-========================================================
+Restricting Bucket Access by IP Address
+=======================================
 
 Scenario
 --------
 
-This case describes how to restrict the source IP addresses that can access an OBS bucket. The following shows how to deny a client access whose source IP address is within the range of 114.115.1.0/24.
+This section describes how to restrict access to an OBS bucket from specific IP addresses. In this example, clients in the IP address range **114.115.1.0/24** are denied access to the bucket.
 
 Recommended Configuration
 -------------------------
@@ -20,7 +20,7 @@ Procedure
 
 #. In the navigation pane of OBS Console, choose **Buckets**.
 
-#. In the bucket list, click the bucket name you want to go to the **Objects** page.
+#. In the bucket list, click the desired bucket name to go to the **Objects** page.
 
 #. In the navigation pane, choose **Permissions** > **Bucket Policies**.
 
@@ -29,7 +29,7 @@ Procedure
 #. Configure a bucket policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000002141456310.png
+   .. figure:: /_static/images/en-us_image_0000002678229689.png
       :alt: **Figure 1** Configuring a bucket policy
 
       **Figure 1** Configuring a bucket policy
@@ -83,4 +83,8 @@ Initiate an access request from an IP address within 114.115.1.0/24. The access 
 Related Scenarios
 -----------------
 
--  To allow only a specified IP address to access the OBS bucket, set **Condition Operator** to **NotIpAddress** and specify the allowed IP address as the **Value**.
+-  To allow only a specified IP address to access an OBS bucket, you need to create two bucket policies:
+
+   Policy 1: Select **Deny** for **Effect**. Set **Condition Operator** to **NotIpAddress** and specify the allowed IP address as the **Value**.
+
+   Policy 2: Select **Allow** for **Effect**. Set **Condition Operator** to **IpAddress** and specify the allowed IP address as the **Value**.

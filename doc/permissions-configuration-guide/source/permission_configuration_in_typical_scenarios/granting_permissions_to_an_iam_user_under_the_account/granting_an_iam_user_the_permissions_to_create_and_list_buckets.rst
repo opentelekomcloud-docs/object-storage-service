@@ -29,7 +29,7 @@ Procedure
 #. Configure a custom policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001385655888.png
+   .. figure:: /_static/images/en-us_image_0000002678229719.png
       :alt: **Figure 1** Configuring a custom policy
 
       **Figure 1** Configuring a custom policy
