@@ -4,7 +4,7 @@ on:
     types: [opened, reopened, synchronize, edited]
 jobs:
   tox-docs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-internal
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
