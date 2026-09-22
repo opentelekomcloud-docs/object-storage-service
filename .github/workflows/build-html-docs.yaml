@@ -6,9 +6,8 @@ jobs:
   tox-docs:
     runs-on: ubuntu-internal
     container:
-      image: ${{ secrets.ARTIFACTORY_URL }}/dhi.io/python:3.12-debian-dev
+      image: artifactory.devops.telekom.de/dhi.io/python:3.12-debian-dev
       credentials:
-        registry: ${{ secrets.ARTIFACTORY_URL }}
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     steps:
