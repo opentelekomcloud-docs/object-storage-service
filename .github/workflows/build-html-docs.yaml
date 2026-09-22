@@ -5,6 +5,12 @@ on:
 jobs:
   tox-docs:
     runs-on: ubuntu-internal
+    container:
+      image: ${{ secrets.ARTIFACTORY_URL }}/dhi.io/python:3.12-debian-dev
+      credentials:
+        registry: ${{ secrets.ARTIFACTORY_URL }}
+        username: ${{ secrets.REGISTRY_USERNAME }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
