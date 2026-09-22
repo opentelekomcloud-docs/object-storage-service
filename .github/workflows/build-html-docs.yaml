@@ -8,8 +8,8 @@ jobs:
     container:
       image: artifactory.devops.telekom.de/dhi.io/python:3.12-debian-dev
       credentials:
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSWORD }}
+        username: ${{ secrets.ARTIFACTORY_AUTH_USERNAME }}
+        password: ${{ secrets.ARTIFACTORY_AUTH_PASSWORD }}
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
