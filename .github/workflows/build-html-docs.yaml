@@ -6,10 +6,7 @@ jobs:
   tox-docs:
     runs-on: ubuntu-internal
     container:
-      image: artifactory.devops.telekom.de/dhi.io/python:3.12-debian-dev
-      credentials:
-        username: ${{ secrets.ARTIFACTORY_AUTH_USERNAME }}
-        password: ${{ secrets.ARTIFACTORY_AUTH_PASSWORD }}
+      image: python:3.12-slim
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
