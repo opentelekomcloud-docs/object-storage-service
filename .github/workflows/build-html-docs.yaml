@@ -6,7 +6,7 @@ jobs:
   tox-docs:
     runs-on: ubuntu-internal
     container:
-      image: python:3.12
+      image: catthehacker/ubuntu:act-24.04
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
