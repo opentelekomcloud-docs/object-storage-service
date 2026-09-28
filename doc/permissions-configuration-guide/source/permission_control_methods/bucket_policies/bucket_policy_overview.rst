@@ -12,8 +12,7 @@ A bucket policy applies to an OBS bucket and the objects in the bucket. Bucket p
 
 .. note::
 
-   -  Creating a bucket and obtaining a bucket list are service-level operations. To obtain such operation permissions, you need to configure :ref:`IAM permissions <obs_40_0014>`.
-   -  Due to data caching, it takes 5 minutes at most for a bucket policy to take effect.
+   Permissions for creating and listing buckets are service level and should be granted using :ref:`IAM permissions <obs_40_0014>`.
 
 
 Bucket Policy Overview

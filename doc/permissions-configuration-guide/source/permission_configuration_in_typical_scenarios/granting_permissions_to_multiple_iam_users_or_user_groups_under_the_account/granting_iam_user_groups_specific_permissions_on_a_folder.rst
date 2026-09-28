@@ -33,7 +33,7 @@ To allow IAM users to operate buckets and objects on OBS Console or OBS Browser+
 Procedure
 ---------
 
-#. Log in to the management console using a cloud service account.
+#. Log in to OBS Console using a cloud service account.
 
 #. On the top menu bar, choose **Service List** > **Management & Deployment** > **Identity and Access Management**.
 
@@ -44,7 +44,7 @@ Procedure
 #. Configure a custom policy.
 
 
-   .. figure:: /_static/images/en-us_image_0000001386340170.png
+   .. figure:: /_static/images/en-us_image_0000002678229665.png
       :alt: **Figure 1** Configuring a custom policy
 
       **Figure 1** Configuring a custom policy
@@ -127,14 +127,14 @@ Procedure
 Verification
 ------------
 
-#. Log in to OBS Console as an IAM user.
+#. Log in to the management console as an IAM user.
 #. In the bucket list, click bucket **example-002** to go to the **Overview** page.
 
    .. note::
 
       After the configuration is complete, it is normal if the system still displays a message indicating that you do not have required permissions, because OBS Console also calls other APIs for advanced settings, but you can still perform the operations allowed on the folder.
 
-#. In the navigation pane, select **Objects**. If a message indicating no sufficient is available and no object can be viewed, ignore the message and continue with the operations.
+#. In the navigation pane, select **Objects**. If a message indicating insufficient permissions appears and no object can be viewed, ignore the message and continue with the operations.
 
    .. note::
 

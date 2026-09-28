@@ -16,7 +16,7 @@ You need to consider the following factors before configuring permissions:
 OBS provides various permission control methods for different scenarios. The following figure can help you quickly find the best method for your needs.
 
 
-.. figure:: /_static/images/en-us_image_0000001254687479.png
+.. figure:: /_static/images/en-us_image_0000002648149970.png
    :alt: **Figure 1** Typical permissions scenarios
 
    **Figure 1** Typical permissions scenarios
@@ -66,5 +66,5 @@ The following table lists the typical scenarios for your reference.
    +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | Granting temporary permissions                                                      | :ref:`Granting Temporary Access to OBS <obs_40_0037>`                                                   |
    +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | Restricting access to specified IP addresses                                        | :ref:`Restricting Access to a Bucket for Specific IP Addresses <obs_40_0036>`                           |
+   | Restricting access to specified IP addresses                                        | :ref:`Restricting Bucket Access by IP Address <obs_40_0036>`                                            |
    +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+

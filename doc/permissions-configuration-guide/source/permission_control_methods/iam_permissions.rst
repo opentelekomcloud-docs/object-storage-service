@@ -21,7 +21,7 @@ You can grant permissions to users by roles and policies.
 
 .. note::
 
-   Due to data caching, a role and policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user or a user group.
+   Due to data caching, a role or policy involving OBS actions becomes effective 10 to 15 minutes after being attached to a user or user group.
 
 IAM presets system permissions for each cloud service so that you can quickly configure basic permissions. :ref:`Table 1 <obs_40_0003__table143320246431>` describes all system permissions of OBS.
 
@@ -162,7 +162,7 @@ Policy Structure and Syntax
 A policy consists of a version and one or more statements.
 
 
-.. figure:: /_static/images/en-us_image_0257849924.png
+.. figure:: /_static/images/en-us_image_0000002678389511.png
    :alt: **Figure 1** Policy structure
 
    **Figure 1** Policy structure
@@ -172,28 +172,28 @@ Policy syntax example:
 .. code-block::
 
    {
-       "Version": "1.1",
-       "Statement": [
+    "Version": "1.1",
+    "Statement": [
                    {
-               "Effect": "Allow",
-               "Action": [
-                   "obs:bucket:HeadBucket",
-                   "obs:bucket:ListBucket",
-                   "obs:bucket:GetBucketLocation"
-               ],
-               "Resource": [
-                   "obs:*:*:bucket:*"
-               ],
-               "Condition": {
-                   "StringEndWithIfExsits": {
-                       "g:UserName": ["specialCharacter"]
-                   },
-                   "Bool": {
-                       "g:MFAPresent": ["true"]
-                   }
-               }
-           }
-       ]
+      "Effect": "Allow",
+      "Action": [
+       "obs:bucket:HeadBucket",
+       "obs:bucket:ListBucket",
+       "obs:bucket:GetBucketLocation"
+      ],
+      "Resource": [
+       "obs:*:*:bucket:*"
+      ],
+      "Condition": {
+       "StringEndWithIfExsits": {
+        "g:UserName": ["specialCharacter"]
+       },
+       "Bool": {
+        "g:MFAPresent": ["true"]
+       }
+      }
+     }
+    ]
    }
 
 .. table:: **Table 3** Policy syntax parameters
@@ -248,7 +248,7 @@ Policy syntax example:
 Configuring IAM Permissions
 ---------------------------
 
--  `Creating a User and Granting OBS Permissions <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0122.html>`__
+-  `Creating an IAM User and Granting OBS Permissions <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0122.html>`__
 -  `Creating a Custom Policy <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0016.html>`__
 
 Example Custom Policies
@@ -370,7 +370,7 @@ Example Custom Policies
 
 -  **Example 6: Deny object upload.**
 
-   A policy with only **Deny** statements must be used together other policies. If the policy assigned to a user contains both **Allow** and **Deny** statements, the **Deny** statement take precedence over the **Allow** statement.
+   A policy with only **Deny** statements must be used together with other policies. If the policy assigned to a user contains both **Allow** and **Deny** statements, the **Deny** statement takes precedence over the **Allow** statement.
 
    If you need to assign **OBS OperateAccess** permissions to a user but prevent the user from uploading objects, you can create a custom policy to deny object upload, and assign this custom policy and **OBS OperateAccess** to the user. Then the user can perform all operations allowed by **OBS OperateAccess** except for uploading objects. The following is an example of a deny policy:
 

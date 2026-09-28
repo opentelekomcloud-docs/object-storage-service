@@ -13,7 +13,7 @@ OBS Permission Control Methods
 OBS provides multiple permission control methods, including IAM permissions, bucket policies, object ACLs, and bucket ACLs. :ref:`Table 1 <obs_40_0001__table16110824101113>` describes the methods and their application scenarios.
 
 
-.. figure:: /_static/images/en-us_image_0257815079.png
+.. figure:: /_static/images/en-us_image_0000002648309832.png
    :alt: **Figure 1** OBS permission control methods
 
    **Figure 1** OBS permission control methods
@@ -53,7 +53,7 @@ Relationships Between OBS Permissions and IAM Permissions
 OBS provides multiple permission control methods, including time-limited access to objects, object ACLs, bucket ACLs, and bucket policies. Some service-level permissions (for example, creating a bucket and listing all buckets) cannot be configured through OBS and can only be configured on IAM. OBS permissions apply only to resources (buckets and objects). To grant both OBS service-level and resource-level permissions, you must use IAM permissions or both IAM and OBS permissions.
 
 
-.. figure:: /_static/images/en-us_image_0257817646.png
+.. figure:: /_static/images/en-us_image_0000002678229697.png
    :alt: **Figure 2** Relationships between OBS permissions and IAM permissions
 
    **Figure 2** Relationships between OBS permissions and IAM permissions
@@ -121,8 +121,8 @@ Considering the advantages and disadvantages of the elements, you are advised to
 
 -  Select bucket policies to:
 
+   -  Grant different permissions to IAM users under the same account.
    -  Grant permissions across accounts or to anonymous users.
-   -  Grant different permissions to different IAM users under the same account.
 
 .. note::
 
@@ -165,7 +165,7 @@ Following the least-privilege principle, the permission is defaulted to deny, an
 If no method specifies an allow statement, then the request will be denied by default. Only if no method specifies a deny statement and one or more methods specify an allow statement, will the request be allowed. For example, if a bucket has multiple bucket policies with allow statements, adding such a new bucket policy applies the allowed permissions to the bucket, but adding a new bucket policy with a deny statement will make the permissions work differently. The deny statement will take precedence over allow statements, even if the denied permissions are allowed in other bucket policies.
 
 
-.. figure:: /_static/images/en-us_image_0000001664558420.png
+.. figure:: /_static/images/en-us_image_0000002678389537.png
    :alt: **Figure 3** Authorization process
 
    **Figure 3** Authorization process
@@ -174,7 +174,7 @@ If no method specifies an allow statement, then the request will be denied by de
 
 .. _obs_40_0001__fig2276143024512:
 
-.. figure:: /_static/images/en-us_image_0000001479778546.png
+.. figure:: /_static/images/en-us_image_0000002678389539.png
    :alt: **Figure 4** Action (allow or deny) to take when bucket policies and IAM permissions for IAM users conflict under an account
 
    **Figure 4** Action (allow or deny) to take when bucket policies and IAM permissions for IAM users conflict under an account
@@ -183,7 +183,7 @@ If no method specifies an allow statement, then the request will be denied by de
 
 .. _obs_40_0001__fig1251114133010:
 
-.. figure:: /_static/images/en-us_image_0000001555603997.png
+.. figure:: /_static/images/en-us_image_0000002648149944.png
    :alt: **Figure 5** Action (allow or deny) to take when bucket policies, IAM permissions, and ACLs conflict in cross-account scenarios
 
    **Figure 5** Action (allow or deny) to take when bucket policies, IAM permissions, and ACLs conflict in cross-account scenarios

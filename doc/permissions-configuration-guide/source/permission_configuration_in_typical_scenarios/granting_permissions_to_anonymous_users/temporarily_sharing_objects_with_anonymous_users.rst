@@ -15,7 +15,7 @@ Procedure for Sharing a File
 
 #. In the navigation pane of OBS Console, choose **Object Storage**.
 
-#. In the bucket list, click the bucket name you want to go to the **Objects** page.
+#. In the bucket list, click the desired bucket name to go to the **Objects** page.
 
 #. Select the file to be shared and click **Share** in the **Operation** column.
 

@@ -11,7 +11,7 @@ Permission Configuration in Typical Scenarios
 -  :ref:`Granting Permissions to Other Accounts <obs_40_0024>`
 -  :ref:`Granting Permissions to Anonymous Users <obs_40_0030>`
 -  :ref:`Granting Temporary Access to OBS <obs_40_0037>`
--  :ref:`Restricting Access to a Bucket for Specific IP Addresses <obs_40_0036>`
+-  :ref:`Restricting Bucket Access by IP Address <obs_40_0036>`
 
 .. toctree::
    :maxdepth: 1
@@ -23,4 +23,4 @@ Permission Configuration in Typical Scenarios
    granting_permissions_to_other_accounts/index
    granting_permissions_to_anonymous_users/index
    granting_temporary_access_to_obs
-   restricting_access_to_a_bucket_for_specific_ip_addresses
+   restricting_bucket_access_by_ip_address
