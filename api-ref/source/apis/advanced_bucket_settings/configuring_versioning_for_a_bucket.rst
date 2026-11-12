@@ -8,7 +8,7 @@ Configuring Versioning for a Bucket
 Functions
 ---------
 
-This operation restores an object that is mistakenly overwritten or deleted. You can use versioning to save, query, and restore objects of different versions. Versioning allows you to easily recover lost data due to misoperations or program faults. Versioning can also be used for retaining and archiving data.
+This operation restores an object that is mistakenly overwritten or deleted. You can use versioning to save, query, and restore objects of different versions. Versioning allows you to easily restore lost data due to misoperations or program faults. Versioning can also be used for retaining and archiving data.
 
 By default, versioning is disabled for a bucket.
 
@@ -22,15 +22,15 @@ After versioning is enabled for a bucket:
 -  You can download objects by specifying version IDs. By default, the latest object is downloaded if the version ID is not specified.
 -  You can specify a version ID to permanently delete a specific object. If an object is deleted with no version ID specified, only a delete marker with a unique version ID is generated, but the object is not physically deleted.
 -  The latest objects in a bucket are returned by default after a GET Object request. You can also send a request to obtain a bucket's objects with all version IDs.
--  Except delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
+-  Except for delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
 
 After versioning is suspended for a bucket:
 
 -  Existing objects with version IDs are not affected.
--  The system creates version ID **null** to an uploaded object and the object will be overwritten after a namesake one is uploaded.
+-  The system creates a version ID of **null** for an uploaded object and the object will be overwritten after a namesake one is uploaded.
 -  You can download objects by specifying version IDs. By default, the latest object is downloaded if the version ID is not specified.
 -  You can specify a version ID to delete a specific object. If an object is deleted with no version ID specified, OBS creates a delete marker with a version ID of **null** and deletes the object whose version ID is **null**.
--  Except delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
+-  Except for delete markers, storage space occupied by objects with all version IDs, excluding object metadata, is billed.
 
 Only the bucket owner can set versioning for the bucket.
 

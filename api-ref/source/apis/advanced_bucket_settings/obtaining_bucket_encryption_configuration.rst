@@ -129,7 +129,7 @@ This response contains the following elements to detail bucket encryption config
 Error Responses
 ---------------
 
-In addition to common error codes, this API also returns others. The following table lists common errors and possible causes. For details, see :ref:`Table 2 <obs_04_0063__table1488314173514>`.
+In addition to common error codes, this API returns others. The following table lists common errors and possible causes. For details, see :ref:`Table 2 <obs_04_0063__table1488314173514>`.
 
 .. _obs_04_0063__table1488314173514:
 

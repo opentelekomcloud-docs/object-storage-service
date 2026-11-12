@@ -10,7 +10,7 @@ Functions
 
 OBS uses the GET method to obtain the custom domain name of a bucket.
 
-To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for obtaining custom domain names.
+To perform this operation, you must be the bucket owner or an IAM user who has the permission to obtain the custom domain name of a bucket.
 
 Request Syntax
 --------------
@@ -63,7 +63,7 @@ Response Syntax
 Response Headers
 ----------------
 
-The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
+This response uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
 Response Elements
 -----------------
