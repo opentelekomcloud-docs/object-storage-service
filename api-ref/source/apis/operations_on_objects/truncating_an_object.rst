@@ -8,7 +8,7 @@ Truncating an Object
 Functions
 ---------
 
-This operation can truncate an object to a specified size.
+This operation can truncate an existing object to a specified size.
 
 .. note::
 

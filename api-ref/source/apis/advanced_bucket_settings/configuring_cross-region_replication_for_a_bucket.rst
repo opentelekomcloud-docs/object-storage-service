@@ -37,7 +37,7 @@ Request Syntax
        <Agency>testAcy</Agency>
        <Rule>
            <ID>rule1</ID>
-           <Prefix>key-prefix</Prefix>
+           <Prefix></Prefix>
            <Status>rule-status</Status>
            <Destination>
                <Bucket>targetbucketname</Bucket>
@@ -60,11 +60,11 @@ The request uses one header, as described in the following table.
 
 .. table:: **Table 1** Request header for cross-region replication
 
-   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
-   | Element     | Description                                                                                                                                                                                                          | Mandatory (Yes/No) |
-   +=============+======================================================================================================================================================================================================================+====================+
-   | Content-MD5 | Base64-encoded 128-bit MD5 value of the request body calculated according to RFC 1864. For details about how to calculate Content-MD5, see :ref:`Content-MD5 Algorithm in Java <obs_04_0010__section1255031191518>`. | Yes                |
-   +-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+   +-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+   | Element     | Description                                                                                                                                                                                                            | Mandatory (Yes/No) |
+   +=============+========================================================================================================================================================================================================================+====================+
+   | Content-MD5 | Base64-encoded 128-bit MD5 value of the request body calculated according to RFC 1864. For details about how to calculate Content-MD5, see :ref:`Content-MD5 Algorithm in Java <obs_04_0010ss__section1255031191518>`. | Yes                |
+   +-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
 
 Request Elements
 ----------------
@@ -92,7 +92,7 @@ The request body contains elements to specify the replication configuration for 
    +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Rule                        | Container of a specified replication rule.                                                                                                                                 | Yes                   |
    |                             |                                                                                                                                                                            |                       |
-   |                             | The replication configuration must contain at least one rule. The maximum number of rules is 100.                                                                          |                       |
+   |                             | There must be at least one rule for the replication configuration. A maximum of 100 rules can be configured.                                                               |                       |
    |                             |                                                                                                                                                                            |                       |
    |                             | Type: container                                                                                                                                                            |                       |
    |                             |                                                                                                                                                                            |                       |
@@ -116,7 +116,7 @@ The request body contains elements to specify the replication configuration for 
    +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
    | Prefix                      | Prefix of an object key name, applicable to one or more objects. If the **Prefix** is left blank, the cross-region replication rule is applied to the whole bucket.        | Yes                   |
    |                             |                                                                                                                                                                            |                       |
-   |                             | The prefix should be a UTF-8-encoded character sequence of 1 to 1,024 characters. Duplicate prefixes are not supported.                                                    |                       |
+   |                             | The prefix should be a UTF-8-encoded character sequence of 1 to 1,024 characters. Overlapping prefixes are not supported.                                                  |                       |
    |                             |                                                                                                                                                                            |                       |
    |                             | Type: string                                                                                                                                                               |                       |
    |                             |                                                                                                                                                                            |                       |
@@ -136,7 +136,7 @@ The request body contains elements to specify the replication configuration for 
    |                             |                                                                                                                                                                            |                       |
    |                             | Parent: Destination                                                                                                                                                        |                       |
    +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | StorageClass                | Storage class of an object                                                                                                                                                 | No                    |
+   | StorageClass                | Storage class of an object.                                                                                                                                                | No                    |
    |                             |                                                                                                                                                                            |                       |
    |                             | Type: string                                                                                                                                                               |                       |
    |                             |                                                                                                                                                                            |                       |
@@ -174,7 +174,7 @@ Response Syntax
 Response Headers
 ----------------
 
-The response to the request uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
+This response uses common headers. For details, see :ref:`Table 1 <obs_04_0013__d0e686>`.
 
 Response Elements
 -----------------

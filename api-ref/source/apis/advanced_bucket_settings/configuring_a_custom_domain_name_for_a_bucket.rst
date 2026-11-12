@@ -8,11 +8,7 @@ Configuring a Custom Domain Name for a Bucket
 Functions
 ---------
 
-OBS uses the PUT method to configure a custom domain name for a bucket. After the configuration is successful, you can access the bucket through the domain name.
-
-To perform this operation, the user must be the bucket owner or the bucket owner's IAM user that has permissions required for configuring custom domain names.
-
-Ensure that the custom domain name can correctly resolve to the OBS service through DNS.
+OBS uses the PUT method to configure a custom domain name for a bucket. After the configuration is successful, you can access the bucket through the domain name. You need to ensure that DNS can resolve the custom domain name to OBS.
 
 Request Syntax
 --------------

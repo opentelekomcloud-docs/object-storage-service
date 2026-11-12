@@ -26,10 +26,14 @@ Basic Concepts Related to OBS APIs
 
 -  Object
 
-   An object is a basic data unit on OBS. A bucket can store multiple objects, and OBS does not distinguish between object file types. Objects are serialized in OBS. An object may be a text, a video, or any other types of files. In OBS, the size of a file can range from 0 bytes to 48.8 TB. However, when an object is uploaded through the **PutObject** operation, it cannot exceed the maximum size of 5 GB. Use the multipart upload method, if the object size is larger than 5 GB.
+   An object is a basic data unit on OBS. A bucket can store multiple objects, and OBS does not distinguish between object file types. Objects are serialized in OBS. An object may be a text, a video, or any other types of files. In OBS, the size of a file can range from 0 bytes to 48.8 TB. However, when an object is uploaded through the **PutObject** operation, it cannot exceed the maximum size of 5 GB. To upload an object larger than 5 GB, use the multipart upload method.
 
 -  Region
 
    A region is a geographic area in which cloud resources are deployed. Availability zones (AZs) in the same region can communicate with each other over an intranet, while AZs in different regions are isolated from each other. Deploying cloud resources in different regions can better suit certain user requirements or comply with local laws or regulations.
 
    Each bucket in OBS must reside in a region. You can specify the region when creating the bucket. Once a bucket is created, its region cannot be changed. Select the most appropriate region for a bucket based on the location, cost, and regulatory compliance requirements. For details about the available regions, see :ref:`Endpoints <en-us_topic_0031051947__section124911550580>`.
+
+-  Enterprise project
+
+   Enterprise projects group and manage resources across regions. Resources in one enterprise project are logically isolated from resources in another. An enterprise project can contain resources from multiple regions, and resources can be added to or removed from enterprise projects. For more information about enterprise projects and how to obtain enterprise project IDs, see the *Enterprise Management User Guide*.
