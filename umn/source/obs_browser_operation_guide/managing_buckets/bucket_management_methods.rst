@@ -13,7 +13,7 @@ OBS Browser supports three methods of bucket management.
 
    .. _obs_03_0059__fcd32b0f2cd294fdaaa01e93655c90137:
 
-   .. figure:: /_static/images/en-us_image_0129804217.png
+   .. figure:: /_static/images/en-us_image_0000002541124246.png
       :alt: **Figure 1** First method of managing buckets
 
       **Figure 1** First method of managing buckets
@@ -24,7 +24,7 @@ OBS Browser supports three methods of bucket management.
 
    .. _obs_03_0059__fig46223652173138:
 
-   .. figure:: /_static/images/en-us_image_0129805313.png
+   .. figure:: /_static/images/en-us_image_0000002540964612.png
       :alt: **Figure 2** Second method of managing buckets
 
       **Figure 2** Second method of managing buckets
@@ -35,7 +35,7 @@ OBS Browser supports three methods of bucket management.
 
    .. _obs_03_0059__fig40567659173352:
 
-   .. figure:: /_static/images/en-us_image_0129805421.png
+   .. figure:: /_static/images/en-us_image_0000002540964598.png
       :alt: **Figure 3** Third method of managing buckets
 
       **Figure 3** Third method of managing buckets

@@ -23,7 +23,7 @@ Procedure
 
    .. _obs_03_0416__fe095887a5e664d6aa0dd30456edda8b1:
 
-   .. figure:: /_static/images/en-us_image_0129829000.png
+   .. figure:: /_static/images/en-us_image_0000002541123952.png
       :alt: **Figure 1** Object properties
 
       **Figure 1** Object properties
@@ -43,4 +43,4 @@ Procedure
 
 #. Paste the object URL in the address box of a web browser. Press **Enter**, and then you can access the object.
 
-.. |image1| image:: /_static/images/en-us_image_0237534488.png
+.. |image1| image:: /_static/images/en-us_image_0000002541123954.png

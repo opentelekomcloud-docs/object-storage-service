@@ -13,7 +13,7 @@ Procedure
    To download the package, click the OBS Browser package link on the homepage of OBS Console.
 
 
-   .. figure:: /_static/images/en-us_image_0000001631858722.png
+   .. figure:: /_static/images/en-us_image_0000002571724769.png
       :alt: **Figure 1** Downloading an OBS Browser software package
 
       **Figure 1** Downloading an OBS Browser software package

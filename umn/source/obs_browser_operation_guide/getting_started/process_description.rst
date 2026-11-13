@@ -9,11 +9,11 @@ The follow-up sections describe how to complete the following tasks illustrated 
 
 .. _obs_03_0064__fig161520481729:
 
-.. figure:: /_static/images/en-us_image_0130267221.png
+.. figure:: /_static/images/en-us_image_0000002571724171.png
    :alt: **Figure 1** OBS Browser flowchart
 
    **Figure 1** OBS Browser flowchart
 
 Click |image1| in the upper right of the page, or right-click the bucket list or object list and choose **Refresh** to refresh the OBS Browser page.
 
-.. |image1| image:: /_static/images/en-us_image_0148639825.png
+.. |image1| image:: /_static/images/en-us_image_0000002540964244.png

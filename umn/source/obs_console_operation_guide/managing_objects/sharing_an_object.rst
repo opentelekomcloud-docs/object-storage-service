@@ -13,13 +13,13 @@ You can share temporary URLs of your objects with others for them to access your
 Background Information
 ----------------------
 
-File sharing is temporary. All sharing URLs are only valid for a limited period of time.
+File sharing is temporary. All shared URLs are only valid for a limited period of time.
 
 A temporary URL consists of the access domain name and the temporary authentication information of a file.
 
 The temporary authentication information contains the **AccessKeyId**, **Expires**, **x-obs-security-token**, and **Signature** parameters. **AccessKeyId**, **x-obs-security-token**, and **Signature** are used for authentication. The **Expires** parameter specifies the validity period of the authentication.
 
-After an object is shared on OBS Console, the system will generate a URL that contains the temporary authentication information, valid for five minutes since its generation by default. Each time you change the validity period of a URL, OBS obtains the authentication information again to generate a new URL for sharing, which takes effect since the time when the validity period is changed.
+After an object is shared on OBS Console, the system will generate a URL that contains the temporary authentication information, valid for five minutes since its generation by default. Each time you change the validity period of a URL, OBS obtains the authentication information again to create a new shared URL. This new URL is in effect immediately upon the change.
 
 Constraints
 -----------
@@ -32,23 +32,23 @@ Constraints
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Locate the file to be shared and click **Share** in the **Operation** column.
 
    Once the **Share File** dialog box is opened, the URL is effective and valid for five minutes by default. If you change the validity period, the authentication information in the URL changes accordingly, and the URL's new validity period starts upon the change.
 
 
-   .. figure:: /_static/images/en-us_image_0000001523534634.png
+   .. figure:: /_static/images/en-us_image_0000002541123874.png
       :alt: **Figure 1** Sharing a file
 
       **Figure 1** Sharing a file
 
 #. Operate the URL as follows:
 
-   -  Click **Open URL** to preview the file on a new page or directly download it to your default download path.
-   -  Click **Copy Link** to share the link to others for them to access this file using a browser.
-   -  Click **Copy Path** to share the file path to users who have access to the bucket. The users then can search for the file by pasting the shared path to the search box of the bucket.
+   -  Click **Open in Browser** to preview the file on a new page or directly download it to your default download path.
+   -  Click **Copy Link** to share the link with others for them to access this file in a browser.
+   -  Click **Copy Path** to share the file path with users who have access to the bucket. The users then can search for the file by pasting the shared path in the search box of the bucket.
 
    .. note::
 

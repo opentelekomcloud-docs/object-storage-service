@@ -148,7 +148,7 @@ Example Custom Policies
 
    A deny policy must be used together with other policies. If the permissions assigned to a user contain both "Allow" and "Deny", the "Deny" permissions take precedence over the "Allow" permissions.
 
-   If you grant the system policy OBS OperateAccess to a user but do not want the user to have the object upload permission (which is also a permission allowed by OBS OperateAccess), you can create a custom policy besides the OBS OperateAccess policy, to deny the user's upload permission. According to the authorization principle, the policy with the deny statement takes precedence, so that the user can perform all operations allowed by OBS OperateAccess, except uploading objects. The following is an example of a deny policy:
+   If you grant the system policy **OBS OperateAccess** to a user but do not want the user to have the object upload permission (which is also a permission allowed by **OBS OperateAccess**), you can create a custom policy besides the **OBS OperateAccess** policy, to deny the user's upload permission. According to the authorization principle, the policy with the deny statement takes precedence, so that the user can perform all operations allowed by **OBS OperateAccess**, except uploading objects. The following is an example of a deny policy:
 
    .. code-block::
 
