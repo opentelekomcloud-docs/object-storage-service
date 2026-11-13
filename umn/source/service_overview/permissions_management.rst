@@ -24,7 +24,7 @@ RBAC policy: An RBAC policy consists of permissions for an entire service. Users
 
 .. note::
 
-   Due to data caching, an RBAC policy or a fine-grained policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user or a user group.
+   Due to data caching, an RBAC policy or a fine-grained policy involving OBS actions becomes effective 10 to 15 minutes after being attached to a user or user group.
 
 :ref:`Table 1 <obs_03_0045__table358116162418>` lists all system policies of OBS.
 
@@ -62,7 +62,7 @@ RBAC policy: An RBAC policy consists of permissions for an entire service. Users
 
 The following table lists operations that can be performed under each set of OBS permission.
 
-.. table:: **Table 2** Permissions and the allowed operations on OBS resources
+.. table:: **Table 2** Relationship between OBS operations and permissions
 
    +------------------------------------------------+----------------------+---------------+-------------------+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
    | Operation                                      | Tenant Administrator | Tenant Guest  | OBS Administrator | OBS Buckets Viewer                                                                | OBS ReadOnlyAccess                                                                | OBS OperateAccess                                                                 |

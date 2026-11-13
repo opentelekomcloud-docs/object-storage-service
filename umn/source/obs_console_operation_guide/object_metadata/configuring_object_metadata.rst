@@ -8,7 +8,7 @@ Configuring Object Metadata
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Click the object to be operated, and then click the **Metadata** tab.
 
@@ -16,7 +16,7 @@ Procedure
 
    .. _obs_03_0324__fig23497413194123:
 
-   .. figure:: /_static/images/en-us_image_0129757763.png
+   .. figure:: /_static/images/en-us_image_0000002571604331.png
       :alt: **Figure 1** Adding metadata
 
       **Figure 1** Adding metadata

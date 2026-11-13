@@ -84,7 +84,7 @@ Creating an Agency for Cross-Region Replication
          Add the source and destination buckets. For example, set the resource path to **OBS:*:*:bucket:piccomp** and **OBS:*:*:bucket:piccomp-output**, indicating the source bucket **piccomp** and destination bucket **piccomp-output**, respectively.
 
 
-   .. figure:: /_static/images/en-us_image_0000002269635345.png
+   .. figure:: /_static/images/en-us_image_0000002571604389.png
       :alt: **Figure 1** Configuring a custom policy
 
       **Figure 1** Configuring a custom policy

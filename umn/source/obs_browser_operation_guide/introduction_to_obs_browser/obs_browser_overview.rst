@@ -41,4 +41,4 @@ OBS Browser has a flattened GUI, which is friendly to Windows users. For a bette
 
 You can click |image1| at the upper right corner and click **About OBS Browser** to view the version information, or click **Online Help** to view the help document.
 
-.. |image1| image:: /_static/images/en-us_image_0237530299.png
+.. |image1| image:: /_static/images/en-us_image_0000002541124054.png

@@ -17,12 +17,12 @@ An object tag is a key-value pair. To use tags, follow the rules below:
 
    -  If there are multiple tags specified for an object, each tag key must be unique.
    -  A tag key must contain 1 to 36 characters and be case sensitive.
-   -  A tag key can't start or end with a space or contain the following characters: ``,/|<>=*\``
+   -  A tag key can't start or end with a space, and can contain only digits, letters, underscores (_), and hyphens (-).
 
 -  Tag value constraints:
 
    -  A tag value can contain 0 to 43 characters and must be case sensitive.
-   -  A tag value can't contain the following characters: ``,/|<>=*\``
+   -  A tag value can contain only digits, letters, underscores (_), and hyphens (-).
 
 Important Notes
 ---------------
@@ -68,31 +68,31 @@ Configuring Object Tags
 
 On OBS Console, you can add tags to an object when uploading it (see :ref:`Procedure <en-us_topic_0045853663__section64292661113931>`). You can also add tags to an existing object, as described in the following:
 
-#. In the bucket list, click the bucket you want to operate. The **Objects** page is displayed.
+#. In the bucket list, click the desired bucket. The **Objects** page is displayed.
 #. In the object list, click the name of the object you want to add tags to.
 #. Click the **Tags** tab. Then, click **Add Tag** in the upper left corner.
 #. In the **Add Tag** dialog box, enter a tag key and a tag value.
 
    .. table:: **Table 1** Parameter description
 
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                            |
-      +===================================+========================================================================================================================+
-      | Tag key                           | The key of an object must be unique and cannot be left blank. You can customize a tag or choose one predefined on TMS. |
-      |                                   |                                                                                                                        |
-      |                                   | -  Tag key constraints:                                                                                                |
-      |                                   |                                                                                                                        |
-      |                                   |    -  If there are multiple tags specified for an object, each tag key must be unique.                                 |
-      |                                   |    -  A tag key must contain 1 to 36 characters and be case sensitive.                                                 |
-      |                                   |    -  A tag key can't start or end with a space or contain the following characters: ``,/|<>=*\``                      |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
-      | Tag value                         | A tag value can be repetitive or left blank.                                                                           |
-      |                                   |                                                                                                                        |
-      |                                   | -  Tag value constraints:                                                                                              |
-      |                                   |                                                                                                                        |
-      |                                   |    -  A tag value can contain 0 to 43 characters and must be case sensitive.                                           |
-      |                                   |    -  A tag value can't contain the following characters: ``,/|<>=*\``                                                 |
-      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                         |
+      +===================================+=====================================================================================================================+
+      | Tag key                           | The key of an object must be unique and cannot be left blank. You can define a tag or select one predefined on TMS. |
+      |                                   |                                                                                                                     |
+      |                                   | -  Tag key constraints:                                                                                             |
+      |                                   |                                                                                                                     |
+      |                                   |    -  If there are multiple tags specified for an object, each tag key must be unique.                              |
+      |                                   |    -  A tag key must contain 1 to 36 characters and be case sensitive.                                              |
+      |                                   |    -  A tag key can't start or end with a space or contain the following characters: ``,/|<>=*\``                   |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Tag value                         | A tag value can be duplicated or left blank.                                                                        |
+      |                                   |                                                                                                                     |
+      |                                   | -  Tag value constraints:                                                                                           |
+      |                                   |                                                                                                                     |
+      |                                   |    -  A tag value can contain 0 to 43 characters and must be case sensitive.                                        |
+      |                                   |    -  A tag value can't contain the following characters: ``,/|<>=*\``                                              |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.
 

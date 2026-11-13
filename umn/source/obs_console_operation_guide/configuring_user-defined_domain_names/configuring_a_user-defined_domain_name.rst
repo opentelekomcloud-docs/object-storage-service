@@ -8,7 +8,7 @@ Configuring a User-Defined Domain Name
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. In the navigation pane, choose **Domain Name Mgmt**.
 
@@ -18,7 +18,7 @@ Procedure
 
    .. _obs_03_0032__fig53010339108:
 
-   .. figure:: /_static/images/en-us_image_0000001458743966.png
+   .. figure:: /_static/images/en-us_image_0000002540964026.png
       :alt: **Figure 1** Configuring a user-defined domain name
 
       **Figure 1** Configuring a user-defined domain name

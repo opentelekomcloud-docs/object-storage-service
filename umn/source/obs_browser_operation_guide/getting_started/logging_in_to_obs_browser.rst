@@ -34,5 +34,3 @@ Follow-up Procedure
 For details about the system configuration of OBS Browser, see :ref:`Configuring the System <en-us_topic_0045853630>`.
 
 If you want to use OBS Browser to manage objects across accounts, click **Manage Account** to add account information. Then you can switch to the target account by clicking the name of that account. For details about account management, see :ref:`Managing Accounts <en-us_topic_0045853764>`.
-
-For details about the OBS Browser version update, see :ref:`Updating OBS Browser <obs_03_0438>`.

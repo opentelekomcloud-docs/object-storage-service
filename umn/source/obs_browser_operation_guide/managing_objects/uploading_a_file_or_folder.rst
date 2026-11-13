@@ -19,24 +19,28 @@ Procedure
 
 #. Click the bucket to which the file or folder will be uploaded.
 
-#. Click **Upload**. The **Upload Object** dialog box is displayed. For details, see :ref:`Figure 1 <obs_03_0414__obs_03_0024_fig1511502439>`.
+#. Click **Upload**. The **Upload Object** dialog box is displayed. For details, see :ref:`Figure 1 <obs_03_0414__en-us_topic_0129289121_fig1511502439>`.
 
-   You can select either files or folders to upload. For details, see :ref:`4 <obs_03_0414__obs_03_0024_li1356818523426>` and :ref:`5 <obs_03_0414__obs_03_0024_li018223074620>`.
+   You can select either files or folders to upload. For details, see :ref:`4 <obs_03_0414__en-us_topic_0129289121_li1356818523426>` and :ref:`5 <obs_03_0414__en-us_topic_0129289121_li018223074620>`.
 
-   .. _obs_03_0414__obs_03_0024_fig1511502439:
+   .. _obs_03_0414__en-us_topic_0129289121_fig1511502439:
 
-   .. figure:: /_static/images/en-us_image_0150044268.png
+   .. figure:: /_static/images/en-us_image_0000002540964288.png
       :alt: **Figure 1** Uploading objects
 
       **Figure 1** Uploading objects
 
-#. .. _obs_03_0414__obs_03_0024_li1356818523426:
+#. .. _obs_03_0414__en-us_topic_0129289121_li1356818523426:
 
    Click **Select File**. The local file browser dialog box is displayed. Select the file that you want to upload and click **Open**.
 
    You can upload a maximum of 500 files or folders at a time.
 
-#. .. _obs_03_0414__obs_03_0024_li018223074620:
+   .. note::
+
+      If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters to ensure compatibility.
+
+#. .. _obs_03_0414__en-us_topic_0129289121_li018223074620:
 
    Click **Select Folder**, select a folder, and click **OK**.
 
