@@ -14,7 +14,6 @@ OBS Browser Operation Guide
 -  :ref:`Permission Control <obs_03_0140>`
 -  :ref:`Lifecycle Management <obs_03_0424>`
 -  :ref:`CORS <obs_03_0427>`
--  :ref:`Logging <obs_03_0430>`
 -  :ref:`External Buckets <obs_03_0433>`
 -  :ref:`Task Management <obs_03_0435>`
 -  :ref:`Related Operations <obs_03_0028>`
@@ -34,7 +33,6 @@ OBS Browser Operation Guide
    permission_control/index
    lifecycle_management/index
    cors/index
-   logging/index
    external_buckets/index
    task_management
    related_operations/index

@@ -13,7 +13,7 @@ OBS Browser supports three methods of object management.
 
    .. _obs_03_0060__fig4140529718916:
 
-   .. figure:: /_static/images/en-us_image_0130778144.png
+   .. figure:: /_static/images/en-us_image_0000002541124250.png
       :alt: **Figure 1** First method of managing objects
 
       **Figure 1** First method of managing objects
@@ -24,7 +24,7 @@ OBS Browser supports three methods of object management.
 
    .. _obs_03_0060__fig24767716181032:
 
-   .. figure:: /_static/images/en-us_image_0130778160.png
+   .. figure:: /_static/images/en-us_image_0000002541124236.png
       :alt: **Figure 2** Second method of managing objects
 
       **Figure 2** Second method of managing objects
@@ -35,7 +35,7 @@ OBS Browser supports three methods of object management.
 
    .. _obs_03_0060__fig56131650141216:
 
-   .. figure:: /_static/images/en-us_image_0130778196.png
+   .. figure:: /_static/images/en-us_image_0000002571604573.png
       :alt: **Figure 3** Third method of managing objects
 
       **Figure 3** Third method of managing objects

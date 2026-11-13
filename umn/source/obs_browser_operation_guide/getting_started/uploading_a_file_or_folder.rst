@@ -30,7 +30,7 @@ Procedure
 
    .. _obs_03_0024__fig1511502439:
 
-   .. figure:: /_static/images/en-us_image_0150044268.png
+   .. figure:: /_static/images/en-us_image_0000002540964288.png
       :alt: **Figure 1** Uploading objects
 
       **Figure 1** Uploading objects
@@ -40,6 +40,10 @@ Procedure
    Click **Select File**. The local file browser dialog box is displayed. Select the file that you want to upload and click **Open**.
 
    You can upload a maximum of 500 files or folders at a time.
+
+   .. note::
+
+      If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters to ensure compatibility.
 
 #. .. _obs_03_0024__li018223074620:
 

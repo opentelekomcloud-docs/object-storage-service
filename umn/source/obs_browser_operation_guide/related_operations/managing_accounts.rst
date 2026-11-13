@@ -34,7 +34,7 @@ Adding an Account
 
          .. _en-us_topic_0045853764__f7b99ff29dc1543b4b16e69c9db5bd5af:
 
-         .. figure:: /_static/images/en-us_image_0129866022.png
+         .. figure:: /_static/images/en-us_image_0000002571604429.png
             :alt: **Figure 1** Adding a new account - OBS
 
             **Figure 1** Adding a new account - OBS
@@ -45,7 +45,7 @@ Adding an Account
 
          .. _en-us_topic_0045853764__f8c588f27619148c78257359a12e609a7:
 
-         .. figure:: /_static/images/en-us_image_0129867278.png
+         .. figure:: /_static/images/en-us_image_0000002571724533.png
             :alt: **Figure 2** Adding a new account - Other object storage services
 
             **Figure 2** Adding a new account - Other object storage services
@@ -74,4 +74,4 @@ Deleting an Account
 #. Click **Delete** in the row where the desired account resides.
 #. Click **OK** and the account is deleted.
 
-.. |image1| image:: /_static/images/en-us_image_0237530299.png
+.. |image1| image:: /_static/images/en-us_image_0000002541124054.png

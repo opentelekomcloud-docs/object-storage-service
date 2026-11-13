@@ -10,7 +10,7 @@ On OBS Console, you can search for files or folders by storage class, last modif
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. **Search for objects by storage class**:
 
@@ -18,10 +18,10 @@ Procedure
    b. Select your desired option, or enter a keyword and then select the option displayed.
    c. Click **OK**. The searched objects are displayed in the object list.
 
-   Suppose you want to search for objects in the Standard storage class. Click the search box and choose **Storage Class** from the drop-down list. Then, select **Standard**, or enter **standard** in the search box and select the option displayed. After that, click **OK**. Objects in the Standard storage class will be displayed in the object list.
+   Suppose you want to search for objects in the Standard storage class. Click the search box and choose **Storage Class** from the drop-down list. Then, select **Standard**, or enter **stan** in the search box and select the option displayed. After that, click **OK**. Objects in the Standard storage class will be displayed in the object list.
 
 
-   .. figure:: /_static/images/en-us_image_0000002112799428.png
+   .. figure:: /_static/images/en-us_image_0000002571604699.png
       :alt: **Figure 1** Searching for objects by storage class
 
       **Figure 1** Searching for objects by storage class
@@ -42,7 +42,7 @@ Procedure
    Suppose you want to search for objects uploaded from 13:00:00 on October 10, 2023. Click the search box and choose **Last Modified** from the drop-down list. Then, click the text box for **Start Date**, specify the time (13:00:00 on October 10, 2023) and click **OK**. Objects uploaded from 13:00:00 on October 10, 2023 will be displayed in the object list.
 
 
-   .. figure:: /_static/images/en-us_image_0000002112961384.png
+   .. figure:: /_static/images/en-us_image_0000002571724645.png
       :alt: **Figure 2** Searching for objects by last modification time
 
       **Figure 2** Searching for objects by last modification time
@@ -61,7 +61,7 @@ Procedure
    Suppose you want to search for objects whose prefix is **te**. Click the search box and choose **Object Name Prefix** from the drop-down list box. Then, enter **te**, and press **Enter**. Objects with the **te** prefix will be displayed in the object list.
 
 
-   .. figure:: /_static/images/en-us_image_0000002112804116.png
+   .. figure:: /_static/images/en-us_image_0000002540964714.png
       :alt: **Figure 3** Searching for objects by object name prefix
 
       **Figure 3** Searching for objects by object name prefix
@@ -80,7 +80,7 @@ Procedure
       Suppose you enter **stan** in the search box. The system will then display the **Standard** storage class. After you click this storage class, all objects whose storage class is Standard will be displayed in the object list.
 
 
-      .. figure:: /_static/images/en-us_image_0000002148446593.png
+      .. figure:: /_static/images/en-us_image_0000002571724663.png
          :alt: **Figure 4** Searching for objects by storage class keyword
 
          **Figure 4** Searching for objects by storage class keyword
@@ -90,7 +90,7 @@ Procedure
       Suppose you want to search for objects with the **te** prefix. Enter **te** in the search box and press **Enter**. Then, all objects with the **te** prefix will be displayed in the object list.
 
 
-      .. figure:: /_static/images/en-us_image_0000002148572577.png
+      .. figure:: /_static/images/en-us_image_0000002540964712.png
          :alt: **Figure 5** Searching for objects by object name prefix
 
          **Figure 5** Searching for objects by object name prefix
@@ -107,4 +107,4 @@ Related Operations
 
 In the object list, click |image1| next to the size or last modified time to sort objects.
 
-.. |image1| image:: /_static/images/en-us_image_0000001627960406.png
+.. |image1| image:: /_static/images/en-us_image_0000002540964734.png

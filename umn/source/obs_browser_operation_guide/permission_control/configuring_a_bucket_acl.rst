@@ -18,7 +18,7 @@ Procedure
 
    .. _en-us_topic_0045853509__ff824ee795c054719ae026365b7671c8f:
 
-   .. figure:: /_static/images/en-us_image_0129832488.png
+   .. figure:: /_static/images/en-us_image_0000002571604097.png
       :alt: **Figure 1** Configuring a bucket ACL
 
       **Figure 1** Configuring a bucket ACL

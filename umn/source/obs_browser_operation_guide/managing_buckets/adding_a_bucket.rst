@@ -21,7 +21,7 @@ Procedure
 #. Set the bucket parameters, as listed in :ref:`Table 1 <obs_03_0407__tcbb89d695149467789cfdd635af1df0c>`.
 
 
-   .. figure:: /_static/images/en-us_image_0129772318.png
+   .. figure:: /_static/images/en-us_image_0000002571604653.png
       :alt: **Figure 1** Adding a bucket
 
       **Figure 1** Adding a bucket
@@ -104,4 +104,4 @@ You can specify its storage class when creating a bucket or change its storage c
 
 #. In the displayed dialog box, click **Close** to close the dialog box.
 
-.. |image1| image:: /_static/images/en-us_image_0237534341.png
+.. |image1| image:: /_static/images/en-us_image_0000002541124430.png

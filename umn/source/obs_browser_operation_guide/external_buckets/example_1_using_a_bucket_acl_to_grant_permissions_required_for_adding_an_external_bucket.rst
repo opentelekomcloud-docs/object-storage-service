@@ -29,7 +29,7 @@ Procedure
 ---------
 
 #. Log in to OBS Console.
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 #. In the navigation pane on the left, click **Permissions** to go to the permission management page.
 #. Click **Bucket ACL**. The **Bucket ACL** page is displayed.
 #. Click **Add**, enter the account ID of the user that will add the bucket to OBS Browser, and select the read and write access to the bucket.

@@ -15,7 +15,7 @@ An object owner is the account that uploads the object, but may not be the owner
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Click a desired object.
 

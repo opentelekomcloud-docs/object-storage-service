@@ -18,7 +18,7 @@ Procedure
 
    .. _en-us_topic_0045853854__fig49848587164214:
 
-   .. figure:: /_static/images/en-us_image_0129833825.png
+   .. figure:: /_static/images/en-us_image_0000002541124342.png
       :alt: **Figure 1** Creating a lifecycle rule on OBS Browser
 
       **Figure 1** Creating a lifecycle rule on OBS Browser
