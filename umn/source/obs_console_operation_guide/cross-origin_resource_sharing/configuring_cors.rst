@@ -15,11 +15,11 @@ Static website hosting has been configured. For details, see :ref:`Configuring S
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. In the navigation pane, choose **Permissions** > **CORS Rules**.
 
-#. Click **Create**. The **Create CORS Rule** dialog box is displayed. See :ref:`Figure 1 <en-us_topic_0066036542__fig2425430173411>` for details.
+#. Click **Create**. The **Create CORS Rule** dialog box is displayed, as shown in :ref:`Figure 1 <en-us_topic_0066036542__fig2425430173411>`.
 
    .. note::
 
@@ -27,12 +27,12 @@ Procedure
 
    .. _en-us_topic_0066036542__fig2425430173411:
 
-   .. figure:: /_static/images/en-us_image_0145420855.png
+   .. figure:: /_static/images/en-us_image_0000002571724137.png
       :alt: **Figure 1** Creating a CORS rule
 
       **Figure 1** Creating a CORS rule
 
-#. In the **CORS Rule** dialog box, configure **Allowed Origin**, **Allowed Method**, **Allowed Header**, **Exposed Header**, and **Cache Duration (s)**.
+#. In the **CORS Rule** dialog box, configure **Allowed Origin**, **Allowed Method**, **Allowed Header**, **Exposed Header**, and **Cache Duration**.
 
    .. table:: **Table 1** Parameters in CORS rules
 
@@ -72,7 +72,7 @@ Procedure
       |                                   |                                                                                                                                                                                          |
       |                                   | You can enter multiple exposed headers (one per line). Spaces and special characters including **\*&:<** are not allowed.                                                                |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Cache Duration (s)                | Mandatory                                                                                                                                                                                |
+      | Cache Duration                    | Mandatory                                                                                                                                                                                |
       |                                   |                                                                                                                                                                                          |
       |                                   | Specifies the duration that your browser can cache CORS responses, expressed in seconds. The default value is **100**.                                                                   |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

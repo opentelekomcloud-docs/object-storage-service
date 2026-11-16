@@ -12,7 +12,7 @@ Cross-region replication refers to the process of automatically and asynchronous
 You can configure a rule to replicate only objects with a specified prefix or replicate all objects in a bucket. Replicated objects in the destination bucket are copies of those in the source bucket. Objects in both buckets have the same name and metadata (including the content, size, last modification time, creator, version ID, custom metadata, and ACL). By default, the storage class of the replicated object is the same as that of the source object. You can also specify a storage class for the replicated object.
 
 
-.. figure:: /_static/images/en-us_image_0136493204.png
+.. figure:: /_static/images/en-us_image_0000002571604741.png
    :alt: **Figure 1** Cross-region replication
 
    **Figure 1** Cross-region replication

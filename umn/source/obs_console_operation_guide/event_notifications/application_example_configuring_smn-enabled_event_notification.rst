@@ -23,7 +23,7 @@ Procedure
 
    .. _obs_03_0333__fig164117487446:
 
-   .. figure:: /_static/images/en-us_image_0129426050.png
+   .. figure:: /_static/images/en-us_image_0000002571724149.png
       :alt: **Figure 1** Creating a bucket
 
       **Figure 1** Creating a bucket
@@ -35,7 +35,7 @@ Procedure
    Click the name of the bucket created in :ref:`2 <obs_03_0333__li29947515>` to go to the **Objects** page. Then, click **Create Folder**. In the displayed dialog box, enter a folder name and click **OK**. In the following example, **SMN** is the folder name.
 
 
-   .. figure:: /_static/images/en-us_image_0000001180502786.png
+   .. figure:: /_static/images/en-us_image_0000002541124150.png
       :alt: **Figure 2** Creating a folder
 
       **Figure 2** Creating a folder
@@ -71,7 +71,7 @@ Procedure
 
       .. _obs_03_0333__fig377201314360:
 
-      .. figure:: /_static/images/en-us_image_0145403235.png
+      .. figure:: /_static/images/en-us_image_0000002571604473.png
          :alt: **Figure 3** Adding an event notification rule
 
          **Figure 3** Adding an event notification rule
@@ -93,7 +93,7 @@ Verification
 
    .. _obs_03_0333__fig1183879515218:
 
-   .. figure:: /_static/images/en-us_image_0129289372.png
+   .. figure:: /_static/images/en-us_image_0000002571604481.png
       :alt: **Figure 4** Email details about the object uploading
 
       **Figure 4** Email details about the object uploading
@@ -104,9 +104,9 @@ Verification
 
    .. _obs_03_0333__fig36929030152112:
 
-   .. figure:: /_static/images/en-us_image_0129289481.png
+   .. figure:: /_static/images/en-us_image_0000002541124130.png
       :alt: **Figure 5** Email details about the object deleting
 
       **Figure 5** Email details about the object deleting
 
-.. |image1| image:: /_static/images/en-us_image_0000001196392484.png
+.. |image1| image:: /_static/images/en-us_image_0000002571604479.png

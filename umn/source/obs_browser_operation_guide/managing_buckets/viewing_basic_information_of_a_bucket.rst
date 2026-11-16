@@ -18,7 +18,7 @@ Procedure
 
    .. _obs_03_0409__fig35840242155659:
 
-   .. figure:: /_static/images/en-us_image_0129807617.png
+   .. figure:: /_static/images/en-us_image_0000002571724329.png
       :alt: **Figure 1** Basic information about the bucket
 
       **Figure 1** Basic information about the bucket

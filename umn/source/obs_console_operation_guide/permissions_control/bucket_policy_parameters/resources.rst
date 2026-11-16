@@ -12,11 +12,6 @@ Resources can be specified in either of the following ways:
 -  **Include**: The bucket policy applies to specified OBS resources.
 -  **Exclude**: The bucket policy applies to OBS resources except the specified ones.
 
-Applying a Bucket Policy to a Bucket
-------------------------------------
-
-To specify the current bucket as the resource, keep the resource text box empty. When configuring actions for the policy, select bucket related actions.
-
 Applying a Bucket Policy to Specified Objects
 ---------------------------------------------
 

@@ -9,6 +9,10 @@ Managing Objects
 -  :ref:`Creating a Folder <obs_03_0413>`
 -  :ref:`Uploading a File or Folder <obs_03_0414>`
 -  :ref:`Downloading a File or Folder <obs_03_0415>`
+-  :ref:`Renaming a File <obs_03_0069>`
+-  :ref:`Copying a File or Folder <obs_03_0065>`
+-  :ref:`Moving a File or Folder <obs_03_0066>`
+-  :ref:`Sharing a File <obs_03_0106>`
 -  :ref:`Accessing an Object Using Its Object URL <obs_03_0416>`
 -  :ref:`Searching for a File or Folder <obs_03_0417>`
 -  :ref:`Deleting a File or Folder <en-us_topic_0045853551>`
@@ -22,6 +26,10 @@ Managing Objects
    creating_a_folder
    uploading_a_file_or_folder
    downloading_a_file_or_folder
+   renaming_a_file
+   copying_a_file_or_folder
+   moving_a_file_or_folder
+   sharing_a_file
    accessing_an_object_using_its_object_url
    searching_for_a_file_or_folder
    deleting_a_file_or_folder

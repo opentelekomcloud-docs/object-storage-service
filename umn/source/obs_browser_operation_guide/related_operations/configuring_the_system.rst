@@ -16,7 +16,7 @@ Procedure
 
    .. _en-us_topic_0045853630__fig42068739173655:
 
-   .. figure:: /_static/images/en-us_image_0129866628.png
+   .. figure:: /_static/images/en-us_image_0000002540964420.png
       :alt: **Figure 1** Configuring the system
 
       **Figure 1** Configuring the system
@@ -55,7 +55,7 @@ Procedure
 
    .. _en-us_topic_0045853630__fig543149173827:
 
-   .. figure:: /_static/images/en-us_image_0129866667.png
+   .. figure:: /_static/images/en-us_image_0000002571604397.png
       :alt: **Figure 2** Network configurations
 
       **Figure 2** Network configurations
@@ -75,7 +75,7 @@ Procedure
 
    .. _en-us_topic_0045853630__fig2876079495946:
 
-   .. figure:: /_static/images/en-us_image_0129867351.png
+   .. figure:: /_static/images/en-us_image_0000002571724369.png
       :alt: **Figure 3** Other configurations
 
       **Figure 3** Other configurations
@@ -92,6 +92,6 @@ Procedure
 
 #. Click **Save** to save the system configuration.
 
-.. |image1| image:: /_static/images/en-us_image_0237530299.png
-.. |image2| image:: /_static/images/en-us_image_0148639825.png
-.. |image3| image:: /_static/images/en-us_image_0148639825.png
+.. |image1| image:: /_static/images/en-us_image_0000002541124054.png
+.. |image2| image:: /_static/images/en-us_image_0000002540964244.png
+.. |image3| image:: /_static/images/en-us_image_0000002540964244.png

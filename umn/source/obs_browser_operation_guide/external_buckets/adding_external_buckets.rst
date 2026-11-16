@@ -30,7 +30,7 @@ Procedure
 #. Select **Add external bucket** and enter the bucket name.
 
 
-   .. figure:: /_static/images/en-us_image_0129840536.png
+   .. figure:: /_static/images/en-us_image_0000002540964380.png
       :alt: **Figure 1** Adding an external bucket
 
       **Figure 1** Adding an external bucket

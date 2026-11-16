@@ -17,7 +17,7 @@ Constraints
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the desired bucket to go to the **Objects** page.
 
 #. Select the file you want to restore, and click **Restore** on the right. The following dialog box shown in :ref:`Figure 1 <obs_03_0320__fig37793164192736>` is displayed.
 
@@ -29,7 +29,7 @@ Procedure
 
    .. _obs_03_0320__fig37793164192736:
 
-   .. figure:: /_static/images/en-us_image_0129533894.png
+   .. figure:: /_static/images/en-us_image_0000002571604805.png
       :alt: **Figure 1** Restoring an object
 
       **Figure 1** Restoring an object
@@ -45,7 +45,7 @@ Procedure
       |                                   |                                                                                                                                                                                                |
       |                                   | For example, if you set **Validity Period** to **20** when restoring an object, 20 days after the object is successfully restored, its status will change from **Restored** to **Unrestored**. |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Speed                             | How fast an object will be restored.                                                                                                                                                           |
+      | Speed                             | How fast objects will be restored.                                                                                                                                                             |
       |                                   |                                                                                                                                                                                                |
       |                                   | -  **Expedited**: Cold objects can be restored within 1 to 5 minutes.                                                                                                                          |
       |                                   | -  **Standard**: Cold objects can be restored within 3 to 5 hours.                                                                                                                             |
@@ -69,6 +69,6 @@ Within the validity period of a restored object, you can restore the object agai
 
 .. note::
 
-   If a restored object is restored again, its expiration time should be later than the time set for the previous restore. Assume that an object is restored on January 1 and will expire 30 days later (on January 30). If the object is restored again on January 10 and is made to be expired earlier than January 30 (less than 20 days later), this restore action is considered invalid.
+   If a restored object is restored again, its expiration time should be later than the time set for the previous restore. Assume that an object is restored on January 1 and will expire 30 days later (on January 30). If the object is restored again on January 10 and is made to be expired earlier than January 30 (fewer than 20 days), this restore action is considered invalid.
 
-.. |image1| image:: /_static/images/en-us_image_0148639825.png
+.. |image1| image:: /_static/images/en-us_image_0000002540964244.png

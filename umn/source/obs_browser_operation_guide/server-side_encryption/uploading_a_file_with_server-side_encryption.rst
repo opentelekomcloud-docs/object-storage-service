@@ -10,7 +10,7 @@ OBS allows you to encrypt objects on the server side so that the objects can be 
 Prerequisites
 -------------
 
-The **KMS Administrator** permission has been granted for the region where OBS is deployed. For details, see the *Identity and Access Management User Guide*.
+The **KMS Administrator** permission has been granted through IAM for the region where OBS is deployed. For details, see the *Identity and Access Management User Guide*.
 
 .. note::
 
@@ -46,7 +46,7 @@ Procedure
 
    .. _obs_03_0421__fdd58a926a65c4dc39d5a7be42a9bb60c:
 
-   .. figure:: /_static/images/en-us_image_0129858302.png
+   .. figure:: /_static/images/en-us_image_0000002541124414.png
       :alt: **Figure 1** Configuring KMS encryption
 
       **Figure 1** Configuring KMS encryption
@@ -66,7 +66,7 @@ Procedure
       To enable KMS encryption, you must enable HTTPS. Therefore, if you deselect **Enable HTTPS**, **Enable KMS encryption** will be deselected accordingly.
 
 
-   .. figure:: /_static/images/en-us_image_0129858610.png
+   .. figure:: /_static/images/en-us_image_0000002571724705.png
       :alt: **Figure 2** Encryption status
 
       **Figure 2** Encryption status
@@ -76,5 +76,5 @@ Procedure
       -  Server-side encryption does not support HTTP. To use server-side encryption, enable HTTPS.
       -  A key in use cannot be deleted. Otherwise, the object encrypted with this key cannot be downloaded.
 
-.. |image1| image:: /_static/images/en-us_image_0237530299.png
-.. |image2| image:: /_static/images/en-us_image_0237534488.png
+.. |image1| image:: /_static/images/en-us_image_0000002541124054.png
+.. |image2| image:: /_static/images/en-us_image_0000002541123954.png

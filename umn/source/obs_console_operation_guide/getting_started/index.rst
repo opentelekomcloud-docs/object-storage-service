@@ -7,6 +7,7 @@ Getting Started
 
 -  :ref:`Process Description <obs_03_0303>`
 -  :ref:`Configuring User Permissions <obs_03_0304>`
+-  :ref:`Logging In to OBS Console <obs_03_0305>`
 -  :ref:`Creating a Bucket <obs_03_0306>`
 -  :ref:`Uploading an Object <obs_03_0307>`
 -  :ref:`Downloading an Object <obs_03_0308>`
@@ -19,6 +20,7 @@ Getting Started
 
    process_description
    configuring_user_permissions
+   logging_in_to_obs_console
    creating_a_bucket
    uploading_an_object
    downloading_an_object

@@ -23,7 +23,7 @@ Procedure
 #. In the **Add CORS Rule** dialog box that is displayed, enter CORS rules.
 
 
-   .. figure:: /_static/images/en-us_image_0129834236.png
+   .. figure:: /_static/images/en-us_image_0000002541123732.png
       :alt: **Figure 1** Adding a CORS rule
 
       **Figure 1** Adding a CORS rule

@@ -23,7 +23,7 @@ If the problem persists after there is more memory, collect dump files by perfor
 
    .. _obs_03_0442__f47717ffaf52748978a29fe06579e969f:
 
-   .. figure:: /_static/images/en-us_image_0129289143.png
+   .. figure:: /_static/images/en-us_image_0000002540964414.png
       :alt: **Figure 1** Viewing the Dump file path
 
       **Figure 1** Viewing the Dump file path

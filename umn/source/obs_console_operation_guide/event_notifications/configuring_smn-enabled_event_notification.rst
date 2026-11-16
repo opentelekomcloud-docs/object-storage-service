@@ -5,7 +5,7 @@
 Configuring SMN-Enabled Event Notification
 ==========================================
 
-This section describes how to configure an SMN-enabled event notification rule on OBS Console.
+This section describes how to configure an SMN event notification rule on OBS Console.
 
 Background Information
 ----------------------
@@ -15,7 +15,7 @@ For details, see :ref:`SMN-Enabled Event Notifications <en-us_topic_0045853816>`
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. In the navigation pane, choose **Basic Configurations** > **Event Notification**. The **Event Notification** page is displayed.
 
@@ -23,7 +23,7 @@ Procedure
 
    .. _en-us_topic_0066088963__fig17847723015:
 
-   .. figure:: /_static/images/en-us_image_0145117970.png
+   .. figure:: /_static/images/en-us_image_0000002540964122.png
       :alt: **Figure 1** Creating an event notification rule
 
       **Figure 1** Creating an event notification rule

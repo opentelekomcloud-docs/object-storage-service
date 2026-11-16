@@ -47,7 +47,7 @@ In the region where OBS is deployed, the **KMS Administrator** permission has be
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Click **Upload Object**. The **Upload Object** dialog box is displayed.
 
@@ -60,7 +60,7 @@ Procedure
       If the bucket has server-side encryption configured, the object you upload will inherit encryption from the bucket by default.
 
 
-   .. figure:: /_static/images/en-us_image_0000002113097516.png
+   .. figure:: /_static/images/en-us_image_0000002571604145.png
       :alt: **Figure 1** Encrypting an object to be uploaded
 
       **Figure 1** Encrypting an object to be uploaded

@@ -14,7 +14,7 @@ Company **A** has a large number of files to archive but it does not want to put
 
 .. _obs_03_0338__fig4961082014460:
 
-.. figure:: /_static/images/en-us_image_0129288906.png
+.. figure:: /_static/images/en-us_image_0000002541124116.png
    :alt: **Figure 1** Using a user-defined domain name to access hosted static website
 
    **Figure 1** Using a user-defined domain name to access hosted static website
@@ -127,7 +127,7 @@ Procedure
 
       .. _obs_03_0338__fig18806520194814:
 
-      .. figure:: /_static/images/en-us_image_0000002275909777.png
+      .. figure:: /_static/images/en-us_image_0000002571724437.png
          :alt: **Figure 2** Uploading an object
 
          **Figure 2** Uploading an object
@@ -165,7 +165,7 @@ Procedure
    e. Set **Hosting By** to **Current bucket**.
 
 
-      .. figure:: /_static/images/en-us_image_0145846197.png
+      .. figure:: /_static/images/en-us_image_0000002541124120.png
          :alt: **Figure 3** Configuring static website hosting
 
          **Figure 3** Configuring static website hosting
@@ -189,7 +189,7 @@ Procedure
    b. Click **Configure User Domain Name** and set **User Domain Name** to **www.example.com**.
 
 
-      .. figure:: /_static/images/en-us_image_0000001121218940.png
+      .. figure:: /_static/images/en-us_image_0000002541124134.png
          :alt: **Figure 4** Configuring a user domain name
 
          **Figure 4** Configuring a user domain name
@@ -240,7 +240,7 @@ Procedure
 
       .. _obs_03_0338__fig37569995102120:
 
-      .. figure:: /_static/images/en-us_image_0129289255.png
+      .. figure:: /_static/images/en-us_image_0000002571724411.png
          :alt: **Figure 5** Default homepage
 
          **Figure 5** Default homepage
@@ -249,7 +249,7 @@ Procedure
 
       .. _obs_03_0338__fig117531153115316:
 
-      .. figure:: /_static/images/en-us_image_0129289469.png
+      .. figure:: /_static/images/en-us_image_0000002541124128.png
          :alt: **Figure 6** 404 error page
 
          **Figure 6** 404 error page

@@ -29,10 +29,10 @@ Procedure
 
 #. **Optional**: Click the **Completed** button on the top of the page to view completed tasks. Click |image7| next to a finished task to delete the task record.
 
-.. |image1| image:: /_static/images/en-us_image_0237531615.png
-.. |image2| image:: /_static/images/en-us_image_0237531617.png
-.. |image3| image:: /_static/images/en-us_image_0237531618.png
-.. |image4| image:: /_static/images/en-us_image_0237534487.png
-.. |image5| image:: /_static/images/en-us_image_0237531619.png
-.. |image6| image:: /_static/images/en-us_image_0237531618.png
-.. |image7| image:: /_static/images/en-us_image_0237534487.png
+.. |image1| image:: /_static/images/en-us_image_0000002571604443.png
+.. |image2| image:: /_static/images/en-us_image_0000002540964460.png
+.. |image3| image:: /_static/images/en-us_image_0000002541124100.png
+.. |image4| image:: /_static/images/en-us_image_0000002540964406.png
+.. |image5| image:: /_static/images/en-us_image_0000002571604441.png
+.. |image6| image:: /_static/images/en-us_image_0000002541124100.png
+.. |image7| image:: /_static/images/en-us_image_0000002540964406.png

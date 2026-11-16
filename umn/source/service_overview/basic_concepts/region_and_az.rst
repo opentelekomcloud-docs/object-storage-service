@@ -17,7 +17,7 @@ A region and availability zone (AZ) identify the location of a data center. You 
 
 .. _obs_03_0148__fig8747114281212:
 
-.. figure:: /_static/images/en-us_image_0185449745.png
+.. figure:: /_static/images/en-us_image_0000002540964796.png
    :alt: **Figure 1** Regions and AZs
 
    **Figure 1** Regions and AZs
@@ -26,14 +26,6 @@ How Do I Select a Region?
 -------------------------
 
 You are advised to select a region close to you or your target users. This reduces network latency and improves access speed.
-
-How Do I Select an AZ?
-----------------------
-
-When determining whether to deploy resources in the same AZ, consider your applications' requirements for disaster recovery (DR) and network latency.
-
--  For high DR capability, deploy resources in different AZs in the same region.
--  For low network latency, deploy resources in the same AZ.
 
 Regions and Endpoints
 ---------------------

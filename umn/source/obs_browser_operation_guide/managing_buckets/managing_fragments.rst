@@ -40,4 +40,4 @@ Procedure
 
 #. In the **Manage Fragment** dialog box, click **Close** to close the dialog box and return to the OBS Browser home page.
 
-.. |image1| image:: /_static/images/en-us_image_0237534487.png
+.. |image1| image:: /_static/images/en-us_image_0000002540964406.png

@@ -22,7 +22,7 @@ Procedure
 
    For example, if you want to search for buckets whose names contain **test**, you only need to enter **test** in the search box in the upper right corner on the main page and click |image4|. Then, all buckets that contain **test** in their names are displayed in the bucket list.
 
-.. |image1| image:: /_static/images/en-us_image_0237535268.png
-.. |image2| image:: /_static/images/en-us_image_0237531620.png
-.. |image3| image:: /_static/images/en-us_image_0237531612.png
-.. |image4| image:: /_static/images/en-us_image_0237535268.png
+.. |image1| image:: /_static/images/en-us_image_0000002540964388.png
+.. |image2| image:: /_static/images/en-us_image_0000002541124026.png
+.. |image3| image:: /_static/images/en-us_image_0000002540964390.png
+.. |image4| image:: /_static/images/en-us_image_0000002540964388.png

@@ -10,7 +10,7 @@ Cloud Trace Service (CTS) records operations on cloud resources in your account.
 After you enable CTS and configure a tracker, CTS can record management and data traces of OBS for auditing.
 
 
-.. figure:: /_static/images/en-us_image_0136316120.png
+.. figure:: /_static/images/en-us_image_0000002571723995.png
    :alt: **Figure 1** CTS
 
    **Figure 1** CTS
@@ -80,4 +80,4 @@ You can click **Disable** under the **Operation** column on the right of a track
 
 You can click **Delete** under the **Operation** column on the right of a tracker to delete the tracker. Deleting a tracker has no impact on existing operation records. When you enable CTS again, you can view operation records that have been generated.
 
-.. |image1| image:: /_static/images/en-us_image_0148639306.png
+.. |image1| image:: /_static/images/en-us_image_0000002571604047.png

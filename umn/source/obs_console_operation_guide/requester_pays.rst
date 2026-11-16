@@ -46,14 +46,14 @@ Constraints
 Configuring Requester Pays
 --------------------------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. In the navigation pane, choose **Overview**.
 
 #. In the **Basic Configurations** area, click **Requester Pays**. The **Requester Pays** dialog box is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0250427066.png
+   .. figure:: /_static/images/en-us_image_0000002541124384.png
       :alt: **Figure 1** Requester pays
 
       **Figure 1** Requester pays

@@ -25,15 +25,11 @@ Prerequisites
 Procedure
 ---------
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Go to the folder where you want to upload files and click **Upload Object**. The **Upload Object** dialog box is displayed.
 
-#. Select a storage class. If you do not specify a storage class, the objects you upload inherit the default storage class of the bucket.
-
-   .. note::
-
-      An object can have a different storage class from its bucket. You can specify a storage class for an object when uploading it, or you can change the object storage class after the object is uploaded.
+#. Select a storage class.
 
 #. In the **Upload Object** area, drag and drop the files or folders you want to upload.
 
@@ -58,7 +54,7 @@ Procedure
    Configuring tags: Tags are used to identify objects with tag keys and values. For details, see :ref:`Adding Tags to an Object <obs_41_0054>`.
 
 
-   .. figure:: /_static/images/en-us_image_0000002235397602.png
+   .. figure:: /_static/images/en-us_image_0000002571724207.png
       :alt: **Figure 1** Configuring metadata, WORM retention, or object tags
 
       **Figure 1** Configuring metadata, WORM retention, or object tags
@@ -70,7 +66,7 @@ Related Operations
 
 When uploading an object, you can specify a storage class for it. After the object is uploaded, you can also change its storage class by doing as follows:
 
-#. In the bucket list, click the bucket you want to operate to go to the **Objects** page.
+#. In the bucket list of OBS Console, click the required bucket to go to the **Objects** page.
 
 #. Select the target object and choose **More** > **Change Storage Class** on the right.
 

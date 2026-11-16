@@ -13,7 +13,7 @@ In the use of OBS, you may send PUT and GET requests that generate upload and do
 You do not need to separately subscribe to Cloud Eye. It starts automatically once you create a resource (a bucket, for example) in OBS. For more information about Cloud Eye, see `Cloud Eye User Guide <https://docs.otc.t-systems.com/cloud-eye/umn>`__.
 
 
-.. figure:: /_static/images/en-us_image_0198863546.png
+.. figure:: /_static/images/en-us_image_0000002571724717.png
    :alt: **Figure 1** Cloud Eye monitoring
 
    **Figure 1** Cloud Eye monitoring
