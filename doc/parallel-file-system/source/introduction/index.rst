@@ -9,6 +9,7 @@ Introduction
 -  :ref:`Application Scenarios <obs_13_0008>`
 -  :ref:`Constraints <obs_13_0009>`
 -  :ref:`Using PFS <obs_13_0010>`
+-  :ref:`Features <obs_13_0012>`
 
 .. toctree::
    :maxdepth: 1
@@ -18,3 +19,4 @@ Introduction
    application_scenarios
    constraints
    using_pfs
+   features/index

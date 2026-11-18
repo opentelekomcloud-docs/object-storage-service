@@ -12,7 +12,7 @@ Procedure
 
 #. On the console homepage, click **Service List** in the upper left corner and choose **Storage** > **Object Storage Service**.
 
-#. In the navigation pane, choose **Parallel File Systems**.
+#. In the navigation pane on the left, choose **Parallel File Systems**.
 
 #. In the upper right corner of the page, click **Create Parallel File System**.
 
